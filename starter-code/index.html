@@ -5,9 +5,216 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>CSS Lab | Responsive Cloning | Product Hunt</title>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
   <link rel="stylesheet" href="styles.min.css">
 </head>
 <body>
-  
+  <div class="container">
+    <div class="navbar">
+      <div class="find">
+          <div class="find-logo">
+            <img class="logo-img" src="images/logo.png" alt="Logo">
+          </div>
+          <div class="find-input">
+            <input type="text">
+            ... Login
+          </div>
+      </div>
+      <div class="navbar-content">
+        <div class="menu-element first">Home</div>
+        <div class="menu-element">Tech</div>
+        <div class="menu-element">Games</div>
+        <div class="menu-element">Podcasts</div>
+        <div class="menu-element">Books</div>
+        <div class="menu-element">Bots</div>
+        <div class="menu-element remove-resp">Developer Tools</div>
+        <div class="menu-element remove-resp">iMessage Apps</div>
+        <div class="menu-element remove-resp">iPhone</div>
+        <div class="menu-element remove-resp">Photography Tools</div>
+      </div>
+    </div>
+    <div class="content">
+      <div class="welcome">
+        <div class="close">
+          X
+        </div>
+        <div class="welcome-left">
+          <span class="welcome-firstpart">Welcome to Product Hunt</span>  Get the best new products in your inbox, daily
+        </div>
+        <div class="welcome-right">
+          <input type="text" placeholder="Your email">
+          <button>Subscribe</button>
+        </div>
+      </div>
+      <div class="left-content">
+        <!-- first part of the left content -->
+        <div class="popular-week">
+          <div class="close-week">
+            X
+          </div>
+          <div class="week-header">
+            Popular this week
+          </div>
+          <div class="post-content">
+            <div class="img-popular">
+              <img src="images/popular-this-week/app-1.png" alt="Popular">
+            </div>
+            <div class="text-popular">
+              <h3>Duolingo Bots</h3>
+              AI-powered characters to teach language conversation
+              <div class="numbers">
+                <div class="votes">
+                  <img src="images/votes.png" alt="votes"> 1460
+                </div>
+                <div class="comments">
+                  <img src="images/comments.png" alt="comments"> 49
+                </div>
+                <div class="phone">
+                  IPHONE
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="post-content">
+            <div class="img-popular">
+              <img src="images/popular-this-week/app-2.png" alt="Popular">
+            </div>
+            <div class="text-popular">
+              <h3>Tribe 2.0</h3>
+              Introducing Augmented Messaging
+              <div class="numbers">
+                <div class="votes">
+                  <img src="images/votes.png" alt="votes"> 1465
+                </div>
+                <div class="comments">
+                  <img src="images/comments.png" alt="comments"> 188
+                </div>
+                <div class="phone">
+                  ANDROID
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="post-content">
+            <div class="img-popular">
+              <img src="images/popular-this-week/app-3.png" alt="Popular">
+            </div>
+            <div class="text-popular">
+              <h3>Workplace by Facebook</h3>
+              Connect everyone in your company and turn ideas into action
+              <div class="numbers">
+                <div class="votes">
+                  <img src="images/votes.png" alt="votes"> 1003
+                </div>
+                <div class="comments">
+                  <img src="images/comments.png" alt="comments"> 80
+                </div>
+                <div class="phone">
+                  ANDROID
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="separator">
+
+        </div>
+        <!-- Second part of the left content -->
+        <div class="popular-week">
+          <div class="close-popular-week">
+            <strong>POPULAR</strong> | NEWEST
+          </div>
+          <div class="week-header">
+            Today
+          </div>
+          <div class="post-content">
+            <div class="img-popular">
+              <img src="images/today/app-1.png" alt="Popular">
+            </div>
+            <div class="text-popular">
+              <h3>Sprayscape</h3>
+              AI-powered characters to teach language conversation
+              <div class="numbers">
+                <div class="votes">
+                  <img src="images/votes.png" alt="votes"> 1460
+                </div>
+                <div class="comments">
+                  <img src="images/comments.png" alt="comments"> 49
+                </div>
+                <div class="phone">
+                  ANDROID
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="post-content">
+            <div class="img-popular">
+              <img src="images/today/app-2.png" alt="Popular">
+            </div>
+            <div class="text-popular">
+              <h3>Ask Gary Vee</h3>
+              Introducing Augmented Messaging
+              <div class="numbers">
+                <div class="votes">
+                  <img src="images/votes.png" alt="votes"> 1465
+                </div>
+                <div class="comments">
+                  <img src="images/comments.png" alt="comments"> 188
+                </div>
+                <div class="phone">
+                  IPHONE
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="post-content">
+            <div class="img-popular">
+              <img src="images/today/app-3.png" alt="Popular">
+            </div>
+            <div class="text-popular">
+              <h3>The Electron Wheel</h3>
+              Connect everyone in your company and turn ideas into action
+              <div class="numbers">
+                <div class="votes">
+                  <img src="images/votes.png" alt="votes"> 1003
+                </div>
+                <div class="comments">
+                  <img src="images/comments.png" alt="comments"> 80
+                </div>
+                <div class="phone">
+                  ANDROID
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+        <div class="separator">
+
+        </div>
+      </div>
+
+      <div class="right-content">
+        <div class="slack">
+          <h3>Kittybot for Slack</h3><br>
+          A friendly feline that sends you cool new things
+          <div class="kitty-button">
+            ADD KITTYBOT TO SLACK
+          </div>
+        </div>
+        <div class="upcoming-chats">
+
+        </div>
+        <div class="tweets">
+
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
