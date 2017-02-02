@@ -31,57 +31,75 @@ body {
   position: fixed;
   left: 0;
   top: 0;
-  margin: 2%;
-  height: 40px;
+  z-index: 1;
+  padding: 2%;
+  height: 64px;
   width: 100%;
+  background-color: $white-body;
 
-  #logo {
-    float: left;
-    height: 100%;
-    width: auto;
-  }
-  #search-btn {
-    float: left;
-    height: 100%;
-    width: auto;
-    @include transparentButton();
-  }
-  #search-bar {
-    float: left;
-    @include transparentButton();
-  }
-  #options-btn {
-    float: right;
-    height: 100%;
-    width: auto;
-    @include transparentButton();
-  }
-  #login-btn {
-    float: right;
-    height: 100%;
-    width: auto;
-    @include transparentButton();
-  }
-  #page-links {
-    clear: both;
+  #top-nav {
+    height: calc(50% - 6px);
 
-    button {
-      height: 4%;
-      width: 4%;
+    #logo {
+      float: left;
+      height: 100%;
+      width: auto;
+    }
+
+    #search-btn {
+      float: left;
+      height: 100%;
+      width: auto;
+      @include transparentButton();
+    }
+
+    #search-bar {
+      float: left;
+      height: 100%;
+      @include transparentButton();
+    }
+
+    #options-btn {
+      float: right;
+      height: 100%;
+      width: auto;
+      @include transparentButton();
+    }
+
+    #login-btn {
+      float: right;
+      height: 100%;
+      width: auto;
+      @include transparentButton();
+    }
+  }
+
+  #bottom-nav {
+    height: calc(50% - 6px);
+    z-index: 0;
+
+    .nav-link {
+      height: 100%;
       width: auto;
       padding: 0;
-      font-size: 2.6vw;
+      font-size: 2.4vw;
       @include transparentButton();
 
+    }
+    .nav-arrow {
+      height: 100%;
+      width: 5%;
+      padding: 0;
+      @include transparentButton();
       img {
-        height: 40%;
+        height: 25%;
         width: auto;
       }
     }
   }
 }
 #content{
-  margin-top: 47px;
+  margin-top: 70px;
 
   .item-list {
     height: 240px;
@@ -141,7 +159,7 @@ body {
       }
 
       .item-info-description {
-        font-size: 2vw;
+        font-size: 2.3vw;
         color: $silver-text;
       }
 
@@ -165,14 +183,14 @@ body {
 
     }
   }
-  .ghetto-hr {
-    height: 4%;
-    width: 94%;
-    margin: 0 3% 0 3%;
-    border-bottom: 1px solid $silver-text;
-  }
 
   .sort-by-btn {
     @include transparentButton();
   }
+}
+.ghetto-hr {
+  height: 4%;
+  width: 94%;
+  margin: 0 3% 0 3%;
+  border-bottom: 1px solid $silver-text;
 }
