@@ -1,4 +1,6 @@
-$white-body: #f9f9f9;
+/* Vars and Functions */
+$gray-body: #f9f9f9;
+$grey-body: $gray-body;
 $silver-text: #C0C0C0;
 
 @mixin transparentButton {
@@ -15,27 +17,28 @@ $silver-text: #C0C0C0;
   }
 }
 
-
 @mixin showBorder {
   box-sizing: border-box;
   border: 2px solid black;
 }
 
 body {
-  height: 100%;
   margin: 2%;
-  background-color: $white-body;
+  background-color: white;
   font-family: arial;
 }
+
+/* Navigation Bar */
 #navbar {
   position: fixed;
   left: 0;
   top: 0;
   z-index: 1;
-  padding: 2%;
+  padding: 6px 2% 0 2%;
+  margin-bottom: 6px;
   height: 64px;
   width: 100%;
-  background-color: $white-body;
+  background-color: white;
 
   #top-nav {
     height: calc(50% - 6px);
@@ -78,19 +81,22 @@ body {
     height: calc(50% - 6px);
     z-index: 0;
 
-    .nav-link {
+    button {
       height: 100%;
-      width: auto;
       padding: 0;
-      font-size: 2.4vw;
       @include transparentButton();
 
     }
+
+    .nav-link {
+      width: auto;
+      font-size: 2.4vw;
+
+    }
+
     .nav-arrow {
-      height: 100%;
       width: 5%;
-      padding: 0;
-      @include transparentButton();
+
       img {
         height: 25%;
         width: auto;
@@ -98,15 +104,25 @@ body {
     }
   }
 }
+
+/* Main Content */
 #content{
-  margin-top: 70px;
+  width: 100%;
+  margin-top: 76px;
+
+  #subscription-solicitacion {
+    display: none;
+  }
 
   .item-list {
+    box-sizing: border-box;
     height: 240px;
     width: 90%;
+    padding: 6px;
     margin: 0 5% 0 5%;
 
     .item-title-bar {
+      position: relative;
       height: 10%;
       border-bottom: 1px solid $silver-text;
 
@@ -114,83 +130,213 @@ body {
 
         float: left;
       }
+
       button {
 
         float: right;
         @include transparentButton();
       }
-      .close-list-btn {
+
+      .close-item-btn {
+        position: relative;
+        left: 2%;
+        bottom: 4%;
         height: 100%;
         width: 10%;
         img {
-          height: 70%;
-          width: 70%;
-        }
-      }
-    }
-  }
-  .item {
-    position: relative;
-    height: 22%;
-    width: 100;
-
-    .item-img {
-      position: absolute;
-      top: 50%;
-      left: 5%;
-      transform: translateY(-50%);
-      height: 80%;
-      width: 15%;
-      margin: 0px;
-
-    }
-
-    .item-info {
-      display: block;;
-      position: absolute;
-      top: 50%;
-      left: 25%;
-      transform: translateY(-50%);
-      height: 80%;
-      width: 75%;
-
-      .item-info-header {
-        font-size: 4vw;
-      }
-
-      .item-info-description {
-        font-size: 2.3vw;
-        color: $silver-text;
-      }
-
-      button {
-        height: 50%;
-        font-size: 1.8vw;
-        padding: 0;
-        width: auto;
-        @include transparentButton();
-        color: black;
-
-        img {
-          height: 30%;
+          height: 35%;
           width: auto;
         }
       }
 
-      .black-text {
-        color: black;
+      .sort-by-btn {
+        @include transparentButton();
       }
 
     }
-  }
 
-  .sort-by-btn {
-    @include transparentButton();
+    .item {
+      position: relative;
+      height: 22%;
+      width: 100;
+
+      .item-img {
+        position: absolute;
+        top: 50%;
+        left: 5%;
+        transform: translateY(-50%);
+        height: 80%;
+        width: auto;
+        margin: 0px;
+
+      }
+
+      .item-info {
+        display: block;;
+        position: absolute;
+        top: 50%;
+        left: 25%;
+        transform: translateY(-50%);
+        height: 80%;
+        width: 75%;
+
+        .item-info-header {
+          font-size: 4vw;
+        }
+
+        .item-info-description {
+          font-size: 2.3vw;
+          color: $silver-text;
+        }
+
+        button {
+          height: 50%;
+          font-size: 1.8vw;
+          padding: 0;
+          width: auto;
+          @include transparentButton();
+          color: black;
+
+          img {
+            height: 30%;
+            width: auto;
+          }
+        }
+
+        .black-text {
+          color: black;
+        }
+
+        .item-platform {
+          display: none;
+        }
+
+      }
+    }
+
   }
 }
+
+/* Custom reusable horizontal rule*/
 .ghetto-hr {
   height: 4%;
   width: 94%;
   margin: 0 3% 0 3%;
   border-bottom: 1px solid $silver-text;
+}
+
+/* When (width >= 375px) */
+@media (min-width: 375px) {
+
+  body {
+    background-color: $grey-body;
+  }
+
+  /* Main Content (width >= 375px) */
+  #content {
+    width: 100%;
+
+    #subscription-solicitacion {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      height: 30px;
+      width: 90%;
+      padding: 6px;
+      margin: 12px 5% 12px 5%;
+      background-color: white;
+
+      .solicitation-row {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        position: relative;
+        z-index: 0;
+        height: 50%;
+        width: 100%;
+
+        #welcome-msg {
+          font-size: 2vw;
+          font-weight: bold;
+
+        }
+
+        #product-tagline {
+          position: relative;
+          top: 2%;
+          font-size: 1.4vw;
+
+        }
+        #email-input {
+          box-sizing: border-box;
+          height: 80%;
+          width: 30%;
+          border: 1px solid $grey-body;
+          font-size: 2vw;
+
+        }
+
+        #sub-btn {
+          height: 100%;
+          width: auto;
+          font-size: 2vw;
+          font-weight: bold;
+          background-color: red;
+          color: white;
+          border: none;
+          cursor: pointer;
+          overflow: hidden;
+          border-radius: 2px;
+
+        }
+
+        .close-item-btn {
+          overflow: visible;
+          left: 95%;
+          bottom: 100%;
+          height: 100%;
+          width: auto;
+          position: absolute;
+          z-index: 1;
+          @include transparentButton();
+          img {
+            height: 50%;
+            width: auto;
+          }
+        }
+      }
+    }
+
+    .item-list{
+      border: 1px solid $silver-text;
+      margin-bottom: 12px;
+      background-color: white;
+
+      .item {
+
+        .item-info {
+
+          .item-info-description {
+
+            font-size: 2vw;
+          }
+
+          .item-platform {
+            position: relative;
+            left: 80%;
+            bottom: 65%;
+            display: block;
+            font-size: 2vw;
+
+          }
+          .platform-likes {
+            left: 20%;
+          }
+        }
+      }
+    }
+  }
+
 }
