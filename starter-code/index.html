@@ -5,9 +5,115 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>CSS Lab | Responsive Cloning | Product Hunt</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
   <link rel="stylesheet" href="styles.min.css">
 </head>
 <body>
-  
+  <header>
+    <div id="search-bar">
+      <img src="images/logo.png">
+      <input type="search" placeholder="Discover your next favorite thing...">
+    </div>
+    <hr>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Tech</a>
+        <a href="#">Game</a>
+        <a href="#">Podcast</a>
+        <a href="#">Books</a>
+        <a href="#">Bots</a>
+    </nav>
+
+  </header><hr>
+
+  <div id="main-wrapper">
+    <div id="email-sub" class="container">
+      <img src="images/close.png">
+      <b>Welcome to ProducHunt</b> <span>get the best products in your mailbox</span>
+      <input type="email" placeholder="Your e-mail">
+      <button>SUBSCRIBE</button>
+
+    </div>
+
+    <div id="wrapper">
+    <div id="popular-this-week" class="container">
+      <div class="header">
+        <h2>Popular this week</h2>
+        <img src="images/close.png">
+      </div><hr>
+      <div class="content">
+        <ul>
+          <li>
+            <img src="images/popular-this-week/app-1.png" alt="app icon" class="app-icon">
+            <h3 class="app-name">Duolingo Bots</h3>
+            <span class="description">AI powered charecters to teach lanquage conversation</span><br>
+            <button><img src="images/votes.png">89</button>
+            <button><img src="images/comments.png">57</button>
+            <button>Save</button>
+            <div class="phone-button"><div>Android</div>+15</div>
+          </li><hr>
+          <li>
+            <img src="images/popular-this-week/app-2.png" alt="app icon" class="app-icon">
+            <h3 class="app-name">Tribe 2.0</h3>
+            <span class="description">Introducing augemented messaging</span><br>
+            <button><img src="images/votes.png">17</button>
+            <button><img src="images/comments.png">5</button>
+            <button>Save</button>
+            <div class="phone-button"><div>Iphone</div>+7</div>
+          </li><hr>
+          <li>
+            <img src="images/popular-this-week/app-3.png" alt="app icon" class="app-icon">
+            <h3 class="app-name">Workplace by facebook</h3>
+            <span class="description">Connect everyone in your office and turn ideas into action</span><br>
+            <button><img src="images/votes.png">1</button>
+            <button><img src="images/comments.png">0</button>
+            <button>Save</button>
+            <div class="phone-button"><div>Iphone</div>+4</div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div id="today" class="container">
+      <div class="header">
+        <h2>Today</h2>
+
+      </div><hr>
+      <div class="content">
+        <ul>
+          <li>
+            <img src="images/today/app-1.png" alt="app icon" class="app-icon">
+            <h3 class="app-name">Sprayscape</h3>
+            <span class="description">A perferctyly imperfect VR camera experiment</span><br>
+            <button><img src="images/votes.png">15</button>
+            <button><img src="images/comments.png">23</button>
+            <button>Save</button>
+            <div class="phone-button"><div>Iphone</div>+3</div>
+          </li><hr>
+          <li>
+            <img src="images/today/app-2.png" alt="app icon" class="app-icon">
+            <h3 class="app-name">Ask Gary Vee</h3>
+            <span class="description">The unofficial Gary Vee persona chatbot</span><br>
+            <button><img src="images/votes.png">11</button>
+            <button><img src="images/comments.png">45</button>
+            <button>Save</button>
+            <div class="phone-button"><div>Android</div>+13</div>
+          </li><hr>
+          <li>
+            <img src="images/today/app-3.png" alt="app icon" class="app-icon">
+            <h3 class="app-name">The Electron Wheel</h3>
+            <span class="description">Turn your standart bicycle into electric one</span><br>
+            <button><img src="images/votes.png">45</button>
+            <button><img src="images/comments.png">8</button>
+            <button>Save</button>
+            <div class="phone-button"><div>Android</div>+5</div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    </div>
+    <div id="side-bar" class="container">
+
+    </div>
+  </div>
 </body>
 </html>
