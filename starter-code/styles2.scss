@@ -1,0 +1,127 @@
+@import 'reset';
+@import 'variables';
+
+body {
+  background: #f9f9f9;
+  margin: 0;
+  min-height: 100%;
+  position: relative;
+  font-family: sans-serif;
+  font-weight: lighter;
+  height: 667px;
+}
+
+h1, h2 {
+  font-family: sans-serif;
+  font-weight: lighter;
+  background-color: pink;
+}
+
+
+.topNav {
+  background-color: pink;
+  width: 100%; // need
+  float: left;
+  height: 10%;
+}
+
+.logo {
+  display: block;
+  float: left;
+  width: 5%;
+  height: auto;
+  background-color: yellow;
+  margin-left: 2%;
+}
+
+.searchForm {
+  display: block;
+  float: left;
+  background-color: #fff;
+}
+
+.searchIcon {
+  display: block;
+  height: auto;
+  float: left;
+}
+
+.searchText {
+  display: inline;
+  vertical-align: middle;
+  text-align: left;
+}
+
+.loginText {
+  float: right;
+  background-color: yellow;
+}
+
+.bottomNav {
+  text-align: center;
+  vertical-align: middle; // idk
+  border: 2px solid blue;
+  display: block;
+  height: 10%;
+}
+
+.bottomNav li {
+  list-style: none;
+  display: inline;
+  background-color: yellow;
+  margin: 0 1%;
+}
+
+.bottomNav .switch {
+  width: 2%;
+  display: inline;
+  float: right;
+}
+
+.topicWrapper {
+  display: block;
+  height: 50%;
+  border: 2px solid blue;
+}
+
+.closeIcon {
+  display: inline;
+  width: 2%;
+  background-color: yellow;
+}
+
+.topicHeader {
+  display: inline;
+  float: left;
+  font-size: 90%;
+  border: 2px solid green; 
+}
+
+.topicHeader h1{
+  background-color: yellow;
+
+}
+.topicPost {
+  border: 1px solid green;
+  font-size: 60%;
+  clear: both;
+  background-color: gray;
+  height: 50%;
+}
+
+.topicPost h1, h2 {
+    background-color: yellow;
+}
+
+
+.topicContent {
+  display: block;
+  float: left;
+}
+.preview {
+  display: block;
+  float: left;
+  width: 8%;
+  height: auto;
+  position: relative;
+}
