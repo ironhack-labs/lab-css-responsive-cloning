@@ -1,3 +1,135 @@
+/* ==========
+    SCSS VARIABLES
+===========*/
+
+$primary-color: #acaaab;
+.clearingdiv {
+  clear: both;
+}
+/* ==========
+    GLOBAL STYLING
+===========*/
+
+* {
+  margin: 0px;
+  padding: 0px;
+  color: $primary-color;
+  font-size: 12px;
+  font-family: source-sans-pro, arial;
+}
+
 body {
-  background: #f9f9f9;
+  // min-width: 410px;
+  width: 100vw;
+}
+
+/* ==========
+    OPEN:HEADER
+===========*/
+
+header {
+  width: 100%;
+}
+
+.logo {
+  float: left;
+  width: 10%;
+  height: auto;
+}
+
+.search {
+  float: left;
+  width: 6%;
+  height: auto;
+  margin-top: 2%;
+}
+
+header {
+
+  input[type=text]{
+    display: inline;
+    padding: 2px;
+    float: left;
+    margin-top: 3%;
+    margin-left: 2%;
+    width: 65%;
+    background-color: rgba(173,173,173, 0.6);
+    color: white;
+    border-radius: 5px;
+    border-style: none;
+  }
+
+  button {
+    float: right;
+    padding: 2px;
+    margin-top: 3%;
+    margin-right: 3%;
+    background-color: none;
+    border-radius: 5px;
+    border-style: none;
+    color: white;
+    transition: background-color .4s ease-in-out;
+  }
+}
+
+    /* ==========
+        OPEN:TABS
+    ===========*/
+
+      .tabs {
+        width: 100%;
+        text-align: center;
+        border-top: 1px solid $primary-color;
+        padding-top: 2%;
+      }
+
+      .tabs li {
+        display: inline;
+        width: 100%;
+        padding: 0 1% 0;
+        font-size: 0.8em;
+      }
+
+    /* ==========
+        CLOSE:TABS
+    ===========*/
+
+/* ==========
+    CLOSE:HEADER
+===========*/
+
+
+.test {
+  background-color: red;
+  width: 100px;
+  height: 10px;
+}
+
+
+/* ==========
+  ANIMATIONS
+===========*/
+
+header button:hover {
+  background-color: tomato;
+}
+
+/* ==========
+  MEDIA QUERY
+===========*/
+ @media (min-width: 600px){
+  header {
+
+    input[type=text], button {
+     padding: 0.5%;
+   }
+
+    * {
+      font-size: 1.6rem;
+    }
+
+    .tabs li { // why doesnt just li work?
+      padding: 0 2.5%  0;
+    }
+  }
 }
