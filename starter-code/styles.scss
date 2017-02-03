@@ -1,3 +1,107 @@
+
+@import 'resetForn';
+
 body {
   background: #f9f9f9;
+  font-family: Arial;
+}
+
+.header {
+width: 100vw;
+height: 20vh;
+
+}
+.search {
+width: 100%;
+height: 50%;
+
+
+input {
+  background: url(images/search.png) no-repeat scroll 0.5em;
+  width: 80%;
+  height: 20px;
+  border: 0;
+  border-style: none;
+  background-color: white;
+  margin-top: 10px;
+  background-size: 10px;
+  padding-left: 20px;
+  padding-bottom: 2px;
+  margin-left: 5px
+
+}
+
+p {
+color: gray;
+font-size: 11px;
+float: right;
+margin-top: 16px;
+margin-right: 8px;
+}
+
+}
+
+.navigation {
+  width: 100%;
+  height: 50%;
+
+li{
+display: inline;
+color: white;
+float: left;
+padding-left: 10px;
+margin-top: 5px;
+font-size: 6px;
+margin-left: 20px;
+}
+a {
+color: gray;
+text-decoration: none;
+}
+
+hr {
+  height: 2px;
+  background-color: gray;
+  margin-top: 0;
+  margin-right: 0;
+
+}
+}
+
+.logo {
+float: left;
+max-width: 8%;
+
+}
+
+////// POPULAR THIS WEEK
+.popularThisWeek {
+width: 100vw;
+height: 40vh;
+background-color: pink;
+
+.title {
+background-color: indigo;
+}
+.duolingBots {
+background-color: gold;
+}
+
+.tribe {
+background-color: black;
+}
+.workplaceFacebook {
+background-color: red;
+}
+}
+
+.app {
+  width: 100%;
+  height: 20%;
+}
+ ////// TODAY
+.today {
+width: 100vw;
+height:40vh;
+background-color: blue;
 }
