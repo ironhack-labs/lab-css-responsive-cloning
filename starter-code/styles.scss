@@ -1,3 +1,140 @@
 body {
   background: #f9f9f9;
 }
+
+// Style that makes sure the padding and border are included in the width and
+// height of the elements,
+* {
+    box-sizing: border-box;
+}
+
+// Styles that set font family for document.
+html {
+    font-family: "Lucida Sans", sans-serif;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  float: left;
+}
+
+/* The length of the viewport (100%) divided into 12 columns => 100/12 = 8.33%
+// For a desktop, these are dimentions
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;} */
+
+// Mobile First design - always have it check for a smaller dimention first
+/* For mobile phones: */
+@media only screen and (max-width: 599px){
+[class*="col-"] {width: 100%;}
+.left-bar {display: none;}
+.right-bar {display: none;}
+}
+
+// Media query that acts like an if statement. First will check for smaller
+// screen (mobile). If screen is larger (tablet), then following styles are
+// applied.
+@media only screen and (min-width: 600px) {
+    /* For tablets: */
+    .col-m-1 {width: 8.33%;}
+    .col-m-2 {width: 16.66%;}
+    .col-m-3 {width: 25%;}
+    .col-m-4 {width: 33.33%;}
+    .col-m-5 {width: 41.66%;}
+    .col-m-6 {width: 50%;}
+    .col-m-7 {width: 58.33%;}
+    .col-m-8 {width: 66.66%;}
+    .col-m-9 {width: 75%;}
+    .col-m-10 {width: 83.33%;}
+    .col-m-11 {width: 91.66%;}
+    .col-m-12 {width: 100%;}
+}
+
+
+//Media query that acts like an if statement. First will check for smaller
+// screen (tablet). If screen is larger (desktop), then following styles are applied.
+@media only screen and (min-width: 768px) {
+  // The length of the viewport (100%) divided into 12 columns => 100/12 = 8.33%
+  // For a desktop, these are dimentions
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+}
+
+
+
+// Selector that uses a regular expression that catches all divs containing the
+// prefix col-
+[class*="col-"] {
+    float: left;
+    padding: 15px; // This is what gives the divs a spaced appearance
+}
+
+// Style to clear the flow of columnsp proceeding columns that are floated,
+// The ::after inserts sometihng after each of the selected elements
+// ::before acheives the same effect, only before the element.
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+// Styles the header
+.header {
+    background-color: #9933cc;
+    color: #ffffff;
+    padding: 15px;
+}
+
+// Stylings for the left bar
+.left-bar {
+
+}
+
+// Stylings for the right bar
+.right-bar {
+
+}
+
+
+// Styles all ul tags in the divs marked with "menu"
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+// Styles all li tags in the divs marked with "menu"
+.menu li {
+    padding: 8px;
+    margin-bottom: 7px;
+    background-color :#33b5e5;
+    color: #ffffff;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+// A transformation that is invoked when the cursor hovers over the divs marked
+// with "mene"
+.menu li:hover {
+    background-color: #0099cc;
+}
