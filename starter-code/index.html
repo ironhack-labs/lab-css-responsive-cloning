@@ -5,9 +5,237 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>CSS Lab | Responsive Cloning | Product Hunt</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,800&amp;subset=latin-ext" rel="stylesheet">
   <link rel="stylesheet" href="styles.min.css">
+  <link rel="stylesheet" href="desktop.min.css">
 </head>
 <body>
-  
+
+<nav class="top-navbar">
+
+  <div class="container">
+
+    <img class="site-logo" src="images/logo.png"  alt="page-logo">
+
+    <div class="input-search">
+      <form>
+          <span><input type="search" class="search" placeholder="Discover..."></span>
+      </form>
+      <a class="log-in" href="#">... Login</a>
+    </div>
+
+    <ul class="navigation-li">
+      <li><a href="#"></a>Home</li>
+      <li><a href="#"></a>Tech</li>
+      <li><a href="#"></a>Games</li>
+      <li><a href="#"></a>Podcast</li>
+      <li><a href="#"></a>Books</li>
+      <li><a href="#"></a>Bots</li>
+      <li><a href="#"></a>Developer Tools</li>
+      <li><a href="#"></a>iMessages Apps</li>
+      <li class="last-two"><a href="#"></a>iPhone</li>
+      <li class="last-two"><a href="#"></a>Photography Tools</li>
+    </ul>
+      <img class="left-arrow" src="images/arrow-prev.png" alt="arrow">
+      <img class="right-arrow" src="images/arrow-next.png" alt="">
+
+  </nav><!-- navbar -->
+<div class="container">
+<!--==================== SUBSCRIBE ===================== -->
+<section class="subscribe">
+  <img src="images/hand.png" alt="hands">
+  <p><b>Welcome to Product Hunt</b> Get the best new products in your inbox, daily.</p>
+  <form>
+    <img src="images/close.png" alt="close">
+    <button class="button" type="button" name="button">subscribe</button>
+    <input type="email" placeholder="Your Email"></input>
+  </form>
+  <inpu></inpu>
+</section>
+
+<section class="popular">
+  <h2>Popular this week</h2>
+  <img src="images/close.png" alt="close-x">
+</section>
+
+<!--==================== POPULAR-APPS ===================== -->
+
+<section class="popular-apps-section">
+
+  <!--=======POPULAR APP 1======-->
+  <div class="popular-app">
+
+    <img src="images/popular-this-week/app-1.png" alt="popular-apps">
+
+    <h2>Duolingo Bots</h2>
+    <p>AI-powered characters to teach language conversation</p>
+
+    <div class="social-button">
+      <img src="images/votes.png" alt="votes">1460
+    </div>
+
+    <div class="social-button">
+      <img src="images/comments.png" alt="comments">49
+    </div>
+
+    <div class="social-button">
+      <img src="images/save.png" alt="comments">SAVE
+    </div>
+    <div class="social-button">
+      <img src="images/share.png" alt="comments">
+    </div>
+  </div>
+
+  <!--=======PUPULAR APP 2========-->
+  <div class="popular-app">
+
+    <img src="images/popular-this-week/app-2.png" alt="popular-apps">
+
+    <h2>Tribe 2.0</h2>
+    <p>Introduction Augmemted Messaging</p>
+    <div class="social-button">
+      <img src="images/votes.png" alt="votes">1465
+    </div>
+
+    <div class="social-button">
+      <img src="images/comments.png" alt="comments">188
+    </div>
+
+    <div class="social-button">
+      <img src="images/save.png" alt="comments">SAVE
+    </div>
+    <div class="social-button">
+      <img src="images/share.png" alt="comments">
+    </div>
+  </div>
+
+  <!-- POPULAR APP 3  -->
+  <div class="popular-app">
+
+    <img src="images/popular-this-week/app-3.png" alt="popular-apps">
+
+      <h2>Workplace by Facebook</h2>
+
+      <p>Connect everyone in your company and turn ideas into action</p>
+
+      <div class="social-button">
+        <img src="images/votes.png" alt="votes">1003
+      </div>
+
+      <div class="social-button">
+        <img src="images/comments.png" alt="comments">80
+      </div>
+
+      <div class="social-button">
+        <img src="images/save.png" alt="comments">SAVE
+      </div>
+
+      <div class="social-button last-popular-app">
+        <img src="images/share.png" alt="comments">
+      </div>
+  </div>
+
+</section><!-- popular-apps-section -->
+
+  <p class="show-more"><img src="images/arrow-down.png" alt="more">show more</p>
+
+<section class="today-popular">
+  <div class="today">
+      <h2>Today</h2>
+      <a href="#">newest</a>
+      <a href="#"><span>popular</span> |</a>
+  </div>
+</section>
+
+<!--==================== TODAYS APPS ===================== -->
+
+<section class="popular-apps-section">
+
+  <!--==== FIRST APP ====-->
+  <div class="today-apps">
+
+    <img src="images/today/app-1.png" alt="popular-apps">
+
+    <h2>Sprayscape</h2>
+
+    <p>A perfectly imperfect VR-ish camera experiment, by Google</p>
+
+    <div class="social-button">
+      <img src="images/votes.png" alt="votes">82
+    </div>
+
+    <div class="social-button">
+      <img src="images/comments.png" alt="comments">
+    </div>
+
+    <div class="social-button">
+      <img src="images/save.png" alt="comments">SAVE
+    </div>
+
+    <div class="social-button last-popular-app">
+      <img src="images/share.png" alt="comments">
+    </div>
+  </div>
+
+  <!--==== SECOND APP ====-->
+  <div class="today-apps">
+
+    <img src="images/today/app-2.png" alt="popular-apps">
+
+    <h2>Ask Gary Vee</h2>
+
+    <p>The unofficial Gary Vee persona chatbot on Messenger!</p>
+
+    <div class="social-button">
+      <img src="images/votes.png" alt="votes">21
+    </div>
+
+    <div class="social-button">
+      <img src="images/comments.png" alt="comments">9
+    </div>
+
+    <div class="social-button">
+      <img src="images/save.png" alt="comments">SAVE
+    </div>
+
+    <div class="social-button last-popular-app">
+      <img src="images/share.png" alt="comments">
+    </div>
+  </div>
+
+  <!--==== TIRD APP ====-->
+  <div class="today-apps">
+
+    <img src="images/today/app-3.png" alt="popular-apps">
+
+    <h2>The Electron Wheel</h2>
+
+    <p>Turn your standard bicycle into an electric bike.</p>
+
+    <div class="social-button">
+      <img src="images/votes.png" alt="votes">23
+    </div>
+
+    <div class="social-button">
+      <img src="images/comments.png" alt="comments">2
+    </div>
+
+    <div class="social-button">
+      <img src="images/save.png" alt="comments">SAVE
+    </div>
+
+    <div class="social-button last-popular-app">
+      <img src="images/share.png" alt="comments">
+    </div>
+  </div>
+
+
+</section>
+</div>
+</div><!-- container -->
+
+
+
+  </header>
 </body>
 </html>
