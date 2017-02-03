@@ -1,3 +1,130 @@
 body {
   background: #f9f9f9;
+  padding-left: 5%;
+}
+header {
+  position: fixed;
+  top: 100px;
+  padding-left: 50px;
+  margin-left: 100px;
+  left: 50px;
+  width: 80%;
+  border: 5px solid;
+
+}
+.searchBar {
+  .textSearch {
+    width: 77%;
+    height: auto;
+    background-image: url("./images/search.png") ;
+    background-repeat: no-repeat;
+    font-size: 14px
+  }
+  width: 65%;
+
+}
+.navBar {
+  img {
+      display: inline-block;;
+  }
+  width: 65%;
+
+}
+.ulList {
+  list-style-type: none;
+  margin: 10px;
+  .navBarHome {
+    background-color: #f9f9f9;
+  }
+  li {
+    display: inline;
+    margin-right: 1%;
+  }
+}
+.signUp {
+    width: 65%;
+
+    text-align: center;
+
+    button {
+      margin-right: 4%;
+    }
+}
+.popular {
+  // margin-top: 25px;
+}
+.popularTitle {
+  font-weight: bold;
+  margin-left: 2.5%;
+  padding-top: 15px;;
+  padding-bottom: 10px;
+  padding-left: 0%;
+  width: 60%;
+  background-color: #D3D3D3;
+
+  img {
+    float: right;
+    padding-right: 1%;
+  }
+
+
+}
+.entry {
+  width: 60%;
+
+  margin-left: 2.5%;
+  .imageApp {
+    float: left;
+    padding-left: 1%;
+    padding-top: 1%;
+  }
+  h4 {
+  }
+  p {
+  }
+
+}
+
+.likesLeft {
+  display: inline;
+}
+.likesRight {
+  display: inline;
+  float: right;
+
+}
+.showMore {
+  width: 60%;
+  text-align: center;
+
+  margin-left: 2.5%;
+}
+@media (max-width: 800px) {
+  body {
+
+  }
+  .searchBar {
+  }
+  .showMore {
+    display: none;
+  }
+  .textSearch {
+    value: "Discover...";
+  }
+  .ulList {
+    font-size: 11px;
+  }
+  .signUp {
+    display: none;
+  }
+  .event {
+    color: white;
+  }
+  .popularTitle {
+    background-color: white;
+  }
+  .likesRight {
+    float: left;
+  }
+
 }
