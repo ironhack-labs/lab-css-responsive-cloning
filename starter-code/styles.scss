@@ -1,3 +1,55 @@
 body {
-  background: #f9f9f9;
+  // background: #f9f9f9;
+  background-color: #f9f9f9;
+}
+
+main {
+  margin: 0;
+  padding: 0;
+  min-width: 320px;
+  background-color: #111;
+}
+
+h2 {
+
+}
+
+.header-nav {
+  background-color: #111;
+
+  .search-bar {
+
+  }
+  .nav-bar{
+
+    ul {
+
+      li {
+
+      }
+    }
+  }
+}
+
+.content-container {
+  background-color: #222;
+
+  .product-container {
+
+    .header-title {
+      background-color: #444;
+    }
+
+    .product {
+      background-color: #555;
+
+      .img {
+
+      }
+    }
+
+    .post {
+      background-color: #666;
+    }
+  }
 }
