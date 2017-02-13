@@ -85,7 +85,7 @@ input:focus{
 }
 
 .container {
-  padding: 12px 8px;
+  padding: 12px;
   background-color: white;
 }
 
@@ -193,8 +193,26 @@ input:focus{
   img {
     width: 10px;
   }
-
 }
+
+.todayheading {
+  float: left;
+  width: calc(70% - 5px);
+  h5 {
+    margin-top: 5px;
+  }
+}
+
+.popnewest {
+  width: 30%;
+  vertical-align: middle;
+  text-align: center;
+  float: left;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin: 0;
+}
+
 
 .clearfix:after {
      visibility: hidden;
