@@ -85,10 +85,13 @@ input:focus{
 }
 
 .container {
-  padding: 12px;
+  padding: 10px 20px;
   background-color: white;
 }
 
+.subscribe {
+  display: none;
+}
 .popular {
   background: white;
   border-bottom: $borders;
@@ -215,10 +218,77 @@ input:focus{
 
 
 .clearfix:after {
-     visibility: hidden;
-     display: block;
-     font-size: 0;
-     content: " ";
-     clear: both;
-     height: 0;
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+
+
+@media screen and (min-width: 768px) {
+  .container {
+    margin: 30px 20px;
+    border: $borders;
+  }
+  .navLinks {
+    font-size: 1.3em;
+    ul {
+      text-align: center;
+      height: 30px;
+      li {
+        margin: 0 10px;
+      }
+    }
+  }
+  .subscribe {
+    display: block;
+    margin-bottom: 10px;
+    background-color: white;
+    margin: 30px 20px;
+    text-align: center;
+    padding: 20px;
+    border: $borders;
+    h2 {
+      color: black;
+      display: inline;
+      font-size: 0.8em;
+      font-weight: 900;
+    }
+    p {
+      display: inline;
+      font-size: 0.8em;
+      padding-left: 3px;
+    }
+    .email {
+      margin-top: 8px;
+    }
+    input[type="button"], input[type="text"] {
+      display: inline;
+      border-radius: 3.5px;
+      padding: 10px 12px;
+    }
+    input[type="button"] {
+      width: 90px;
+      background-color: #ea532a;
+      color: white;
+    }
+    input[type="text"] {
+      width: 150px;
+      border: $borders;
+      color: $website-text;
+    }
+    .closebtn {
+      float: right;
+      margin: 5px;
+      width: 10px;
+      img {
+        width: 10px;
+      }
+    }
+  }
+  .showmore {
+    margin-bottom: 15px;
+  }
 }
