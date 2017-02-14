@@ -61,5 +61,7 @@ Product Hunt has an interesting Responsive design. We have done four different s
 
 - [Atom editor sass-autocompile](https://atom.io/packages/sass-autocompile)
 - [Use of media queries](https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries)
+- [v0.1 WYSIWYG Editing](https://i.gyazo.com/a62eeeb8d217daf7de529f3d8e2a7a57.mp4)
+- [v0.15 Screenshot](https://i.gyazo.com/dd6e08661e613d068ea48cc18a877104.png)
 
 **/Happy Coding!**

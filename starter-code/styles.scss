@@ -1,5 +1,200 @@
+.fullWidthTainer {
+  width: 100%;
+  min-height: 100%;
+  padding: 0 10%;
+  margin: 0px;
+  box-sizing: border-box;
+  background: green;
+}
+
 .header {
-    box-shadow: 0 1px 0 0 rgba(0,0,0,.05), 0 2px 4px 0 rgba(0,0,0,.06);
-    background: #fff;
-    position: relative;
+  width: 100%;
+  height:100px;
+  display: block;
+  box-shadow: 0 1px 0 0 rgba(0,0,0,.05), 0 2px 4px 0 rgba(0,0,0,.06);
+  background: #fff;
+  position: relative;
+  background: pink;
+}
+
+.search {
+  width: 100%;
+  max-height: 50px;
+  background: blue;
+}
+
+a#logo > img {
+  width: 34px;
+  max-height: 50px;
+  background: limegreen;
+
+}
+
+span#searchBar {
+  width: 100%;
+  height: 30px;
+  background: black;
+}
+
+span#dotMenu {
+  width: 25px;
+  height: 14px;
+  background: #ccc;
+}
+
+span#login {
+  width: 39px;
+  height: 18px;
+  background: #ccc;
+
+}
+
+.headerNav {
+  width: 100%;
+  height: 50px;
+  line-height: 0px;
+  padding: 0 10px;
+  background: maroon;
+  box-sizing: border-box;
+  overflow-x: scroll;
+  white-space: nowrap;
+  display: inline-flex;
+}
+
+.headerNav a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+}
+
+.headerNav a:hover {
+    background-color: #777;
+}
+
+div#gradient {
+  width: 12px;
+  background: beige;
+}
+
+div#gradientEnd {
+  width: 26px;
+  background: beige;
+}
+
+a#seeAll {
+  width: 15px;
+  background: beige;
+}
+
+div#arrows {
+  width: 40px;
+  background: brown;
+}
+
+.subscribe {
+  width: 100%;
+  margin: 0;
+  background: skyblue;
+}
+
+span#fiftyshadesofGrey {
+  color: #ccc;
+  width: 40%;
+}
+
+span#enterEmail {
+  background: #ddd;
+
+}
+
+span#subscribe {
+  background: red;
+  width: 45px;
+}
+
+.feed {
+  width: 100%;
+  background: navy;
+  flex: 1;
+}
+
+.mainFeed {
+  width: 100%;
+  background: aqua;
+  // background: #fff;
+  border-radius: 3px;
+  border: 1px solid rgba(0,0,0,.09);
+  box-shadow: 0 1px 4px 0 rgba(0,0,0,.04);
+
+}
+
+div#feedHeader {
+  background: violet;
+  width: 80%;
+  color: #ccc;
+}
+
+
+.splitter {
+  width: 100%;
+  background: red;
+  vertical-align: top;
+}
+
+td#main {
+  width: 75%;
+}
+
+td#side {
+  width:20%;
+}
+
+.mainPost {
+  background: yellow;
+  width: 100%;
+}
+
+.postBox {
+  width: 90%;
+  background: orange;
+}
+
+.post {
+  width: 95%;
+  height: 131px;
+  background: black;
+  color: #fff;
+}
+
+.sideFeed {
+  width: 92%;
+  flex: 1;
+  float: right;
+  background: teal;
+  display: inline-block;
+
+
+}
+
+div#sideHeader {
+  background: #ccc;
+  width: 90%;
+}
+
+.sidePost {
+  width: 98%;
+  background: red;
+}
+
+.sideBox {
+  width: 96%;
+  background: lightblue;
+  box-sizing: border-box;
+}
+
+.miniPost {
+  max-width: 98%;
+  min-height: 152px;
 }

@@ -8,9 +8,10 @@
   <link rel="stylesheet" href="styles.min.css">
 </head>
 
-<body>
+<body class = "fullWidthTainer">
+
   <header class = "header">
-    
+
     <div class = "search">
       <a id = "logo" href = "http://producthunt.com"><img src = "./images/logo.png"></a>
       <span id = "searchBar">___________BAR_HERE___________</span>
@@ -19,7 +20,8 @@
     </div>
     <div>
       <nav class = "headerNav">
-        <a href = "http://producthunt.com">Home</a>
+        <a id = "home" href = "http://producthunt.com">Home</a>
+        <div id = "gradient"></div>
         <a href = "http://producthunt.com">Tech</a>
         <a href = "http://producthunt.com">Games</a>
         <a href = "http://producthunt.com">Books</a>
@@ -27,16 +29,99 @@
         <a href = "http://producthunt.com">Developer Tools</a>
         <a href = "http://producthunt.com">Games</a>
         <a href = "http://producthunt.com">Get Shit Done</a>
+        <div id = "gradientEnd"></div>
         <a href = "http://producthunt.com">Smart Home</a>
         <a href = "http://producthunt.com">Tech</a>
         <a href = "http://producthunt.com">Touch Bar Apps</a>
         <a href = "http://producthunt.com">Wearables</a>
         <a id = "seeAll" href = "http://producthunt.com">SEE ALL</a>
+        <div class = "arrows"></div>
       </nav>
     </div>
 
   </header>
 
+
+  <figure class ="subscribe">
+    <h3>Welcome to Product Hunt</h3>
+    <span id ="fiftyshadesofGrey">Get the best new products in your inbox, daily.</span>
+    <span id ="enterEmail">Your Email Here</span>
+    <span id ="subscribe">SUBSCRIBE</span>
+
+  </figure>
+
+  <article class = "feed">
+    <div class = "mainFeed">
+      <div id ="feedHeader"><h3>Recommended for you</h3></div>
+      <table class = "splitter">
+        <tr>
+          <td id ="main">
+        <div class = "mainPost">
+          <ul class = "postBox">
+            <li>
+              <div class = "post"><a href = "#">Title of Post></a>
+              </div>
+            </li>
+            <li>
+              <div class = "post"><a href = "#">Title of Post></a>
+              </div>
+            </li>
+            <li>
+              <div class = "post"><a href = "#">Title of Post></a>
+              </div>
+            </li>
+            <li>
+              <div class = "post"><a href = "#">Title of Post></a>
+              </div>
+            </li>
+            <li>
+              <div class = "post"><a href = "#">Title of Post></a>
+              </div>
+            </li>
+            <li>
+              <div class = "post"><a href = "#">Title of Post></a>
+              </div>
+            </li>
+            <li>
+              <div class = "post"><a href = "#">Title of Post></a>
+              </div>
+            </li>
+          </ul>
+
+        </div>
+          </td>
+          <td id = "side">
+            <aside class = "sideFeed">
+              <div id ="sideHeader"><h3>Tech in New Orleans</h3></div>
+              <div class = "sidePost">
+              <ul class = "sideBox">
+                <li>
+                  <div class = "miniPost"><a href = "#">Title of Post></a>
+                  </div>
+                </li>
+                <li>
+                  <div class = "miniPost"><a href = "#">Title of Post></a>
+                  </div>
+                </li>
+                <li>
+                  <div class = "miniPost"><a href = "#">Title of Post></a>
+                  </div>
+                </li>
+                <li>
+                  <div class = "miniPost"><a href = "#">Title of Post></a>
+                  </div>
+                </li>
+                <li>
+                  <div class = "miniPost"><a href = "#">Title of Post></a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </aside>
+        </td>
+      </tr>
+    </table>
+  </article>
 
 </body>
 </html>
