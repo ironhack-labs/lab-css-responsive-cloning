@@ -5,9 +5,242 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>CSS Lab | Responsive Cloning | Product Hunt</title>
-  <link rel="stylesheet" href="styles.min.css">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  
+  <div class="header">
+    <div class="contraint-width">
+      <div class="content">
+        <a class="logo" href="#"> <img id="logo" src="images/logo.png"/></a>
+        <div>
+          <input class="input" autocomplete="off" data-test="search-input" name="q"
+          placeholder="Discover your next favorite thing..." value="">
+        </div>
+        <a class="login-dot" href="/login">...</a>
+        <a class="login" href="/login" data-test="login-button">Login</a>
+      </div>
+
+      <nav class="navigation">
+        <div class="sub-navigation">
+          <ol class="ulist">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Tech</a></li>
+            <li><a href="#">Games</a></li>
+            <li><a href="#">Podcasts</a></li>
+            <li><a href="#">Books</a></li>
+            <li><a href="#">Bots</a></li>
+            <li><a href="#">Developer Tools</a></li>
+            <li><a href="#">iMessage Apps</a></li>
+            <li><a href="#">iphone</a></li>
+            <li class="last"><a href="#">Photography Tools</a></li>
+          </ol>
+        </div>
+        <div class="arrows-scroll">
+          <ol>
+            <li><a href="#"><img class="arrow-prev" src="images/arrow-prev.png" alt=""></a></li>
+            <li><a href="#"><img class="arrow-next" src="images/arrow-next.png" alt=""></a></li>
+          </ol>
+        </div>
+        <!--
+          <div class="gradient-left"></div>
+          <div class="gradient-right"></div>
+        -->
+      </nav>
+
+    </div>
+  </div>
+  <div class="division"></div>
+  <div class="main-content">
+    <div class="contraint-width">
+      <div class="container">
+        <div class="box-content">
+          <span class="welcome-emoji" style="font-style: normal; font-weight: normal;">
+            <img draggable="false" class="emoji" alt="👋" src="https://twemoji.maxcdn.com/36x36/1f44b.png">
+          </span>
+          <span class="welcome">Welcome to Product Hunt</span>
+          <span class="welcome-subtitle">Get the best new products in your inbox, daily.</span>
+          <form class="form-email-subscribe" action="index.html" method="post">
+            <div class="form-email">
+              <input type="email" class="email-field" placeholder="Your email" name="email">
+            </div>
+            <button class="button-subscribe"type="button" name="button">
+              <div class="button-container">Subscribe</div>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="main-content-bottom">
+      <div class="recomended">
+        <div class="rec-header">
+          <span>Popular this week</span>
+        </div>
+        <div class="rec-content">
+          <div class="img-container">
+            <img src="images/popular-this-week/app-1.png" alt="">
+          </div>
+          <div class="content-container">
+            <span>Duolingo Bots</span>
+            <div class="cont-text">Al-powered characters to teach language conversation</div>
+            <div class="cont-button">
+              <button id="button" type="button" name="button">1460</button>
+            </div>
+            <div class="cont-comments">
+              <button id="comments" type="button" name="button">49</button>
+            </div>
+            <div class="cont-iphone">
+              <button id="iphone" type="button" name="button">iphone</button>
+            </div>
+            <div class="cont-number">
+              <button id="number" type="button" name="button">+ 2</button>
+            </div>
+          </div>
+        </div>
+        <div class="rec-content">
+          <div class="img-container">
+            <img src="images/popular-this-week/app-2.png" alt="">
+          </div>
+          <div class="content-container">
+            <span>Tribe 2.0</span>
+            <div class="cont-text">Introducing Augmented Messaging</div>
+            <div class="cont-button">
+              <button id="button" type="button" name="button">1465</button>
+            </div>
+            <div class="cont-comments">
+              <button id="comments" type="button" name="button">188</button>
+            </div>
+            <div class="cont-iphone">
+              <button id="iphone" type="button" name="button">android</button>
+            </div>
+            <div class="cont-number">
+              <button id="number" type="button" name="button">+ 4</button>
+            </div>
+          </div>
+        </div>
+        <div class="rec-content">
+          <div class="img-container">
+            <img src="images/popular-this-week/app-3.png" alt="">
+          </div>
+          <div class="content-container">
+            <span>Workplace by Facebook</span>
+            <div class="cont-text">Connect everyone in your company and turn ideas into action</div>
+            <div class="cont-button">
+              <button id="button" type="button" name="button">1003</button>
+            </div>
+            <div class="cont-comments">
+              <button id="comments" type="button" name="button">80</button>
+            </div>
+            <div class="cont-iphone">
+              <button id="iphone" type="button" name="button">android</button>
+            </div>
+            <div class="cont-number">
+              <button id="number" type="button" name="button">+ 2</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="divisor"></div>
+      <div class="recomended">
+        <div class="rec-header">
+          <span>Today</span>
+        </div>
+        <div class="rec-content">
+          <div class="img-container">
+            <img id="img-today" src="images/today/app-1.png" alt="">
+          </div>
+          <div class="content-container">
+            <span>Sprayscape</span>
+            <div class="cont-text">A perfectly imperfect VR-ish camera experiment, by Google</div>
+            <div class="cont-button">
+              <button id="button" type="button" name="button">82</button>
+            </div>
+            <div class="cont-comments">
+              <button id="comments" type="button" name="button">8</button>
+            </div>
+            <div class="cont-iphone">
+              <button id="iphone" type="button" name="button">android</button>
+            </div>
+            <div class="cont-number">
+              <button id="number" type="button" name="button">+ 3</button>
+            </div>
+          </div>
+        </div>
+        <div class="rec-content">
+          <div class="img-container">
+            <img id="img-today" src="images/today/app-2.png" alt="">
+          </div>
+          <div class="content-container">
+            <span>Ask Gary Vee</span>
+            <div class="cont-text">The unofficial Gary Vee persona chatbot on Messenger!</div>
+            <div class="cont-button">
+              <button id="button" type="button" name="button">21</button>
+            </div>
+            <div class="cont-comments">
+              <button id="comments" type="button" name="button">9</button>
+            </div>
+            <div class="cont-iphone">
+              <button id="iphone" type="button" name="button">get shit done</button>
+            </div>
+            <div class="cont-number">
+              <button id="number" type="button" name="button">+ 1</button>
+            </div>
+          </div>
+        </div>
+        <div class="rec-content">
+          <div class="img-container">
+            <img id="img-today" src="images/today/app-3.png" alt="">
+          </div>
+          <div class="content-container">
+            <span>The Electron Wheel</span>
+            <div class="cont-text">Turn your standard bicycle into an electric bike.</div>
+            <div class="cont-button">
+              <button id="button" type="button" name="button">23</button>
+            </div>
+            <div class="cont-comments">
+              <button id="comments" type="button" name="button">2</button>
+            </div>
+            <!--
+            <div class="cont-iphone">
+              <button id="iphone" type="button" name="button">iphone</button>
+            </div>
+            <div class="cont-number">
+              <button id="number" type="button" name="button">+ 2</button>
+            </div>
+            -->
+          </div>
+        </div>
+      </div>
+      <div class="box-slack">
+        <div class="header-slack">
+          <div id="header-slack-text">
+            <h5>Kittybot for Slack</h5>
+          </div>
+          <div id="header-slack-close">
+            <img id="img-slack" src="images/close.png" alt="">
+          </div>
+        </div>
+        <div class="content-slack">
+          <p>A friendly feline that sends you
+          cool new things.</p>
+        </div>
+        <div class="button-slack">
+          <button class="button-slack-add"type="button" name="button">add kittybot to slack</button>
+        </div>
+      </div>
+      <div class="box-chat">
+        <div class="header-chat">
+          <h5>upcoming live chats</h5>
+        </div>
+        <div class="divisor-2"></div>
+        <div class="content-chat">
+          <img id="chat"src="images/upcoming-chats.png" alt="">
+        </div>
+        <div class="divisor-2"></div>
+        <div class="footer-chat">
+          <h5>see more</h5>
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
