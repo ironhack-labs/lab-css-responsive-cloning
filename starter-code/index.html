@@ -6,8 +6,180 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>CSS Lab | Responsive Cloning | Product Hunt</title>
   <link rel="stylesheet" href="styles.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 </head>
 <body>
-  
+  <div class = "top-bar">
+    <img src="images/logo.png" class="logo">
+    <div class="search">
+      <span><img src="images/search.png"> <input type="text" name="search-bar" placeholder="Discover your next favorite thing..."></span>
+    </div>
+    <div class="login">
+      <span>...</span>
+      <span class="word">Login</span>
+    </div>
+    <div class="options">
+      <ul>
+        <li>Home</li>
+        <li>Tech</li>
+        <li>Games</li>
+        <li>Podcasts</li>
+        <li>Books</li>
+        <li>Bots</li>
+        <li>Developer Tools</li>
+        <li>iMessage Apps</li>
+        <li>iPhone</li>
+        <li>Photography Tools</li>
+        <li><img src="images/arrow-prev.png"><img src="images/arrow-next.png"></li>
+      </ul>
+    </div>
+  </div>
+  <div class="welcome">
+    <h2>Welcome to Product Hunt</h2>
+    <span>Get the best new products in your inbox, daily.</span>
+    <input type="text" name="fname" placeholder="Your email">
+    <input type="button" value="SUBSCRIBE" class="button">
+    <img src="images/close.png">
+  </div>
+  <div class="container12">
+  <div class="container">
+    <div class="popular">
+      <h3>Popular this week</h3>
+      <img src="images/close.png">
+    </div>
+        <div class="duolingo">
+          <img src="images/popular-this-week/app-1.png">
+          <h3>Duolingo Bots</h3>
+          <p>AI-powered characters to teach language conversation</p>
+          <ul class="producticons">
+              <li><img src="images/votes.png">1460</li>
+              <li><img src="images/comments.png">49</li>
+              <li><img src="images/save.png">SAVE</li>
+              <li class="share"><img src="images/share.png"></li>
+              <div class="device">
+                <span class="iphone">IPHONE</span><span>+2</span>
+              </div>
+          </ul>
+        </div>
+        <div class="tribe">
+          <img src="images/popular-this-week/app-2.png">
+          <h3>Tribe 2.0</h3>
+          <p>Introducing Augmented Messaging</p>
+          <ul class="producticons">
+              <li><img src="images/votes.png">1465</li>
+              <li><img src="images/comments.png">188</li>
+              <li><img src="images/save.png">SAVE</li>
+              <li class="share"><img src="images/share.png"></li>
+              <div class="device">
+                <span class="android">ANDROID</span><span>+4</span>
+              </div>
+        </div>
+        <div class="facebook">
+          <img src="images/popular-this-week/app-3.png">
+          <h3>Workplace by Facebook</h3>
+          <p>Connect everyonein your company and turn ideas into action</p>
+          <ul class="producticons">
+              <li><img src="images/votes.png">1465</li>
+              <li><img src="images/comments.png">188</li>
+              <li><img src="images/save.png">SAVE</li>
+              <li class="share"><img src="images/share.png"></li>
+              <div class="device">
+                <span class="android">ANDROID</span><span>+2</span>
+        </div>
+        <p id="more">SHOW MORE</p>
+      </div>
+    </div>
+
+<div class="container2">
+    <div class="today">
+      <h3>Today</h3>
+      <span><strong>Popular</strong> | Newest</span>
+    </div>
+      <div class="sprayscape">
+        <img src="images/today/app-1.png">
+        <h3>Sprayscape</h3>
+        <p>A perfectly imperfect VR-ish camera experiment, by Google</p>
+        <ul class="producticons">
+            <li><img src="images/votes.png">1460</li>
+            <li><img src="images/comments.png">49</li>
+            <li><img src="images/save.png">SAVE</li>
+            <li class="share"><img src="images/share.png"></li>
+            <div class="device">
+              <span class="android">ANDROID</span><span>+3</span>
+            </div>
+      </div>
+      <div class="ask-gary">
+        <img src="images/today/app-2.png">
+        <h3>Ask Gary Vee</h3>
+        <p>Ask unofficial Gary Veepersona chatbot on Messenger</p>
+        <ul class="producticons">
+            <li><img src="images/votes.png">21</li>
+            <li><img src="images/comments.png">9</li>
+            <li><img src="images/save.png">SAVE</li>
+            <li class="share"><img src="images/share.png"></li>
+            <div class="device">
+              <span class="android">GET SHIT DONE</span><span>+3</span>
+            </div>
+      </div>
+      <div class="electron">
+        <img src="images/today/app-3.png">
+        <h3>The Electron Wheel</h3>
+        <p>Turn your standard bycicle into an electric bike</p>
+        <ul class="producticons">
+            <li><img src="images/votes.png">23</li>
+            <li><img src="images/comments.png">2</li>
+            <li><img src="images/save.png">SAVE</li>
+            <li class="share"><img src="images/share.png"></li>
+            <div class="device">
+            </div>
+          </div>
+        </div>
+      </div>
+    <div class="container3">
+      <div class="kittybot">
+        <h3>Kittybot for Slack</h3>
+        <img src="images/close.png">
+        <p>A friendly feline that sends you cool new things.</p>
+        <input type="button" name="kittybot" value="#ADD KITTYBOT TO SLACK">
+      </div>
+      <div class="upcoming">
+        <h2>UPCOMING LIVE CHATS</h2>
+        <div class="adam">
+          <h3>Adam Besvinick</h3>
+          <p>VC at the Deep Fork Capital</p>
+          <input type="button" name="remindme" value="REMIND ME">
+        </div>
+        <div class="susan">
+          <h3>Susan David</h3>
+          <p>Author of Emotionally Guilty</p>
+          <input type="button" name="remindme" value="REMIND ME">
+        </div>
+        <div class="avid">
+          <h3>Avid Larizadeh Duggan</h3>
+          <p>General Partner at GV</p>
+          <input type="button" name="remindme" value="REMIND ME">
+        </div>
+        <div class="katerina">
+          <h3>Katerina Marcov Shneider</h3>
+          <p>Founder and CEO of Ritual</p>
+          <input type="button" name="remindme" value="REMIND ME">
+        </div>
+        <div class="jocelyn">
+          <h3>Jocelyn Glei</h3>
+          <p>Master of Productivity, founder and author...</p>
+          <input type="button" name="remindme" value="REMIND ME">
+        </div>
+      </div>
+      <div class="tweets">
+        <h1>Tweets</h3><span> liked by</span>
+        <a href="@ProductHuntLOVE"> @ProductHuntLOVE </a>
+        <div class="max">
+          <h3>Max Pelzner</h3>
+          <p>@WholsMaxPelzner</p>
+          <p>Ask <a href="@GaryVee"> @GaryVee </a> is on <a href="ProductHunt">ProductHunt!</a></p>
+        </div>
+      </div>
+    </div>
+</div>
 </body>
 </html>
