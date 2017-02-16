@@ -13,7 +13,7 @@ body {
 
 nav {
   background: white;
-  padding: 8px;
+  padding: 8px 8px 0px 8px;
   font-size: 16px;
   border-bottom: $borders;
     img {
@@ -66,13 +66,13 @@ input:focus{
     width: 100%;
     list-style-type: none;
     margin: 0 0 0 5px;
-    padding: 0;
+    padding: 7px 0 8px 0;
     li {
       display: inline;
       margin: 0px 2px;
       font-size: 0.6em;
       height: 50px;
-      padding-bottom: 20px;
+      padding: 11px 0;
       img {
         width: 12px;
       }
@@ -89,8 +89,8 @@ input:focus{
   background-color: white;
 }
 
-.subscribe {
-  display: none;
+.subscribe, .phone, .sidebar {
+  display: none!important;
 }
 .popular {
   background: white;
@@ -143,13 +143,15 @@ input:focus{
 .producttxt {
   float: left;
   width: calc(75% - 5px);
-  padding: 20px 0 20px 5px;
+  padding: 25px 0 20px 5px;
+  font-weight: 300;
   h5 {
     margin: 0;
     color: black;
     display: inline-block;
     font-weight: normal;
     font-size: 1em;
+    padding-bottom: 3px;
   }
   p {
     margin: 0;
@@ -181,16 +183,22 @@ input:focus{
   }
 }
 
+.save, .share {
+  display: block;
+}
+
 .share {
   img {
     margin-top: -3px;
   }
 }
 
+
+
 .showmore {
   font-size: 0.8em;
   font-weight: bolder;
-  width: 25%;
+  width: 30%;
   margin: auto;
   padding: 10px 0;
   img {
@@ -226,10 +234,27 @@ input:focus{
   height: 0;
 }
 
+input[type="button"], {
+  display: inline;
+  border-radius: 3.5px;
+  padding: 10px 12px;
+}
+input[type="button"] {
+  width: 90px;
+  background-color: #ea532a;
+  color: white;
+}
+input[type="text"] {
+  width:75%;
+  color: $website-text;
+  display: inline;
+  padding: 10px 12px;
+}
+
 
 @media screen and (min-width: 768px) {
   .container {
-    margin: 30px 20px;
+    margin: 20px;
     border: $borders;
   }
   .navLinks {
@@ -243,7 +268,7 @@ input:focus{
     }
   }
   .subscribe {
-    display: block;
+    display: block!important;
     margin-bottom: 10px;
     background-color: white;
     margin: 30px 20px;
@@ -263,25 +288,16 @@ input:focus{
     }
     .email {
       margin-top: 8px;
+      input[type="text"] {
+        border-left: $borders;
+        width: 25%;
+        margin: auto;
+      }
     }
-    input[type="button"], input[type="text"] {
-      display: inline;
-      border-radius: 3.5px;
-      padding: 10px 12px;
-    }
-    input[type="button"] {
-      width: 90px;
-      background-color: #ea532a;
-      color: white;
-    }
-    input[type="text"] {
-      width: 150px;
-      border: $borders;
-      color: $website-text;
-    }
+
     .closebtn {
       float: right;
-      margin: 5px;
+      margin: -15px 0 0;
       width: 10px;
       img {
         width: 10px;
@@ -291,4 +307,228 @@ input:focus{
   .showmore {
     margin-bottom: 15px;
   }
+  .search {
+    input {
+      border: $borders;
+      border-left: none;
+      padding: 4px;
+      width: 88%;
+      font-size: 14.5px;
+    }
+    span {
+      width: 25px;
+      border: $borders;
+      padding: 10px 0 9px 0;
+      border-right: none;
+    }
+  }
+  .login {
+    margin-top: 8px;
+    margin-right: 20px;
+    float: right;
+    p {
+      font-size: 14px;
+      font-weight: normal;
+    }
+  }
+  .productimg {
+    width: 90px;
+    padding-right: 12px;
+  }
+  .producttxt  {
+    font-size: 1.1em;
+    width: 84.3%;
+  }
+  .save, .share {
+    display: none!important;
+  }
+  .phone {
+    display: block!important;
+    color: black;
+    float: right;
+    font-weight: bold;
+    border: none!important;
+    background-color: #eee;
+    padding: 5px 8px!important;
+    text-transform: uppercase;
+  }
+  input[type="text"] {
+    border: $borders;
+    border-left: none;
+  }
+  .search {
+    span {
+      padding: 4px 0 3px 0;
+    }
+  }
 }
+
+@media screen and (min-width: 1024px) {
+  .search {
+    img {
+      width: 45px;
+    }
+  }
+  .welcome {
+    float: left;
+    margin-left: 10%;
+    margin-top: 8px;
+  }
+  .subscribe {
+    .closebtn {
+      margin: 15px!important;
+    }
+  }
+  .email {
+    input[type="text"] {
+      margin-left: -75px;
+    }
+  }
+}
+
+@media screen and (min-width: 1140px)  {
+  .topnav {
+    margin: 0 75px;
+  }
+  .search {
+    padding:5px 0;
+    input[type="text"] {
+      padding: 10px 0;
+    }
+    img {
+      width: 50px;
+    }
+  }
+  .login {
+    margin-top: 23px;
+    p {
+      font-size: 1.6em;
+    }
+  }
+  .navLinks {
+    padding: 10px 0 15px 0;
+    font-size: 1.6em;
+    margin: 0 75px;
+  }
+  .navLinks ul li {
+    margin: 15px;
+    padding: 18px 16px;
+    font-size: 0.7em;;
+  }
+  .container {
+    width: calc(100% * (3/5) - 75px);
+    float: left;
+    margin-left: 75px;
+    margin-top: 0px;
+  }
+  .sidebar {
+    width: calc(100% * (2/5) - 137px);
+    float: left;
+    display: block!important;
+  }
+  .kittybot, .livechats {
+    background: white;
+    border: $borders;
+    padding: 10px 20px;
+    h5 {
+      margin: 10px 0 0 0;
+      color: black;
+      display: inline-block;
+      font-weight: normal;
+      font-size: 1.1em;
+      padding-bottom: 10px;
+    }
+    p {
+      margin: 0;
+      font-size: 0.9em;
+      padding-bottom: 10px;
+    }
+    input[type="button"] {
+      width: 100%;
+      margin: 10px 0 30px 0;
+      font-size: 0.9em;
+    }
+  }
+  .subscribe {
+    margin-left: 75px;
+    margin-right: 75px;
+  }
+  .producttxt {
+    width: 82%;
+  }
+  .kittybot {
+    .closebtn {
+      float: right;
+      img {
+        width: 10px;
+      }
+    }
+  }
+  .livechats {
+    margin-top: 20px;
+    h5 {
+    }
+  }
+  .hrline {
+    border: $borders;
+    width: 100%;
+    margin: 15px 0 20px 0;
+  }
+  .chatperson {
+    padding: 0;
+    margin-bottom: 20px;
+  }
+  .chatperson li {
+    list-style-type: none;
+  }
+  .personimg {
+    width: 50px;
+    float: left;
+    margin-top: 6px;
+    img {
+      border-radius: 50%;
+      width: 100%;
+    }
+  }
+  .personname {
+    float: left;
+    padding-left: 10px;
+    h5 {
+      margin: 0;
+      padding-bottom: 5px;
+    }
+  }
+  .remind {
+    color: black;
+    border: $borders;
+    padding: 8px 0;
+    border-radius: 4px;
+    text-align: center;
+    vertical-align: middle;
+    width: 100px;
+    p {
+      padding: 0;
+    }
+  }
+  .search span {
+    padding: 10px 5px 9px 3px;
+    img {
+      width: 22px;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// HI
