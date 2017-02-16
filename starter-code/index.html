@@ -6,8 +6,250 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>CSS Lab | Responsive Cloning | Product Hunt</title>
   <link rel="stylesheet" href="styles.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,900" rel="stylesheet">
 </head>
 <body>
-  
+    <nav>
+      <div class="topnav">
+        <div class="search">
+          <img src="images/logo.png">
+          <span><img src="images/search.png"></span><input type="text" name="fname" placeholder="Discover your next favorite thing...">
+        </div>
+        <div class="login">
+          <p>...</p>
+          <p>Login</p>
+        </div>
+      </div>
+      <div class="navLinks">
+        <ul>
+          <li>Home</li>
+          <li>Tech</li>
+          <li>Games</li>
+          <li>Podcasts</li>
+          <li>Books</li>
+          <li>Bot</li>
+          <li>Developer Tools</li>
+          <li>iMessage Apps</li>
+          <li><img src="images/arrow-prev.png"><img src="images/arrow-next.png"></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="subscribe">
+      <div class="welcome">
+        👋 <h2> Welcome to Product Hunt</h2>
+        <p>Get the best new products in your inbox, daily.</p>
+      </div>
+      <div class="closebtn">
+        <img src="images/close.png">
+      </div>
+      <div class="email">
+        <input type="text" name="fname" placeholder="Your email">
+        <input type="button" value="SUBSCRIBE">
+      </div>
+
+    </div>
+    <div class="container">
+      <div class="popular clearfix">
+        <div class="popheading">
+          <h5>Popular this week</h5>
+        </div>
+        <div class="closebtn">
+          <img src="images/close.png">
+        </div>
+      </div>
+      <!-- Popular This Week App 1 -->
+      <div class="product clearfix">
+        <div class="productimg">
+          <img src="images/popular-this-week/app-1.png">
+        </div>
+        <div class="producttxt">
+          <h5>Duolingo Bots</h5>
+          <p>AI-powered characters to teach language conversation</p>
+
+          <ul class="producticons">
+              <li><img src="images/votes.png">1460</li>
+              <li><img src="images/comments.png">49</li>
+              <li class="save"><img src="images/save.png">SAVE</li>
+              <li class="share"><img src="images/share.png"></li>
+              <li class="phone">IPHONE</li>
+          </ul>
+        </div>
+      </div>
+      <!-- Popular This Week App 2 -->
+      <div class="product clearfix">
+        <div class="productimg">
+          <img src="images/popular-this-week/app-2.png">
+        </div>
+        <div class="producttxt">
+          <h5>Tribe 2.0</h5>
+          <p>Introducing Augemented Messaging &trade;</p>
+
+          <ul class="producticons">
+              <li><img src="images/votes.png">1465</li>
+              <li><img src="images/comments.png">188</li>
+              <li class="save"><img src="images/save.png">SAVE</li>
+              <li class="share"><img src="images/share.png"></li>
+              <li class="phone">android</li>
+
+          </ul>
+        </div>
+      </div>
+
+      <!-- Popular This Week App 3 -->
+      <div class="product clearfix removeborder">
+        <div class="productimg">
+          <img src="images/popular-this-week/app-3.png">
+        </div>
+        <div class="producttxt">
+          <h5>Workplace by Facebook</h5>
+          <p>Connect everyone in your company and turn ideas into action</p>
+
+          <ul class="producticons">
+              <li><img src="images/votes.png">1003</li>
+              <li><img src="images/comments.png">80</li>
+              <li class="save"><img src="images/save.png">SAVE</li>
+              <li class="share"><img src="images/share.png"></li>
+              <li class="phone">android</li>
+
+          </ul>
+        </div>
+      </div>
+      <div class="showmore">
+        <img src="images/arrow-down.png"> SHOW MORE
+      </div>
+
+
+      <div class="popular clearfix">
+        <div class="todayheading">
+          <h5>Today</h5>
+        </div>
+        <div class="popnewest">
+          <h6><strong style="color: black;">Popular</strong> | Newest</h6>
+        </div>
+      </div>
+
+      <!-- Today App 1 -->
+      <div class="product clearfix">
+        <div class="productimg">
+          <img src="images/today/app-1.png">
+        </div>
+        <div class="producttxt">
+
+          <h5>Sprayscape</h5>
+          <p>A perfectly imperfect VR-ish camera experiment, By Google</p>
+
+          <ul class="producticons">
+              <li><img src="images/votes.png">82</li>
+              <li><img src="images/comments.png">8</li>
+              <li class="save"><img src="images/save.png">SAVE</li>
+              <li class="share"><img src="images/share.png"></li>
+              <li class="phone">android</li>
+
+          </ul>
+        </div>
+      </div>
+
+        <!-- Today App 2 -->
+      <div class="product clearfix">
+        <div class="productimg">
+          <img src="images/today/app-2.png">
+        </div>
+        <div class="producttxt">
+          <h5>Ask Gary Vee</h5>
+          <p>The Unoffical Gary Vee persona chatbox on Messenger!</p>
+
+          <ul class="producticons">
+              <li><img src="images/votes.png">21</li>
+              <li><img src="images/comments.png">9</li>
+              <li class="save"><img src="images/save.png">SAVE</li>
+              <li class="share"><img src="images/share.png"></li>
+              <li class="phone">get shit done</li>
+          </ul>
+
+        </div>
+      </div>
+
+        <!-- Today App 3-->
+      <div class="product clearfix removeborder">
+        <div class="productimg">
+          <img src="images/today/app-3.png">
+        </div>
+        <div class="producttxt">
+          <h5>The Electric Wheel</h5>
+          <p>Turn your standard bike into an electric bike.</p>
+
+          <ul class="producticons">
+              <li><img src="images/votes.png">23</li>
+              <li><img src="images/comments.png">2</li>
+              <li class="save"><img src="images/save.png">SAVE</li>
+              <li class="share"><img src="images/share.png"></li>
+              <li class="phone">IPHONE</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="sidebar">
+      <div class="kittybot">
+        <div class="closebtn">
+             <img src="images/close.png">
+           </div>
+        <h5>Kittybot for Slack.</h5>
+        <p>A friendly feline that sends you cool new things.</p>
+        <input type="button" value="ADD KITTYBOT TO SLACK">
+      </div>
+      <div class="livechats clearfix">
+        <h5>UPCOMING LIVE CHATS</h5>
+        <div class="hrline">
+        </div>
+        <div class="chatpeople">
+          <div class="chatperson clearfix">
+            <div>
+              <div class="personimg">
+                <img src="images/person.jpeg">
+              </div>
+              <div class="personname">
+                <h5>Adman Besvinick</h5>
+                <p>VC at Deep Fork Capital</p>
+                <div class="remind">
+                  <p>REMIND ME</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="chatperson clearfix">
+            <div>
+              <div class="personimg">
+                <img src="images/person2.jpeg">
+              </div>
+              <div class="personname">
+                <h5>Susan David</h5>
+                <p>Author of Emotionally Guilty</p>
+                <div class="remind">
+                  <p>REMIND ME</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="chatperson clearfix">
+            <div>
+              <div class="personimg">
+                <img src="images/person.jpeg">
+              </div>
+              <div class="personname">
+                <h5>Avid Larizadeh Duggan</h5>
+                <p>General Partner at GV</p>
+                <div class="remind">
+                  <p>REMIND ME</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
 </body>
 </html>
