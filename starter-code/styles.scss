@@ -294,6 +294,12 @@ ul.topnav {
     }
 }
 
+@media (max-width: 1200px) {
+  .bottomRight-bar {
+    display: none;
+  }
+}
+
 @media (max-width: 478px) {
   #nav1 {
     display: none;
