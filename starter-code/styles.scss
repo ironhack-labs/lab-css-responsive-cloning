@@ -270,6 +270,18 @@ ul.topnav {
     background-color: aqua;
 }
 
+.selectorOptionContainer:hover {
+    background-color: #edeff2;
+}
+
+.save:hover {
+    background-color: #edeff2;
+}
+
+.commentBox:hover {
+    background-color: #edeff2;
+}
+
 @media (max-width: 1200px) {
   .save {
     display: none;
