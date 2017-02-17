@@ -1,3 +1,300 @@
-body {
-  background: #f9f9f9;
+$font-stack:   16px 'HelveticaNeue', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$primary-color: #999;
+$background: #f9f9f9;
+$border-color: #e8e8e8 ;
+$font-color: rgb(153, 153, 153);
+$main-red: #da552f
+
+// _reset.scss
+
+* {
+	padding: 0;
+	margin: 0;
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
 }
+
+body {
+  font: 100% $font-stack;
+  color: $primary-color;
+  background: $background;
+}
+
+/*Top Navigation Menu*/
+/*.a{position:relative}
+.b{position:absolute}*/
+#main-wrapper {
+  margin-left: 35px;
+  margin-right: 35px;
+}
+#menu-logo {
+    width: 100%;  /* i'm assuming full width */
+    height: 50px; /* change it to desired width */
+    float:left;
+    background-color: red;
+}
+
+#logo {
+    display: inline-block;
+    vertical-align: top;
+    width: 50px;
+    height: 50px;
+    margin-top: 2px;    /* if you want it vertically middle of the navbar. */
+}
+
+#top-nav-group > a {
+    display: inline-block;
+    vertical-align: top;
+    height: 50px;        /* if you want it to take the full height of the bar */
+}
+/* Search Bar*/
+
+/*#search-bar {
+        background-image: url(../img/menu_bg.png);
+        position: absolute;
+        top: 13px;
+        margin-left: 135px;
+          float:left;
+
+}*/
+#search-bar-container {
+        position: absolute;
+        top: 2px;
+        margin-left: 5px;
+        float:left;
+}
+
+a {
+    color: #1e7ad3;
+    text-decoration: none;
+}
+
+a:hover { text-decoration: underline }
+
+.container, .main {
+    width: 100%;
+    margin-left: 30px;
+    margin-right: 30px;
+    height: 300px;
+}
+
+.main { margin-top: 2px; }
+
+
+/*input {
+    font-family: 'HelveticaNeue', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 13px;
+    color: #555860;
+}
+*/
+
+.search {
+    position: relative;
+    margin: 0 auto;
+    width: 948px;
+    height: 30px;
+}
+
+input {
+    font: 16px  $font-stack;
+		font-weight: 400;
+    color: $primary-color;
+}
+
+.search input {
+    height: 30px;
+    width: 100%;
+    padding: 0 12px 0 25px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #a8acbc #babdcc #c0c3d2;
+    border-radius: 3px;
+    background: white url("http://cssdeck.com/uploads/media/items/5/5JuDgOa.png") 8px 6px no-repeat;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-box-shadow: inset 0 1px #e5e7ed, 0 1px 0 #fcfcfc;
+    -moz-box-shadow: inset 0 1px #e5e7ed, 0 1px 0 #fcfcfc;
+    -ms-box-shadow: inset 0 1px #e5e7ed, 0 1px 0 #fcfcfc;
+    -o-box-shadow: inset 0 1px #e5e7ed, 0 1px 0 #fcfcfc;
+    box-shadow: inset 0 1px #e5e7ed, 0 1px 0 #fcfcfc;
+}
+
+.search input:focus {
+    outline: none;
+    border-color: #66b1ee;
+    -webkit-box-shadow: 0 0 2px rgba(85, 168, 236, 0.9);
+    -moz-box-shadow: 0 0 2px rgba(85, 168, 236, 0.9);
+    -ms-box-shadow: 0 0 2px rgba(85, 168, 236, 0.9);
+    -o-box-shadow: 0 0 2px rgba(85, 168, 236, 0.9);
+    box-shadow: 0 0 2px rgba(85, 168, 236, 0.9);
+}
+
+.search input:focus + .results { display: block }
+
+.search .results {
+    display: none;
+    position: absolute;
+    top: 35px;
+    left: 0px;
+    right: 0;
+    z-index: 10;
+    padding: 0;
+    margin: 0;
+    border-width: 1px;
+    border-color: #cbcfe2 #c8cee7 #c4c7d7;
+    border-radius: 3px;
+    background-color: #fff;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #fdfdfd), color-stop(100%, #eceef4));
+    background-image: -webkit-linear-gradient(top, #fdfdfd, #eceef4);
+    background-image: -moz-linear-gradient(top, #fdfdfd, #eceef4);
+    background-image: -ms-linear-gradient(top, #fdfdfd, #eceef4);
+    background-image: -o-linear-gradient(top, #fdfdfd, #eceef4);
+    background-image: linear-gradient(top, #fdfdfd, #eceef4);
+    -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    -ms-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    -o-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.search .results li { display: block }
+
+.search .results li:first-child { margin-top: -1px }
+
+.search .results li:first-child:before, .search .results li:first-child:after {
+    display: block;
+    content: '';
+    width: 0;
+    height: 0;
+    position: absolute;
+    left: 50%;
+    margin-left: -5px;
+    border: 5px outset transparent;
+    font: 100% $font-stack;
+    color: $primary-color;
+}
+
+.search .results li:first-child:before {
+    border-bottom: 5px solid #c4c7d7;
+    top: -11px;
+}
+
+.search .results li:first-child:after {
+    border-bottom: 5px solid #fdfdfd;
+    top: -10px;
+}
+
+.search .results li:first-child:hover:before, .search .results li:first-child:hover:after { display: none }
+
+.search .results li:last-child { margin-bottom: -1px }
+
+.search .results a {
+    display: block;
+    position: relative;
+    margin: 0 -1px;
+    padding: 6px 40px 6px 10px;
+    text-shadow: 0 1px #fff;
+    border: 1px solid transparent;
+    border-radius: 3px;
+}
+
+.search .results a span { font-weight: 200 }
+
+.search .results a:before {
+    content: '';
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    margin-top: -9px;
+}
+
+.search .results a:hover {
+  margin: 2px 10px 2px 10px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #BFBFBF;
+    text-shadow: 0 -1px rgba(0, 0, 0, 0.3);
+}
+
+:-moz-placeholder {
+    color: #a7aabc;
+    font-weight: 200;
+}
+
+::-webkit-input-placeholder {
+    color: #a7aabc;
+    font-weight: 200;
+}
+
+.lt-ie9 .search input { line-height: 30px }
+
+
+
+ul {
+    float: left;
+    list-style: none;
+}
+/*Top Dropdown Tab*/
+/* Dropdown Button */
+.dropbtn {
+    background-color: #4CAF50;
+    color: ;
+		display: inline-block;
+    float: left;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+    background-color: #BFBFBF;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown-tab {
+    position: relative;
+    display: inline-block;
+    float: left;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}
+
+/*Login Tab*/
+
+#login-tab {
+    position: relative;
+    display: inline-block;
+    float: left;
+}
+
+/*Second Navigation*/

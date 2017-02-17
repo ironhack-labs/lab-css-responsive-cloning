@@ -5,9 +5,78 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>CSS Lab | Responsive Cloning | Product Hunt</title>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
   <link rel="stylesheet" href="styles.min.css">
 </head>
 <body>
-  
+   <!-- Header content -->
+   <header>
+  </header>
+  <div id="main-wrapper">
+    <ul id="top-nav-group">
+        <li id="menu-logo"><img id="logo" src="./images/logo.png"/></li>
+        <li id="search-bar-container">
+          <section class="main">
+  	        <form class="search" method="post" action="index.html" >
+  		      <input type="text" name="q" placeholder="Discover your next favorite thing..." />
+  		        <ul class="results" >
+  			        <li><a href="index.html">Slack</a></li>
+  			        <li><a href="index.html">Bots</a></li>
+  	 		        <li><a href="index.html">Mac Apps</a></li>
+                <li><a href="index.html">Productivity</a></li>
+                <li><a href="index.html">Developer Tools</a></li>
+                <li><a href="index.html">Emojis</a></li>
+                <li><a href="index.html">PRESS ENTER TO SEE ALL RESULTS</a></li>
+              </ul>
+  	        </form>
+          </section>
+         </li>
+        <li id="dropdown-tab">
+        <section class="dropdown">
+          <button onclick="myFunction()" class="dropbtn">...</button>
+            <ul id="myDropdown" class="dropdown-content">
+            <li><a href="#">Collections</a></li>
+            <li><a href="#">Live Chats</a></li>
+            <li><a href="#">Apps</a></li>
+            <li><a href="#">Meetups</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Branding</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Pro Tips</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Radio</a></li>
+            </ul>
+          </section>
+        </li>
+      <li id="login-tab"><a href="#">Login</a></li>
+    </ul>
+    <nav id="menu">
+    <ul id="second-nav-group">
+        <li> <a href="#">Home</a><li>
+        <li><a href="#">Tech</a></li>
+        <li> <a href="#">Games</a><li>
+        <li><a href="#">Books</a></li>
+        <li> <a href="#">Artificial Intelligence</a><li>
+        <li><a href="#">Developer Tools</a></li>
+        <li> <a href="#">Games</a><li>
+        <li><a href="#">Get Shit Done</a></li>
+        <li> <a href="#">Smart Home</a><li>
+        <li><a href="#">Tech</a></li>
+        <li> <a href="#">Scrollable menu</a><li>
+    </ul>
+</nav>
+ <div role="main">
+   <!-- Page content -->
+ </div>
+
+ <aside role="complementary">
+   <!-- Secondary content -->
+ </aside>
+
+ <footer>
+   <!-- Footer content -->
+ </footer>
+</div>
+ <script src="scripts.js"></script>
 </body>
 </html>
