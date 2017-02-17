@@ -2,12 +2,349 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>CSS Lab | Responsive Cloning | Product Hunt</title>
   <link rel="stylesheet" href="styles.min.css">
+  <link rel="shortcut icon" href="https://cdn.zapier.com/storage/services/956222d713379993139cdeb38ac3ca7f.128x128.png">
+  <title>Responsive Website - SCSS and Media Query</title>
 </head>
 <body>
-  
-</body>
-</html>
+  <div class="chatLogo"></div>
+<div class="header magicPath">
+  <div class="innerHeader">
+  <div class="topBar">
+    <div class="logoArea">
+   <img id="logoP" src="Images/logo.jpg">
+   <a class="ourLogo" href="https://ouwebs.com/"><strong>Product Hunt</strong>
+     <span class="ourMotto">The best new products, every day</span></a>
+ </div>
+ <div class="searchBarBox">
+   <form class="searchBar" method="GET" action="/search/posts">
+     <label class="text_quJvV subtle_fyrho base_3LqBu">
+         <input autocomplete="off" class="inputSearch" data-test="search-input" name="q" placeholder="Discover your next favorite thing…" value="">
+      </label>
+    </form>
+  </div>
+  <div class="logingArea">
+    <a href="#" class="moreLink" data-test="more">
+    <span class="dots">
+    <svg width="15" height="5" viewBox="0 0 20 4" xmlns="http://www.w3.org/2000/svg"><path d="M2 4c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zm8 0c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zm8 0c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z" fill="#BBB" fill-rule="evenodd"></path></svg>
+    </span>
+    <span class="dividerDots">|</span>
+    <a class="login text_quJvV" href="/login" data-test="login-button">
+      <button class="buttonWhite text_quJvV">
+            <div class="buttonContainer_1ROJn">Log in</div>
+          </button>
+          <button class="buttonOrange text_quJvV">
+            <div class="buttonContainer_1ROJn">Sign up</div>
+          </button>
+        </a>
+ </div>
+  </div>
+        <nav class="navigation_3VZtR text_quJvV subtle_fyrho base_3LqBu">
+          <li class="active"><a class="item" href="/">Home</a></li>
+          <div class="subNavigaton">
+          <ul class="menuList text_quJvV">
+          <li><a class="item menuPadding" href="https://www.producthunt.com//tech">Artificial Inteligence</a></li>
+          <li><a class="item menuPadding" href="https://www.producthunt.com//tech">Developer Tools</a></li>
+          <li><a class="item menuPadding" href="https://www.producthunt.com//tech">Tech</a></li>
+          <li><a class="item menuPadding" href="https://www.producthunt.com//games">Games</a></li>
+          <li><a class="item menuPadding" href="https://www.producthunt.com//books">Books</a></li>
+          <li><a class="item menuPadding" href="https://www.producthunt.com//topics/artificial-intelligence?compact=true">Artificial Intelligence</a></li>
+          <li><a class="item menuPadding" href="https://www.producthunt.com//topics/developer-tools?compact=true">Developer Tools</a></li>
+          <li><a class="item menuPadding" href="https://www.producthunt.com//topics/games?compact=true">Games</a></li>
+          <li><a class="item menuPadding" href="https://www.producthunt.com//topics/get-shit-done?compact=true">Get Shit Done</a></li>
+          <li><a class="item menuPadding" href="https://www.producthunt.com//topics/smart-home?compact=true">Smart Home</a></li>
+          <li><a class="item menuPadding" href="https://www.producthunt.com//topics/tech?compact=true">Tech</a></li>
+          <li><a class="item menuPadding" href="https://www.producthunt.com//topics/touch-bar-apps?compact=true">Touch Bar Apps</a></li>
+          <li><a class="item menuPadding" href="https://www.producthunt.com//topics/wearables?compact=true">Wearables</a></li>
+          <li><a class="item menuPadding" href="https://www.producthunt.com//topics/wearables?compact=true">See all</a></li>
+          </ul>
+        </div>
+          <div class="arrows_2M4n0"><a class="arrowLeft arrow_spCSZ" disabled=""><span><svg width="9" height="16" viewBox="0 0 9 16" xmlns="http://www.w3.org/2000/svg"><path d="M1.05833636,0 L0,1.05654696 L6.95502928,8 L6.64746554e-16,14.943453 L1.05833636,16 L8.54271718,8.52827348 C8.83496729,8.23651377 8.83496729,7.7634825 8.54271718,7.47172652 L1.05833636,0 L1.05833636,0 Z" fill="#999" transform="matrix(-1 0 0 1 8.762 0)" fill-rule="evenodd"></path></svg></span></a><a class="arrowRight_3VUc0 arrow_spCSZ"><span><svg width="9" height="16" viewBox="0 0 9 16" xmlns="http://www.w3.org/2000/svg"><path d="M1.05833636,0 L0,1.05654696 L6.95502928,8 L6.64746554e-16,14.943453 L1.05833636,16 L8.54271718,8.52827348 C8.83496729,8.23651377 8.83496729,7.7634825 8.54271718,7.47172652 L1.05833636,0 L1.05833636,0 Z" fill="#999" fill-rule="evenodd"></path></svg></span></a></div>
+        </nav>
+      </div>
+</div>
+<div class="page magicPath">
+<div class="newsletter boxy">
+   <div class="newsBox">
+     <div class="boxText">
+       <div class="topRow">
+       <img class="hand" src="Images/hand.png">
+        <span class="newsPar text_quJvV height">Welcome to Product Hunt</span>
+        <span class="newsIns text_quJvV height">Get the best new products in your inbox, daily.</span>
+      </div>
+         <div class="myForm">
+         <form class="form_3fSD_">
+           <div class="fieldWrap_1S0iI">
+          <input type="email" class="fieldSpace text_quJvV subtle_fyrho base_3LqBu" placeholder="Your email" name="email"></div>
+          <button class="buttonOrange text_quJvV">
+            <div class="buttonContainer_1ROJn">Subscribe</div>
+          </button>
+         </form>
+       </div>
+
+    </div>
+  </div>
+</div>
+
+<div class="theWhole">
+  <div class="feed">
+    <section>
+    <div class="fullWidth boxy">
+    <div class="grapper09">
+      <div class="header01">
+       <span class="title_viAcO featured_2PenR default_25TkV base_3LqBu">Recomended for you
+        <img class="handDown" src="Images/hand-down.png" width="20px"></span>
+      </div>
+      <div class="contentBox01">
+        <ul class="postsList_3n2Ck">
+          <li>
+            <div class="internalBox1">
+              <div class="thumdnail">
+             <img src="Images/1feae72b-aa88-48ad-9410-33ac2e89891c.jpg">
+              </div>
+              <div class="ContentText54">
+              <span class="tittleRan">Duolingo Bots</span>
+             <p class="myText09">AI-powered characters to teach language conversation</p>
+             <div class="useful">
+               <img src="Images/triangulo.png">
+               110
+             </div>
+             <div class="comments">
+               <img class="chatIcon" src="Images/chat-icon.png">
+               49
+             </div>
+             <div class="randRight">
+             <div class="extra">Iphone</div><span class="numberExtra">+4</span>
+            </div>
+           </div>
+         </div>
+         </li>
+         <li>
+           <div class="internalBox1">
+             <div class="thumdnail">
+            <img src="Images/18e51a44-0d39-48a5-acb4-d978cdbddd9c.jpg">
+             </div>
+             <div class="ContentText54">
+             <span class="tittleRan">Ding Music</span>
+            <p class="myText09">A friendly app that know what music you like</p>
+            <div class="useful">
+              <img src="Images/triangulo.png">
+              1460
+            </div>
+            <div class="comments">
+              <img class="chatIcon" src="Images/chat-icon.png">
+              32
+            </div>
+            <div class="randRight">
+            <div class="extra">Music</div><span class="numberExtra">+1</span>
+           </div>
+          </div>
+        </div>
+        </li>
+        <li>
+          <div class="internalBox1 noBorderBottom">
+            <div class="thumdnail">
+           <img src="Images/4dc92fe2-e43b-46cb-9a07-3baa0c06431e.jpg">
+            </div>
+            <div class="ContentText54">
+            <span class="tittleRan">Radar</span>
+            <p class="myText09">The location platform for mible apps</p>
+           <div class="useful">
+             <img src="Images/triangulo.png">
+             345
+           </div>
+           <div class="comments">
+             <img class="chatIcon" src="Images/chat-icon.png">
+             89
+           </div>
+           <div class="randRight">
+           <div class="extra">Android</div><span class="numberExtra">+3</span>
+          </div>
+         </div>
+       </div>
+       </li>
+          </ul>
+          <div class="more">
+            <span  class="donwArrowHead">⌄</span><span class="showMore">Show More</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="fullWidth boxy">
+    <div class="grapper09">
+      <div class="header01">
+       <span class="title_viAcO featured_2PenR default_25TkV base_3LqBu">Today</span>
+       <div class="sorting myText09"><span class="popular myText09">Popular</span>
+         <span> | Newest</span>
+      </div>
+    </div>
+      <div class="contentBox01">
+        <ul class="postsList_3n2Ck">
+          <li>
+            <div class="internalBox1">
+              <div class="thumdnail">
+             <img src="Images/698062fb-f100-419c-b738-e7ab69a5fe8c.jpg">
+              </div>
+              <div class="ContentText54">
+              <span class="tittleRan">Product Run</span>
+             <p class="myText09">A dynamic list of the bottom 100 projects on Product Hunt</p>
+             <div class="useful">
+               <img src="Images/triangulo.png">
+               312
+             </div>
+             <div class="comments">
+               <img class="chatIcon" src="Images/chat-icon.png">
+               412
+             </div>
+             <div class="randRight">
+             <div class="extra">Android</div><span class="numberExtra">+2</span>
+            </div>
+           </div>
+         </div>
+         </li>
+         <li>
+           <div class="internalBox1">
+             <div class="thumdnail">
+            <img src="Images/ca02ed33-c255-4b2c-8519-ddf3625a5466.jpg">
+             </div>
+             <div class="ContentText54">
+             <span class="tittleRan">Owl's Book</span>
+            <p class="myText09">Store quotes, books and more</p>
+            <div class="useful">
+              <img src="Images/triangulo.png">
+              180
+            </div>
+            <div class="comments">
+              <img class="chatIcon" src="Images/chat-icon.png">
+              39
+            </div>
+            <div class="randRight">
+            <div class="extra">Reading</div><span class="numberExtra">+4</span>
+           </div>
+          </div>
+        </div>
+        </li>
+        <li>
+          <div class="internalBox1">
+            <div class="thumdnail">
+           <img src="Images/de57136e-4a73-4a20-9e68-b8d07569cab6.jpg">
+            </div>
+            <div class="ContentText54">
+            <span class="tittleRan">TwPixart</span>
+            <p class="myText09">Create are with tweets and pixels</p>
+           <div class="useful">
+             <img src="Images/triangulo.png">
+             225
+           </div>
+           <div class="comments">
+             <img class="chatIcon" src="Images/chat-icon.png">
+             76
+           </div>
+           <div class="randRight">
+           <div class="extra">Mac</div><span class="numberExtra">+9</span>
+          </div>
+         </div>
+       </div>
+       </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+ </section>
+ </div>
+ <div class="secundary">
+   <aside class="sidebar">
+      <div class="sideBox99">
+        <img class="X" src="Images/x.png">
+        <h4>Kittybot for Slack.</h4>
+        <p>A friendly feline that send you cool new things</p>
+        <button class="kittyButon">
+          <img src="Images/slack.png">
+          <span class="slacKity">Add Kittybot to Slack</span>
+        </button>
+      </div>
+
+      <div class="sideBox99 sideBox101 padding10">
+        <h4>Upcoming Live Chats</h4>
+        <ul class="chatList">
+          <li>
+            <img class="avatar" src="Images/jake.jpg">
+            <div class="chatInfo">
+              <h5 class="chatPerson">Jacob Laber</h5>
+              <p class="chatDescription">
+              CEO of Philz Coffee
+              </p>
+              <button class="remainMe">
+                <span class="remainText">Remain Me</span>
+              </button>
+            </div>
+          </li>
+          <li>
+            <img class="avatar" src="Images/use1.jpg">
+            <div class="chatInfo">
+              <h5 class="chatPerson">Kelly Hoey</h5>
+              <p class="chatDescription">
+              Author of Build Your Dream Network
+              </p>
+              <button class="remainMe">
+                <span class="remainText">Remain Me</span>
+              </button>
+            </div>
+          </li>
+          <li>
+            <img class="avatar" src="Images/use4.jpg">
+            <div class="chatInfo">
+              <h5 class="chatPerson">Nathalie Molina Niño</h5>
+              <p class="chatDescription">
+              CEO at BRAVA Investments
+              </p>
+              <button class="remainMe">
+                <span class="remainText">Remain Me</span>
+              </button>
+            </div>
+          </li>
+          <li>
+            <img class="avatar" src="Images/use2.jpg">
+            <div class="chatInfo">
+              <h5 class="chatPerson">Tony Xu</h5>
+              <p class="chatDescription">
+              Founder of DoorDash
+              </p>
+              <button class="remainMe">
+                <span class="remainText">Remain Me</span>
+              </button>
+            </div>
+          </li>
+          <li class="chatBottomBoder">
+            <img class="avatar" src="Images/use3.jpg">
+            <div class="chatInfo">
+              <h5 class="chatPerson">Melissa Perri</h5>
+              <p class="chatDescription">
+              Product Manager, UX Designer
+              </p>
+              <button class="remainMe">
+                <span class="remainText">Remain Me</span>
+              </button>
+            </div>
+          </li>
+        </ul>
+        <div class="seeMore">
+        <span>See more<span/>
+        </div>
+      </div>
+    </aside>
+   </div>
+      </div>
+
+  </section>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+    </body>
+  </html>
