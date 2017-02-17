@@ -1,3 +1,233 @@
 body {
   background: #f9f9f9;
 }
+
+* {
+/* With these codes padding and border does not increase it's width and gives intuitive style.*/
+
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+}
+
+
+
+body{background:#f9f9f9;
+margin: 0;
+width: auto;
+height: auto;
+position: relative;
+/*display: block;*/
+font-family: "proxima-nova", "Proxima Nova", helvetica, arial, sans-serif;
+}
+div{
+  width: 100%;
+}
+
+.main{
+margin: 0;
+padding: 0;
+min-width: 320px;
+background: red;
+}
+.top{
+background: white;
+display: flex;
+/*height: 50px;*/
+}
+
+#page-logo{
+height: 34px;
+float: left;
+/*margin: 0 10px 0 0;*/
+}
+.container{
+  background: grey;
+}
+.sides{
+width: 16.66%;
+/*background: red;*/
+border: 1px dashed;
+float: left;
+
+}
+.mid{
+  width: 66.66%;
+  /*background: white;*/
+  float: left;
+  margin-top: 15px;
+}
+.mid-top{
+background: white;
+float: left;
+width: 100%;
+}
+.mid-left{
+  width: 75%;
+  background: pink;
+  border-top: 1px dashed black;
+  margin-top: 15px;
+  float: left;
+}
+
+.mid-right{
+width: 25%;
+float: left;
+margin-top: 15px;
+/*margin-left: 15px;*/
+background: violet;
+}
+
+#sideContent {
+	    margin-left: 15px;
+    }
+
+.search-field{
+border: 1px;
+border-style: solid;
+border-radius: 5px;
+border-color: grey;
+box-sizing: border-box;
+height: 30px;
+padding: 2px 30px 0 32px;
+width:100%;
+background: url('./images/search.png') no-repeat 8px 6px;
+}
+
+.text{
+  color: grey;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+  /*text-align: right;*/
+}
+#search-img{
+height: 20px;
+}
+.pos{
+float: left;
+  }
+.indent{
+margin-left:16.66%;
+margin-right:16.66%;
+  }
+
+#dots{
+    color:grey;
+    text-decoration: none;
+    position: absolute;
+    margin-top: 6px;
+    font-weight: bold;
+    padding-left: 10px;
+    /*float: right;*/
+    /*margin-right: auto;*/
+  }
+#logIn{
+    color:grey;
+    font-size: 16px;
+    text-decoration: none;
+    position: absolute;
+    margin-left: 20px;
+    margin-top: 10px;
+    padding-left: 10px;
+  }
+
+
+#navigation{
+border-top: 1px solid #e8e8e8;
+float: left;
+/*margin-top: 30px;*/
+/*height: 50px;*/
+/*position: relative;*/
+/*margin-right: 100px;*/
+/*text-align: justify;*/
+}
+
+
+ul#navigation{
+  list-style: none;
+}
+ul#navigation li {
+    display: inline;
+    padding-right: 8px;
+}
+
+.list-item{
+  /*height: 20px;*/
+  /*line-height: 20px;*/
+  color:grey;
+  font-size: 14px;
+  text-decoration: none;
+}
+#home{
+  border: 1px solid;
+  color: black;
+  background-color: #C0C0C0;
+  padding-bottom: 10px;
+  padding-left: 10px;
+
+}
+  /*input[type=search] {*/
+  	/*color: red;*/
+  	/*text-align: right;*/
+  	/*!!!!!cursor: pointer;*/
+  	/*display: block;*/
+  	/*width: 100%;*/
+  	/*letter-spacing: 4px;*/
+  	/*word-spacing: 20px;*/
+  }
+
+@media (min-width: 320px) and (max-width: 747px) {
+    .search-field{width:100%;
+    }
+@media (min-width: 748px) {
+        .search-field{width:100%;
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*.responsive-div {
+  background-color: red;
+  height: 100px;
+  width: 100px;
+  font-size:10px;
+}
+@media (min-width: 1000px) {
+  .responsive-div {
+    background-color: blue;
+  }
+  .text{
+    color: green;
+  }
+}
+
+  @media (min-width: 650px) and (max-width: 999px) {
+    p.mobile{color: cyan;
+      font-size: 1vw;
+    }
+    p.tablet{
+      font-size: 2em;
+    }
+    p.desktop{
+      font-size: 2rem;
+    }
+  .responsive-div {
+    background-color: green;
+  }
+}*/
+
