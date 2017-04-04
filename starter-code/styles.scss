@@ -1,11 +1,16 @@
+// styles.scss
+
+@import 'reset';
+
 body {
-  background: #f9f9f9;
-  /*background: red;*/
+  background-color: #f9f9f9;
   font-size: 16px;
   line-height: normal;
 }
 
-
+.main {
+  background-color: inherit;
+}
 @media (min-width: 350px) and (max-width: 699px) {
   .main {
     background-color: green;
@@ -21,7 +26,7 @@ body {
   margin: 0 auto;
 }
 
-@media (min-width: 450px) and (max-width: 699px) {
+@media (min-width: 500px) and (max-width: 800px) {
   .wide-header {
     background-color: red;
     font-size: 30px;
@@ -36,7 +41,6 @@ body {
   height: inherit;
   position: relative;
   margin: 0 auto;
-
 }
 
 .medsup-header{
@@ -58,7 +62,7 @@ body {
 }
 
 .medsup-header .formheader{
-  height: 28px;
+  height: 50px;
   width: 600px;
   border: 1px;
   border-style: ridge;
@@ -90,7 +94,7 @@ body {
   height: 40px
 }
 
-@media  (max-width: 400px) {
+@media  (max-width: 500px) {
   .nav-header{
     background-color: magenta;
     font-weight: bold;
@@ -98,7 +102,7 @@ body {
   }
 }
 
-@media (min-width: 400px) {
+@media (min-width: 500px) {
   .nav-header{
     background-color: red;
     font-weight: lighter;
@@ -117,6 +121,12 @@ width: 1000px;
 margin: 0 auto;
 }
 
+@media (max-width: 1000px){
+  .main{
+    width: 800px;
+  }
+}
+
 .wellcome{
   position: relative;
   width: 800px;
@@ -125,7 +135,13 @@ margin: 0 auto;
   text-align: center;
   line-height: 40px;
   background-color: #EBF5FB;
+}
 
+@media (max-width: 1000px){
+  .wellcome{
+    width: 600px;
+    height: 80px;
+  }
 }
 
 .wellcome form{
@@ -142,7 +158,8 @@ margin: 0 auto;
 
 .dates{
   display: flex;
-justify-content: center;
+  justify-content: center;
+  width: inherit;
 }
 
 .left-column{
@@ -150,6 +167,14 @@ justify-content: center;
   float: left;
   align-self: auto;
   left: -200px;
+}
+
+@media (max-width: 1000px){
+  .left-column{
+
+    left:-150px;
+    float:none;
+  }
 }
 
 .popular{
@@ -170,6 +195,13 @@ justify-content: center;
   float: right;
   align-self: auto;
   right: -200px;
+}
+@media (max-width: 1000px){
+  .right-column{
+    float: left;
+    right: -150px;
+
+  }
 }
 
 .kittybot{
