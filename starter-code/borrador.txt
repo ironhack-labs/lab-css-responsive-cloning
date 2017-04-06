@@ -1,0 +1,38 @@
+
+
+<!-- < <ul>
+  <li><a>Tech</a></li>
+  <li><a>Games</a></li>
+  <li><a>Podcast</a></li>
+  <li><a>Books</a></li>
+  <li><a>Bots</a></li>
+  <li><a>Developer Tools</a></li>
+</ul> -->
+
+
+
+// .section-left{
+//   box-sizing: border-box;
+//   float: left;
+//   width: 90%;
+//   height: 40%;
+//   background-color: yellow;
+
+  // ul {
+  //     float: right;
+  //     list-style-type: none;
+  //     text-align: center;
+  //     overflow: auto;
+  //     font-size: 30px;
+  //
+  //     li {
+  //         float: left;
+  //         color: grey;
+  //         padding: 0 /*top*/ 10px /*right*/ 0 /*bottom*/  0; /*left*/
+  //
+  //         a {
+  //             color: #1A1A1A;
+  //         }
+  //     }
+  //   }
+  //}
