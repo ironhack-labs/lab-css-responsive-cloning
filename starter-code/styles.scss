@@ -52,8 +52,6 @@ main header{
     height: 50%;
     width: 100%;
 
-    
-
       .section-left{
         float: left;
         width: 80%;
@@ -82,12 +80,12 @@ main header{
     padding: 10% /*top*/ 10% /*right*/ 0 /*bottom*/  10%; /*left*/;
 
       header{
-      box-sizing: border-box;
-      display: block;
+      //box-sizing: border-box;
+      //display: block;
       background-color: red;
       height: 10%;
       width: 100%;
-      overflow: auto;
+      //overflow: auto;
 
       .header-left{
         box-sizing: border-box;
@@ -135,6 +133,115 @@ main header{
       background-color: darkred;
       width: 50%;
       height: 80%;
+      padding: 0;
+
+      .weekly{
+        background-color: black;
+        height: 50%;
+        width: 100%;
+
+        header{
+          //box-sizing: border-box;
+          //display: block;
+          background-color: pink;
+          height: 20%;
+          width: 100%;
+          //overflow: auto;
+
+          .text{
+            float:left;
+            height: 100%;
+            width: 80%;
+            background-color: black;
+            margin: 0;
+          }
+
+          .cross{
+            float:right;
+            height: 100%;
+            width: 20%;
+            background-color: darkblue;
+          }
+        }
+
+        article{
+          height: 80%;
+          width: 100%;
+          background-color: purple;
+
+          .top{
+            background-color: yellow;
+            height: 30%;
+            width: 100%;
+          }
+
+          .middle{
+            background-color: orange;
+            height: 40%;
+            width: 100%;
+          }
+
+          .bottom{
+            background-color: pink;
+            height: 30%;
+            width: 100%;
+          }
+        }
+      }
+
+      .today{
+        background-color: black;
+        height: 50%;
+        width: 100%;
+
+        header{
+          //box-sizing: border-box;
+          //display: block;
+          background-color: pink;
+          height: 20%;
+          width: 100%;
+          //overflow: auto;
+
+          .text{
+            float:left;
+            height: 100%;
+            width: 80%;
+            background-color: black;
+            margin: 0;
+          }
+
+          .cross{
+            float:right;
+            height: 100%;
+            width: 20%;
+            background-color: darkblue;
+          }
+        }
+
+        article{
+          height: 80%;
+          width: 100%;
+          background-color: purple;
+
+          .top{
+            background-color: yellow;
+            height: 30%;
+            width: 100%;
+          }
+
+          .middle{
+            background-color: orange;
+            height: 40%;
+            width: 100%;
+          }
+
+          .bottom{
+            background-color: pink;
+            height: 30%;
+            width: 100%;
+          }
+        }
+      }
     }
 
     .section-right{
