@@ -249,6 +249,117 @@ main header{
       background-color: darkblue;
       width: 20%;
       height: 80%;
+      padding: 0;
+
+      .top{
+        background-color: yellow;
+        height: 20%;
+        width: 100%;
+
+        header{
+
+          background-color: pink;
+          height: 20%;
+          width: 100%;
+
+          .text{
+            float:left;
+            height: 100%;
+            width: 80%;
+            background-color: black;
+            margin: 0;
+          }
+
+          .cross{
+            float:right;
+            height: 100%;
+            width: 20%;
+            background-color: darkblue;
+          }
+        }
+
+        article{
+          height: 80%;
+          width: 100%;
+          background-color: purple;
+
+
+          .text{
+            background-color: yellow;
+            height: 40%;
+            width: 100%;
+            margin: 0;
+          }
+
+          .button{
+            box-sizing: border-box;
+            background-color: red;
+            height: 60%;
+            width: 100%;
+          }
+        }
+      }
+
+      .middle{
+        background-color: orange;
+        height: 60%;
+        width: 100%;
+
+        header{
+
+          background-color: pink;
+          height: 20%;
+          width: 100%;
+
+          .text{
+            float:left;
+            height: 100%;
+            width: 100%;
+            background-color: black;
+            margin: 0;
+          }
+        }
+
+        article{
+          height: 60%;
+          width: 100%;
+          background-color: purple;
+
+
+          .top{
+            background-color: yellow;
+            height: 30%;
+            width: 100%;
+            padding: 0;
+          }
+
+          .middle{
+            background-color: red;
+            height: 40%;
+            width: 100%;
+            padding: 0;
+          }
+
+          .bottom{
+            background-color: pink;
+            height: 30%;
+            width: 100%;
+            padding: 0;
+          }
+        }
+
+        footer{
+          height: 20%;
+          width: 100%;
+          background-color: black;
+        }
+      }
+
+      .bottom{
+        background-color: pink;
+        height: 20%;
+        width: 100%;
+      }
     }
   }
 }
@@ -310,12 +421,121 @@ main header{
       }
 
     }
-      .section-left{
-        float:left;
-        background-color: darkred;
+    .section-left{
+      float:left;
+      background-color: darkred;
+      width: 100%;
+      height: 80%;
+      padding: 0;
+
+      .weekly{
+        background-color: black;
+        height: 50%;
         width: 100%;
-        height: 80%;
+
+        header{
+          //box-sizing: border-box;
+          //display: block;
+          background-color: pink;
+          height: 20%;
+          width: 100%;
+          //overflow: auto;
+
+          .text{
+            float:left;
+            height: 100%;
+            width: 80%;
+            background-color: black;
+            margin: 0;
+          }
+
+          .cross{
+            float:right;
+            height: 100%;
+            width: 20%;
+            background-color: darkblue;
+          }
+        }
+
+        article{
+          height: 80%;
+          width: 100%;
+          background-color: purple;
+
+          .top{
+            background-color: yellow;
+            height: 30%;
+            width: 100%;
+          }
+
+          .middle{
+            background-color: orange;
+            height: 40%;
+            width: 100%;
+          }
+
+          .bottom{
+            background-color: pink;
+            height: 30%;
+            width: 100%;
+          }
+        }
       }
+
+      .today{
+        background-color: black;
+        height: 50%;
+        width: 100%;
+
+        header{
+          //box-sizing: border-box;
+          //display: block;
+          background-color: pink;
+          height: 20%;
+          width: 100%;
+          //overflow: auto;
+
+          .text{
+            float:left;
+            height: 100%;
+            width: 80%;
+            background-color: black;
+            margin: 0;
+          }
+
+          .cross{
+            float:right;
+            height: 100%;
+            width: 20%;
+            background-color: darkblue;
+          }
+        }
+
+        article{
+          height: 80%;
+          width: 100%;
+          background-color: purple;
+
+          .top{
+            background-color: yellow;
+            height: 30%;
+            width: 100%;
+          }
+
+          .middle{
+            background-color: orange;
+            height: 40%;
+            width: 100%;
+          }
+
+          .bottom{
+            background-color: pink;
+            height: 30%;
+            width: 100%;
+          }
+        }
+      }
+    }
 
       .section-right{
         display: none;
@@ -380,12 +600,121 @@ main header{
 
     }
 
-      .section-left{
-        float:left;
-        background-color: darkred;
+    .section-left{
+      float:left;
+      background-color: darkred;
+      width: 100%;
+      height: 80%;
+      padding: 0;
+
+      .weekly{
+        background-color: black;
+        height: 50%;
         width: 100%;
-        height: 80%;
+
+        header{
+          //box-sizing: border-box;
+          //display: block;
+          background-color: pink;
+          height: 20%;
+          width: 100%;
+          //overflow: auto;
+
+          .text{
+            float:left;
+            height: 100%;
+            width: 80%;
+            background-color: black;
+            margin: 0;
+          }
+
+          .cross{
+            float:right;
+            height: 100%;
+            width: 20%;
+            background-color: darkblue;
+          }
+        }
+
+        article{
+          height: 80%;
+          width: 100%;
+          background-color: purple;
+
+          .top{
+            background-color: yellow;
+            height: 30%;
+            width: 100%;
+          }
+
+          .middle{
+            background-color: orange;
+            height: 40%;
+            width: 100%;
+          }
+
+          .bottom{
+            background-color: pink;
+            height: 30%;
+            width: 100%;
+          }
+        }
       }
+
+      .today{
+        background-color: black;
+        height: 50%;
+        width: 100%;
+
+        header{
+          //box-sizing: border-box;
+          //display: block;
+          background-color: pink;
+          height: 20%;
+          width: 100%;
+          //overflow: auto;
+
+          .text{
+            float:left;
+            height: 100%;
+            width: 80%;
+            background-color: black;
+            margin: 0;
+          }
+
+          .cross{
+            float:right;
+            height: 100%;
+            width: 20%;
+            background-color: darkblue;
+          }
+        }
+
+        article{
+          height: 80%;
+          width: 100%;
+          background-color: purple;
+
+          .top{
+            background-color: yellow;
+            height: 30%;
+            width: 100%;
+          }
+
+          .middle{
+            background-color: orange;
+            height: 40%;
+            width: 100%;
+          }
+
+          .bottom{
+            background-color: pink;
+            height: 30%;
+            width: 100%;
+          }
+        }
+      }
+    }
 
       .section-right{
         display: none;
@@ -411,6 +740,115 @@ main header{
         background-color: darkred;
         width: 100%;
         height: 80%;
+        padding: 0;
+
+        .weekly{
+          background-color: black;
+          height: 50%;
+          width: 100%;
+
+          header{
+            //box-sizing: border-box;
+            //display: block;
+            background-color: pink;
+            height: 20%;
+            width: 100%;
+            //overflow: auto;
+
+            .text{
+              float:left;
+              height: 100%;
+              width: 80%;
+              background-color: black;
+              margin: 0;
+            }
+
+            .cross{
+              float:right;
+              height: 100%;
+              width: 20%;
+              background-color: darkblue;
+            }
+          }
+
+          article{
+            height: 80%;
+            width: 100%;
+            background-color: purple;
+
+            .top{
+              background-color: yellow;
+              height: 30%;
+              width: 100%;
+            }
+
+            .middle{
+              background-color: orange;
+              height: 40%;
+              width: 100%;
+            }
+
+            .bottom{
+              background-color: pink;
+              height: 30%;
+              width: 100%;
+            }
+          }
+        }
+
+        .today{
+          background-color: black;
+          height: 50%;
+          width: 100%;
+
+          header{
+            //box-sizing: border-box;
+            //display: block;
+            background-color: pink;
+            height: 20%;
+            width: 100%;
+            //overflow: auto;
+
+            .text{
+              float:left;
+              height: 100%;
+              width: 80%;
+              background-color: black;
+              margin: 0;
+            }
+
+            .cross{
+              float:right;
+              height: 100%;
+              width: 20%;
+              background-color: darkblue;
+            }
+          }
+
+          article{
+            height: 80%;
+            width: 100%;
+            background-color: purple;
+
+            .top{
+              background-color: yellow;
+              height: 30%;
+              width: 100%;
+            }
+
+            .middle{
+              background-color: orange;
+              height: 40%;
+              width: 100%;
+            }
+
+            .bottom{
+              background-color: pink;
+              height: 30%;
+              width: 100%;
+            }
+          }
+        }
       }
 
       .section-right{
