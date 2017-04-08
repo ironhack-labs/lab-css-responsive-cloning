@@ -1,3 +1,183 @@
+$gray: #868A95;
+$gray-line: #dfe1e4;
+$border-line: 1.5px $gray-line solid;
+
 body {
   background: #f9f9f9;
+  width: 500px;
+  margin: 0;
+  font-family: Helvetica;
+  color: $gray;
+  font-size: 10px;
+}
+
+//Pantallas XS
+@media (max-width: 320px){}
+//Pantallas S
+@media (min-width: 320px) and (max-width: 600px){}
+//Pantallas M
+@media (min-width: 600px) and (max-width: 1024px){}
+//Pantallas L
+@media (min-width: 1024px){}
+
+.cabecera {
+  width: 100%;
+  height: 80px;
+
+  .buscador {
+    height: 50%;
+    border-bottom: $border-line;
+    font-size: 1.5em;
+    #logo{
+      height: 100%;
+    }
+    #search{
+      height:50%;
+      margin-bottom: 8px;
+    }
+    .discover {
+      display: inline-block;
+      position: relative;
+      bottom: 16px;
+    }
+    .derecha {
+      display: inline-block;
+      float: right;
+      margin: 7px 8px 0 0;
+      font-weight: bold;
+    }
+  }
+  .secciones {
+    height: 50%;
+    border-bottom: $border-line;
+    font-size: 1.2em;
+    a{
+      text-align: center;
+      margin-left: 8px;
+      position: relative;
+      top: 10px;
+    }
+    .arrow{
+      float: right;
+      height: 35%;
+      margin: 10px 5px 0 0;
+    }
+  }
+}
+
+.cuerpo {
+  width: 100%;
+  height: 830px;
+
+  .popular {
+    height: 50%;
+
+    .this-week{
+      height: 15%;
+      .section{
+        color: #56575a;
+        font-size: 2em;
+        position: relative;
+        top: 25px;
+        left: 5px;
+      }
+      img{
+        float: right;
+        height: 17%;
+        margin-right: 8px;
+        margin-top: 30px;
+      }
+    }
+    .product {
+      height: 25%;
+      border-top: $border-line;
+    }
+    .show-more{
+      height: 10%;
+      padding-left: 40%;
+      img{
+        height: 20%;
+        display: inline-block;
+        margin-right: 5px;
+      }
+      span{
+        font-weight: bold;
+      }
+    }
+  }
+  .today {
+    height: 45%;
+    .newest {
+      height: 16%;
+      .section{
+        color: #56575a;
+        font-size: 2em;
+        position: relative;
+        top: 25px;
+        left: 5px;
+      }
+      .upper-case{
+        float: right;
+        font-size: 1.2em;
+        font-weight: bold;
+        position: relative;
+        top: 33px;
+        margin-right: 8px;
+      }
+    }
+    .product {
+      height: 28%;
+      border-top: $border-line;
+    }
+  }
+  .chat {
+    height: 5%;
+    div{
+      margin-top: 1%;
+      height: 50%;
+      padding-top: 1%;
+      border: 1.5px $gray-line solid;
+      font-size: 1.2em;
+    }
+  }
+}
+
+.app-img{
+  height: 60%;
+  margin: 4% 4% 4% 2%;
+}
+.content{
+  display: inline-block;
+  position: relative;
+  bottom: 20px;
+  .app-name {
+    color: #56575a;
+    font-size: 2em;
+    margin: 0;
+  }
+  .app-descr {
+    font-size: 1.2em;
+    margin: 0;
+  }
+  .buttons{
+    height: 17px;
+    margin-top: 10px;
+    div {
+      display: inline-block;
+      border: 1px $gray-line solid;
+      width: auto;
+      height: inherit;
+      padding-right: 6px;
+      margin-right: 3px;
+      img{
+        height: inherit;
+        display: inline-block;
+      }
+      span{
+        font-size: 1.2em;
+        position: relative;
+        bottom: 5px;
+      }
+    }
+  }
 }
