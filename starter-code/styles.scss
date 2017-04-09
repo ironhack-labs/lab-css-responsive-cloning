@@ -1,6 +1,6 @@
 body {
   background: #f9f9f9;
-  color: white;
+  color: black;
 }
 
 main{
@@ -10,121 +10,125 @@ main{
 @media (min-width: 1000px){
 
   //Header
-  main header{
-    display: block;
-    width: 100%;
-    height: 200px;
+  main{
 
-    .header-top{
-      box-sizing: border-box;
-      background-color: red;
-      height: 50%;
+    header{
+      display: block;
       width: 100%;
-      overflow: auto;
+      height: 200px;
+      background-color: white;
 
-      .section-left{
-        float: left;
-        width: 25%;
-        height: 100%;
-        background-color: purple;
-        padding-top: 30px;
-        padding-left: 10px;
+      .header-top{
+        box-sizing: border-box;
+        //background-color: red;
+        height: 50%;
+        width: 100%;
+        overflow: auto;
 
-        img{
-          width: 50px;
-          height: auto;
-        }
-      }
+        .section-left{
+          float: left;
+          width: 25%;
+          height: 100%;
+          //background-color: purple;
+          padding-top: 30px;
+          padding-left: 10px;
 
-      .section-middle{
-        float: left;
-        width: 50%;
-        height: 100%;
-        padding-top: 50px;
-        padding-left: 0px;
-        background-color: black;
-
-        img{
-          float:left;
-          width: 15px;
-          height: auto;
+          img{
+            width: 50px;
+            height: auto;
+          }
         }
 
-        input{
-          float:left;
-          overflow: hidden;
-        }
-      }
-
-      .section-right{
-        float: left;
-        width: 25%;
-        height: 100%;
-        padding: 0;
-        background-color: pink;
-        padding-top: 50px;
-        padding-left: 0px;
-
-        p{
-          margin: 0;
-          text-align: left;
-        }
-      }
-    }
-
-    .header-bottom{
-      box-sizing: border-box;
-      background-color: blue;
-      height: 50%;
-      width: 100%;
-
-      .section-left{
-        float: left;
-        width: 80%;
-        height: 100%;
-        padding-top: 50px;
-        padding-left: 10px;
-        background-color: darkgreen;
-
-        ul{
-          width: 100%;
-          height: 30%;
-          list-style-type: none;
-          overflow: hidden;
+        .section-middle{
+          float: left;
+          width: 50%;
+          height: 100%;
+          padding-top: 50px;
           padding-left: 0px;
-          margin: 0;
+          //background-color: black;
 
-          li {
-          display: inline-block;
-          color: grey;
-          padding-right: 10px;
+          img{
+            float:left;
+            width: 15px;
+            height: auto;
+          }
 
-            a {
-                color: #1A1A1A;
-            }
+          input{
+            float:left;
+            overflow: hidden;
+          }
+        }
+
+        .section-right{
+          float: left;
+          width: 25%;
+          height: 100%;
+          padding: 0;
+          //background-color: pink;
+          padding-top: 50px;
+          padding-left: 0px;
+
+          p{
+            margin: 0;
+            text-align: left;
           }
         }
       }
 
-      .section-right{
-        float: left;
-        width: 20%;
-        height: 100%;
-        padding: 0;
-        background-color: green;
-        padding-top: 50px;
-        padding-left: 0px;
+      .header-bottom{
+        box-sizing: border-box;
+        //background-color: blue;
+        height: 50%;
+        width: 100%;
 
-        .arror-prev{
-          float:left;
-          width: 50px;
-          height: auto;
+        .section-left{
+          float: left;
+          width: 80%;
+          height: 100%;
+          padding-top: 50px;
+          padding-left: 10px;
+          //background-color: darkgreen;
+
+          ul{
+            width: 100%;
+            height: 30%;
+            list-style-type: none;
+            overflow: hidden;
+            padding-left: 0px;
+            margin: 0;
+
+            li {
+            display: inline-block;
+            color: grey;
+            padding-right: 10px;
+
+              a {
+                  color: #1A1A1A;
+              }
+            }
+          }
         }
 
-        .arror-next{
-          float:left;
-          width: 50px;
-          height: auto;
+        .section-right{
+          float: left;
+          width: 20%;
+          height: 100%;
+          padding: 0;
+          //background-color: green;
+          padding-top: 50px;
+          padding-left: 0px;
+
+          .arror-prev{
+            float:left;
+            width: 50px;
+            height: auto;
+          }
+
+          .arror-next{
+            float:left;
+            width: 50px;
+            height: auto;
+          }
         }
       }
     }
@@ -132,1403 +136,9 @@ main{
 
 
 //Section
-  main section{
-    box-sizing: border-box;
-    display: block;
-    width: 100%;
-    height: 750px;
-    padding: 10% /*top*/ 10% /*right*/ 0 /*bottom*/  10%; /*left*/;
+  main{
 
-    header{
-    box-sizing: border-box;
-    display: block;
-    background-color: red;
-    height: 10%;
-    width: 100%;
-    overflow: auto;
-
-    .header-left{
-      box-sizing: border-box;
-      float: left;
-      height: 100%;
-      width: 95%;
-      background-color: yellow;
-
-      .header-text{
-        float: left;
-        height: 100%;
-        width: 50%;
-        background-color: orange;
-        margin: 0;
-
-        box-sizing: border-box;
-        padding-top: 10px;
-        padding-left: 10px;
-
-        h3{
-          float:left;
-          margin: 0;
-          height: 100%;
-          width: 50%;
-          text-align: left;
-          font-size: 0.9em;
-        }
-
-        p{
-          float:left;
-          height: 100%;
-          width: 50%;
-          margin: 0;
-          text-align: left;
-          font-size: 0.7em;
-        }
-
-      }
-
-      .header-input{
-        float:left;
-        height: 100%;
-        width: 25%;
-        background-color: purple;
-
-        box-sizing: border-box;
-        padding-top: 10px;
-        padding-left: 10px;
-
-        input{
-          float:left;
-          overflow: hidden;
-        }
-      }
-
-      .header-button{
-        float:left;
-        height: 100%;
-        width: 25%;
-        background-color: blue;
-
-        box-sizing: border-box;
-        padding-top: 5px;
-        padding-left: 20px;
-        padding-right: 10px;
-        padding-bottom: 10px;
-
-        button{
-          float:left;
-          box-sizing: border-box;
-          background-color: red;
-          height:100%;
-          width: 100%;
-
-          box-sizing: border-box;
-          padding-top: 2px;
-          padding-left: 10px;
-
-          p{
-            float:left;
-            margin: 0;
-            text-align: left;
-          }
-        }
-      }
-
-    }
-
-    .header-right{
-      box-sizing: border-box;
-      float:right;
-      height: 100%;
-      width: 5%;
-      background-color: black;
-
-      box-sizing: border-box;
-      padding-top: 25px;
-      padding-right: 10px;
-
-      img{
-        float: right;
-        width: 15px;
-        height: auto;
-      }
-    }
-
-  }
-
-    .section-left{
-      float:left;
-      background-color: darkred;
-      width: 70%;
-      height: 80%;
-      padding: 0;
-
-      .weekly{
-        background-color: black;
-        height: 50%;
-        width: 100%;
-
-        header{
-          //box-sizing: border-box;
-          display: block;
-          background-color: pink;
-          height: 20%;
-          width: 100%;
-          //overflow: auto;
-
-          .text{
-            float:left;
-            height: 100%;
-            width: 80%;
-            background-color: black;
-            margin: 0;
-
-            text-align: left;
-            box-sizing: border-box;
-            padding-top: 25px;
-            padding-left: 10px;
-          }
-
-          .cross{
-            float:right;
-            height: 100%;
-            width: 20%;
-            background-color: darkblue;
-
-            box-sizing: border-box;
-            padding-top: 25px;
-            padding-right: 10px;
-
-            img{
-              float: right;
-              width: 15px;
-              height: auto;
-            }
-          }
-        }
-
-        article{
-          height: 80%;
-          width: 100%;
-          background-color: purple;
-
-          .top{
-            background-color: yellow;
-            height: 33%;
-            width: 100%;
-            padding: 0;
-
-            .photo{
-              float:left;
-              background-color: blue;
-              height: 100%;
-              width: 30%;
-              padding: 0;
-
-              box-sizing: border-box;
-              padding-top: 10px;
-              padding-left: 10px;
-
-              img{
-                width: 50px;
-                height: auto;
-              }
-            }
-
-            .product-info{
-              float:left;
-              background-color: red;
-              height: 100%;
-              width: 50%;
-              padding: 0;
-
-              .product-name{
-                height: 33%;
-                width: 100%;
-                background-color: purple;
-                margin: 0;
-              }
-
-              .product-description{
-                height: 33%;
-                width: 100%;
-                background-color: black;
-                margin: 0;
-
-                font-size: 0.8em;
-              }
-
-              .interactive-buttons{
-                box-sizing: border-box;
-                background-color: yellow;
-                height: 34%;
-                width: 100%;
-
-                .button-votes{
-                  float:left;
-                  box-sizing: border-box;
-                  background-color: red;
-                  height: 100%;
-                  width: 50%;
-
-                  box-sizing: border-box;
-                  padding-top: 10px;
-                  padding-left: 10px;
-
-                  img{
-                    float:left;
-                    width: 20px;
-                    height: auto;
-                  }
-
-                  p{
-                    float:left;
-                    margin: 0;
-                    text-align: left;
-                  }
-
-
-                }
-
-                .button-comments{
-                  float:left;
-                  box-sizing: border-box;
-                  background-color: red;
-                  height:100%;
-                  width: 50%;
-
-                  box-sizing: border-box;
-                  padding-top: 10px;
-                  padding-left: 10px;
-
-                  img{
-                    float:left;
-                    width: 15px;
-                    height: auto;
-                  }
-
-                  p{
-                    float:left;
-                    margin: 0;
-                    text-align: left;
-                  }
-                }
-              }
-            }
-
-            .phone{
-              float:right;
-              background-color: green;
-              height: 100%;
-              width: 20%;
-              padding: 0;
-
-              box-sizing: border-box;
-              padding-top: 30px;
-              padding-right: 10px;
-
-              p{
-                float:right;
-                margin: 0;
-                text-align: left;
-              }
-            }
-          }
-
-          .middle{
-            background-color: orange;
-            height: 34%;
-            width: 100%;
-            padding: 0;
-
-            .photo{
-              float:left;
-              background-color: green;
-              height: 100%;
-              width: 30%;
-              padding: 0;
-
-              box-sizing: border-box;
-              padding-top: 10px;
-              padding-left: 10px;
-
-              img{
-                width: 50px;
-                height: auto;
-              }
-            }
-
-            .product-info{
-              float:left;
-              background-color: red;
-              height: 100%;
-              width: 50%;
-              padding: 0;
-
-              .product-name{
-                height: 33%;
-                width: 100%;
-                background-color: purple;
-                margin: 0;
-              }
-
-              .product-description{
-                height: 33%;
-                width: 100%;
-                background-color: black;
-                margin: 0;
-                font-size: 0.8em;
-              }
-
-              .interactive-buttons{
-                box-sizing: border-box;
-                background-color: yellow;
-                height: 34%;
-                width: 100%;
-
-                .button-votes{
-                  float:left;
-                  box-sizing: border-box;
-                  background-color: red;
-                  height: 100%;
-                  width: 50%;
-
-                  box-sizing: border-box;
-                  padding-top: 10px;
-                  padding-left: 10px;
-
-                  img{
-                    float:left;
-                    width: 20px;
-                    height: auto;
-                  }
-
-                  p{
-                    float:left;
-                    margin: 0;
-                    text-align: left;
-                  }
-
-
-                }
-
-                .button-comments{
-                  float:left;
-                  box-sizing: border-box;
-                  background-color: red;
-                  height:100%;
-                  width: 50%;
-
-                  box-sizing: border-box;
-                  padding-top: 10px;
-                  padding-left: 10px;
-
-                  img{
-                    float:left;
-                    width: 15px;
-                    height: auto;
-                  }
-
-                  p{
-                    float:left;
-                    margin: 0;
-                    text-align: left;
-                  }
-                }
-              }
-            }
-
-            .phone{
-              float:right;
-              background-color: blue;
-              height: 100%;
-              width: 20%;
-              padding: 0;
-
-              box-sizing: border-box;
-              padding-top: 30px;
-              padding-right: 10px;
-
-              p{
-                float:right;
-                margin: 0;
-                text-align: left;
-              }
-            }
-          }
-
-          .bottom{
-            background-color: pink;
-            height: 33%;
-            width: 100%;
-            padding: 0;
-
-            .photo{
-              float:left;
-              background-color: blue;
-              height: 100%;
-              width: 30%;
-              padding: 0;
-
-              box-sizing: border-box;
-              padding-top: 10px;
-              padding-left: 10px;
-
-              img{
-                width: 50px;
-                height: auto;
-              }
-            }
-
-            .product-info{
-              float:left;
-              background-color: red;
-              height: 100%;
-              width: 50%;
-              padding: 0;
-
-              .product-name{
-                height: 33%;
-                width: 100%;
-                background-color: purple;
-                margin: 0;
-              }
-
-              .product-description{
-                height: 33%;
-                width: 100%;
-                background-color: black;
-                margin: 0;
-                font-size: 0.8em;
-              }
-
-              .interactive-buttons{
-                box-sizing: border-box;
-                background-color: yellow;
-                height: 34%;
-                width: 100%;
-
-                .button-votes{
-                  float:left;
-                  box-sizing: border-box;
-                  background-color: red;
-                  height: 100%;
-                  width: 50%;
-
-                  box-sizing: border-box;
-                  padding-top: 10px;
-                  padding-left: 10px;
-
-                  img{
-                    float:left;
-                    width: 20px;
-                    height: auto;
-                  }
-
-                  p{
-                    float:left;
-                    margin: 0;
-                    text-align: left;
-                  }
-
-
-                }
-
-                .button-comments{
-                  float:left;
-                  box-sizing: border-box;
-                  background-color: red;
-                  height:100%;
-                  width: 50%;
-
-                  box-sizing: border-box;
-                  padding-top: 10px;
-                  padding-left: 10px;
-
-                  img{
-                    float:left;
-                    width: 15px;
-                    height: auto;
-                  }
-
-                  p{
-                    float:left;
-                    margin: 0;
-                    text-align: left;
-                  }
-                }
-              }
-            }
-
-            .phone{
-              float:right;
-              background-color: green;
-              height: 100%;
-              width: 20%;
-              padding: 0;
-
-              box-sizing: border-box;
-              padding-top: 30px;
-              padding-right: 10px;
-
-              p{
-                float:right;
-                margin: 0;
-                text-align: left;
-              }
-            }
-          }
-        }
-      }
-
-      .today{
-        background-color: black;
-        height: 50%;
-        width: 100%;
-
-        header{
-          //box-sizing: border-box;
-          display: block;
-          background-color: pink;
-          height: 20%;
-          width: 100%;
-          //overflow: auto;
-
-          .text{
-            float:left;
-            height: 100%;
-            width: 80%;
-            background-color: black;
-            margin: 0;
-
-            text-align: left;
-            box-sizing: border-box;
-            padding-top: 25px;
-            padding-left: 10px;
-          }
-
-          .cross{
-            float:right;
-            height: 100%;
-            width: 20%;
-            background-color: darkblue;
-
-            box-sizing: border-box;
-            padding-top: 25px;
-            padding-right: 10px;
-
-            img{
-              float: right;
-              width: 15px;
-              height: auto;
-            }
-          }
-        }
-
-        article{
-          height: 80%;
-          width: 100%;
-          background-color: purple;
-
-          .top{
-            background-color: yellow;
-            height: 33%;
-            width: 100%;
-            padding: 0;
-
-            .photo{
-              float:left;
-              background-color: blue;
-              height: 100%;
-              width: 30%;
-              padding: 0;
-
-              box-sizing: border-box;
-              padding-top: 10px;
-              padding-left: 10px;
-
-              img{
-                width: 50px;
-                height: auto;
-              }
-            }
-
-            .product-info{
-              float:left;
-              background-color: red;
-              height: 100%;
-              width: 50%;
-              padding: 0;
-
-              .product-name{
-                height: 33%;
-                width: 100%;
-                background-color: purple;
-                margin: 0;
-              }
-
-              .product-description{
-                height: 33%;
-                width: 100%;
-                background-color: black;
-                margin: 0;
-                font-size: 0.8em;
-              }
-
-              .interactive-buttons{
-                box-sizing: border-box;
-                background-color: yellow;
-                height: 34%;
-                width: 100%;
-
-                .button-votes{
-                  float:left;
-                  box-sizing: border-box;
-                  background-color: red;
-                  height: 100%;
-                  width: 50%;
-
-                  box-sizing: border-box;
-                  padding-top: 10px;
-                  padding-left: 10px;
-
-                  img{
-                    float:left;
-                    width: 20px;
-                    height: auto;
-                  }
-
-                  p{
-                    float:left;
-                    margin: 0;
-                    text-align: left;
-                  }
-
-
-                }
-
-                .button-comments{
-                  float:left;
-                  box-sizing: border-box;
-                  background-color: red;
-                  height:100%;
-                  width: 50%;
-
-                  box-sizing: border-box;
-                  padding-top: 10px;
-                  padding-left: 10px;
-
-                  img{
-                    float:left;
-                    width: 15px;
-                    height: auto;
-                  }
-
-                  p{
-                    float:left;
-                    margin: 0;
-                    text-align: left;
-                  }
-                }
-              }
-            }
-
-            .phone{
-              float:right;
-              background-color: green;
-              height: 100%;
-              width: 20%;
-              padding: 0;
-
-              box-sizing: border-box;
-              padding-top: 30px;
-              padding-right: 10px;
-
-              p{
-                float:right;
-                margin: 0;
-                text-align: left;
-              }
-            }
-          }
-
-          .middle{
-            background-color: orange;
-            height: 34%;
-            width: 100%;
-            padding: 0;
-
-            .photo{
-              float:left;
-              background-color: green;
-              height: 100%;
-              width: 30%;
-              padding: 0;
-
-              box-sizing: border-box;
-              padding-top: 10px;
-              padding-left: 10px;
-
-              img{
-                width: 50px;
-                height: auto;
-              }
-            }
-
-            .product-info{
-              float:left;
-              background-color: red;
-              height: 100%;
-              width: 50%;
-              padding: 0;
-
-              .product-name{
-                height: 33%;
-                width: 100%;
-                background-color: purple;
-                margin: 0;
-              }
-
-              .product-description{
-                height: 33%;
-                width: 100%;
-                background-color: black;
-                margin: 0;
-                font-size: 0.8em;
-
-              }
-
-              .interactive-buttons{
-                box-sizing: border-box;
-                background-color: yellow;
-                height: 34%;
-                width: 100%;
-
-                .button-votes{
-                  float:left;
-                  box-sizing: border-box;
-                  background-color: red;
-                  height: 100%;
-                  width: 50%;
-
-                  box-sizing: border-box;
-                  padding-top: 10px;
-                  padding-left: 10px;
-
-                  img{
-                    float:left;
-                    width: 20px;
-                    height: auto;
-                  }
-
-                  p{
-                    float:left;
-                    margin: 0;
-                    text-align: left;
-                  }
-
-
-                }
-
-                .button-comments{
-                  float:left;
-                  box-sizing: border-box;
-                  background-color: red;
-                  height:100%;
-                  width: 50%;
-
-                  box-sizing: border-box;
-                  padding-top: 10px;
-                  padding-left: 10px;
-
-                  img{
-                    float:left;
-                    width: 15px;
-                    height: auto;
-                  }
-
-                  p{
-                    float:left;
-                    margin: 0;
-                    text-align: left;
-                  }
-                }
-              }
-            }
-
-            .phone{
-              float:right;
-              background-color: blue;
-              height: 100%;
-              width: 20%;
-              padding: 0;
-
-              box-sizing: border-box;
-              padding-top: 30px;
-              padding-right: 10px;
-
-              p{
-                float:right;
-                margin: 0;
-                text-align: left;
-              }
-            }
-          }
-
-          .bottom{
-            background-color: pink;
-            height: 33%;
-            width: 100%;
-            padding: 0;
-
-            .photo{
-              float:left;
-              background-color: blue;
-              height: 100%;
-              width: 30%;
-              padding: 0;
-
-              box-sizing: border-box;
-              padding-top: 10px;
-              padding-left: 10px;
-
-              img{
-                width: 50px;
-                height: auto;
-              }
-            }
-
-            .product-info{
-              float:left;
-              background-color: red;
-              height: 100%;
-              width: 50%;
-              padding: 0;
-
-              .product-name{
-                height: 33%;
-                width: 100%;
-                background-color: purple;
-                margin: 0;
-              }
-
-              .product-description{
-                height: 33%;
-                width: 100%;
-                background-color: black;
-                margin: 0;
-                font-size: 0.8em;
-              }
-
-              .interactive-buttons{
-                box-sizing: border-box;
-                background-color: yellow;
-                height: 34%;
-                width: 100%;
-
-                .button-votes{
-                  float:left;
-                  box-sizing: border-box;
-                  background-color: red;
-                  height: 100%;
-                  width: 50%;
-
-                  box-sizing: border-box;
-                  padding-top: 10px;
-                  padding-left: 10px;
-
-                  img{
-                    float:left;
-                    width: 20px;
-                    height: auto;
-                  }
-
-                  p{
-                    float:left;
-                    margin: 0;
-                    text-align: left;
-                  }
-
-
-                }
-
-                .button-comments{
-                  float:left;
-                  box-sizing: border-box;
-                  background-color: red;
-                  height:100%;
-                  width: 50%;
-
-                  box-sizing: border-box;
-                  padding-top: 10px;
-                  padding-left: 10px;
-
-                  img{
-                    float:left;
-                    width: 15px;
-                    height: auto;
-                  }
-
-                  p{
-                    float:left;
-                    margin: 0;
-                    text-align: left;
-                  }
-                }
-              }
-            }
-
-            .phone{
-              float:right;
-              background-color: green;
-              height: 100%;
-              width: 20%;
-              padding: 0;
-
-              box-sizing: border-box;
-              padding-top: 30px;
-              padding-right: 10px;
-
-              p{
-                float:right;
-                margin: 0;
-                text-align: left;
-              }
-            }
-          }
-        }
-      }
-    }
-
-    .section-right{
-      float:right;
-      background-color: darkblue;
-      width: 20%;
-      height: 80%;
-      padding: 0;
-
-      .top{
-        background-color: yellow;
-        height: 20%;
-        width: 100%;
-
-        header{
-
-          background-color: pink;
-          height: 20%;
-          width: 100%;
-
-          .text{
-            float:left;
-            height: 100%;
-            width: 80%;
-            background-color: black;
-            margin: 0;
-          }
-
-          .cross{
-            float:right;
-            height: 100%;
-            width: 20%;
-            background-color: darkblue;
-          }
-        }
-
-        article{
-          height: 80%;
-          width: 100%;
-          background-color: purple;
-
-
-          .text{
-            background-color: yellow;
-            height: 40%;
-            width: 100%;
-            margin: 0;
-          }
-
-          .button{
-            box-sizing: border-box;
-            background-color: red;
-            height: 60%;
-            width: 100%;
-          }
-        }
-      }
-
-      .middle{
-        background-color: orange;
-        height: 60%;
-        width: 100%;
-
-        header{
-
-          background-color: pink;
-          height: 20%;
-          width: 100%;
-
-          .text{
-            float:left;
-            height: 100%;
-            width: 100%;
-            background-color: black;
-            margin: 0;
-          }
-        }
-
-        article{
-          height: 60%;
-          width: 100%;
-          background-color: purple;
-
-          .top{
-            background-color: yellow;
-            height: 33%;
-            width: 100%;
-            padding: 0;
-
-            .photo{
-              float:left;
-              background-color: blue;
-              height: 100%;
-              width: 50%;
-              padding: 0;
-            }
-
-            .user-info{
-              float:left;
-              background-color: green;
-              height: 100%;
-              width: 50%;
-              padding: 0;
-
-              .user-name{
-                height: 33%;
-                width: 100%;
-                background-color: purple;
-                margin: 0;
-              }
-
-              .user{
-                height: 33%;
-                width: 100%;
-                background-color: black;
-                margin: 0;
-              }
-
-              .button{
-                box-sizing: border-box;
-                background-color: yellow;
-                height: 34%;
-                width: 100%;
-              }
-            }
-          }
-
-          .middle{
-            background-color: red;
-            height: 34%;
-            width: 100%;
-            padding: 0;
-
-            .photo{
-              float:left;
-              background-color: green;
-              height: 100%;
-              width: 50%;
-              padding: 0;
-            }
-
-            .user-info{
-              float:left;
-              background-color: green;
-              height: 100%;
-              width: 50%;
-              padding: 0;
-
-              .user-name{
-                height: 33%;
-                width: 100%;
-                background-color: purple;
-                margin: 0;
-              }
-
-              .user{
-                height: 33%;
-                width: 100%;
-                background-color: black;
-                margin: 0;
-              }
-
-              .button{
-                box-sizing: border-box;
-                background-color: yellow;
-                height: 34%;
-                width: 100%;
-              }
-            }
-          }
-
-          .bottom{
-            background-color: pink;
-            height: 33%;
-            width: 100%;
-            padding: 0;
-
-            .photo{
-              float:left;
-              background-color: blue;
-              height: 100%;
-              width: 50%;
-              padding: 0;
-            }
-
-            .user-info{
-              float:left;
-              background-color: green;
-              height: 100%;
-              width: 50%;
-              padding: 0;
-
-              .user-name{
-                height: 33%;
-                width: 100%;
-                background-color: purple;
-                margin: 0;
-              }
-
-              .user{
-                height: 33%;
-                width: 100%;
-                background-color: black;
-                margin: 0;
-              }
-
-              .button{
-                box-sizing: border-box;
-                background-color: yellow;
-                height: 34%;
-                width: 100%;
-              }
-            }
-          }
-        }
-
-        footer{
-          height: 20%;
-          width: 100%;
-          background-color: black;
-        }
-      }
-
-      .bottom{
-        background-color: pink;
-        height: 20%;
-        width: 100%;
-
-        header{
-
-          background-color: pink;
-          height: 40%;
-          width: 100%;
-
-          .title{
-            float:left;
-            height: 50%;
-            width: 50%;
-            background-color: green;
-            margin: 0;
-          }
-
-          .text{
-            float:left;
-            height: 50%;
-            width: 50%;
-            background-color: red;
-            margin: 0;
-          }
-
-          .user{
-            clear:left;
-            height: 50%;
-            width: 100%;
-            background-color: yellow;
-            margin: 0;
-          }
-        }
-
-        article{
-          height: 60%;
-          width: 100%;
-          background-color: purple;
-
-          .photo{
-            float:left;
-            background-color: blue;
-            height: 40%;
-            width: 50%;
-            padding: 0;
-          }
-
-          .user-info{
-            float:left;
-            background-color: red;
-            height: 40%;
-            width: 50%;
-            padding: 0;
-
-            .user-name{
-              height: 50%;
-              width: 100%;
-              background-color: green;
-              margin: 0;
-            }
-
-            .user{
-              height: 50%;
-              width: 100%;
-              background-color: black;
-              margin: 0;
-            }
-
-          }
-
-          .content{
-            clear:left;
-            background-color: pink;
-            height: 60%;
-            width: 100%;
-            padding: 0;
-          }
-        }
-      }
-    }
-  }
-}
-
-@media (min-width: 650px) and (max-width: 999px){
-
-  //Header
-  main header{
-    display: block;
-    width: 100%;
-    height: 200px;
-
-    .header-top{
-      box-sizing: border-box;
-      background-color: red;
-      height: 50%;
-      width: 100%;
-      overflow: auto;
-
-      .section-left{
-        float: left;
-        width: 25%;
-        height: 100%;
-        background-color: purple;
-        padding-top: 30px;
-        padding-left: 10px;
-
-        img{
-          width: 50px;
-          height: auto;
-        }
-      }
-
-      .section-middle{
-        float: left;
-        width: 50%;
-        height: 100%;
-        padding-top: 50px;
-        padding-left: 0px;
-        background-color: black;
-
-        img{
-          float:left;
-          width: 15px;
-          height: auto;
-        }
-
-        input{
-          float:left;
-          overflow: hidden;
-        }
-      }
-
-      .section-right{
-        float: left;
-        width: 25%;
-        height: 100%;
-        padding: 0;
-        background-color: pink;
-        padding-top: 50px;
-        padding-left: 0px;
-
-        p{
-          margin: 0;
-          text-align: left;
-        }
-      }
-    }
-
-    .header-bottom{
-      box-sizing: border-box;
-      background-color: blue;
-      height: 50%;
-      width: 100%;
-
-      .section-left{
-        float: left;
-        width: 80%;
-        height: 100%;
-        padding-top: 50px;
-        padding-left: 10px;
-        background-color: darkgreen;
-
-        ul{
-          width: 100%;
-          height: 30%;
-          list-style-type: none;
-          overflow: hidden;
-          padding-left: 0px;
-          margin: 0;
-
-          li {
-          display: inline-block;
-          color: grey;
-          padding-right: 10px;
-
-            a {
-                color: #1A1A1A;
-            }
-          }
-        }
-      }
-
-      .section-right{
-        float: left;
-        width: 20%;
-        height: 100%;
-        padding: 0;
-        background-color: green;
-        padding-top: 50px;
-        padding-left: 0px;
-
-        .arror-prev{
-          float:left;
-          width: 50px;
-          height: auto;
-        }
-
-        .arror-next{
-          float:left;
-          width: 50px;
-          height: auto;
-        }
-      }
-    }
-  }
-
-  //Section
-    main section{
+    section{
       box-sizing: border-box;
       display: block;
       width: 100%;
@@ -1538,135 +148,24 @@ main{
       header{
       box-sizing: border-box;
       display: block;
-      background-color: red;
+      //background-color: red;
       height: 10%;
       width: 100%;
       overflow: auto;
+      background-color: white;
 
       .header-left{
         box-sizing: border-box;
         float: left;
         height: 100%;
         width: 95%;
-        background-color: yellow;
-
-        .header-text{
-          height: 50%;
-          width: 100%;
-          background-color: orange;
-          margin: 0;
-
-          box-sizing: border-box;
-          padding-top: 10px;
-          padding-left: 10px;
-
-          h3{
-            float:left;
-            margin: 0;
-            height: 100%;
-            width: 50%;
-            text-align: left;
-            font-size: 0.9em;
-          }
-
-          p{
-            float:left;
-            height: 100%;
-            width: 50%;
-            margin: 0;
-            text-align: left;
-            font-size: 0.7em;
-          }
-
-        }
-
-        .header-input{
-          float:left;
-          height: 50%;
-          width: 50%;
-          background-color: purple;
-
-          box-sizing: border-box;
-          padding-top: 10px;
-          padding-left: 10px;
-
-          input{
-            float:left;
-            overflow: hidden;
-          }
-        }
-
-        .header-button{
-          float:left;
-          height: 50%;
-          width: 50%;
-          background-color: blue;
-
-          box-sizing: border-box;
-          padding-top: 5px;
-          padding-left: 20px;
-
-          button{
-            float:left;
-            box-sizing: border-box;
-            background-color: red;
-            height:100%;
-            width: 50%;
-
-            box-sizing: border-box;
-            padding-top: 2px;
-            padding-left: 10px;
-
-            p{
-              float:left;
-              margin: 0;
-              text-align: left;
-            }
-          }
-        }
-
-      }
-
-      .header-right{
-        box-sizing: border-box;
-        float:right;
-        height: 100%;
-        width: 5%;
-        background-color: black;
-
-        box-sizing: border-box;
-        padding-top: 25px;
-        padding-right: 10px;
-
-        img{
-          float: right;
-          width: 15px;
-          height: auto;
-        }
-      }
-
-    }
-
-      header{
-      box-sizing: border-box;
-      display: block;
-      background-color: red;
-      height: 10%;
-      width: 100%;
-      overflow: auto;
-
-      .header-left{
-        box-sizing: border-box;
-        float: left;
-        height: 100%;
-        width: 95%;
-        background-color: yellow;
+        //background-color: yellow;
 
         .header-text{
           float: left;
           height: 100%;
           width: 50%;
-          background-color: orange;
+          //background-color: orange;
           margin: 0;
 
           box-sizing: border-box;
@@ -1690,21 +189,19 @@ main{
             text-align: left;
             font-size: 0.7em;
           }
-
         }
 
         .header-input{
           float:left;
           height: 100%;
           width: 25%;
-          background-color: purple;
+          //background-color: purple;
 
           box-sizing: border-box;
           padding-top: 10px;
           padding-left: 10px;
 
           input{
-            float:left;
             overflow: hidden;
           }
         }
@@ -1713,7 +210,7 @@ main{
           float:left;
           height: 100%;
           width: 25%;
-          background-color: blue;
+          //background-color: blue;
 
           box-sizing: border-box;
           padding-top: 5px;
@@ -1722,9 +219,8 @@ main{
           padding-bottom: 10px;
 
           button{
-            float:left;
             box-sizing: border-box;
-            background-color: red;
+            //background-color: red;
             height:100%;
             width: 100%;
 
@@ -1733,13 +229,11 @@ main{
             padding-left: 10px;
 
             p{
-              float:left;
               margin: 0;
               text-align: left;
             }
           }
         }
-
       }
 
       .header-right{
@@ -1747,7 +241,7 @@ main{
         float:right;
         height: 100%;
         width: 5%;
-        background-color: black;
+        //background-color: black;
 
         box-sizing: border-box;
         padding-top: 25px;
@@ -1760,2094 +254,24 @@ main{
         }
       }
     }
-
-    .section-left{
-      float:left;
-      background-color: darkred;
-      width: 100%;
-      height: 80%;
-      padding: 0;
-
-      .weekly{
-        background-color: black;
-        height: 50%;
-        width: 100%;
-
-        header{
-          //box-sizing: border-box;
-          display: block;
-          background-color: pink;
-          height: 20%;
-          width: 100%;
-          //overflow: auto;
-
-          .text{
-            float:left;
-            height: 100%;
-            width: 80%;
-            background-color: black;
-            margin: 0;
-
-            text-align: left;
-            box-sizing: border-box;
-            padding-top: 25px;
-            padding-left: 10px;
-          }
-
-          .cross{
-            float:right;
-            height: 100%;
-            width: 20%;
-            background-color: darkblue;
-
-            box-sizing: border-box;
-            padding-top: 25px;
-            padding-right: 10px;
-
-            img{
-              float: right;
-              width: 15px;
-              height: auto;
-            }
-          }
-        }
-
-        article{
-          height: 80%;
-          width: 100%;
-          background-color: purple;
-
-          .top{
-            background-color: yellow;
-            height: 33%;
-            width: 100%;
-            padding: 0;
-
-            .photo{
-              float:left;
-              background-color: blue;
-              height: 100%;
-              width: 30%;
-              padding: 0;
-
-              box-sizing: border-box;
-              padding-top: 10px;
-              padding-left: 10px;
-
-              img{
-                width: 50px;
-                height: auto;
-              }
-            }
-
-            .product-info{
-              float:left;
-              background-color: red;
-              height: 100%;
-              width: 50%;
-              padding: 0;
-
-              .product-name{
-                height: 33%;
-                width: 100%;
-                background-color: purple;
-                margin: 0;
-              }
-
-              .product-description{
-                height: 33%;
-                width: 100%;
-                background-color: black;
-                margin: 0;
-
-                font-size: 0.8em;
-              }
-
-              .interactive-buttons{
-                box-sizing: border-box;
-                background-color: yellow;
-                height: 34%;
-                width: 100%;
-
-                .button-votes{
-                  float:left;
-                  box-sizing: border-box;
-                  background-color: red;
-                  height: 100%;
-                  width: 50%;
-
-                  box-sizing: border-box;
-                  padding-top: 10px;
-                  padding-left: 10px;
-
-                  img{
-                    float:left;
-                    width: 20px;
-                    height: auto;
-                  }
-
-                  p{
-                    float:left;
-                    margin: 0;
-                    text-align: left;
-                  }
-
-
-                }
-
-                .button-comments{
-                  float:left;
-                  box-sizing: border-box;
-                  background-color: red;
-                  height:100%;
-                  width: 50%;
-
-                  box-sizing: border-box;
-                  padding-top: 10px;
-                  padding-left: 10px;
-
-                  img{
-                    float:left;
-                    width: 15px;
-                    height: auto;
-                  }
-
-                  p{
-                    float:left;
-                    margin: 0;
-                    text-align: left;
-                  }
-                }
-              }
-            }
-
-            .phone{
-              float:right;
-              background-color: green;
-              height: 100%;
-              width: 20%;
-              padding: 0;
-
-              box-sizing: border-box;
-              padding-top: 30px;
-              padding-right: 10px;
-
-              p{
-                float:right;
-                margin: 0;
-                text-align: left;
-              }
-            }
-          }
-
-          .middle{
-            background-color: orange;
-            height: 34%;
-            width: 100%;
-            padding: 0;
-
-            .photo{
-              float:left;
-              background-color: green;
-              height: 100%;
-              width: 30%;
-              padding: 0;
-
-              box-sizing: border-box;
-              padding-top: 10px;
-              padding-left: 10px;
-
-              img{
-                width: 50px;
-                height: auto;
-              }
-            }
-
-            .product-info{
-              float:left;
-              background-color: red;
-              height: 100%;
-              width: 50%;
-              padding: 0;
-
-              .product-name{
-                height: 33%;
-                width: 100%;
-                background-color: purple;
-                margin: 0;
-              }
-
-              .product-description{
-                height: 33%;
-                width: 100%;
-                background-color: black;
-                margin: 0;
-                font-size: 0.8em;
-              }
-
-              .interactive-buttons{
-                box-sizing: border-box;
-                background-color: yellow;
-                height: 34%;
-                width: 100%;
-
-                .button-votes{
-                  float:left;
-                  box-sizing: border-box;
-                  background-color: red;
-                  height: 100%;
-                  width: 50%;
-
-                  box-sizing: border-box;
-                  padding-top: 10px;
-                  padding-left: 10px;
-
-                  img{
-                    float:left;
-                    width: 20px;
-                    height: auto;
-                  }
-
-                  p{
-                    float:left;
-                    margin: 0;
-                    text-align: left;
-                  }
-                }
-
-                .button-comments{
-                  float:left;
-                  box-sizing: border-box;
-                  background-color: red;
-                  height:100%;
-                  width: 50%;
-
-                  box-sizing: border-box;
-                  padding-top: 10px;
-                  padding-left: 10px;
-
-                  img{
-                    float:left;
-                    width: 15px;
-                    height: auto;
-                  }
-
-                  p{
-                    float:left;
-                    margin: 0;
-                    text-align: left;
-                  }
-                }
-              }
-            }
-
-            .phone{
-              float:right;
-              background-color: blue;
-              height: 100%;
-              width: 20%;
-              padding: 0;
-
-              box-sizing: border-box;
-              padding-top: 30px;
-              padding-right: 10px;
-
-              p{
-                float:right;
-                margin: 0;
-                text-align: left;
-              }
-            }
-          }
-
-          .bottom{
-            background-color: pink;
-            height: 33%;
-            width: 100%;
-            padding: 0;
-
-            .photo{
-              float:left;
-              background-color: blue;
-              height: 100%;
-              width: 30%;
-              padding: 0;
-
-              box-sizing: border-box;
-              padding-top: 10px;
-              padding-left: 10px;
-
-              img{
-                width: 50px;
-                height: auto;
-              }
-            }
-
-            .product-info{
-              float:left;
-              background-color: red;
-              height: 100%;
-              width: 50%;
-              padding: 0;
-
-              .product-name{
-                height: 33%;
-                width: 100%;
-                background-color: purple;
-                margin: 0;
-              }
-
-              .product-description{
-                height: 33%;
-                width: 100%;
-                background-color: black;
-                margin: 0;
-                font-size: 0.8em;
-              }
-
-              .interactive-buttons{
-                box-sizing: border-box;
-                background-color: yellow;
-                height: 34%;
-                width: 100%;
-
-                .button-votes{
-                  float:left;
-                  box-sizing: border-box;
-                  background-color: red;
-                  height: 100%;
-                  width: 50%;
-
-                  box-sizing: border-box;
-                  padding-top: 10px;
-                  padding-left: 10px;
-
-                  img{
-                    float:left;
-                    width: 20px;
-                    height: auto;
-                  }
-
-                  p{
-                    float:left;
-                    margin: 0;
-                    text-align: left;
-                  }
-                }
-
-                .button-comments{
-                  float:left;
-                  box-sizing: border-box;
-                  background-color: red;
-                  height:100%;
-                  width: 50%;
-
-                  box-sizing: border-box;
-                  padding-top: 10px;
-                  padding-left: 10px;
-
-                  img{
-                    float:left;
-                    width: 15px;
-                    height: auto;
-                  }
-
-                  p{
-                    float:left;
-                    margin: 0;
-                    text-align: left;
-                  }
-                }
-              }
-            }
-
-            .phone{
-              float:right;
-              background-color: green;
-              height: 100%;
-              width: 20%;
-              padding: 0;
-
-              box-sizing: border-box;
-              padding-top: 30px;
-              padding-right: 10px;
-
-              p{
-                float:right;
-                margin: 0;
-                text-align: left;
-              }
-            }
-          }
-        }
-      }
-
-      .today{
-        background-color: black;
-        height: 50%;
-        width: 100%;
-
-        header{
-          //box-sizing: border-box;
-          display: block;
-          background-color: pink;
-          height: 20%;
-          width: 100%;
-          //overflow: auto;
-
-          .text{
-            float:left;
-            height: 100%;
-            width: 80%;
-            background-color: black;
-            margin: 0;
-
-            text-align: left;
-            box-sizing: border-box;
-            padding-top: 25px;
-            padding-left: 10px;
-          }
-
-          .cross{
-            float:right;
-            height: 100%;
-            width: 20%;
-            background-color: darkblue;
-
-            box-sizing: border-box;
-            padding-top: 25px;
-            padding-right: 10px;
-
-            img{
-              float: right;
-              width: 15px;
-              height: auto;
-            }
-          }
-        }
-
-        article{
-          height: 80%;
-          width: 100%;
-          background-color: purple;
-
-          .top{
-            background-color: yellow;
-            height: 33%;
-            width: 100%;
-            padding: 0;
-
-            .photo{
-              float:left;
-              background-color: blue;
-              height: 100%;
-              width: 30%;
-              padding: 0;
-
-              box-sizing: border-box;
-              padding-top: 10px;
-              padding-left: 10px;
-
-              img{
-                width: 50px;
-                height: auto;
-              }
-            }
-
-            .product-info{
-              float:left;
-              background-color: red;
-              height: 100%;
-              width: 50%;
-              padding: 0;
-
-              .product-name{
-                height: 33%;
-                width: 100%;
-                background-color: purple;
-                margin: 0;
-              }
-
-              .product-description{
-                height: 33%;
-                width: 100%;
-                background-color: black;
-                margin: 0;
-                font-size: 0.8em;
-              }
-
-              .interactive-buttons{
-                box-sizing: border-box;
-                background-color: yellow;
-                height: 34%;
-                width: 100%;
-
-                .button-votes{
-                  float:left;
-                  box-sizing: border-box;
-                  background-color: red;
-                  height: 100%;
-                  width: 50%;
-
-                  box-sizing: border-box;
-                  padding-top: 10px;
-                  padding-left: 10px;
-
-                  img{
-                    float:left;
-                    width: 20px;
-                    height: auto;
-                  }
-
-                  p{
-                    float:left;
-                    margin: 0;
-                    text-align: left;
-                  }
-                }
-
-                .button-comments{
-                  float:left;
-                  box-sizing: border-box;
-                  background-color: red;
-                  height:100%;
-                  width: 50%;
-
-                  box-sizing: border-box;
-                  padding-top: 10px;
-                  padding-left: 10px;
-
-                  img{
-                    float:left;
-                    width: 15px;
-                    height: auto;
-                  }
-
-                  p{
-                    float:left;
-                    margin: 0;
-                    text-align: left;
-                  }
-                }
-              }
-            }
-
-            .phone{
-              float:right;
-              background-color: green;
-              height: 100%;
-              width: 20%;
-              padding: 0;
-
-              box-sizing: border-box;
-              padding-top: 30px;
-              padding-right: 10px;
-
-              p{
-                float:right;
-                margin: 0;
-                text-align: left;
-              }
-            }
-          }
-
-          .middle{
-            background-color: orange;
-            height: 34%;
-            width: 100%;
-            padding: 0;
-
-            .photo{
-              float:left;
-              background-color: green;
-              height: 100%;
-              width: 30%;
-              padding: 0;
-
-              box-sizing: border-box;
-              padding-top: 10px;
-              padding-left: 10px;
-
-              img{
-                width: 50px;
-                height: auto;
-              }
-            }
-
-            .product-info{
-              float:left;
-              background-color: red;
-              height: 100%;
-              width: 50%;
-              padding: 0;
-
-              .product-name{
-                height: 33%;
-                width: 100%;
-                background-color: purple;
-                margin: 0;
-              }
-
-              .product-description{
-                height: 33%;
-                width: 100%;
-                background-color: black;
-                margin: 0;
-                font-size: 0.8em;
-
-              }
-
-              .interactive-buttons{
-                box-sizing: border-box;
-                background-color: yellow;
-                height: 34%;
-                width: 100%;
-
-                .button-votes{
-                  float:left;
-                  box-sizing: border-box;
-                  background-color: red;
-                  height: 100%;
-                  width: 50%;
-
-                  box-sizing: border-box;
-                  padding-top: 10px;
-                  padding-left: 10px;
-
-                  img{
-                    float:left;
-                    width: 20px;
-                    height: auto;
-                  }
-
-                  p{
-                    float:left;
-                    margin: 0;
-                    text-align: left;
-                  }
-                }
-
-                .button-comments{
-                  float:left;
-                  box-sizing: border-box;
-                  background-color: red;
-                  height:100%;
-                  width: 50%;
-
-                  box-sizing: border-box;
-                  padding-top: 10px;
-                  padding-left: 10px;
-
-                  img{
-                    float:left;
-                    width: 15px;
-                    height: auto;
-                  }
-
-                  p{
-                    float:left;
-                    margin: 0;
-                    text-align: left;
-                  }
-                }
-              }
-            }
-
-            .phone{
-              float:right;
-              background-color: blue;
-              height: 100%;
-              width: 20%;
-              padding: 0;
-
-              box-sizing: border-box;
-              padding-top: 30px;
-              padding-right: 10px;
-
-              p{
-                float:right;
-                margin: 0;
-                text-align: left;
-              }
-            }
-          }
-
-          .bottom{
-            background-color: pink;
-            height: 33%;
-            width: 100%;
-            padding: 0;
-
-            .photo{
-              float:left;
-              background-color: blue;
-              height: 100%;
-              width: 30%;
-              padding: 0;
-
-              box-sizing: border-box;
-              padding-top: 10px;
-              padding-left: 10px;
-
-              img{
-                width: 50px;
-                height: auto;
-              }
-            }
-
-            .product-info{
-              float:left;
-              background-color: red;
-              height: 100%;
-              width: 50%;
-              padding: 0;
-
-              .product-name{
-                height: 33%;
-                width: 100%;
-                background-color: purple;
-                margin: 0;
-              }
-
-              .product-description{
-                height: 33%;
-                width: 100%;
-                background-color: black;
-                margin: 0;
-                font-size: 0.8em;
-              }
-
-              .interactive-buttons{
-                box-sizing: border-box;
-                background-color: yellow;
-                height: 34%;
-                width: 100%;
-
-                .button-votes{
-                  float:left;
-                  box-sizing: border-box;
-                  background-color: red;
-                  height: 100%;
-                  width: 50%;
-
-                  box-sizing: border-box;
-                  padding-top: 10px;
-                  padding-left: 10px;
-
-                  img{
-                    float:left;
-                    width: 20px;
-                    height: auto;
-                  }
-
-                  p{
-                    float:left;
-                    margin: 0;
-                    text-align: left;
-                  }
-                }
-
-                .button-comments{
-                  float:left;
-                  box-sizing: border-box;
-                  background-color: red;
-                  height:100%;
-                  width: 50%;
-
-                  box-sizing: border-box;
-                  padding-top: 10px;
-                  padding-left: 10px;
-
-                  img{
-                    float:left;
-                    width: 15px;
-                    height: auto;
-                  }
-
-                  p{
-                    float:left;
-                    margin: 0;
-                    text-align: left;
-                  }
-                }
-              }
-            }
-
-            .phone{
-              float:right;
-              background-color: green;
-              height: 100%;
-              width: 20%;
-              padding: 0;
-
-              box-sizing: border-box;
-              padding-top: 30px;
-              padding-right: 10px;
-
-              p{
-                float:right;
-                margin: 0;
-                text-align: left;
-              }
-            }
-          }
-        }
-      }
-    }
-
-      .section-right{
-        display: none;
-      }
-    }
-}
-
-@media (min-width: 480px) and (max-width: 649px){
-
-  //Header
-  main header{
-    display: block;
-    width: 100%;
-    height: 200px;
-
-    .header-top{
-      box-sizing: border-box;
-      background-color: red;
-      height: 50%;
-      width: 100%;
-      overflow: auto;
-
-      .section-left{
-        float: left;
-        width: 25%;
-        height: 100%;
-        background-color: purple;
-        padding-top: 30px;
-        padding-left: 10px;
-
-        img{
-          width: 50px;
-          height: auto;
-        }
-      }
-
-      .section-middle{
-        float: left;
-        width: 50%;
-        height: 100%;
-        background-color: black;
-
-        padding-top: 50px;
-        padding-left: 0px;
-
-        img{
-          float:left;
-          width: 15px;
-          height: auto;
-        }
-
-        input{
-          float:left;
-          overflow: hidden;
-        }
-      }
-
-      .section-right{
-        float: left;
-        width: 25%;
-        height: 100%;
-        padding: 0;
-        background-color: pink;
-        padding-top: 50px;
-        padding-left: 0px;
-
-        p{
-          margin: 0;
-          text-align: left;
-        }
-      }
-    }
-
-    .header-bottom{
-      box-sizing: border-box;
-      background-color: blue;
-      height: 50%;
-      width: 100%;
-
-      .section-left{
-        float: left;
-        width: 80%;
-        height: 100%;
-        padding-top: 50px;
-        padding-left: 10px;
-        background-color: darkgreen;
-
-        ul{
-          width: 100%;
-          height: 30%;
-          list-style-type: none;
-          overflow: hidden;
-          padding-left: 0px;
-          margin: 0;
-
-          li {
-          display: inline-block;
-          color: grey;
-          padding-right: 10px;
-
-            a {
-                color: #1A1A1A;
-            }
-          }
-        }
-      }
-
-      .section-right{
-        float: left;
-        width: 20%;
-        height: 100%;
-        padding: 0;
-        background-color: green;
-        padding-top: 50px;
-        padding-left: 0px;
-
-        .arror-prev{
-          float:left;
-          width: 50px;
-          height: auto;
-        }
-
-        .arror-next{
-          float:left;
-          width: 50px;
-          height: auto;
-        }
-      }
-    }
-  }
-
-  //Section
-    main section{
-      box-sizing: border-box;
-      display: block;
-      width: 100%;
-      height: 750px;
-      padding: 10% /*top*/ 10% /*right*/ 0 /*bottom*/  10%; /*left*/;
-
-      header{
-      box-sizing: border-box;
-      display: block;
-      background-color: red;
-      height: 10%;
-      width: 100%;
-      overflow: auto;
-
-      .header-left{
-        box-sizing: border-box;
-        float: left;
-        height: 100%;
-        width: 95%;
-        background-color: yellow;
-
-        .header-text{
-          height: 50%;
-          width: 100%;
-          background-color: orange;
-          margin: 0;
-
-          box-sizing: border-box;
-          padding-top: 10px;
-          padding-left: 10px;
-
-          h3{
-            float:left;
-            margin: 0;
-            height: 100%;
-            width: 50%;
-            text-align: left;
-            font-size: 0.9em;
-          }
-
-          p{
-            float:left;
-            height: 100%;
-            width: 50%;
-            margin: 0;
-            text-align: left;
-            font-size: 0.7em;
-          }
-
-        }
-
-        .header-input{
-          float:left;
-          height: 50%;
-          width: 50%;
-          background-color: purple;
-
-          box-sizing: border-box;
-          padding-top: 10px;
-          padding-left: 10px;
-
-          input{
-            float:left;
-            overflow: hidden;
-          }
-
-        }
-
-        .header-button{
-          float:left;
-          height: 50%;
-          width: 50%;
-          background-color: blue;
-
-          box-sizing: border-box;
-          padding-top: 5px;
-          padding-left: 20px;
-
-          button{
-            float:left;
-            box-sizing: border-box;
-            background-color: red;
-            height:100%;
-            width: 50%;
-
-            box-sizing: border-box;
-            padding-top: 2px;
-            padding-left: 10px;
-
-            p{
-              float:left;
-              margin: 0;
-              text-align: left;
-            }
-          }
-
-        }
-
-      }
-
-      .header-right{
-        box-sizing: border-box;
-        float:right;
-        height: 100%;
-        width: 5%;
-        background-color: black;
-
-        box-sizing: border-box;
-        padding-top: 25px;
-        padding-right: 10px;
-
-        img{
-          float: right;
-          width: 15px;
-          height: auto;
-        }
-      }
-
-    }
-
-    .section-left{
-      float:left;
-      background-color: darkred;
-      width: 100%;
-      height: 80%;
-      padding: 0;
-
-      .weekly{
-        background-color: black;
-        height: 50%;
-        width: 100%;
-
-        header{
-          //box-sizing: border-box;
-          display: block;
-          background-color: pink;
-          height: 20%;
-          width: 100%;
-          //overflow: auto;
-
-          .text{
-            float:left;
-            height: 100%;
-            width: 80%;
-            background-color: black;
-            margin: 0;
-
-            text-align: left;
-            box-sizing: border-box;
-            padding-top: 25px;
-            padding-left: 10px;
-          }
-
-          .cross{
-            float:right;
-            height: 100%;
-            width: 20%;
-            background-color: darkblue;
-
-            box-sizing: border-box;
-            padding-top: 25px;
-            padding-right: 10px;
-
-            img{
-              float: right;
-              width: 15px;
-              height: auto;
-            }
-          }
-        }
-
-        article{
-          height: 80%;
-          width: 100%;
-          background-color: purple;
-
-          .top{
-            background-color: yellow;
-            height: 33%;
-            width: 100%;
-            padding: 0;
-
-            .photo{
-              float:left;
-              background-color: blue;
-              height: 100%;
-              width: 30%;
-              padding: 0;
-
-              box-sizing: border-box;
-              padding-top: 10px;
-              padding-left: 10px;
-
-              img{
-                width: 50px;
-                height: auto;
-              }
-            }
-
-            .product-info{
-              float:left;
-              background-color: red;
-              height: 100%;
-              width: 50%;
-              padding: 0;
-
-              .product-name{
-                height: 33%;
-                width: 100%;
-                background-color: purple;
-                margin: 0;
-              }
-
-              .product-description{
-                height: 33%;
-                width: 100%;
-                background-color: black;
-                margin: 0;
-
-                font-size: 0.8em;
-              }
-
-              .interactive-buttons{
-                box-sizing: border-box;
-                background-color: yellow;
-                height: 34%;
-                width: 100%;
-
-                .button-votes{
-                  float:left;
-                  box-sizing: border-box;
-                  background-color: red;
-                  height: 100%;
-                  width: 50%;
-
-                  box-sizing: border-box;
-                  padding-top: 10px;
-                  padding-left: 10px;
-
-                  img{
-                    float:left;
-                    width: 20px;
-                    height: auto;
-                  }
-
-                  p{
-                    float:left;
-                    margin: 0;
-                    text-align: left;
-                  }
-
-
-                }
-
-                .button-comments{
-                  float:left;
-                  box-sizing: border-box;
-                  background-color: red;
-                  height:100%;
-                  width: 50%;
-
-                  box-sizing: border-box;
-                  padding-top: 10px;
-                  padding-left: 10px;
-
-                  img{
-                    float:left;
-                    width: 15px;
-                    height: auto;
-                  }
-
-                  p{
-                    float:left;
-                    margin: 0;
-                    text-align: left;
-                  }
-                }
-              }
-            }
-
-            .phone{
-              float:right;
-              background-color: green;
-              height: 100%;
-              width: 20%;
-              padding: 0;
-
-              box-sizing: border-box;
-              padding-top: 30px;
-              padding-right: 10px;
-
-              p{
-                float:right;
-                margin: 0;
-                text-align: left;
-              }
-            }
-          }
-
-          .middle{
-            background-color: orange;
-            height: 34%;
-            width: 100%;
-            padding: 0;
-
-            .photo{
-              float:left;
-              background-color: green;
-              height: 100%;
-              width: 30%;
-              padding: 0;
-
-              box-sizing: border-box;
-              padding-top: 10px;
-              padding-left: 10px;
-
-              img{
-                width: 50px;
-                height: auto;
-              }
-            }
-
-            .product-info{
-              float:left;
-              background-color: red;
-              height: 100%;
-              width: 50%;
-              padding: 0;
-
-              .product-name{
-                height: 33%;
-                width: 100%;
-                background-color: purple;
-                margin: 0;
-              }
-
-              .product-description{
-                height: 33%;
-                width: 100%;
-                background-color: black;
-                margin: 0;
-                font-size: 0.8em;
-              }
-
-              .interactive-buttons{
-                box-sizing: border-box;
-                background-color: yellow;
-                height: 34%;
-                width: 100%;
-
-                .button-votes{
-                  float:left;
-                  box-sizing: border-box;
-                  background-color: red;
-                  height: 100%;
-                  width: 50%;
-
-                  box-sizing: border-box;
-                  padding-top: 10px;
-                  padding-left: 10px;
-
-                  img{
-                    float:left;
-                    width: 20px;
-                    height: auto;
-                  }
-
-                  p{
-                    float:left;
-                    margin: 0;
-                    text-align: left;
-                  }
-
-
-                }
-
-                .button-comments{
-                  float:left;
-                  box-sizing: border-box;
-                  background-color: red;
-                  height:100%;
-                  width: 50%;
-
-                  box-sizing: border-box;
-                  padding-top: 10px;
-                  padding-left: 10px;
-
-                  img{
-                    float:left;
-                    width: 15px;
-                    height: auto;
-                  }
-
-                  p{
-                    float:left;
-                    margin: 0;
-                    text-align: left;
-                  }
-                }
-              }
-            }
-
-            .phone{
-              float:right;
-              background-color: blue;
-              height: 100%;
-              width: 20%;
-              padding: 0;
-
-              box-sizing: border-box;
-              padding-top: 30px;
-              padding-right: 10px;
-
-              p{
-                float:right;
-                margin: 0;
-                text-align: left;
-              }
-            }
-          }
-
-          .bottom{
-            background-color: pink;
-            height: 33%;
-            width: 100%;
-            padding: 0;
-
-            .photo{
-              float:left;
-              background-color: blue;
-              height: 100%;
-              width: 30%;
-              padding: 0;
-
-              box-sizing: border-box;
-              padding-top: 10px;
-              padding-left: 10px;
-
-              img{
-                width: 50px;
-                height: auto;
-              }
-            }
-
-            .product-info{
-              float:left;
-              background-color: red;
-              height: 100%;
-              width: 50%;
-              padding: 0;
-
-              .product-name{
-                height: 33%;
-                width: 100%;
-                background-color: purple;
-                margin: 0;
-              }
-
-              .product-description{
-                height: 33%;
-                width: 100%;
-                background-color: black;
-                margin: 0;
-                font-size: 0.8em;
-              }
-
-              .interactive-buttons{
-                box-sizing: border-box;
-                background-color: yellow;
-                height: 34%;
-                width: 100%;
-
-                .button-votes{
-                  float:left;
-                  box-sizing: border-box;
-                  background-color: red;
-                  height: 100%;
-                  width: 50%;
-
-                  box-sizing: border-box;
-                  padding-top: 10px;
-                  padding-left: 10px;
-
-                  img{
-                    float:left;
-                    width: 20px;
-                    height: auto;
-                  }
-
-                  p{
-                    float:left;
-                    margin: 0;
-                    text-align: left;
-                  }
-
-
-                }
-
-                .button-comments{
-                  float:left;
-                  box-sizing: border-box;
-                  background-color: red;
-                  height:100%;
-                  width: 50%;
-
-                  box-sizing: border-box;
-                  padding-top: 10px;
-                  padding-left: 10px;
-
-                  img{
-                    float:left;
-                    width: 15px;
-                    height: auto;
-                  }
-
-                  p{
-                    float:left;
-                    margin: 0;
-                    text-align: left;
-                  }
-                }
-              }
-            }
-
-            .phone{
-              float:right;
-              background-color: green;
-              height: 100%;
-              width: 20%;
-              padding: 0;
-
-              box-sizing: border-box;
-              padding-top: 30px;
-              padding-right: 10px;
-
-              p{
-                float:right;
-                margin: 0;
-                text-align: left;
-              }
-            }
-          }
-        }
-      }
-
-      .today{
-        background-color: black;
-        height: 50%;
-        width: 100%;
-
-        header{
-          //box-sizing: border-box;
-          display: block;
-          background-color: pink;
-          height: 20%;
-          width: 100%;
-          //overflow: auto;
-
-          .text{
-            float:left;
-            height: 100%;
-            width: 80%;
-            background-color: black;
-            margin: 0;
-
-            text-align: left;
-            box-sizing: border-box;
-            padding-top: 25px;
-            padding-left: 10px;
-          }
-
-          .cross{
-            float:right;
-            height: 100%;
-            width: 20%;
-            background-color: darkblue;
-
-            box-sizing: border-box;
-            padding-top: 25px;
-            padding-right: 10px;
-
-            img{
-              float: right;
-              width: 15px;
-              height: auto;
-            }
-          }
-        }
-
-        article{
-          height: 80%;
-          width: 100%;
-          background-color: purple;
-
-          .top{
-            background-color: yellow;
-            height: 33%;
-            width: 100%;
-            padding: 0;
-
-            .photo{
-              float:left;
-              background-color: blue;
-              height: 100%;
-              width: 30%;
-              padding: 0;
-
-              box-sizing: border-box;
-              padding-top: 10px;
-              padding-left: 10px;
-
-              img{
-                width: 50px;
-                height: auto;
-              }
-            }
-
-            .product-info{
-              float:left;
-              background-color: red;
-              height: 100%;
-              width: 50%;
-              padding: 0;
-
-              .product-name{
-                height: 33%;
-                width: 100%;
-                background-color: purple;
-                margin: 0;
-              }
-
-              .product-description{
-                height: 33%;
-                width: 100%;
-                background-color: black;
-                margin: 0;
-                font-size: 0.8em;
-              }
-
-              .interactive-buttons{
-                box-sizing: border-box;
-                background-color: yellow;
-                height: 34%;
-                width: 100%;
-
-                .button-votes{
-                  float:left;
-                  box-sizing: border-box;
-                  background-color: red;
-                  height: 100%;
-                  width: 50%;
-
-                  box-sizing: border-box;
-                  padding-top: 10px;
-                  padding-left: 10px;
-
-                  img{
-                    float:left;
-                    width: 20px;
-                    height: auto;
-                  }
-
-                  p{
-                    float:left;
-                    margin: 0;
-                    text-align: left;
-                  }
-
-
-                }
-
-                .button-comments{
-                  float:left;
-                  box-sizing: border-box;
-                  background-color: red;
-                  height:100%;
-                  width: 50%;
-
-                  box-sizing: border-box;
-                  padding-top: 10px;
-                  padding-left: 10px;
-
-                  img{
-                    float:left;
-                    width: 15px;
-                    height: auto;
-                  }
-
-                  p{
-                    float:left;
-                    margin: 0;
-                    text-align: left;
-                  }
-                }
-              }
-            }
-
-            .phone{
-              float:right;
-              background-color: green;
-              height: 100%;
-              width: 20%;
-              padding: 0;
-
-              box-sizing: border-box;
-              padding-top: 30px;
-              padding-right: 10px;
-
-              p{
-                float:right;
-                margin: 0;
-                text-align: left;
-              }
-            }
-          }
-
-          .middle{
-            background-color: orange;
-            height: 34%;
-            width: 100%;
-            padding: 0;
-
-            .photo{
-              float:left;
-              background-color: green;
-              height: 100%;
-              width: 30%;
-              padding: 0;
-
-              box-sizing: border-box;
-              padding-top: 10px;
-              padding-left: 10px;
-
-              img{
-                width: 50px;
-                height: auto;
-              }
-            }
-
-            .product-info{
-              float:left;
-              background-color: red;
-              height: 100%;
-              width: 50%;
-              padding: 0;
-
-              .product-name{
-                height: 33%;
-                width: 100%;
-                background-color: purple;
-                margin: 0;
-              }
-
-              .product-description{
-                height: 33%;
-                width: 100%;
-                background-color: black;
-                margin: 0;
-                font-size: 0.8em;
-
-              }
-
-              .interactive-buttons{
-                box-sizing: border-box;
-                background-color: yellow;
-                height: 34%;
-                width: 100%;
-
-                .button-votes{
-                  float:left;
-                  box-sizing: border-box;
-                  background-color: red;
-                  height: 100%;
-                  width: 50%;
-
-                  box-sizing: border-box;
-                  padding-top: 10px;
-                  padding-left: 10px;
-
-                  img{
-                    float:left;
-                    width: 20px;
-                    height: auto;
-                  }
-
-                  p{
-                    float:left;
-                    margin: 0;
-                    text-align: left;
-                  }
-
-
-                }
-
-                .button-comments{
-                  float:left;
-                  box-sizing: border-box;
-                  background-color: red;
-                  height:100%;
-                  width: 50%;
-
-                  box-sizing: border-box;
-                  padding-top: 10px;
-                  padding-left: 10px;
-
-                  img{
-                    float:left;
-                    width: 15px;
-                    height: auto;
-                  }
-
-                  p{
-                    float:left;
-                    margin: 0;
-                    text-align: left;
-                  }
-                }
-              }
-            }
-
-            .phone{
-              float:right;
-              background-color: blue;
-              height: 100%;
-              width: 20%;
-              padding: 0;
-
-              box-sizing: border-box;
-              padding-top: 30px;
-              padding-right: 10px;
-
-              p{
-                float:right;
-                margin: 0;
-                text-align: left;
-              }
-            }
-          }
-
-          .bottom{
-            background-color: pink;
-            height: 33%;
-            width: 100%;
-            padding: 0;
-
-            .photo{
-              float:left;
-              background-color: blue;
-              height: 100%;
-              width: 30%;
-              padding: 0;
-
-              box-sizing: border-box;
-              padding-top: 10px;
-              padding-left: 10px;
-
-              img{
-                width: 50px;
-                height: auto;
-              }
-            }
-
-            .product-info{
-              float:left;
-              background-color: red;
-              height: 100%;
-              width: 50%;
-              padding: 0;
-
-              .product-name{
-                height: 33%;
-                width: 100%;
-                background-color: purple;
-                margin: 0;
-              }
-
-              .product-description{
-                height: 33%;
-                width: 100%;
-                background-color: black;
-                margin: 0;
-                font-size: 0.8em;
-              }
-
-              .interactive-buttons{
-                box-sizing: border-box;
-                background-color: yellow;
-                height: 34%;
-                width: 100%;
-
-                .button-votes{
-                  float:left;
-                  box-sizing: border-box;
-                  background-color: red;
-                  height: 100%;
-                  width: 50%;
-
-                  box-sizing: border-box;
-                  padding-top: 10px;
-                  padding-left: 10px;
-
-                  img{
-                    float:left;
-                    width: 20px;
-                    height: auto;
-                  }
-
-                  p{
-                    float:left;
-                    margin: 0;
-                    text-align: left;
-                  }
-
-
-                }
-
-                .button-comments{
-                  float:left;
-                  box-sizing: border-box;
-                  background-color: red;
-                  height:100%;
-                  width: 50%;
-
-                  box-sizing: border-box;
-                  padding-top: 10px;
-                  padding-left: 10px;
-
-                  img{
-                    float:left;
-                    width: 15px;
-                    height: auto;
-                  }
-
-                  p{
-                    float:left;
-                    margin: 0;
-                    text-align: left;
-                  }
-                }
-              }
-            }
-
-            .phone{
-              float:right;
-              background-color: green;
-              height: 100%;
-              width: 20%;
-              padding: 0;
-
-              box-sizing: border-box;
-              padding-top: 30px;
-              padding-right: 10px;
-
-              p{
-                float:right;
-                margin: 0;
-                text-align: left;
-              }
-            }
-          }
-        }
-      }
-    }
-
-      .section-right{
-        display: none;
-      }
-    }
-}
-
-@media (max-width: 479px){
-
-  //Header
-  main header{
-    display: block;
-    width: 100%;
-    height: 200px;
-
-    .header-top{
-      box-sizing: border-box;
-      background-color: red;
-      height: 50%;
-      width: 100%;
-      overflow: auto;
-
-      .section-left{
-        float: left;
-        width: 25%;
-        height: 100%;
-        background-color: purple;
-        padding-top: 30px;
-        padding-left: 10px;
-
-        img{
-          width: 50px;
-          height: auto;
-        }
-      }
-
-      .section-middle{
-        float: left;
-        width: 50%;
-        height: 100%;
-        padding-top: 50px;
-        padding-left: 0px;
-        background-color: black;
-
-        img{
-          float:left;
-          width: 15px;
-          height: auto;
-        }
-
-        input{
-          float:left;
-          overflow: hidden;
-        }
-      }
-
-      .section-right{
-        float: left;
-        width: 25%;
-        height: 100%;
-        padding: 0;
-        background-color: pink;
-        padding-top: 50px;
-        padding-left: 0px;
-
-        p{
-          margin: 0;
-          text-align: left;
-        }
-      }
-    }
-
-    .header-bottom{
-      box-sizing: border-box;
-      background-color: blue;
-      height: 50%;
-      width: 100%;
-
-      .section-left{
-        float: left;
-        width: 80%;
-        height: 100%;
-        padding-top: 50px;
-        padding-left: 10px;
-        background-color: darkgreen;
-
-        ul{
-          width: 100%;
-          height: 30%;
-          list-style-type: none;
-          overflow: hidden;
-          padding-left: 0px;
-          margin: 0;
-
-          li {
-          display: inline-block;
-          color: grey;
-          padding-right: 10px;
-
-            a {
-                color: #1A1A1A;
-            }
-          }
-        }
-      }
-
-      .section-right{
-        float: left;
-        width: 20%;
-        height: 100%;
-        padding: 0;
-        background-color: green;
-        padding-top: 50px;
-        padding-left: 0px;
-
-        .arror-prev{
-          float:left;
-          width: 50px;
-          height: auto;
-        }
-
-        .arror-next{
-          float:left;
-          width: 50px;
-          height: auto;
-        }
-      }
-    }
-  }
-
-  //Section
-    main section{
-      box-sizing: border-box;
-      display: block;
-      width: 100%;
-      height: 750px;
-      padding: 0 /*top*/ 0 /*right*/ 0 /*bottom*/  0; /*left*/;
-
-        header{
-        display: none;
-      }
 
       .section-left{
         float:left;
-        background-color: darkred;
-        width: 100%;
+        //background-color: darkred;
+        width: 70%;
         height: 80%;
         padding: 0;
+        background-color: white;
 
         .weekly{
-          background-color: black;
+          //background-color: black;
           height: 50%;
           width: 100%;
 
           header{
             //box-sizing: border-box;
             display: block;
-            background-color: pink;
+            //background-color: pink;
             height: 20%;
             width: 100%;
             //overflow: auto;
@@ -3856,7 +280,7 @@ main{
               float:left;
               height: 100%;
               width: 80%;
-              background-color: black;
+              //background-color: black;
               margin: 0;
 
               text-align: left;
@@ -3869,7 +293,7 @@ main{
               float:right;
               height: 100%;
               width: 20%;
-              background-color: darkblue;
+              //background-color: darkblue;
 
               box-sizing: border-box;
               padding-top: 25px;
@@ -3886,17 +310,17 @@ main{
           article{
             height: 80%;
             width: 100%;
-            background-color: purple;
+            //background-color: purple;
 
             .top{
-              background-color: yellow;
+              //background-color: yellow;
               height: 33%;
               width: 100%;
               padding: 0;
 
               .photo{
                 float:left;
-                background-color: blue;
+                //background-color: blue;
                 height: 100%;
                 width: 30%;
                 padding: 0;
@@ -3913,7 +337,7 @@ main{
 
               .product-info{
                 float:left;
-                background-color: red;
+                //background-color: red;
                 height: 100%;
                 width: 50%;
                 padding: 0;
@@ -3921,14 +345,14 @@ main{
                 .product-name{
                   height: 33%;
                   width: 100%;
-                  background-color: purple;
+                  //background-color: purple;
                   margin: 0;
                 }
 
                 .product-description{
                   height: 33%;
                   width: 100%;
-                  background-color: black;
+                  //background-color: black;
                   margin: 0;
 
                   font-size: 0.8em;
@@ -3936,14 +360,14 @@ main{
 
                 .interactive-buttons{
                   box-sizing: border-box;
-                  background-color: yellow;
+                  //background-color: yellow;
                   height: 34%;
                   width: 100%;
 
                   .button-votes{
                     float:left;
                     box-sizing: border-box;
-                    background-color: red;
+                    //background-color: red;
                     height: 100%;
                     width: 50%;
 
@@ -3962,14 +386,12 @@ main{
                       margin: 0;
                       text-align: left;
                     }
-
-
                   }
 
                   .button-comments{
                     float:left;
                     box-sizing: border-box;
-                    background-color: red;
+                    //background-color: red;
                     height:100%;
                     width: 50%;
 
@@ -3994,7 +416,7 @@ main{
 
               .phone{
                 float:right;
-                background-color: green;
+                //background-color: green;
                 height: 100%;
                 width: 20%;
                 padding: 0;
@@ -4012,14 +434,14 @@ main{
             }
 
             .middle{
-              background-color: orange;
+              //background-color: orange;
               height: 34%;
               width: 100%;
               padding: 0;
 
               .photo{
                 float:left;
-                background-color: green;
+                //background-color: green;
                 height: 100%;
                 width: 30%;
                 padding: 0;
@@ -4036,7 +458,7 @@ main{
 
               .product-info{
                 float:left;
-                background-color: red;
+                //background-color: red;
                 height: 100%;
                 width: 50%;
                 padding: 0;
@@ -4044,28 +466,28 @@ main{
                 .product-name{
                   height: 33%;
                   width: 100%;
-                  background-color: purple;
+                  //background-color: purple;
                   margin: 0;
                 }
 
                 .product-description{
                   height: 33%;
                   width: 100%;
-                  background-color: black;
+                  //background-color: black;
                   margin: 0;
                   font-size: 0.8em;
                 }
 
                 .interactive-buttons{
                   box-sizing: border-box;
-                  background-color: yellow;
+                  //background-color: yellow;
                   height: 34%;
                   width: 100%;
 
                   .button-votes{
                     float:left;
                     box-sizing: border-box;
-                    background-color: red;
+                    //background-color: red;
                     height: 100%;
                     width: 50%;
 
@@ -4084,14 +506,12 @@ main{
                       margin: 0;
                       text-align: left;
                     }
-
-
                   }
 
                   .button-comments{
                     float:left;
                     box-sizing: border-box;
-                    background-color: red;
+                    //background-color: red;
                     height:100%;
                     width: 50%;
 
@@ -4116,7 +536,7 @@ main{
 
               .phone{
                 float:right;
-                background-color: blue;
+                //background-color: blue;
                 height: 100%;
                 width: 20%;
                 padding: 0;
@@ -4134,14 +554,14 @@ main{
             }
 
             .bottom{
-              background-color: pink;
+              //background-color: pink;
               height: 33%;
               width: 100%;
               padding: 0;
 
               .photo{
                 float:left;
-                background-color: blue;
+                //background-color: blue;
                 height: 100%;
                 width: 30%;
                 padding: 0;
@@ -4158,7 +578,7 @@ main{
 
               .product-info{
                 float:left;
-                background-color: red;
+                //background-color: red;
                 height: 100%;
                 width: 50%;
                 padding: 0;
@@ -4166,28 +586,28 @@ main{
                 .product-name{
                   height: 33%;
                   width: 100%;
-                  background-color: purple;
+                  //background-color: purple;
                   margin: 0;
                 }
 
                 .product-description{
                   height: 33%;
                   width: 100%;
-                  background-color: black;
+                  //background-color: black;
                   margin: 0;
                   font-size: 0.8em;
                 }
 
                 .interactive-buttons{
                   box-sizing: border-box;
-                  background-color: yellow;
+                  //background-color: yellow;
                   height: 34%;
                   width: 100%;
 
                   .button-votes{
                     float:left;
                     box-sizing: border-box;
-                    background-color: red;
+                    //background-color: red;
                     height: 100%;
                     width: 50%;
 
@@ -4206,14 +626,12 @@ main{
                       margin: 0;
                       text-align: left;
                     }
-
-
                   }
 
                   .button-comments{
                     float:left;
                     box-sizing: border-box;
-                    background-color: red;
+                    //background-color: red;
                     height:100%;
                     width: 50%;
 
@@ -4238,7 +656,7 @@ main{
 
               .phone{
                 float:right;
-                background-color: green;
+                //background-color: green;
                 height: 100%;
                 width: 20%;
                 padding: 0;
@@ -4258,14 +676,14 @@ main{
         }
 
         .today{
-          background-color: black;
+          //background-color: black;
           height: 50%;
           width: 100%;
 
           header{
             //box-sizing: border-box;
             display: block;
-            background-color: pink;
+            //background-color: pink;
             height: 20%;
             width: 100%;
             //overflow: auto;
@@ -4274,7 +692,7 @@ main{
               float:left;
               height: 100%;
               width: 80%;
-              background-color: black;
+              //background-color: black;
               margin: 0;
 
               text-align: left;
@@ -4287,7 +705,7 @@ main{
               float:right;
               height: 100%;
               width: 20%;
-              background-color: darkblue;
+              //background-color: darkblue;
 
               box-sizing: border-box;
               padding-top: 25px;
@@ -4304,17 +722,17 @@ main{
           article{
             height: 80%;
             width: 100%;
-            background-color: purple;
+            //background-color: purple;
 
             .top{
-              background-color: yellow;
+              //background-color: yellow;
               height: 33%;
               width: 100%;
               padding: 0;
 
               .photo{
                 float:left;
-                background-color: blue;
+                //background-color: blue;
                 height: 100%;
                 width: 30%;
                 padding: 0;
@@ -4331,7 +749,7 @@ main{
 
               .product-info{
                 float:left;
-                background-color: red;
+                //background-color: red;
                 height: 100%;
                 width: 50%;
                 padding: 0;
@@ -4339,28 +757,28 @@ main{
                 .product-name{
                   height: 33%;
                   width: 100%;
-                  background-color: purple;
+                  //background-color: purple;
                   margin: 0;
                 }
 
                 .product-description{
                   height: 33%;
                   width: 100%;
-                  background-color: black;
+                  //background-color: black;
                   margin: 0;
                   font-size: 0.8em;
                 }
 
                 .interactive-buttons{
                   box-sizing: border-box;
-                  background-color: yellow;
+                  //background-color: yellow;
                   height: 34%;
                   width: 100%;
 
                   .button-votes{
                     float:left;
                     box-sizing: border-box;
-                    background-color: red;
+                    //background-color: red;
                     height: 100%;
                     width: 50%;
 
@@ -4379,14 +797,12 @@ main{
                       margin: 0;
                       text-align: left;
                     }
-
-
                   }
 
                   .button-comments{
                     float:left;
                     box-sizing: border-box;
-                    background-color: red;
+                    //background-color: red;
                     height:100%;
                     width: 50%;
 
@@ -4411,7 +827,7 @@ main{
 
               .phone{
                 float:right;
-                background-color: green;
+                //background-color: green;
                 height: 100%;
                 width: 20%;
                 padding: 0;
@@ -4429,14 +845,14 @@ main{
             }
 
             .middle{
-              background-color: orange;
+              //background-color: orange;
               height: 34%;
               width: 100%;
               padding: 0;
 
               .photo{
                 float:left;
-                background-color: green;
+                //background-color: green;
                 height: 100%;
                 width: 30%;
                 padding: 0;
@@ -4453,7 +869,7 @@ main{
 
               .product-info{
                 float:left;
-                background-color: red;
+                //background-color: red;
                 height: 100%;
                 width: 50%;
                 padding: 0;
@@ -4461,14 +877,14 @@ main{
                 .product-name{
                   height: 33%;
                   width: 100%;
-                  background-color: purple;
+                  //background-color: purple;
                   margin: 0;
                 }
 
                 .product-description{
                   height: 33%;
                   width: 100%;
-                  background-color: black;
+                  //background-color: black;
                   margin: 0;
                   font-size: 0.8em;
 
@@ -4476,14 +892,14 @@ main{
 
                 .interactive-buttons{
                   box-sizing: border-box;
-                  background-color: yellow;
+                  //background-color: yellow;
                   height: 34%;
                   width: 100%;
 
                   .button-votes{
                     float:left;
                     box-sizing: border-box;
-                    background-color: red;
+                    //background-color: red;
                     height: 100%;
                     width: 50%;
 
@@ -4502,14 +918,12 @@ main{
                       margin: 0;
                       text-align: left;
                     }
-
-
                   }
 
                   .button-comments{
                     float:left;
                     box-sizing: border-box;
-                    background-color: red;
+                    //background-color: red;
                     height:100%;
                     width: 50%;
 
@@ -4534,7 +948,7 @@ main{
 
               .phone{
                 float:right;
-                background-color: blue;
+                //background-color: blue;
                 height: 100%;
                 width: 20%;
                 padding: 0;
@@ -4552,14 +966,14 @@ main{
             }
 
             .bottom{
-              background-color: pink;
+              //background-color: pink;
               height: 33%;
               width: 100%;
               padding: 0;
 
               .photo{
                 float:left;
-                background-color: blue;
+                //background-color: blue;
                 height: 100%;
                 width: 30%;
                 padding: 0;
@@ -4576,7 +990,7 @@ main{
 
               .product-info{
                 float:left;
-                background-color: red;
+                //background-color: red;
                 height: 100%;
                 width: 50%;
                 padding: 0;
@@ -4584,28 +998,28 @@ main{
                 .product-name{
                   height: 33%;
                   width: 100%;
-                  background-color: purple;
+                  //background-color: purple;
                   margin: 0;
                 }
 
                 .product-description{
                   height: 33%;
                   width: 100%;
-                  background-color: black;
+                  //background-color: black;
                   margin: 0;
                   font-size: 0.8em;
                 }
 
                 .interactive-buttons{
                   box-sizing: border-box;
-                  background-color: yellow;
+                  //background-color: yellow;
                   height: 34%;
                   width: 100%;
 
                   .button-votes{
                     float:left;
                     box-sizing: border-box;
-                    background-color: red;
+                    //background-color: red;
                     height: 100%;
                     width: 50%;
 
@@ -4624,14 +1038,12 @@ main{
                       margin: 0;
                       text-align: left;
                     }
-
-
                   }
 
                   .button-comments{
                     float:left;
                     box-sizing: border-box;
-                    background-color: red;
+                    //background-color: red;
                     height:100%;
                     width: 50%;
 
@@ -4656,7 +1068,7 @@ main{
 
               .phone{
                 float:right;
-                background-color: green;
+                //background-color: green;
                 height: 100%;
                 width: 20%;
                 padding: 0;
@@ -4677,7 +1089,3567 @@ main{
       }
 
       .section-right{
+        float:right;
+        //background-color: darkblue;
+        width: 25%;
+        height: 80%;
+        padding: 0;
+        background-color: white;
+
+        .top{
+          //background-color: yellow;
+          height: 20%;
+          width: 100%;
+
+          header{
+            //background-color: pink;
+            height: 20%;
+            width: 100%;
+
+            .text{
+              float:left;
+              height: 100%;
+              width: 80%;
+              //background-color: black;
+              margin: 0;
+            }
+
+            .cross{
+              float:right;
+              height: 100%;
+              width: 20%;
+              //background-color: darkblue;
+
+              box-sizing: border-box;
+              // padding-top: 25px;
+              padding-right: 10px;
+
+              img{
+                float: right;
+                width: 15px;
+                height: auto;
+              }
+            }
+          }
+
+          article{
+            height: 80%;
+            width: 100%;
+            //background-color: purple;
+
+
+            .text{
+              //background-color: green;
+              height: 40%;
+              width: 100%;
+              margin: 0;
+              text-align: left;
+              font-size: 0.7em;
+            }
+
+            .button{
+              box-sizing: border-box;
+              float:left;
+              height: 60%;
+              width: 100%;
+              //background-color: red;
+
+              padding-top: 5px;
+              padding-left: 20px;
+              padding-right: 10px;
+              padding-bottom: 10px;
+
+              button{
+                box-sizing: border-box;
+                //background-color: green;
+                height:100%;
+                width: 100%;
+
+                box-sizing: border-box;
+                padding-top: 2px;
+                padding-left: 10px;
+
+                p{
+                  float:left;
+                  margin: 0;
+                  text-align: left;
+                  font-size: 0.7em;
+                }
+              }
+            }
+
+          }
+        }
+
+        .middle{
+          //background-color: orange;
+          height: 60%;
+          width: 100%;
+
+          header{
+            //background-color: pink;
+            height: 20%;
+            width: 100%;
+
+            .text{
+              float:left;
+              height: 100%;
+              width: 100%;
+              //background-color: black;
+              margin: 0;
+              box-sizing: border-box;
+              padding-top: 20px;
+            }
+          }
+
+          article{
+            height: 60%;
+            width: 100%;
+            //background-color: purple;
+
+            .top{
+              //background-color: yellow;
+              height: 33%;
+              width: 100%;
+              padding: 0;
+
+              .photo{
+                float:left;
+                //background-color: blue;
+                height: 100%;
+                width: 30%;
+                padding: 0;
+
+                box-sizing: border-box;
+                padding-top: 10px;
+                padding-left: 10px;
+
+                img{
+                  width: 40px;
+                  height: auto;
+                }
+              }
+
+              .user-info{
+                float:left;
+                //background-color: green;
+                height: 100%;
+                width: 70%;
+                padding: 0;
+
+                .user-name{
+                  height: 33%;
+                  width: 100%;
+                  //background-color: purple;
+                  margin: 0;
+                  text-align: left;
+                  font-size: 0.8em;
+                }
+
+                .user{
+                  height: 33%;
+                  width: 100%;
+                  //background-color: black;
+                  margin: 0;
+                  text-align: left;
+                  font-size: 0.7em;
+                }
+
+                .button{
+                  box-sizing: border-box;
+                  height: 34%;
+                  width: 100%;
+                  //background-color: red;
+
+                  padding-top: 1px;
+                  padding-left:1px;
+                  padding-right: 50px;
+                  padding-bottom: 1px;
+
+                  button{
+                    box-sizing: border-box;
+                    //background-color: green;
+                    height:100%;
+                    width: 100%;
+
+                    box-sizing: border-box;
+                    padding-top: 2px;
+                    padding-left: 10px;
+
+                    p{
+                      float:left;
+                      margin: 0;
+                      text-align: left;
+                      font-size: 0.7em;
+                    }
+                  }
+                }
+              }
+            }
+
+            .middle{
+              //background-color: red;
+              height: 34%;
+              width: 100%;
+              padding: 0;
+
+              .photo{
+                float:left;
+                //background-color: green;
+                height: 100%;
+                width: 30%;
+                padding: 0;
+
+                box-sizing: border-box;
+                padding-top: 10px;
+                padding-left: 10px;
+
+                img{
+                  width: 40px;
+                  height: auto;
+                }
+              }
+
+              .user-info{
+                float:left;
+                //background-color: green;
+                height: 100%;
+                width: 70%;
+                padding: 0;
+
+                .user-name{
+                  height: 33%;
+                  width: 100%;
+                  //background-color: purple;
+                  margin: 0;
+                  text-align: left;
+                  font-size: 0.8em;
+                }
+
+                .user{
+                  height: 33%;
+                  width: 100%;
+                  //background-color: black;
+                  margin: 0;
+                  text-align: left;
+                  font-size: 0.7em;
+                }
+
+                .button{
+                  box-sizing: border-box;
+                  height: 34%;
+                  width: 100%;
+                  //background-color: red;
+
+                  padding-top: 1px;
+                  padding-left:1px;
+                  padding-right: 50px;
+                  padding-bottom: 1px;
+
+                  button{
+                    box-sizing: border-box;
+                    //background-color: green;
+                    height:100%;
+                    width: 100%;
+
+                    box-sizing: border-box;
+                    padding-top: 2px;
+                    padding-left: 10px;
+
+                    p{
+                      float:left;
+                      margin: 0;
+                      text-align: left;
+                      font-size: 0.7em;
+                    }
+                  }
+                }
+              }
+            }
+
+            .bottom{
+              //background-color: pink;
+              height: 33%;
+              width: 100%;
+              padding: 0;
+
+              .photo{
+                float:left;
+                //background-color: blue;
+                height: 100%;
+                width: 30%;
+                padding: 0;
+
+                box-sizing: border-box;
+                padding-top: 10px;
+                padding-left: 10px;
+
+                img{
+                  width: 40px;
+                  height: auto;
+                }
+              }
+
+              .user-info{
+                float:left;
+                //background-color: green;
+                height: 100%;
+                width: 70%;
+                padding: 0;
+
+                .user-name{
+                  height: 33%;
+                  width: 100%;
+                  //background-color: purple;
+                  margin: 0;
+                  text-align: left;
+                  font-size: 0.8em;
+                }
+
+                .user{
+                  height: 33%;
+                  width: 100%;
+                  //background-color: black;
+                  margin: 0;
+                  text-align: left;
+                  font-size: 0.7em;
+                }
+
+                .button{
+                  box-sizing: border-box;
+                  height: 34%;
+                  width: 100%;
+                  //background-color: red;
+
+                  padding-top: 1px;
+                  padding-left:1px;
+                  padding-right: 50px;
+                  padding-bottom: 1px;
+
+                  button{
+                    box-sizing: border-box;
+                    //background-color: green;
+                    height:100%;
+                    width: 100%;
+
+                    box-sizing: border-box;
+                    padding-top: 2px;
+                    padding-left: 10px;
+
+                    p{
+                      float:left;
+                      margin: 0;
+                      text-align: left;
+                      font-size: 0.7em;
+                    }
+                  }
+                }
+              }
+            }
+          }
+
+          footer{
+            height: 20%;
+            width: 100%;
+            //background-color: black;
+
+            box-sizing: border-box;
+            padding-top: 20px;
+            padding-left:50px;
+            padding-right: 50px;
+            padding-bottom: 20px;
+
+            button{
+              box-sizing: border-box;
+              //background-color: green;
+              height:100%;
+              width: 100%;
+
+              box-sizing: border-box;
+              padding-top: 2px;
+              padding-left: 10px;
+
+              p{
+                float:left;
+                margin: 0;
+                text-align: left;
+                font-size: 0.7em;
+              }
+            }
+          }
+        }
+
+        // .bottom{
+        //   background-color: pink;
+        //   height: 20%;
+        //   width: 100%;
+        //
+        //   header{
+        //     background-color: pink;
+        //     height: 40%;
+        //     width: 100%;
+        //
+        //     .title{
+        //       float:left;
+        //       height: 50%;
+        //       width: 50%;
+        //       background-color: green;
+        //       margin: 0;
+        //     }
+        //
+        //     .text{
+        //       float:left;
+        //       height: 50%;
+        //       width: 50%;
+        //       background-color: red;
+        //       margin: 0;
+        //     }
+        //
+        //     .user{
+        //       clear:left;
+        //       height: 50%;
+        //       width: 100%;
+        //       background-color: yellow;
+        //       margin: 0;
+        //     }
+        //   }
+        //
+        //   article{
+        //     height: 60%;
+        //     width: 100%;
+        //     background-color: purple;
+        //
+        //     .photo{
+        //       float:left;
+        //       background-color: blue;
+        //       height: 40%;
+        //       width: 50%;
+        //       padding: 0;
+        //
+        //       box-sizing: border-box;
+        //       padding-top: 2px;
+        //       padding-left: 2px;
+        //
+        //       img{
+        //         width: 15px;
+        //         height: auto;
+        //       }
+        //     }
+        //
+        //     .user-info{
+        //       float:left;
+        //       background-color: red;
+        //       height: 40%;
+        //       width: 50%;
+        //       padding: 0;
+        //
+        //       .user-name{
+        //         height: 50%;
+        //         width: 100%;
+        //         background-color: green;
+        //         margin: 0;
+        //       }
+        //
+        //       .user{
+        //         height: 50%;
+        //         width: 100%;
+        //         background-color: black;
+        //         margin: 0;
+        //       }
+        //
+        //     }
+        //
+        //     .content{
+        //       clear:left;
+        //       background-color: pink;
+        //       height: 60%;
+        //       width: 100%;
+        //       padding: 0;
+        //     }
+        //   }
+        // }
+      }
+    }
+  }
+}
+
+@media (min-width: 650px) and (max-width: 999px){
+
+  //Header
+  main{
+
+    header{
+      display: block;
+      width: 100%;
+      height: 200px;
+      background-color: white;
+
+      .header-top{
+        box-sizing: border-box;
+        //background-color: red;
+        height: 50%;
+        width: 100%;
+        overflow: auto;
+
+        .section-left{
+          float: left;
+          width: 25%;
+          height: 100%;
+          //background-color: purple;
+          padding-top: 30px;
+          padding-left: 10px;
+
+          img{
+            width: 50px;
+            height: auto;
+          }
+        }
+
+        .section-middle{
+          float: left;
+          width: 50%;
+          height: 100%;
+          padding-top: 50px;
+          padding-left: 0px;
+          //background-color: black;
+
+          img{
+            float:left;
+            width: 15px;
+            height: auto;
+          }
+
+          input{
+            float:left;
+            overflow: hidden;
+          }
+        }
+
+        .section-right{
+          float: left;
+          width: 25%;
+          height: 100%;
+          padding: 0;
+          //background-color: pink;
+          padding-top: 50px;
+          padding-left: 0px;
+
+          p{
+            margin: 0;
+            text-align: left;
+          }
+        }
+      }
+
+      .header-bottom{
+        box-sizing: border-box;
+        //background-color: blue;
+        height: 50%;
+        width: 100%;
+
+        .section-left{
+          float: left;
+          width: 80%;
+          height: 100%;
+          padding-top: 50px;
+          padding-left: 10px;
+          //background-color: darkgreen;
+
+          ul{
+            width: 100%;
+            height: 30%;
+            list-style-type: none;
+            overflow: hidden;
+            padding-left: 0px;
+            margin: 0;
+
+            li {
+            display: inline-block;
+            color: grey;
+            padding-right: 10px;
+
+              a {
+                  color: #1A1A1A;
+              }
+            }
+          }
+        }
+
+        .section-right{
+          float: left;
+          width: 20%;
+          height: 100%;
+          padding: 0;
+          //background-color: green;
+          padding-top: 50px;
+          padding-left: 0px;
+
+          .arror-prev{
+            float:left;
+            width: 50px;
+            height: auto;
+          }
+
+          .arror-next{
+            float:left;
+            width: 50px;
+            height: auto;
+          }
+        }
+      }
+    }
+  }
+
+  //Section
+    main{
+      section{
+       box-sizing: border-box;
+       display: block;
+       width: 100%;
+       height: 750px;
+       padding: 10% /*top*/ 10% /*right*/ 0 /*bottom*/  10%; /*left*/;
+
+       header{
+       box-sizing: border-box;
+       display: block;
+       //background-color: red;
+       height: 10%;
+       width: 100%;
+       overflow: auto;
+
+       .header-left{
+         box-sizing: border-box;
+         float: left;
+         height: 100%;
+         width: 95%;
+         //background-color: yellow;
+
+         .header-text{
+           float: left;
+           height: 100%;
+           width: 50%;
+           //background-color: orange;
+           margin: 0;
+
+           box-sizing: border-box;
+           padding-top: 10px;
+           padding-left: 10px;
+
+           h3{
+             float:left;
+             margin: 0;
+             height: 100%;
+             width: 50%;
+             text-align: left;
+             font-size: 0.9em;
+           }
+
+           p{
+             float:left;
+             height: 100%;
+             width: 50%;
+             margin: 0;
+             text-align: left;
+             font-size: 0.7em;
+           }
+
+         }
+
+         .header-input{
+           float:left;
+           height: 100%;
+           width: 25%;
+           //background-color: purple;
+
+           box-sizing: border-box;
+           padding-top: 10px;
+           padding-left: 10px;
+
+           input{
+             overflow: hidden;
+           }
+         }
+
+         .header-button{
+           float:left;
+           height: 100%;
+           width: 25%;
+           //background-color: blue;
+
+           box-sizing: border-box;
+           padding-top: 5px;
+           padding-left: 20px;
+           padding-right: 10px;
+           padding-bottom: 10px;
+
+           button{
+             box-sizing: border-box;
+             //background-color: red;
+             height:100%;
+             width: 100%;
+
+             box-sizing: border-box;
+             padding-top: 2px;
+             padding-left: 10px;
+
+             p{
+               margin: 0;
+               text-align: left;
+             }
+           }
+         }
+       }
+
+       .header-right{
+         box-sizing: border-box;
+         float:right;
+         height: 100%;
+         width: 5%;
+         //background-color: black;
+
+         box-sizing: border-box;
+         padding-top: 25px;
+         padding-right: 10px;
+
+         img{
+           float: right;
+           width: 15px;
+           height: auto;
+         }
+       }
+     }
+
+     .section-left{
+       float:left;
+       //background-color: darkred;
+       width: 100%;
+       height: 80%;
+       padding: 0;
+       background-color: white;
+
+       .weekly{
+         //background-color: black;
+         height: 50%;
+         width: 100%;
+
+         header{
+           //box-sizing: border-box;
+           display: block;
+           //background-color: pink;
+           height: 20%;
+           width: 100%;
+           //overflow: auto;
+
+           .text{
+             float:left;
+             height: 100%;
+             width: 80%;
+             //background-color: black;
+             margin: 0;
+
+             text-align: left;
+             box-sizing: border-box;
+             padding-top: 25px;
+             padding-left: 10px;
+           }
+
+           .cross{
+             float:right;
+             height: 100%;
+             width: 20%;
+             //background-color: darkblue;
+
+             box-sizing: border-box;
+             padding-top: 25px;
+             padding-right: 10px;
+
+             img{
+               float: right;
+               width: 15px;
+               height: auto;
+             }
+           }
+         }
+
+         article{
+           height: 80%;
+           width: 100%;
+           //background-color: purple;
+
+           .top{
+             //background-color: yellow;
+             height: 33%;
+             width: 100%;
+             padding: 0;
+
+             .photo{
+               float:left;
+               //background-color: blue;
+               height: 100%;
+               width: 30%;
+               padding: 0;
+
+               box-sizing: border-box;
+               padding-top: 10px;
+               padding-left: 10px;
+
+               img{
+                 width: 50px;
+                 height: auto;
+               }
+             }
+
+             .product-info{
+               float:left;
+               //background-color: red;
+               height: 100%;
+               width: 50%;
+               padding: 0;
+
+               .product-name{
+                 height: 33%;
+                 width: 100%;
+                 //background-color: purple;
+                 margin: 0;
+               }
+
+               .product-description{
+                 height: 33%;
+                 width: 100%;
+                 //background-color: black;
+                 margin: 0;
+
+                 font-size: 0.8em;
+               }
+
+               .interactive-buttons{
+                 box-sizing: border-box;
+                 //background-color: yellow;
+                 height: 34%;
+                 width: 100%;
+
+                 .button-votes{
+                   float:left;
+                   box-sizing: border-box;
+                   //background-color: red;
+                   height: 100%;
+                   width: 50%;
+
+                   box-sizing: border-box;
+                   padding-top: 10px;
+                   padding-left: 10px;
+
+                   img{
+                     float:left;
+                     width: 20px;
+                     height: auto;
+                   }
+
+                   p{
+                     float:left;
+                     margin: 0;
+                     text-align: left;
+                   }
+                 }
+
+                 .button-comments{
+                   float:left;
+                   box-sizing: border-box;
+                   //background-color: red;
+                   height:100%;
+                   width: 50%;
+
+                   box-sizing: border-box;
+                   padding-top: 10px;
+                   padding-left: 10px;
+
+                   img{
+                     float:left;
+                     width: 15px;
+                     height: auto;
+                   }
+
+                   p{
+                     float:left;
+                     margin: 0;
+                     text-align: left;
+                   }
+                 }
+               }
+             }
+
+             .phone{
+               float:right;
+               //background-color: green;
+               height: 100%;
+               width: 20%;
+               padding: 0;
+
+               box-sizing: border-box;
+               padding-top: 30px;
+               padding-right: 10px;
+
+               p{
+                 float:right;
+                 margin: 0;
+                 text-align: left;
+               }
+             }
+           }
+
+           .middle{
+             //background-color: orange;
+             height: 34%;
+             width: 100%;
+             padding: 0;
+
+             .photo{
+               float:left;
+               //background-color: green;
+               height: 100%;
+               width: 30%;
+               padding: 0;
+
+               box-sizing: border-box;
+               padding-top: 10px;
+               padding-left: 10px;
+
+               img{
+                 width: 50px;
+                 height: auto;
+               }
+             }
+
+             .product-info{
+               float:left;
+               //background-color: red;
+               height: 100%;
+               width: 50%;
+               padding: 0;
+
+               .product-name{
+                 height: 33%;
+                 width: 100%;
+                 //background-color: purple;
+                 margin: 0;
+               }
+
+               .product-description{
+                 height: 33%;
+                 width: 100%;
+                 //background-color: black;
+                 margin: 0;
+                 font-size: 0.8em;
+               }
+
+               .interactive-buttons{
+                 box-sizing: border-box;
+                 //background-color: yellow;
+                 height: 34%;
+                 width: 100%;
+
+                 .button-votes{
+                   float:left;
+                   box-sizing: border-box;
+                   //background-color: red;
+                   height: 100%;
+                   width: 50%;
+
+                   box-sizing: border-box;
+                   padding-top: 10px;
+                   padding-left: 10px;
+
+                   img{
+                     float:left;
+                     width: 20px;
+                     height: auto;
+                   }
+
+                   p{
+                     float:left;
+                     margin: 0;
+                     text-align: left;
+                   }
+                 }
+
+                 .button-comments{
+                   float:left;
+                   box-sizing: border-box;
+                   //background-color: red;
+                   height:100%;
+                   width: 50%;
+
+                   box-sizing: border-box;
+                   padding-top: 10px;
+                   padding-left: 10px;
+
+                   img{
+                     float:left;
+                     width: 15px;
+                     height: auto;
+                   }
+
+                   p{
+                     float:left;
+                     margin: 0;
+                     text-align: left;
+                   }
+                 }
+               }
+             }
+
+             .phone{
+               float:right;
+               //background-color: blue;
+               height: 100%;
+               width: 20%;
+               padding: 0;
+
+               box-sizing: border-box;
+               padding-top: 30px;
+               padding-right: 10px;
+
+               p{
+                 float:right;
+                 margin: 0;
+                 text-align: left;
+               }
+             }
+           }
+
+           .bottom{
+             //background-color: pink;
+             height: 33%;
+             width: 100%;
+             padding: 0;
+
+             .photo{
+               float:left;
+               //background-color: blue;
+               height: 100%;
+               width: 30%;
+               padding: 0;
+
+               box-sizing: border-box;
+               padding-top: 10px;
+               padding-left: 10px;
+
+               img{
+                 width: 50px;
+                 height: auto;
+               }
+             }
+
+             .product-info{
+               float:left;
+               //background-color: red;
+               height: 100%;
+               width: 50%;
+               padding: 0;
+
+               .product-name{
+                 height: 33%;
+                 width: 100%;
+                 //background-color: purple;
+                 margin: 0;
+               }
+
+               .product-description{
+                 height: 33%;
+                 width: 100%;
+                 //background-color: black;
+                 margin: 0;
+                 font-size: 0.8em;
+               }
+
+               .interactive-buttons{
+                 box-sizing: border-box;
+                 //background-color: yellow;
+                 height: 34%;
+                 width: 100%;
+
+                 .button-votes{
+                   float:left;
+                   box-sizing: border-box;
+                   //background-color: red;
+                   height: 100%;
+                   width: 50%;
+
+                   box-sizing: border-box;
+                   padding-top: 10px;
+                   padding-left: 10px;
+
+                   img{
+                     float:left;
+                     width: 20px;
+                     height: auto;
+                   }
+
+                   p{
+                     float:left;
+                     margin: 0;
+                     text-align: left;
+                   }
+                 }
+
+                 .button-comments{
+                   float:left;
+                   box-sizing: border-box;
+                   //background-color: red;
+                   height:100%;
+                   width: 50%;
+
+                   box-sizing: border-box;
+                   padding-top: 10px;
+                   padding-left: 10px;
+
+                   img{
+                     float:left;
+                     width: 15px;
+                     height: auto;
+                   }
+
+                   p{
+                     float:left;
+                     margin: 0;
+                     text-align: left;
+                   }
+                 }
+               }
+             }
+
+             .phone{
+               float:right;
+               //background-color: green;
+               height: 100%;
+               width: 20%;
+               padding: 0;
+
+               box-sizing: border-box;
+               padding-top: 30px;
+               padding-right: 10px;
+
+               p{
+                 float:right;
+                 margin: 0;
+                 text-align: left;
+               }
+             }
+           }
+         }
+       }
+
+       .today{
+         //background-color: black;
+         height: 50%;
+         width: 100%;
+
+         header{
+           //box-sizing: border-box;
+           display: block;
+           //background-color: pink;
+           height: 20%;
+           width: 100%;
+           //overflow: auto;
+
+           .text{
+             float:left;
+             height: 100%;
+             width: 80%;
+             //background-color: black;
+             margin: 0;
+
+             text-align: left;
+             box-sizing: border-box;
+             padding-top: 25px;
+             padding-left: 10px;
+           }
+
+           .cross{
+             float:right;
+             height: 100%;
+             width: 20%;
+             //background-color: darkblue;
+
+             box-sizing: border-box;
+             padding-top: 25px;
+             padding-right: 10px;
+
+             img{
+               float: right;
+               width: 15px;
+               height: auto;
+             }
+           }
+         }
+
+         article{
+           height: 80%;
+           width: 100%;
+           //background-color: purple;
+
+           .top{
+             //background-color: yellow;
+             height: 33%;
+             width: 100%;
+             padding: 0;
+
+             .photo{
+               float:left;
+               //background-color: blue;
+               height: 100%;
+               width: 30%;
+               padding: 0;
+
+               box-sizing: border-box;
+               padding-top: 10px;
+               padding-left: 10px;
+
+               img{
+                 width: 50px;
+                 height: auto;
+               }
+             }
+
+             .product-info{
+               float:left;
+               //background-color: red;
+               height: 100%;
+               width: 50%;
+               padding: 0;
+
+               .product-name{
+                 height: 33%;
+                 width: 100%;
+                 //background-color: purple;
+                 margin: 0;
+               }
+
+               .product-description{
+                 height: 33%;
+                 width: 100%;
+                 //background-color: black;
+                 margin: 0;
+                 font-size: 0.8em;
+               }
+
+               .interactive-buttons{
+                 box-sizing: border-box;
+                 //background-color: yellow;
+                 height: 34%;
+                 width: 100%;
+
+                 .button-votes{
+                   float:left;
+                   box-sizing: border-box;
+                   //background-color: red;
+                   height: 100%;
+                   width: 50%;
+
+                   box-sizing: border-box;
+                   padding-top: 10px;
+                   padding-left: 10px;
+
+                   img{
+                     float:left;
+                     width: 20px;
+                     height: auto;
+                   }
+
+                   p{
+                     float:left;
+                     margin: 0;
+                     text-align: left;
+                   }
+                 }
+
+                 .button-comments{
+                   float:left;
+                   box-sizing: border-box;
+                   //background-color: red;
+                   height:100%;
+                   width: 50%;
+
+                   box-sizing: border-box;
+                   padding-top: 10px;
+                   padding-left: 10px;
+
+                   img{
+                     float:left;
+                     width: 15px;
+                     height: auto;
+                   }
+
+                   p{
+                     float:left;
+                     margin: 0;
+                     text-align: left;
+                   }
+                 }
+               }
+             }
+
+             .phone{
+               float:right;
+               //background-color: green;
+               height: 100%;
+               width: 20%;
+               padding: 0;
+
+               box-sizing: border-box;
+               padding-top: 30px;
+               padding-right: 10px;
+
+               p{
+                 float:right;
+                 margin: 0;
+                 text-align: left;
+               }
+             }
+           }
+
+           .middle{
+             //background-color: orange;
+             height: 34%;
+             width: 100%;
+             padding: 0;
+
+             .photo{
+               float:left;
+               //background-color: green;
+               height: 100%;
+               width: 30%;
+               padding: 0;
+
+               box-sizing: border-box;
+               padding-top: 10px;
+               padding-left: 10px;
+
+               img{
+                 width: 50px;
+                 height: auto;
+               }
+             }
+
+             .product-info{
+               float:left;
+               //background-color: red;
+               height: 100%;
+               width: 50%;
+               padding: 0;
+
+               .product-name{
+                 height: 33%;
+                 width: 100%;
+                 //background-color: purple;
+                 margin: 0;
+               }
+
+               .product-description{
+                 height: 33%;
+                 width: 100%;
+                 //background-color: black;
+                 margin: 0;
+                 font-size: 0.8em;
+
+               }
+
+               .interactive-buttons{
+                 box-sizing: border-box;
+                 //background-color: yellow;
+                 height: 34%;
+                 width: 100%;
+
+                 .button-votes{
+                   float:left;
+                   box-sizing: border-box;
+                   //background-color: red;
+                   height: 100%;
+                   width: 50%;
+
+                   box-sizing: border-box;
+                   padding-top: 10px;
+                   padding-left: 10px;
+
+                   img{
+                     float:left;
+                     width: 20px;
+                     height: auto;
+                   }
+
+                   p{
+                     float:left;
+                     margin: 0;
+                     text-align: left;
+                   }
+                 }
+
+                 .button-comments{
+                   float:left;
+                   box-sizing: border-box;
+                   //background-color: red;
+                   height:100%;
+                   width: 50%;
+
+                   box-sizing: border-box;
+                   padding-top: 10px;
+                   padding-left: 10px;
+
+                   img{
+                     float:left;
+                     width: 15px;
+                     height: auto;
+                   }
+
+                   p{
+                     float:left;
+                     margin: 0;
+                     text-align: left;
+                   }
+                 }
+               }
+             }
+
+             .phone{
+               float:right;
+               //background-color: blue;
+               height: 100%;
+               width: 20%;
+               padding: 0;
+
+               box-sizing: border-box;
+               padding-top: 30px;
+               padding-right: 10px;
+
+               p{
+                 float:right;
+                 margin: 0;
+                 text-align: left;
+               }
+             }
+           }
+
+           .bottom{
+             //background-color: pink;
+             height: 33%;
+             width: 100%;
+             padding: 0;
+
+             .photo{
+               float:left;
+               //background-color: blue;
+               height: 100%;
+               width: 30%;
+               padding: 0;
+
+               box-sizing: border-box;
+               padding-top: 10px;
+               padding-left: 10px;
+
+               img{
+                 width: 50px;
+                 height: auto;
+               }
+             }
+
+             .product-info{
+               float:left;
+               //background-color: red;
+               height: 100%;
+               width: 50%;
+               padding: 0;
+
+               .product-name{
+                 height: 33%;
+                 width: 100%;
+                 //background-color: purple;
+                 margin: 0;
+               }
+
+               .product-description{
+                 height: 33%;
+                 width: 100%;
+                 //background-color: black;
+                 margin: 0;
+                 font-size: 0.8em;
+               }
+
+               .interactive-buttons{
+                 box-sizing: border-box;
+                 //background-color: yellow;
+                 height: 34%;
+                 width: 100%;
+
+                 .button-votes{
+                   float:left;
+                   box-sizing: border-box;
+                   //background-color: red;
+                   height: 100%;
+                   width: 50%;
+
+                   box-sizing: border-box;
+                   padding-top: 10px;
+                   padding-left: 10px;
+
+                   img{
+                     float:left;
+                     width: 20px;
+                     height: auto;
+                   }
+
+                   p{
+                     float:left;
+                     margin: 0;
+                     text-align: left;
+                   }
+                 }
+
+                 .button-comments{
+                   float:left;
+                   box-sizing: border-box;
+                   //background-color: red;
+                   height:100%;
+                   width: 50%;
+
+                   box-sizing: border-box;
+                   padding-top: 10px;
+                   padding-left: 10px;
+
+                   img{
+                     float:left;
+                     width: 15px;
+                     height: auto;
+                   }
+
+                   p{
+                     float:left;
+                     margin: 0;
+                     text-align: left;
+                   }
+                 }
+               }
+             }
+
+             .phone{
+               float:right;
+               //background-color: green;
+               height: 100%;
+               width: 20%;
+               padding: 0;
+
+               box-sizing: border-box;
+               padding-top: 30px;
+               padding-right: 10px;
+
+               p{
+                 float:right;
+                 margin: 0;
+                 text-align: left;
+               }
+             }
+           }
+         }
+       }
+     }
+     .section-right{
+       display: none;
+     }
+   }
+ }
+}
+
+
+
+@media (min-width: 480px) and (max-width: 649px){
+
+  //Header
+  main{
+
+    header{
+    display: block;
+    width: 100%;
+    height: 200px;
+    background-color: white;
+
+    .header-top{
+      box-sizing: border-box;
+      //background-color: red;
+      height: 50%;
+      width: 100%;
+      overflow: auto;
+
+      .section-left{
+        float: left;
+        width: 25%;
+        height: 100%;
+        //background-color: purple;
+        padding-top: 30px;
+        padding-left: 10px;
+
+        img{
+          width: 50px;
+          height: auto;
+        }
+      }
+
+      .section-middle{
+        float: left;
+        width: 50%;
+        height: 100%;
+        //background-color: black;
+
+        padding-top: 50px;
+        padding-left: 0px;
+
+        img{
+          float:left;
+          width: 15px;
+          height: auto;
+        }
+
+        input{
+          float:left;
+          overflow: hidden;
+        }
+      }
+
+      .section-right{
+        float: left;
+        width: 25%;
+        height: 100%;
+        padding: 0;
+        //background-color: pink;
+        padding-top: 50px;
+        padding-left: 0px;
+
+        p{
+          margin: 0;
+          text-align: left;
+        }
+      }
+    }
+
+    .header-bottom{
+      box-sizing: border-box;
+      //background-color: blue;
+      height: 50%;
+      width: 100%;
+
+      .section-left{
+        float: left;
+        width: 80%;
+        height: 100%;
+        padding-top: 50px;
+        padding-left: 10px;
+        //background-color: darkgreen;
+
+        ul{
+          width: 100%;
+          height: 30%;
+          list-style-type: none;
+          overflow: hidden;
+          padding-left: 0px;
+          margin: 0;
+
+          li {
+          display: inline-block;
+          color: grey;
+          padding-right: 10px;
+
+            a {
+                color: #1A1A1A;
+            }
+          }
+        }
+      }
+
+      .section-right{
+        float: left;
+        width: 20%;
+        height: 100%;
+        padding: 0;
+        //background-color: green;
+        padding-top: 50px;
+        padding-left: 0px;
+
+        .arror-prev{
+          float:left;
+          width: 50px;
+          height: auto;
+        }
+
+        .arror-next{
+          float:left;
+          width: 50px;
+          height: auto;
+        }
+      }
+    }
+  }
+
+  }
+
+
+  //Section
+    main{
+      section{
+      box-sizing: border-box;
+      display: block;
+      width: 100%;
+      height: 750px;
+      padding: 10% /*top*/ 10% /*right*/ 0 /*bottom*/  10%; /*left*/;
+
+      header{
+      box-sizing: border-box;
+      display: block;
+      //background-color: red;
+      height: 10%;
+      width: 100%;
+      overflow: auto;
+
+      .header-left{
+        box-sizing: border-box;
+        float: left;
+        height: 100%;
+        width: 95%;
+        //background-color: yellow;
+
+        .header-text{
+          height: 50%;
+          width: 100%;
+          //background-color: orange;
+          margin: 0;
+
+          box-sizing: border-box;
+          padding-top: 10px;
+          padding-left: 10px;
+
+          h3{
+            float:left;
+            margin: 0;
+            height: 100%;
+            width: 50%;
+            text-align: left;
+            font-size: 0.9em;
+          }
+
+          p{
+            float:left;
+            height: 100%;
+            width: 50%;
+            margin: 0;
+            text-align: left;
+            font-size: 0.7em;
+          }
+
+        }
+
+        .header-input{
+          float:left;
+          height: 50%;
+          width: 50%;
+          //background-color: purple;
+
+          box-sizing: border-box;
+          padding-top: 10px;
+          padding-left: 10px;
+
+          input{
+            overflow: hidden;
+          }
+
+        }
+
+        .header-button{
+          float:left;
+          height: 50%;
+          width: 50%;
+          //background-color: blue;
+
+          box-sizing: border-box;
+          padding-top: 5px;
+          padding-left: 20px;
+
+          button{
+            box-sizing: border-box;
+            //background-color: red;
+            height:100%;
+            width: 50%;
+
+            box-sizing: border-box;
+            padding-top: 2px;
+            padding-left: 10px;
+
+            p{
+              margin: 0;
+              text-align: left;
+            }
+          }
+
+        }
+
+      }
+
+      .header-right{
+        box-sizing: border-box;
+        float:right;
+        height: 100%;
+        width: 5%;
+        //background-color: black;
+
+        box-sizing: border-box;
+        padding-top: 25px;
+        padding-right: 10px;
+
+        img{
+          float: right;
+          width: 15px;
+          height: auto;
+        }
+      }
+
+    }
+
+    .section-left{
+      float:left;
+      //background-color: darkred;
+      width: 100%;
+      height: 80%;
+      padding: 0;
+      background-color: white;
+
+      .weekly{
+        //background-color: black;
+        height: 50%;
+        width: 100%;
+
+        header{
+          //box-sizing: border-box;
+          display: block;
+          //background-color: pink;
+          height: 20%;
+          width: 100%;
+          //overflow: auto;
+
+          .text{
+            float:left;
+            height: 100%;
+            width: 80%;
+            //background-color: black;
+            margin: 0;
+
+            text-align: left;
+            box-sizing: border-box;
+            padding-top: 25px;
+            padding-left: 10px;
+          }
+
+          .cross{
+            float:right;
+            height: 100%;
+            width: 20%;
+            //background-color: darkblue;
+
+            box-sizing: border-box;
+            padding-top: 25px;
+            padding-right: 10px;
+
+            img{
+              float: right;
+              width: 15px;
+              height: auto;
+            }
+          }
+        }
+
+        article{
+          height: 80%;
+          width: 100%;
+          //background-color: purple;
+
+          .top{
+            //background-color: yellow;
+            height: 33%;
+            width: 100%;
+            padding: 0;
+
+            .photo{
+              float:left;
+              //background-color: blue;
+              height: 100%;
+              width: 30%;
+              padding: 0;
+
+              box-sizing: border-box;
+              padding-top: 10px;
+              padding-left: 10px;
+
+              img{
+                width: 50px;
+                height: auto;
+              }
+            }
+
+            .product-info{
+              float:left;
+              //background-color: red;
+              height: 100%;
+              width: 50%;
+              padding: 0;
+
+              .product-name{
+                height: 33%;
+                width: 100%;
+                //background-color: purple;
+                margin: 0;
+              }
+
+              .product-description{
+                height: 33%;
+                width: 100%;
+                //background-color: black;
+                margin: 0;
+
+                font-size: 0.8em;
+              }
+
+              .interactive-buttons{
+                box-sizing: border-box;
+                //background-color: yellow;
+                height: 34%;
+                width: 100%;
+
+                .button-votes{
+                  float:left;
+                  box-sizing: border-box;
+                  //background-color: red;
+                  height: 100%;
+                  width: 50%;
+
+                  box-sizing: border-box;
+                  padding-top: 10px;
+                  padding-left: 10px;
+
+                  img{
+                    float:left;
+                    width: 20px;
+                    height: auto;
+                  }
+
+                  p{
+                    float:left;
+                    margin: 0;
+                    text-align: left;
+                  }
+                }
+
+                .button-comments{
+                  float:left;
+                  box-sizing: border-box;
+                  //background-color: red;
+                  height:100%;
+                  width: 50%;
+
+                  box-sizing: border-box;
+                  padding-top: 10px;
+                  padding-left: 10px;
+
+                  img{
+                    float:left;
+                    width: 15px;
+                    height: auto;
+                  }
+
+                  p{
+                    float:left;
+                    margin: 0;
+                    text-align: left;
+                  }
+                }
+              }
+            }
+
+            .phone{
+              float:right;
+              //background-color: green;
+              height: 100%;
+              width: 20%;
+              padding: 0;
+
+              box-sizing: border-box;
+              padding-top: 30px;
+              padding-right: 10px;
+
+              p{
+                float:right;
+                margin: 0;
+                text-align: left;
+              }
+            }
+          }
+
+          .middle{
+            //background-color: orange;
+            height: 34%;
+            width: 100%;
+            padding: 0;
+
+            .photo{
+              float:left;
+              //background-color: green;
+              height: 100%;
+              width: 30%;
+              padding: 0;
+
+              box-sizing: border-box;
+              padding-top: 10px;
+              padding-left: 10px;
+
+              img{
+                width: 50px;
+                height: auto;
+              }
+            }
+
+            .product-info{
+              float:left;
+              //background-color: red;
+              height: 100%;
+              width: 50%;
+              padding: 0;
+
+              .product-name{
+                height: 33%;
+                width: 100%;
+                //background-color: purple;
+                margin: 0;
+              }
+
+              .product-description{
+                height: 33%;
+                width: 100%;
+                //background-color: black;
+                margin: 0;
+                font-size: 0.8em;
+              }
+
+              .interactive-buttons{
+                box-sizing: border-box;
+                //background-color: yellow;
+                height: 34%;
+                width: 100%;
+
+                .button-votes{
+                  float:left;
+                  box-sizing: border-box;
+                  //background-color: red;
+                  height: 100%;
+                  width: 50%;
+
+                  box-sizing: border-box;
+                  padding-top: 10px;
+                  padding-left: 10px;
+
+                  img{
+                    float:left;
+                    width: 20px;
+                    height: auto;
+                  }
+
+                  p{
+                    float:left;
+                    margin: 0;
+                    text-align: left;
+                  }
+                }
+
+                .button-comments{
+                  float:left;
+                  box-sizing: border-box;
+                  //background-color: red;
+                  height:100%;
+                  width: 50%;
+
+                  box-sizing: border-box;
+                  padding-top: 10px;
+                  padding-left: 10px;
+
+                  img{
+                    float:left;
+                    width: 15px;
+                    height: auto;
+                  }
+
+                  p{
+                    float:left;
+                    margin: 0;
+                    text-align: left;
+                  }
+                }
+              }
+            }
+
+            .phone{
+              float:right;
+              //background-color: blue;
+              height: 100%;
+              width: 20%;
+              padding: 0;
+
+              box-sizing: border-box;
+              padding-top: 30px;
+              padding-right: 10px;
+
+              p{
+                float:right;
+                margin: 0;
+                text-align: left;
+              }
+            }
+          }
+
+          .bottom{
+            //background-color: pink;
+            height: 33%;
+            width: 100%;
+            padding: 0;
+
+            .photo{
+              float:left;
+              //background-color: blue;
+              height: 100%;
+              width: 30%;
+              padding: 0;
+
+              box-sizing: border-box;
+              padding-top: 10px;
+              padding-left: 10px;
+
+              img{
+                width: 50px;
+                height: auto;
+              }
+            }
+
+            .product-info{
+              float:left;
+              //background-color: red;
+              height: 100%;
+              width: 50%;
+              padding: 0;
+
+              .product-name{
+                height: 33%;
+                width: 100%;
+                //background-color: purple;
+                margin: 0;
+              }
+
+              .product-description{
+                height: 33%;
+                width: 100%;
+                //background-color: black;
+                margin: 0;
+                font-size: 0.8em;
+              }
+
+              .interactive-buttons{
+                box-sizing: border-box;
+                //background-color: yellow;
+                height: 34%;
+                width: 100%;
+
+                .button-votes{
+                  float:left;
+                  box-sizing: border-box;
+                  //background-color: red;
+                  height: 100%;
+                  width: 50%;
+
+                  box-sizing: border-box;
+                  padding-top: 10px;
+                  padding-left: 10px;
+
+                  img{
+                    float:left;
+                    width: 20px;
+                    height: auto;
+                  }
+
+                  p{
+                    float:left;
+                    margin: 0;
+                    text-align: left;
+                  }
+                }
+
+                .button-comments{
+                  float:left;
+                  box-sizing: border-box;
+                  //background-color: red;
+                  height:100%;
+                  width: 50%;
+
+                  box-sizing: border-box;
+                  padding-top: 10px;
+                  padding-left: 10px;
+
+                  img{
+                    float:left;
+                    width: 15px;
+                    height: auto;
+                  }
+
+                  p{
+                    float:left;
+                    margin: 0;
+                    text-align: left;
+                  }
+                }
+              }
+            }
+
+            .phone{
+              float:right;
+              //background-color: green;
+              height: 100%;
+              width: 20%;
+              padding: 0;
+
+              box-sizing: border-box;
+              padding-top: 30px;
+              padding-right: 10px;
+
+              p{
+                float:right;
+                margin: 0;
+                text-align: left;
+              }
+            }
+          }
+        }
+      }
+
+      .today{
+        //background-color: black;
+        height: 50%;
+        width: 100%;
+
+        header{
+          //box-sizing: border-box;
+          display: block;
+          //background-color: pink;
+          height: 20%;
+          width: 100%;
+          //overflow: auto;
+
+          .text{
+            float:left;
+            height: 100%;
+            width: 80%;
+            //background-color: black;
+            margin: 0;
+
+            text-align: left;
+            box-sizing: border-box;
+            padding-top: 25px;
+            padding-left: 10px;
+          }
+
+          .cross{
+            float:right;
+            height: 100%;
+            width: 20%;
+            //background-color: darkblue;
+
+            box-sizing: border-box;
+            padding-top: 25px;
+            padding-right: 10px;
+
+            img{
+              float: right;
+              width: 15px;
+              height: auto;
+            }
+          }
+        }
+
+        article{
+          height: 80%;
+          width: 100%;
+          //background-color: purple;
+
+          .top{
+            //background-color: yellow;
+            height: 33%;
+            width: 100%;
+            padding: 0;
+
+            .photo{
+              float:left;
+              //background-color: blue;
+              height: 100%;
+              width: 30%;
+              padding: 0;
+
+              box-sizing: border-box;
+              padding-top: 10px;
+              padding-left: 10px;
+
+              img{
+                width: 50px;
+                height: auto;
+              }
+            }
+
+            .product-info{
+              float:left;
+              //background-color: red;
+              height: 100%;
+              width: 50%;
+              padding: 0;
+
+              .product-name{
+                height: 33%;
+                width: 100%;
+                //background-color: purple;
+                margin: 0;
+              }
+
+              .product-description{
+                height: 33%;
+                width: 100%;
+                //background-color: black;
+                margin: 0;
+                font-size: 0.8em;
+              }
+
+              .interactive-buttons{
+                box-sizing: border-box;
+                //background-color: yellow;
+                height: 34%;
+                width: 100%;
+
+                .button-votes{
+                  float:left;
+                  box-sizing: border-box;
+                  //background-color: red;
+                  height: 100%;
+                  width: 50%;
+
+                  box-sizing: border-box;
+                  padding-top: 10px;
+                  padding-left: 10px;
+
+                  img{
+                    float:left;
+                    width: 20px;
+                    height: auto;
+                  }
+
+                  p{
+                    float:left;
+                    margin: 0;
+                    text-align: left;
+                  }
+                }
+
+                .button-comments{
+                  float:left;
+                  box-sizing: border-box;
+                  //background-color: red;
+                  height:100%;
+                  width: 50%;
+
+                  box-sizing: border-box;
+                  padding-top: 10px;
+                  padding-left: 10px;
+
+                  img{
+                    float:left;
+                    width: 15px;
+                    height: auto;
+                  }
+
+                  p{
+                    float:left;
+                    margin: 0;
+                    text-align: left;
+                  }
+                }
+              }
+            }
+
+            .phone{
+              float:right;
+              //background-color: green;
+              height: 100%;
+              width: 20%;
+              padding: 0;
+
+              box-sizing: border-box;
+              padding-top: 30px;
+              padding-right: 10px;
+
+              p{
+                float:right;
+                margin: 0;
+                text-align: left;
+              }
+            }
+          }
+
+          .middle{
+            //background-color: orange;
+            height: 34%;
+            width: 100%;
+            padding: 0;
+
+            .photo{
+              float:left;
+              //background-color: green;
+              height: 100%;
+              width: 30%;
+              padding: 0;
+
+              box-sizing: border-box;
+              padding-top: 10px;
+              padding-left: 10px;
+
+              img{
+                width: 50px;
+                height: auto;
+              }
+            }
+
+            .product-info{
+              float:left;
+              //background-color: red;
+              height: 100%;
+              width: 50%;
+              padding: 0;
+
+              .product-name{
+                height: 33%;
+                width: 100%;
+                //background-color: purple;
+                margin: 0;
+              }
+
+              .product-description{
+                height: 33%;
+                width: 100%;
+                //background-color: black;
+                margin: 0;
+                font-size: 0.8em;
+              }
+
+              .interactive-buttons{
+                box-sizing: border-box;
+                //background-color: yellow;
+                height: 34%;
+                width: 100%;
+
+                .button-votes{
+                  float:left;
+                  box-sizing: border-box;
+                  //background-color: red;
+                  height: 100%;
+                  width: 50%;
+
+                  box-sizing: border-box;
+                  padding-top: 10px;
+                  padding-left: 10px;
+
+                  img{
+                    float:left;
+                    width: 20px;
+                    height: auto;
+                  }
+
+                  p{
+                    float:left;
+                    margin: 0;
+                    text-align: left;
+                  }
+                }
+
+                .button-comments{
+                  float:left;
+                  box-sizing: border-box;
+                  //background-color: red;
+                  height:100%;
+                  width: 50%;
+
+                  box-sizing: border-box;
+                  padding-top: 10px;
+                  padding-left: 10px;
+
+                  img{
+                    float:left;
+                    width: 15px;
+                    height: auto;
+                  }
+
+                  p{
+                    float:left;
+                    margin: 0;
+                    text-align: left;
+                  }
+                }
+              }
+            }
+
+            .phone{
+              float:right;
+              //background-color: blue;
+              height: 100%;
+              width: 20%;
+              padding: 0;
+
+              box-sizing: border-box;
+              padding-top: 30px;
+              padding-right: 10px;
+
+              p{
+                float:right;
+                margin: 0;
+                text-align: left;
+              }
+            }
+          }
+
+          .bottom{
+            //background-color: pink;
+            height: 33%;
+            width: 100%;
+            padding: 0;
+
+            .photo{
+              float:left;
+              //background-color: blue;
+              height: 100%;
+              width: 30%;
+              padding: 0;
+
+              box-sizing: border-box;
+              padding-top: 10px;
+              padding-left: 10px;
+
+              img{
+                width: 50px;
+                height: auto;
+              }
+            }
+
+            .product-info{
+              float:left;
+              //background-color: red;
+              height: 100%;
+              width: 50%;
+              padding: 0;
+
+              .product-name{
+                height: 33%;
+                width: 100%;
+                //background-color: purple;
+                margin: 0;
+              }
+
+              .product-description{
+                height: 33%;
+                width: 100%;
+                //background-color: black;
+                margin: 0;
+                font-size: 0.8em;
+              }
+
+              .interactive-buttons{
+                box-sizing: border-box;
+                //background-color: yellow;
+                height: 34%;
+                width: 100%;
+
+                .button-votes{
+                  float:left;
+                  box-sizing: border-box;
+                  //background-color: red;
+                  height: 100%;
+                  width: 50%;
+
+                  box-sizing: border-box;
+                  padding-top: 10px;
+                  padding-left: 10px;
+
+                  img{
+                    float:left;
+                    width: 20px;
+                    height: auto;
+                  }
+
+                  p{
+                    float:left;
+                    margin: 0;
+                    text-align: left;
+                  }
+
+
+                }
+
+                .button-comments{
+                  float:left;
+                  box-sizing: border-box;
+                  //background-color: red;
+                  height:100%;
+                  width: 50%;
+
+                  box-sizing: border-box;
+                  padding-top: 10px;
+                  padding-left: 10px;
+
+                  img{
+                    float:left;
+                    width: 15px;
+                    height: auto;
+                  }
+
+                  p{
+                    float:left;
+                    margin: 0;
+                    text-align: left;
+                  }
+                }
+              }
+            }
+
+            .phone{
+              float:right;
+              //background-color: green;
+              height: 100%;
+              width: 20%;
+              padding: 0;
+
+              box-sizing: border-box;
+              padding-top: 30px;
+              padding-right: 10px;
+
+              p{
+                float:right;
+                margin: 0;
+                text-align: left;
+              }
+            }
+          }
+        }
+      }
+    }
+
+      .section-right{
         display: none;
       }
     }
+  }
+}
+
+
+@media (max-width: 479px){
+
+  //Header
+  main{
+
+    header{
+      display: block;
+      width: 100%;
+      height: 200px;
+      background-color: white;
+
+      .header-top{
+        box-sizing: border-box;
+        //background-color: red;
+        height: 50%;
+        width: 100%;
+        overflow: auto;
+
+        .section-left{
+          float: left;
+          width: 25%;
+          height: 100%;
+          //background-color: purple;
+          padding-top: 30px;
+          padding-left: 10px;
+
+          img{
+            width: 50px;
+            height: auto;
+          }
+        }
+
+        .section-middle{
+          float: left;
+          width: 50%;
+          height: 100%;
+          padding-top: 50px;
+          padding-left: 0px;
+          //background-color: black;
+
+          img{
+            float:left;
+            width: 15px;
+            height: auto;
+          }
+
+          input{
+            float:left;
+            overflow: hidden;
+          }
+        }
+
+        .section-right{
+          float: left;
+          width: 25%;
+          height: 100%;
+          padding: 0;
+          //background-color: pink;
+          padding-top: 50px;
+          padding-left: 0px;
+
+          p{
+            margin: 0;
+            text-align: left;
+          }
+        }
+      }
+
+      .header-bottom{
+        box-sizing: border-box;
+        //background-color: blue;
+        height: 50%;
+        width: 100%;
+
+        .section-left{
+          float: left;
+          width: 80%;
+          height: 100%;
+          padding-top: 50px;
+          padding-left: 10px;
+          //background-color: darkgreen;
+
+          ul{
+            width: 100%;
+            height: 30%;
+            list-style-type: none;
+            overflow: hidden;
+            padding-left: 0px;
+            margin: 0;
+
+            li {
+            display: inline-block;
+            color: grey;
+            padding-right: 10px;
+
+              a {
+                  color: #1A1A1A;
+              }
+            }
+          }
+        }
+
+        .section-right{
+          float: left;
+          width: 20%;
+          height: 100%;
+          padding: 0;
+          //background-color: green;
+          padding-top: 50px;
+          padding-left: 0px;
+
+          .arror-prev{
+            float:left;
+            width: 50px;
+            height: auto;
+          }
+
+          .arror-next{
+            float:left;
+            width: 50px;
+            height: auto;
+          }
+        }
+      }
+    }
+  }
+
+  //Section
+    main{
+      section{
+        box-sizing: border-box;
+        display: block;
+        width: 100%;
+        height: 750px;
+        padding: 0 /*top*/ 0 /*right*/ 0 /*bottom*/  0; /*left*/;
+
+          header{
+          display: none;
+        }
+
+        .section-left{
+          float:left;
+          //background-color: darkred;
+          width: 100%;
+          height: 80%;
+          padding: 0;
+          background-color: white;
+
+          .weekly{
+            //background-color: black;
+            height: 50%;
+            width: 100%;
+
+            header{
+              //box-sizing: border-box;
+              display: block;
+              //background-color: pink;
+              height: 20%;
+              width: 100%;
+              //overflow: auto;
+
+              .text{
+                float:left;
+                height: 100%;
+                width: 80%;
+                //background-color: black;
+                margin: 0;
+
+                text-align: left;
+                box-sizing: border-box;
+                padding-top: 25px;
+                padding-left: 10px;
+              }
+
+              .cross{
+                float:right;
+                height: 100%;
+                width: 20%;
+                //background-color: darkblue;
+
+                box-sizing: border-box;
+                padding-top: 25px;
+                padding-right: 10px;
+
+                img{
+                  float: right;
+                  width: 15px;
+                  height: auto;
+                }
+              }
+            }
+
+            article{
+              height: 80%;
+              width: 100%;
+              //background-color: purple;
+
+              .top{
+                //background-color: yellow;
+                height: 33%;
+                width: 100%;
+                padding: 0;
+
+                .photo{
+                  float:left;
+                  //background-color: blue;
+                  height: 100%;
+                  width: 30%;
+                  padding: 0;
+
+                  box-sizing: border-box;
+                  padding-top: 10px;
+                  padding-left: 10px;
+
+                  img{
+                    width: 50px;
+                    height: auto;
+                  }
+                }
+
+                .product-info{
+                  float:left;
+                  //background-color: red;
+                  height: 100%;
+                  width: 50%;
+                  padding: 0;
+
+                  .product-name{
+                    height: 33%;
+                    width: 100%;
+                    //background-color: purple;
+                    margin: 0;
+                  }
+
+                  .product-description{
+                    height: 33%;
+                    width: 100%;
+                    //background-color: black;
+                    margin: 0;
+
+                    font-size: 0.8em;
+                  }
+
+                  .interactive-buttons{
+                    box-sizing: border-box;
+                    //background-color: yellow;
+                    height: 34%;
+                    width: 100%;
+
+                    .button-votes{
+                      float:left;
+                      box-sizing: border-box;
+                      //background-color: red;
+                      height: 100%;
+                      width: 50%;
+
+                      box-sizing: border-box;
+                      padding-top: 10px;
+                      padding-left: 10px;
+
+                      img{
+                        float:left;
+                        width: 20px;
+                        height: auto;
+                      }
+
+                      p{
+                        float:left;
+                        margin: 0;
+                        text-align: left;
+                      }
+                    }
+
+                    .button-comments{
+                      float:left;
+                      box-sizing: border-box;
+                      //background-color: red;
+                      height:100%;
+                      width: 50%;
+
+                      box-sizing: border-box;
+                      padding-top: 10px;
+                      padding-left: 10px;
+
+                      img{
+                        float:left;
+                        width: 15px;
+                        height: auto;
+                      }
+
+                      p{
+                        float:left;
+                        margin: 0;
+                        text-align: left;
+                      }
+                    }
+                  }
+                }
+
+                .phone{
+                  display: none;
+                }
+              }
+
+              .middle{
+                //background-color: orange;
+                height: 34%;
+                width: 100%;
+                padding: 0;
+
+                .photo{
+                  float:left;
+                  //background-color: green;
+                  height: 100%;
+                  width: 30%;
+                  padding: 0;
+
+                  box-sizing: border-box;
+                  padding-top: 10px;
+                  padding-left: 10px;
+
+                  img{
+                    width: 50px;
+                    height: auto;
+                  }
+                }
+
+                .product-info{
+                  float:left;
+                  //background-color: red;
+                  height: 100%;
+                  width: 50%;
+                  padding: 0;
+
+                  .product-name{
+                    height: 33%;
+                    width: 100%;
+                    //background-color: purple;
+                    margin: 0;
+                  }
+
+                  .product-description{
+                    height: 33%;
+                    width: 100%;
+                    //background-color: black;
+                    margin: 0;
+                    font-size: 0.8em;
+                  }
+
+                  .interactive-buttons{
+                    box-sizing: border-box;
+                    //background-color: yellow;
+                    height: 34%;
+                    width: 100%;
+
+                    .button-votes{
+                      float:left;
+                      box-sizing: border-box;
+                      //background-color: red;
+                      height: 100%;
+                      width: 50%;
+
+                      box-sizing: border-box;
+                      padding-top: 10px;
+                      padding-left: 10px;
+
+                      img{
+                        float:left;
+                        width: 20px;
+                        height: auto;
+                      }
+
+                      p{
+                        float:left;
+                        margin: 0;
+                        text-align: left;
+                      }
+                    }
+
+                    .button-comments{
+                      float:left;
+                      box-sizing: border-box;
+                      //background-color: red;
+                      height:100%;
+                      width: 50%;
+
+                      box-sizing: border-box;
+                      padding-top: 10px;
+                      padding-left: 10px;
+
+                      img{
+                        float:left;
+                        width: 15px;
+                        height: auto;
+                      }
+
+                      p{
+                        float:left;
+                        margin: 0;
+                        text-align: left;
+                      }
+                    }
+                  }
+                }
+
+                .phone{
+                  display: none;
+                }
+              }
+
+              .bottom{
+                //background-color: pink;
+                height: 33%;
+                width: 100%;
+                padding: 0;
+
+                .photo{
+                  float:left;
+                  //background-color: blue;
+                  height: 100%;
+                  width: 30%;
+                  padding: 0;
+
+                  box-sizing: border-box;
+                  padding-top: 10px;
+                  padding-left: 10px;
+
+                  img{
+                    width: 50px;
+                    height: auto;
+                  }
+                }
+
+                .product-info{
+                  float:left;
+                  //background-color: red;
+                  height: 100%;
+                  width: 50%;
+                  padding: 0;
+
+                  .product-name{
+                    height: 33%;
+                    width: 100%;
+                    //background-color: purple;
+                    margin: 0;
+                  }
+
+                  .product-description{
+                    height: 33%;
+                    width: 100%;
+                    //background-color: black;
+                    margin: 0;
+                    font-size: 0.8em;
+                  }
+
+                  .interactive-buttons{
+                    box-sizing: border-box;
+                    //background-color: yellow;
+                    height: 34%;
+                    width: 100%;
+
+                    .button-votes{
+                      float:left;
+                      box-sizing: border-box;
+                      //background-color: red;
+                      height: 100%;
+                      width: 50%;
+
+                      box-sizing: border-box;
+                      padding-top: 10px;
+                      padding-left: 10px;
+
+                      img{
+                        float:left;
+                        width: 20px;
+                        height: auto;
+                      }
+
+                      p{
+                        float:left;
+                        margin: 0;
+                        text-align: left;
+                      }
+
+
+                    }
+
+                    .button-comments{
+                      float:left;
+                      box-sizing: border-box;
+                      //background-color: red;
+                      height:100%;
+                      width: 50%;
+
+                      box-sizing: border-box;
+                      padding-top: 10px;
+                      padding-left: 10px;
+
+                      img{
+                        float:left;
+                        width: 15px;
+                        height: auto;
+                      }
+
+                      p{
+                        float:left;
+                        margin: 0;
+                        text-align: left;
+                      }
+                    }
+                  }
+                }
+
+                .phone{
+                  display: none;
+                }
+              }
+            }
+          }
+
+          .today{
+            //background-color: black;
+            height: 50%;
+            width: 100%;
+
+            header{
+              //box-sizing: border-box;
+              display: block;
+              //background-color: pink;
+              height: 20%;
+              width: 100%;
+              //overflow: auto;
+
+              .text{
+                float:left;
+                height: 100%;
+                width: 80%;
+                //background-color: black;
+                margin: 0;
+
+                text-align: left;
+                box-sizing: border-box;
+                padding-top: 25px;
+                padding-left: 10px;
+              }
+
+              .cross{
+                float:right;
+                height: 100%;
+                width: 20%;
+                //background-color: darkblue;
+
+                box-sizing: border-box;
+                padding-top: 25px;
+                padding-right: 10px;
+
+                img{
+                  float: right;
+                  width: 15px;
+                  height: auto;
+                }
+              }
+            }
+
+            article{
+              height: 80%;
+              width: 100%;
+              //background-color: purple;
+
+              .top{
+                //background-color: yellow;
+                height: 33%;
+                width: 100%;
+                padding: 0;
+
+                .photo{
+                  float:left;
+                  //background-color: blue;
+                  height: 100%;
+                  width: 30%;
+                  padding: 0;
+
+                  box-sizing: border-box;
+                  padding-top: 10px;
+                  padding-left: 10px;
+
+                  img{
+                    width: 50px;
+                    height: auto;
+                  }
+                }
+
+                .product-info{
+                  float:left;
+                  //background-color: red;
+                  height: 100%;
+                  width: 50%;
+                  padding: 0;
+
+                  .product-name{
+                    height: 33%;
+                    width: 100%;
+                    //background-color: purple;
+                    margin: 0;
+                  }
+
+                  .product-description{
+                    height: 33%;
+                    width: 100%;
+                    //background-color: black;
+                    margin: 0;
+                    font-size: 0.8em;
+                  }
+
+                  .interactive-buttons{
+                    box-sizing: border-box;
+                    //background-color: yellow;
+                    height: 34%;
+                    width: 100%;
+
+                    .button-votes{
+                      float:left;
+                      box-sizing: border-box;
+                      //background-color: red;
+                      height: 100%;
+                      width: 50%;
+
+                      box-sizing: border-box;
+                      padding-top: 10px;
+                      padding-left: 10px;
+
+                      img{
+                        float:left;
+                        width: 20px;
+                        height: auto;
+                      }
+
+                      p{
+                        float:left;
+                        margin: 0;
+                        text-align: left;
+                      }
+                    }
+
+                    .button-comments{
+                      float:left;
+                      box-sizing: border-box;
+                      //background-color: red;
+                      height:100%;
+                      width: 50%;
+
+                      box-sizing: border-box;
+                      padding-top: 10px;
+                      padding-left: 10px;
+
+                      img{
+                        float:left;
+                        width: 15px;
+                        height: auto;
+                      }
+
+                      p{
+                        float:left;
+                        margin: 0;
+                        text-align: left;
+                      }
+                    }
+                  }
+                }
+
+                .phone{
+                  display: none;
+                }
+              }
+
+              .middle{
+                //background-color: orange;
+                height: 34%;
+                width: 100%;
+                padding: 0;
+
+                .photo{
+                  float:left;
+                  //background-color: green;
+                  height: 100%;
+                  width: 30%;
+                  padding: 0;
+
+                  box-sizing: border-box;
+                  padding-top: 10px;
+                  padding-left: 10px;
+
+                  img{
+                    width: 50px;
+                    height: auto;
+                  }
+                }
+
+                .product-info{
+                  float:left;
+                  //background-color: red;
+                  height: 100%;
+                  width: 50%;
+                  padding: 0;
+
+                  .product-name{
+                    height: 33%;
+                    width: 100%;
+                    //background-color: purple;
+                    margin: 0;
+                  }
+
+                  .product-description{
+                    height: 33%;
+                    width: 100%;
+                    //background-color: black;
+                    margin: 0;
+                    font-size: 0.8em;
+
+                  }
+
+                  .interactive-buttons{
+                    box-sizing: border-box;
+                    //background-color: yellow;
+                    height: 34%;
+                    width: 100%;
+
+                    .button-votes{
+                      float:left;
+                      box-sizing: border-box;
+                      //background-color: red;
+                      height: 100%;
+                      width: 50%;
+
+                      box-sizing: border-box;
+                      padding-top: 10px;
+                      padding-left: 10px;
+
+                      img{
+                        float:left;
+                        width: 20px;
+                        height: auto;
+                      }
+
+                      p{
+                        float:left;
+                        margin: 0;
+                        text-align: left;
+                      }
+
+
+                    }
+
+                    .button-comments{
+                      float:left;
+                      box-sizing: border-box;
+                      //background-color: red;
+                      height:100%;
+                      width: 50%;
+
+                      box-sizing: border-box;
+                      padding-top: 10px;
+                      padding-left: 10px;
+
+                      img{
+                        float:left;
+                        width: 15px;
+                        height: auto;
+                      }
+
+                      p{
+                        float:left;
+                        margin: 0;
+                        text-align: left;
+                      }
+                    }
+                  }
+                }
+
+                .phone{
+                  display: none;
+                }
+              }
+
+              .bottom{
+                //background-color: pink;
+                height: 33%;
+                width: 100%;
+                padding: 0;
+
+                .photo{
+                  float:left;
+                  //background-color: blue;
+                  height: 100%;
+                  width: 30%;
+                  padding: 0;
+
+                  box-sizing: border-box;
+                  padding-top: 10px;
+                  padding-left: 10px;
+
+                  img{
+                    width: 50px;
+                    height: auto;
+                  }
+                }
+
+                .product-info{
+                  float:left;
+                  //background-color: red;
+                  height: 100%;
+                  width: 50%;
+                  padding: 0;
+
+                  .product-name{
+                    height: 33%;
+                    width: 100%;
+                    //background-color: purple;
+                    margin: 0;
+                  }
+
+                  .product-description{
+                    height: 33%;
+                    width: 100%;
+                    //background-color: black;
+                    margin: 0;
+                    font-size: 0.8em;
+                  }
+
+                  .interactive-buttons{
+                    box-sizing: border-box;
+                    //background-color: yellow;
+                    height: 34%;
+                    width: 100%;
+
+                    .button-votes{
+                      float:left;
+                      box-sizing: border-box;
+                      //background-color: red;
+                      height: 100%;
+                      width: 50%;
+
+                      box-sizing: border-box;
+                      padding-top: 10px;
+                      padding-left: 10px;
+
+                      img{
+                        float:left;
+                        width: 20px;
+                        height: auto;
+                      }
+
+                      p{
+                        float:left;
+                        margin: 0;
+                        text-align: left;
+                      }
+
+
+                    }
+
+                    .button-comments{
+                      float:left;
+                      box-sizing: border-box;
+                      //background-color: red;
+                      height:100%;
+                      width: 50%;
+
+                      box-sizing: border-box;
+                      padding-top: 10px;
+                      padding-left: 10px;
+
+                      img{
+                        float:left;
+                        width: 15px;
+                        height: auto;
+                      }
+
+                      p{
+                        float:left;
+                        margin: 0;
+                        text-align: left;
+                      }
+                    }
+                  }
+                }
+
+                .phone{
+                  display: none;
+                }
+              }
+            }
+          }
+        }
+
+      .section-right{
+        display: none;
+      }
+    }
+  }
 }
