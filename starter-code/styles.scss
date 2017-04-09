@@ -325,26 +325,136 @@ main header{
           width: 100%;
           background-color: purple;
 
-
           .top{
             background-color: yellow;
-            height: 30%;
+            height: 33%;
             width: 100%;
             padding: 0;
+
+            .photo{
+              float:left;
+              background-color: blue;
+              height: 100%;
+              width: 50%;
+              padding: 0;
+            }
+
+            .user-info{
+              float:left;
+              background-color: green;
+              height: 100%;
+              width: 50%;
+              padding: 0;
+
+              .user-name{
+                height: 33%;
+                width: 100%;
+                background-color: purple;
+                margin: 0;
+              }
+
+              .user{
+                height: 33%;
+                width: 100%;
+                background-color: black;
+                margin: 0;
+              }
+
+              .button{
+                box-sizing: border-box;
+                background-color: yellow;
+                height: 34%;
+                width: 100%;
+              }
+            }
           }
 
           .middle{
             background-color: red;
-            height: 40%;
+            height: 34%;
             width: 100%;
             padding: 0;
+
+            .photo{
+              float:left;
+              background-color: green;
+              height: 100%;
+              width: 50%;
+              padding: 0;
+            }
+
+            .user-info{
+              float:left;
+              background-color: green;
+              height: 100%;
+              width: 50%;
+              padding: 0;
+
+              .user-name{
+                height: 33%;
+                width: 100%;
+                background-color: purple;
+                margin: 0;
+              }
+
+              .user{
+                height: 33%;
+                width: 100%;
+                background-color: black;
+                margin: 0;
+              }
+
+              .button{
+                box-sizing: border-box;
+                background-color: yellow;
+                height: 34%;
+                width: 100%;
+              }
+            }
           }
 
           .bottom{
             background-color: pink;
-            height: 30%;
+            height: 33%;
             width: 100%;
             padding: 0;
+
+            .photo{
+              float:left;
+              background-color: blue;
+              height: 100%;
+              width: 50%;
+              padding: 0;
+            }
+
+            .user-info{
+              float:left;
+              background-color: green;
+              height: 100%;
+              width: 50%;
+              padding: 0;
+
+              .user-name{
+                height: 33%;
+                width: 100%;
+                background-color: purple;
+                margin: 0;
+              }
+
+              .user{
+                height: 33%;
+                width: 100%;
+                background-color: black;
+                margin: 0;
+              }
+
+              .button{
+                box-sizing: border-box;
+                background-color: yellow;
+                height: 34%;
+                width: 100%;
+              }
+            }
           }
         }
 
@@ -359,6 +469,82 @@ main header{
         background-color: pink;
         height: 20%;
         width: 100%;
+
+        header{
+
+          background-color: pink;
+          height: 40%;
+          width: 100%;
+
+          .title{
+            float:left;
+            height: 50%;
+            width: 50%;
+            background-color: green;
+            margin: 0;
+          }
+
+          .text{
+            float:left;
+            height: 50%;
+            width: 50%;
+            background-color: red;
+            margin: 0;
+          }
+
+          .user{
+            clear:left;
+            height: 50%;
+            width: 100%;
+            background-color: yellow;
+            margin: 0;
+          }
+        }
+
+        article{
+          height: 60%;
+          width: 100%;
+          background-color: purple;
+
+          .photo{
+            float:left;
+            background-color: blue;
+            height: 40%;
+            width: 50%;
+            padding: 0;
+          }
+
+          .user-info{
+            float:left;
+            background-color: red;
+            height: 40%;
+            width: 50%;
+            padding: 0;
+
+            .user-name{
+              height: 50%;
+              width: 100%;
+              background-color: green;
+              margin: 0;
+            }
+
+            .user{
+              height: 50%;
+              width: 100%;
+              background-color: black;
+              margin: 0;
+            }
+
+          }
+
+          .content{
+            clear:left;
+            background-color: pink;
+            height: 60%;
+            width: 100%;
+            padding: 0;
+          }
+        }
       }
     }
   }
