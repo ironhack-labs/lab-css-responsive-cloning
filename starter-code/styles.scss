@@ -1,3 +1,116 @@
-body {
-  background: #f9f9f9;
+//$whitey: #f9f9f9;
+$ghost-white: #F8F8FF;
+$gy : #ADFF2F;
+$xs: 699px;
+
+@mixin dib-vam {
+  display: inline-block;
+  vertical-align: middle;
 }
+
+li {
+  list-style-type: none;
+}
+
+h1 {
+  margin: 0px;
+  @media screen and (max-width: $xs) {
+    font-size: 16px;
+  }
+}
+
+p {
+  margin: 0px;
+  @media screen and (max-width: $xs) {
+    font-size: 13px;
+  }
+}
+
+.dib-vam {
+  @include dib-vam;
+}
+
+body {
+  background: $ghost-white;
+
+  header {
+    section {
+      img, form, a, ul, li {
+        @include dib-vam;
+      }
+
+      img {
+        height: 5vw;
+      }
+
+      input {
+        width: 80vw;
+        @media screen and (max-width: $xs) {
+          width: 70vw;
+        }
+      }
+
+    }
+  }
+}
+
+.no-xs {
+  @media screen and (max-width: $xs) {
+    display: none;
+  }
+}
+
+.center {
+  text-align: center;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.product-img {
+  @include dib-vam;
+  img {
+    height: 80px;
+    width: 80px;
+  }
+}
+
+.product-info {
+  @include dib-vam;
+  @media screen and (max-width: $xs) {
+    width: 70vw;
+  }
+
+  .product-title {
+    height: 40px;
+  }
+
+  .product-social {
+    height: 40px;
+  }
+}
+
+section .box {
+  background: $gy;
+  margin: 10px;
+  p, input, img, button {
+    @include dib-vam;
+  }
+  header {
+    h1 {
+      float: left;
+    }
+    img {
+      float: right;
+    }
+  }
+  article {
+    clear: both;
+  }
+}
+
