@@ -1,0 +1,79 @@
+li {
+  list-style-type: none; }
+
+h1 {
+  margin: 0px; }
+  @media screen and (max-width: 699px) {
+    h1 {
+      font-size: 16px; } }
+
+p {
+  margin: 0px; }
+  @media screen and (max-width: 699px) {
+    p {
+      font-size: 13px; } }
+
+.dib-vam {
+  display: inline-block;
+  vertical-align: middle; }
+
+body {
+  background: #F8F8FF; }
+  body header section img, body header section form, body header section a, body header section ul, body header section li {
+    display: inline-block;
+    vertical-align: middle; }
+  body header section img {
+    height: 5vw; }
+  body header section input {
+    width: 80vw; }
+    @media screen and (max-width: 699px) {
+      body header section input {
+        width: 70vw; } }
+
+@media screen and (max-width: 699px) {
+  .no-xs {
+    display: none; } }
+
+.center {
+  text-align: center; }
+
+.left {
+  float: left; }
+
+.right {
+  float: right; }
+
+.product-img {
+  display: inline-block;
+  vertical-align: middle; }
+  .product-img img {
+    height: 80px;
+    width: 80px; }
+
+.product-info {
+  display: inline-block;
+  vertical-align: middle; }
+  @media screen and (max-width: 699px) {
+    .product-info {
+      width: 70vw; } }
+  .product-info .product-title {
+    height: 40px; }
+  .product-info .product-social {
+    height: 40px; }
+
+section .box {
+  background: #ADFF2F;
+  margin: 10px; }
+  section .box p, section .box input, section .box img, section .box button {
+    display: inline-block;
+    vertical-align: middle; }
+  section .box header h1 {
+    float: left; }
+  section .box header img {
+    float: right; }
+  section .box article {
+    clear: both; }
+
+
+
+/*# sourceMappingURL=styles.min.css.map*/
