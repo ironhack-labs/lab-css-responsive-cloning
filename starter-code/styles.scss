@@ -1,3 +1,213 @@
+$color-orange: rgb(218,85,49);
+$color-text-grey: rgb(178,178,178);
+$color-text-black: rgb(30,30,30);
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+
+
 body {
+  background: white;
+  font-family: 'Roboto', sans-serif;;
+  color: $color-text-grey;
+  font-size: 12px;
+  border: none;
+  padding: none;
+  margin: none;
+}
+
+body > header {
+  .header {
+    padding: 0px 30px;
+    font-size: 1.3em;
+    height: 24px;
+    .logo {
+      display: inline-block;
+      width: 5%;
+      height: 100%;
+      img {
+        height: 100%;
+      }
+    }
+    .search{
+      border: 1px solid $color-text-grey;
+      display: inline-block;
+      width: 80%;
+      height: 100%;
+      vertical-align: top;
+      border-radius: 3px;
+      img {
+        height: 100%;
+      }
+    }
+    .login {
+      width: 10%;
+      display: inline-block;
+    }
+
+  }
+  nav {
+    font-size: 1.3em;
+    li {margin-right: 10px;}
+    img {width: 50%;}
+  }
+}
+
+input {
+  padding: 2px;
+  border: none;
+  background: transparent;
+  width: 95%;
+  height: 100%;
+  font-size: 1em;
+  color: $color-text-grey;
+  margin-bottom: 8px;
+  vertical-align: top;
+}
+
+ul {
+  li {
+    display: inline-block;
+    text-decoration: none;
+  }
+}
+button {
+  color: white;
+  background-color: $color-orange;
+  border-radius: 3px;
+  border: 1px solid $color-orange;
+}
+
+.welcome {
+  width: 100%;
+  clear: both;
+  display: inline-block;
+  background-color: white;
+  border-radius: 3px;
+  border: 1px solid $color-text-grey;
+  input {
+    width: auto;
+    border-radius: 3px;
+    border: 1px solid $color-text-grey;
+  }
+}
+
+.welcome img{
+  height: 24px;
+}
+
+.page {
+  width: 94%;
+  display: inline-block;
+  border-top: 2px solid $color-text-grey;
+  padding: 30px;
   background: #f9f9f9;
+  display: inline-block;
+}
+
+.main {
+  float: left;
+  width: 65%;
+  padding: 10px 0px;
+  display: inline-block;
+
+  .popular, .today{
+    background-color: white;
+    border-radius: 3px;
+    border: 1px solid $color-text-grey;
+    width: 100%;
+    clear: both;
+    display: inline-block;
+    margin-top: 15px;
+
+    > header {
+      display: inline-block;
+      margin: 1%;
+      width: 98%;
+      font-size: 1.3em;
+      border-bottom: 1px solid $color-text-grey;
+    }
+
+    hr {
+      border: 1px solid $color-text-grey;
+      margin: 0px;
+    }
+
+    article {
+      margin: 1% 2%;
+      width: 98%;
+      display: inline-block;
+    }
+
+    article .avatar {
+      display: inline-block;
+      float: left;
+      width: 15%;
+      img {
+        margin: 1% 2%;
+        width: 90%;
+      }
+    }
+
+    article .app {
+      display: inline-block;
+      float: right;
+      width: 85%;
+      span {
+        margin-left: 10px;
+      }
+      h2 {
+        font-size: 1.2em;
+        margin: 0px;
+      }
+      h3 {
+        font-size: 0.9em;
+        margin: 0px;
+      }
+      footer {
+        margin-top: 2%;
+      }
+    }
+  }
+
+
+}
+
+.sidebar {
+  float: right;
+  width: 30%;
+  padding: 10px 0px;
+  display: inline-block;
+
+  .upcoming {
+    margin-top: 15px;
+    border-radius: 3px;
+    border: 1px solid $color-text-grey;
+    background-color: white;
+  }
+  .upcoming footer span{
+    color: $color-orange;
+    margin: 10px;
+    border-top: 2px solid $color-text-grey;
+  }
+
+  .tweets {
+    border-radius: 3px;
+    border: 1px solid $color-text-grey;
+    background-color: white;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    font-size: 10px;
+  }
+  .sidebar {
+    visibility: hidden;
+  }
+  .main {
+    display: block;
+    width: 100%;
+    padding-right: 30px;
+  }
+
 }
