@@ -1,3 +1,518 @@
+@import url("fonts/stylesheet.css");
+$background: #f9f9f9;
+$font: 'WeblySleek UI Semibold';
+$font2: 'Segoe UI';
+$border-color: #d1d1d1 1px solid;
+$xs: "(min-width: 0) and (max-width: 768px)";
+$sm: "(min-width: 768px)";
+$md: "(min-width: 992px)";
+$lg: "(min-width: 1200px)"; /*MEDIA QUERIES BREAKPOINTS*/
+// Small devices (landscape phones, 0px to 768px)
+@media #{$xs} {
+  .subscribe-base {
+    display: none;
+  }
+
+  #icon-message-talk {
+    display: none;
+  }
+
+  .teaser-container-button-right {
+    display: none;
+  }
+
+  .section-right {
+    display: none;
+  }
+
+  .trophy {
+    display: none;
+  }
+}
+// Medium devices (tablets, 768px and up)
+@media #{$sm} {
+  main {
+    margin: 0 2.6%;
+  }
+
+  .subscribe-base {
+    margin-top: 140px;
+    padding: 25px 25px 25px 11%;
+    background-color: white;
+    border: $border-color;
+    position: relative;
+
+    &-close {
+      position: absolute;
+      top: 33%;
+      right: 3%;
+    }
+  }
+
+  .subscribe-welcome {
+    &-icon {
+      max-width: 30px;
+      vertical-align: middle;
+    }
+
+    &-sp1 {
+      font-weight: bold;
+      color: black;
+    }
+  }
+
+  .subscribe-box {
+    padding: 0 50px 0 160px;
+    height: 25px;
+
+    &-input {
+      color: #d4d4d4;
+      height: 80%;
+      border: $border-color;
+      border-radius: 3px;
+      margin-right: 10px;
+    }
+
+    &-button {
+      font-size: 10px;
+      color: white;
+      background: rgb(218,85,54);
+      border: rgb(214, 62, 27);
+      height: 110%;
+      padding: 5px 10px;
+      border-radius: 3px;
+    }
+  }
+
+  .teaser-container-button:nth-child(4),
+  .teaser-container-button:nth-child(5) {
+    display: none;
+  }
+
+  .trophy {
+    display: inline-block;
+    padding: 4px;
+    vertical-align: top;
+    margin-right: 5px;
+    height: 18px;
+  }
+
+  .trophy > img {
+    max-width: 16px;
+  }
+
+  .no {
+    display: none;
+  }
+
+  #icon-message-talk {
+    position: fixed;
+    bottom: 12px;
+    right: 12px;
+    background-color: $background;
+    z-index: 1;
+    transition: all 0.25s;
+  }
+
+  #icon-message-talk:hover {
+    transform: scale(1.15, 1.15);
+    cursor: pointer;
+  }
+
+  .section-right {
+    display: none;
+  }
+}
+@media #{$md} {
+  .subscribe-base {
+    padding: 25px 10px 25px 3%;
+    text-align: center;
+  }
+
+  .subscribe-welcome {
+    display: inline-block;
+  }
+
+  .subscribe-box {
+    display: inline-block;
+    padding: 0 0 0 2%;
+
+    &-input {
+      width: 200px;
+      height: 25px;
+    }
+  }
+
+  .subscribe-welcome-close {
+    top: 42%;
+  }
+}
+// Large devices (desktops, 992px and up)
+// @media #{$md}  {
+//   .subscribe-base{
+//     display: none;
+//   }
+//  }
+// Extra large devices (large desktops, 1200px and up)
+@media #{$lg} {
+  .section-right {
+    display: block;
+    float: right;
+    width: 20%;
+  }
+
+  .section-left {
+    float: left;
+    width: 78%;
+    margin-right: 10px;
+  }
+
+  .kitty-container {
+    margin-top: 25px;
+    padding: 15px;
+    position: relative;
+  }
+
+  .kitty-content {
+    & > p {
+      font-size: 13px;
+    }
+
+    & > button {
+      background-image: url("images/slack-icon.png");
+      background-position: 5px;
+      background-repeat: no-repeat;
+      //padding-left: 30px;
+      background-color: rgb(218,85,54);
+      border: rgb(214, 62, 27);
+      color: white;
+      font-family: $font;
+      border-radius: 3px;
+      height: 25px;
+      padding: 1px 1px 1px 10px;
+      width: 95%;
+      margin: 7px 0 15px 6px;
+      font-size: 13px;
+    }
+  }
+
+  .kitty-close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+  }
+
+  .chat-container {
+    margin-top: 25px;
+    padding: 15px;
+
+    & > ul {
+      list-style: none;
+      padding: 15px 0;
+      margin: 0;
+    }
+
+    &-footer {
+      margin-top: 25px;
+      border-top: $border-color;
+    }
+
+    &-footer > p {
+      text-align: center;
+      color: rgb(218,85,54);
+      font-family: $font;
+      margin: 10px 0 0;
+    }
+  }
+
+  .chat-header {
+    text-align: left;
+    padding: 0 0 15px;
+    border-bottom: $border-color;
+    color: black;
+    font-family: $font;
+    font-weight: bold;
+  }
+
+  .chat-person {
+    position: relative;
+    margin-top: 40px;
+    margin-bottom: 10px;
+
+    &-icon {
+      border-radius: 50%;
+      width: 40px;
+      height: auto;
+      margin-top: 8px;
+    }
+  }
+
+  .chat-person:first-child {
+    margin: 0;
+  }
+
+  .chat-content {
+    float: right;
+    margin-left: 12px;
+    width: 75%;
+
+    & > button,
+    & > span {
+      font-size: small;
+      display: block;
+      text-align: left;
+    }
+
+    & > span:nth-child(1) {
+      font-weight: bold;
+      color: black;
+    }
+
+    & > span:nth-child(2) {
+      margin-bottom: 6px;
+    }
+    // &>span:last-child(-1){
+    //   margin-bottom: 50px;
+    // }
+    & > button {
+      border: $border-color;
+      background-color: inherit;
+      font-weight: bold;
+      color: black;
+    }
+  }
+}
+
 body {
-  background: #f9f9f9;
+  background: $background;
+  color: rgb(178,178,178);
+  font-family: $font2;
+}
+
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+p {
+  margin: 5px;
+}
+
+h3 {
+  margin: 0;
+  color: rgba(0,0,0,0.75);
+}
+
+header {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  background: white;
+  border-bottom: $border-color;
+  max-width: 1200px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.top-menu {
+  display: flex;
+  margin: 10px;
+  align-items: center;
+  justify-content: center;
+
+  &-icon {
+    flex-grow: 1;
+    max-width: 50px;
+    max-height: 50px;
+  }
+
+  &-search {
+    flex-grow: 4;
+    height: 30px;
+    background-image: url("images/search.png");
+    background-position: 5px;
+    background-repeat: no-repeat;
+    padding-left: 30px;
+    border: $border-color;
+    color: #d4d4d4;
+  }
+
+  &-login {
+    flex-grow: 1;
+    border: none;
+    background: none;
+    padding: 0;
+    font-family: $font;
+    color: rgb(178,178,178);
+  }
+}
+
+.nav-bar {
+  margin-left: 15px;
+  margin-right: 15px;
+  position: relative;
+  border-top: 1px solid rgba(#808080, 0.40);
+
+  & > ul {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    margin-right: 50px;
+    height: 34px;
+    overflow: hidden;
+  }
+
+  &-topic {
+    display: inline-block;
+    padding: 11px;
+    font-size: smaller;
+    color: #999999;
+  }
+
+  &-topic:hover {
+    background-color: #F9F9F9;
+    color: rgb(30, 30, 30);
+    cursor: pointer;
+  }
+
+  &-arrows {
+    position: absolute;
+    top: 7px;
+    right: 0;
+    display: inline-block;
+  }
+
+  &-arrow {
+    vertical-align: middle;
+    max-width: 16px;
+  }
+}
+
+.img-close {
+  float: right;
+  max-width: 10px;
+}
+/*************************
+ ***      TEASERS      ***
+ *************************
+ */
+.teaser-base {
+  margin-top: 25px;
+
+  &-footer {
+    text-align: center;
+    padding-bottom: 20px;
+  }
+
+  &-footer > img {
+    padding-right: 2px;
+    max-width: 10px;
+  }
+}
+
+.teaser-base:first-child {
+  margin-top: 140px;
+  @media #{$sm} {
+    margin-top: 25px;
+  }
+}
+
+.teaser-header {
+  position: relative;
+  color: rgba(0, 0, 0, 0.75);
+  background-color: white;
+  // border: $border-color;
+  border-bottom: $border-color;
+  margin-left: 25px;
+  margin-right: 25px;
+
+  &-left {
+    font-size: large;
+    margin: 0;
+    padding: 20px 20px 20px 10px;
+  }
+
+  &-right {
+    position: absolute;
+    top: 20px;
+    right: 5px;
+  }
+}
+/**
+TODO NO PONE BORDER SUPERIOR
+ */
+
+.teaser-container:nth-child(2) {
+  border-top: none;
+}
+
+.teaser-container {
+  border-top: $border-color;
+  padding: 15px 0;
+  background-color: white;
+  padding-left: 25px;
+
+  & > picture > img {
+    margin-right: 20px;
+    vertical-align: top;
+    padding-top: 6px;
+    max-width: 80px;
+  }
+
+  &-content {
+    font-size: small;
+    display: inline-block;
+    width: 79%;
+    @media #{$sm} {
+      width: 85%;
+    }
+
+    & > h3 {
+      font-size: large;
+    }
+  }
+
+  &-buttons > ul {
+    padding: 0;
+  }
+
+  &-button {
+    border: $border-color;
+    display: inline-block;
+    padding: 4px;
+    vertical-align: top;
+    margin-right: 5px;
+    height: 18px;
+
+    & > img {
+      padding-right: 2px;
+      max-width: 16px;
+    }
+  }
+  @media #{$sm} {
+    &-button-right {
+      display: inline-block;
+      padding: 4px;
+      vertical-align: top;
+      margin-right: 5px;
+      float: right;
+
+      &-1 {
+        color: black;
+        background-color: rgb(242, 242, 242);
+      }
+    }
+  }
+
+  &-button:hover {
+    background-color: rgb(232,232,232);
+    color: rgb(30, 30, 30);
+    cursor: pointer;
+  }
+}
+
+.box-container-style {
+  background-color: white;
+  border: $border-color;
 }

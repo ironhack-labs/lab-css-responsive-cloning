@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,7 +8,270 @@
   <title>CSS Lab | Responsive Cloning | Product Hunt</title>
   <link rel="stylesheet" href="styles.min.css">
 </head>
+
 <body>
-  
+
+  <header>
+    <div class="top-menu">
+      <img class="top-menu-icon" src="images/logo.png" alt="">
+      <input class="top-menu-search" type="text" name="" placeholder="Discover your next favourite thing" value="">
+      <button class="top-menu-login" type="button" name="button">... Login</button>
+    </div>
+    <div class="nav-bar">
+      <ul>
+        <li class="nav-bar-topic">Home</li>
+        <li class="nav-bar-topic">Tech</li>
+        <li class="nav-bar-topic">Games</li>
+        <li class="nav-bar-topic">Podcasts</li>
+        <li class="nav-bar-topic">Books</li>
+        <li class="nav-bar-topic">Bots</li>
+        <li class="nav-bar-topic">Developer Tools</li>
+        <li class="nav-bar-topic">iMessage Apps</li>
+        <li class="nav-bar-topic">iPhone</li>
+        <li class="nav-bar-topic">Photography Tools</li>
+      </ul>
+      <div class="nav-bar-arrows">
+        <img class="nav-bar-arrow" src="images/arrow-prev.png" alt="">
+        <img class="nav-bar-arrow" src="images/arrow-next.png" alt="">
+      </div>
+
+    </div>
+  </header>
+
+  <main>
+    <img id="icon-message-talk" src="images/message_talk.png" alt="">
+    <!-- >emmet ==> section.suscribe-base>p+div.suscribe-box>input+button</!-->
+    <section class="subscribe-base">
+      <div class="subscribe-welcome">
+        <img class="subscribe-welcome-icon" src="images/icon-hand.png" alt="">
+        <span class="subscribe-welcome-sp1">Welcome to Product Hunt</span>
+        <span class="subscribe-welcome-sp2">Get the best new products in your inbox, daily</span>
+      </div>
+
+      <div class="subscribe-box">
+        <input class="subscribe-box-input" type="text" value="" placeholder=" Your mail">
+        <button class="subscribe-box-button">SUBSCRIBE</button></div>
+      <img class="subscribe-base-close img-close" src="images/close.png" alt="">
+    </section>
+
+    <section class="section-left">
+      <div class="teaser-base box-container-style">
+        <div class="teaser-header">
+          <h2 class="teaser-header-left">Popular this week</h2>
+          <div class="teaser-header-right">
+            <img class="img-close" src="images/close.png" alt="">
+          </div>
+        </div>
+        <div class="teaser-container">
+          <picture>
+            <!-- <source srcset="images\votes.png" media="(max-width: 600px)">
+            <source srcset="images\popular-this-week\app-1.png" media="(min-width: 800px)"> -->
+            <img src="images\popular-this-week\app-1.png" alt="">
+          </picture>
+          <div class="teaser-container-content">
+            <h3>Duolingo Bots</h3>
+            <p>Ak oiwered characters to teach language conversation</p>
+            <div class="teaser-container-buttons">
+              <!--emmet  ul>li.teaser-container-button*4>img+span -->
+              <ul>
+                <li class="teaser-container-button"><img src="images/votes.png" alt=""><span>1460</span></li>
+                <li class="teaser-container-button"><img src="images/comments.png" alt=""><span>49</span></li>
+                <li class="trophy no"><img src="images/trophy.png" alt=""><span>#1 IN TECH</span></li>
+                <li class="teaser-container-button"><img src="images/add-list.png" alt=""><span>SAVE</span></li>
+                <li class="teaser-container-button"><img src="images/external-link.png" alt=""></li>
+                <li class="teaser-container-button-right"><span>+ 2</span></li>
+                <li class="teaser-container-button-right teaser-container-button-right-1"><span>IPHONE</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="teaser-container">
+          <picture>
+            <img src="images\popular-this-week\app-2.png" alt="">
+          </picture>
+          <div class="teaser-container-content">
+            <h3>Tribe 2.0</h3>
+            <p>Introducing Augmented Messaging&trade;</p>
+            <div class="teaser-container-buttons">
+              <ul>
+                <li class="teaser-container-button"><img src="images/votes.png" alt=""><span>1465</span></li>
+                <li class="teaser-container-button"><img src="images/comments.png" alt=""><span>188</span></li>
+                <li class="trophy"><img src="images/trophy.png" alt=""><span>#1 IN TECH</span></li>
+                <li class="teaser-container-button"><img src="images/add-list.png" alt=""><span>SAVE</span></li>
+                <li class="teaser-container-button"><img src="images/external-link.png" alt=""></li>
+                <li class="teaser-container-button-right"><span>+ 4</span></li>
+                <li class="teaser-container-button-right teaser-container-button-right-1"><span>ANDROID</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="teaser-container">
+          <picture>
+            <img src="images\popular-this-week\app-3.png" alt="">
+          </picture>
+          <div class="teaser-container-content">
+            <h3>Workspace by Facebook</h3>
+            <p>Connect everyone in your company and turn ideas into action</p>
+            <div class="teaser-container-buttons">
+              <ul>
+                <li class="teaser-container-button"><img src="images/votes.png" alt=""><span>1003</span></li>
+                <li class="teaser-container-button"><img src="images/comments.png" alt=""><span>80</span></li>
+                <li class="trophy no"><img src="images/trophy.png" alt=""><span>#1 IN TECH</span></li>
+                <li class="teaser-container-button"><img src="images/add-list.png" alt=""><span>SAVE</span></li>
+                <li class="teaser-container-button"><img src="images/external-link.png" alt=""></li>
+                <li class="teaser-container-button-right"><span>+ 2</span></li>
+                <li class="teaser-container-button-right teaser-container-button-right-1"><span>ANDROID</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="teaser-base-footer">
+          <img src="images/arrow-down.png" alt="">
+          <span>SHOW MORE</span>
+        </div>
+      </div>
+      <div class="teaser-base box-container-style">
+        <div class="teaser-header">
+          <h2 class="teaser-header-left">Today</h2>
+          <div class="teaser-header-right">
+            <span>POPULAR | NEWEST</span>
+          </div>
+        </div>
+        <div class="teaser-container">
+          <picture>
+            <img src="images\today\app-1.png" alt="">
+          </picture>
+          <div class="teaser-container-content">
+            <h3>Sprayscape</h3>
+            <p>A perfectly imperfect VR-ish camera experiment, by Google</p>
+            <div class="teaser-container-buttons">
+              <ul>
+                <li class="teaser-container-button"><img src="images/votes.png" alt=""><span>82</span></li>
+                <li class="teaser-container-button"><img src="images/comments.png" alt=""><span>8</span></li>
+                <li class="trophy no"><img src="images/trophy.png" alt=""><span>#1 IN TECH</span></li>
+                <li class="teaser-container-button"><img src="images/add-list.png" alt=""><span>SAVE</span></li>
+                <li class="teaser-container-button"><img src="images/external-link.png" alt=""></li>
+                <li class="teaser-container-button-right"><span>+ 3</span></li>
+                <li class="teaser-container-button-right teaser-container-button-right-1"><span>ANDROID</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="teaser-container">
+          <picture>
+            <img src="images\today\app-2.png" alt="">
+          </picture>
+          <div class="teaser-container-content">
+            <h3>Ask Gary Vee</h3>
+            <p>The unofficial Gary Vee persona chatbot on Messenger</p>
+            <div class="teaser-container-buttons">
+              <ul>
+                <li class="teaser-container-button"><img src="images/votes.png" alt=""><span>21</span></li>
+                <li class="teaser-container-button"><img src="images/comments.png" alt=""><span>9</span></li>
+                <li class="trophy no"><img src="images/trophy.png" alt=""><span>#1 IN TECH</span></li>
+                <li class="teaser-container-button"><img src="images/add-list.png" alt=""><span>SAVE</span></li>
+                <li class="teaser-container-button"><img src="images/external-link.png" alt=""></li>
+                <li class="teaser-container-button-right"><span>+ 1</span></li>
+                <li class="teaser-container-button-right teaser-container-button-right-1"><span>GET SHIT DONE</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="teaser-container">
+          <picture>
+            <img src="images\today\app-3.png" alt="">
+          </picture>
+          <div class="teaser-container-content">
+            <h3>The electron Wheel</h3>
+            <p>Turn your standard bicyle into an electric bike.</p>
+            <div class="teaser-container-buttons">
+              <ul>
+                <li class="teaser-container-button"><img src="images/votes.png" alt=""><span>23</span></li>
+                <li class="teaser-container-button"><img src="images/comments.png" alt=""><span>4</span></li>
+                <li class="trophy no"><img src="images/trophy.png" alt=""><span>#1 IN TECH</span></li>
+                <li class="teaser-container-button"><img src="images/add-list.png" alt=""><span>SAVE</span></li>
+                <li class="teaser-container-button"><img src="images/external-link.png" alt=""></li>
+                <li class="teaser-container-button-right"><span></span></li>
+                <li class="teaser-container-button-right teaser-container-button-right-1"><span></span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-right">
+      <div class="kitty-container box-container-style">
+        <div class="kitty-header">
+          <h3>Kittybot for Slack.</h3>
+          <img class="kitty-close img-close" src="images/close.png" alt="">
+        </div>
+        <div class="kitty-content">
+          <p>A friendly feline that sends you cool new things. </p>
+          <button>ADD KITTYBOT TO SLACK</button>
+        </div>
+      </div>
+
+      <div class="chat-container box-container-style">
+        <div class="chat-header"><span>UPCOMING LIVE CHATS</span></div>
+        <ul>
+          <li class="chat-person">
+            <img src="images/adam.jpg" alt="" class="chat-person-icon">
+            <div class="chat-content">
+              <span class="chat-person-name">Adam Besvinick</span>
+              <span class="chat-person-description"> VC at Deep Fork Capital</span>
+              <button class="chat-person-remind">REMIND ME</button>
+            </div>
+          </li>
+          <li class="chat-person">
+            <img src="images/susan.jpg" alt="" class="chat-person-icon">
+            <div class="chat-content">
+              <span class="chat-person-name">Susan David</span>
+              <span class="chat-person-description">Author of Emotionally Guilty</span>
+              <button class="chat-person-remind">REMIND ME</button>
+            </div>
+          </li>
+          <li class="chat-person">
+            <img src="images/avid.jpg" alt="" class="chat-person-icon">
+            <div class="chat-content">
+              <span class="chat-person-name">Avid Larizadeh Duggan</span>
+              <span class="chat-person-description">General partner at GV</span>
+              <button class="chat-person-remind">REMIND ME</button>
+            </div>
+          </li>
+          <li class="chat-person">
+            <img src="images/katerina.jpg" alt="" class="chat-person-icon">
+            <div class="chat-content">
+              <span class="chat-person-name">Katerina Markov Schneider</span>
+              <span class="chat-person-description">Founder and CEO of Ritual</span>
+              <button class="chat-person-remind">REMIND ME</button>
+            </div>
+          </li>
+          <li class="chat-person">
+            <img src="images/jocelyn.jpg" alt="" class="chat-person-icon">
+            <div class="chat-content">
+              <span class="chat-person-name">Jocelyn Glei</span>
+              <span class="chat-person-description">Master of Productivity, founder and author...</span>
+              <button class="chat-person-remind">REMIND ME</button>
+            </div>
+          </li>
+        </ul>
+        <div class="chat-container-footer">
+          <p>SEE MORE</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- <div class="twitter-container">
+      <a class="twitter-timeline" data-width="250" data-height="500" href="https://twitter.com/ProductHunt">Tweets by ProductHunt</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </div> -->
+
+  </main>
+
 </body>
+
 </html>
