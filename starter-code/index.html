@@ -1,13 +1,315 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>CSS Lab | Responsive Cloning | Product Hunt</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <link rel="stylesheet" href="styles.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </head>
+
 <body>
-  
+
+  <nav>
+
+    <div class="row container">
+      <div class="left">
+        <img src="./images/logo.png" class="logo">
+      </div>
+      <div class="middle">
+        <img src="./images/search.png" class="icon">
+        <input type="text" placeholder="Discover...">
+      </div>
+      <div class="right">
+        <span>...</span>
+        <b>Login</b>
+      </div>
+    </div>
+
+    <div class="row container">
+      <ul class="nav nav-tabs">
+        <li role="presentation" class="active"><a href="#">Home</a></li>
+        <li role="presentation"><a href="#">Tech</a></li>
+        <li role="presentation"><a href="#">Games</a></li>
+        <li role="presentation"><a href="#">Podcasts</a></li>
+        <li role="presentation"><a href="#">Books</a></li>
+        <li role="presentation"><a href="#">Bots</a></li>
+        <li role="presentation"><a href="#">Developer Tools</a></li>
+        <li role="presentation"><a href="#">iMessage Apps</a></li>
+        <li role="buttons">
+          <a href="#">
+            <img src="./images/arrow-prev.png" width="20px">
+            <img src="./images/arrow-next.png" width="20px">
+          </a>
+        </li>
+      </ul>
+
+    </div>
+
+  </nav>
+
+  <div class="alert alert-welcome alert-dismissible hidden-xs container" role="alert">
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+    <b>Welcome to Product Hunt</b> Get the best new products in your inbox, daily.
+    <input type="email" name="" id="" placeholder="Your Email">
+    <button type="button" class="submit" name="button">SUSCRIBE</button>
+  </div>
+
+  <div class="content col-xs-12 col-lg-10 container">
+    <div class="panel panel-white">
+      <div class="panel-heading">
+        Popular this week
+        <img src="./images/close.png">
+      </div>
+      <div class="panel-body">
+        <div class="media">
+          <div class="media-left media-middle">
+            <a href="#">
+              <img class="media-object" src="./images/popular-this-week/app-1.png" alt="...">
+            </a>
+          </div>
+          <div class="media-body">
+            <h4 class="media-heading">Duolingo Bot</h4>
+
+            <span class="description">Al-powered characters to teach language conversation</span>
+
+            <div class="action">
+              <button type="button" name="button" class="color-black">
+                  <img src="./images/votes.png">
+                  1460
+                </button>
+
+              <button type="button" name="button">
+                  <img src="./images/comments.png">
+                  49
+                </button>
+
+              <button type="button" name="button">
+                  SAVE
+                </button>
+
+              <button type="button" name="button">
+                  E
+                </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="media">
+          <div class="media-left media-middle">
+            <a href="#">
+              <img class="media-object" src="./images/popular-this-week/app-2.png" alt="...">
+            </a>
+          </div>
+          <div class="media-body">
+            <h4 class="media-heading">Tibe 2.0</h4>
+
+            <span class="description">Introducing Augmented Messaging&#8482;</span>
+
+            <div class="action">
+              <button type="button" name="button" class="color-black">
+                  <img src="./images/votes.png">
+                  1465
+                </button>
+
+              <button type="button" name="button">
+                  <img src="./images/comments.png">
+                  188
+                </button>
+
+              <button type="button" name="button">
+                  SAVE
+                </button>
+
+              <button type="button" name="button">
+                  E
+                </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="media">
+          <div class="media-left media-middle">
+            <a href="#">
+              <img class="media-object" src="./images/popular-this-week/app-3.png" alt="...">
+            </a>
+          </div>
+          <div class="media-body">
+            <h4 class="media-heading">Workplace by Facebook</h4>
+
+            <span class="description">Connect everyone in your company and turn ideas into action</span>
+
+            <div class="action">
+              <button type="button" name="button" class="color-black">
+                  <img src="./images/votes.png">
+                  1003
+                </button>
+
+              <button type="button" name="button">
+                  <img src="./images/comments.png">
+                  80
+                </button>
+
+              <button type="button" name="button">
+                  SAVE
+                </button>
+
+              <button type="button" name="button">
+                  E
+                </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <a class="action-show-more" href="#">
+        <img src="./images/arrow-down.png" alt=""> show more
+      </a>
+    </div>
+    <div class="panel  panel-white">
+      <div class="panel-heading">
+        Today
+        <div class="btn-group" role="group" aria-label="...">
+          <button type="button" class="btn btn-default active">Popular</button>
+          <button type="button" class="btn btn-default">Newest</button>
+        </div>
+      </div>
+      <div class="panel-body">
+        <div class="media">
+          <div class="media-left media-middle">
+            <a href="#">
+              <img class="media-object" src="./images/today/app-1.png" alt="...">
+            </a>
+          </div>
+          <div class="media-body">
+            <h4 class="media-heading">Sprayscape</h4>
+
+            <span class="description">A perfectly imperfect VR-ish camera experiment, by Google</span>
+
+            <div class="action">
+              <button type="button" name="button" class="color-black">
+                  <img src="./images/votes.png">
+                  82
+                </button>
+
+              <button type="button" name="button">
+                  <img src="./images/comments.png">
+                  8
+                </button>
+
+              <button type="button" name="button">
+                  SAVE
+                </button>
+
+              <button type="button" name="button">
+                  E
+                </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="media">
+          <div class="media-left media-middle">
+            <a href="#">
+              <img class="media-object" src="./images/today/app-2.png" alt="...">
+            </a>
+          </div>
+          <div class="media-body">
+            <h4 class="media-heading">Ask Gary Vee</h4>
+
+            <span class="description">The unofficial Gary Vee Persona chatbot on Messenger!</span>
+
+            <div class="action">
+              <button type="button" name="button" class="color-black">
+                  <img src="./images/votes.png">
+                  21
+                </button>
+
+              <button type="button" name="button">
+                  <img src="./images/comments.png">
+                  9
+                </button>
+
+              <button type="button" name="button">
+                  SAVE
+                </button>
+
+              <button type="button" name="button">
+                  E
+                </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="media">
+          <div class="media-left media-middle">
+            <a href="#">
+              <img class="media-object" src="./images/today/app-3.png" alt="...">
+            </a>
+          </div>
+          <div class="media-body">
+            <h4 class="media-heading">The Electron Wheel</h4>
+
+            <span class="description">Turn your standard bicycle into an electric bike.</span>
+
+            <div class="action">
+              <button type="button" name="button" class="color-black">
+                  <img src="./images/votes.png">
+                  23
+                </button>
+
+              <button type="button" name="button">
+                  <img src="./images/comments.png">
+                  2
+                </button>
+
+              <button type="button" name="button">
+                  SAVE
+                </button>
+
+              <button type="button" name="button">
+                  E
+                </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-lg-2 visible-lg container">
+
+    <div class="alert alert-add alert-dismissible" role="alert">
+      <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+      <h5>Kittybot to Slak.</h5> A friendly feline that send you cool new things.
+      <button type="button" class="submit" btn btn-default "">Add kittybot to slack</button>
+    </div>
+
+    <a class="twitter-timeline" href="https://twitter.com/ironhack?lang=es" height="450px">
+    Tweets by @ironhack
+    </a>
+  </div>
+
+
 </body>
+
+<script>window.twttr = (function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0],
+    t = window.twttr || {};
+  if (d.getElementById(id)) return t;
+  js = d.createElement(s);
+  js.id = id;
+  js.src = "https://platform.twitter.com/widgets.js";
+  fjs.parentNode.insertBefore(js, fjs);
+
+  t._e = [];
+  t.ready = function(f) {
+    t._e.push(f);
+  };
+
+  return t;
+}(document, "script", "twitter-wjs"));</script>
 </html>
