@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -8,6 +9,158 @@
   <link rel="stylesheet" href="styles.min.css">
 </head>
 <body>
-  
+  <header>
+
+<!-- SEARCH BAR  -->
+
+    <div class='search'>
+      <img class = "logo" src="images/logo.png">
+      <div class = "searchContainer">
+        <img class="searchImg" src="images/search.png">
+        <input class="searchBar" type="search" placeholder="Discover..."></input>
+      </div>
+      <button> ... </button>
+      <button> Login </button>
+    </div>
+
+<!--   NAVIGATION -->
+
+    <nav>
+      <li class='test'><a href="">Home</a></li>
+      <li><a href="">Tech</a></li>
+      <li><a href="">Games</a></li>
+      <li><a href="">Podcasts</a></li>
+      <li><a href="">Books</a></li>
+      <li><a href="">Bots</a></li>
+      <li><a href="">Developer Tools</a></li>
+      <li><a href="">iMessage Apps</a></li>
+      <li class="optional"><a href="">iPhone</a></li>
+      <li class="optional"><a href="">Photography Tools</a></li>
+      <input class = "next-prev"type="image" src="images/arrow-prev.png">
+      <input class = "next-prev" type="image" src="images/arrow-next.png">
+    </nav>
+  </header>
+
+<!--  MAIN CONTENT -->
+
+  <div class="background">
+<!-- POPULAR THIS WEEK -->
+
+    <div class="container">
+      <h1 class='popular-header'>Popular this week</h1>
+      <div class="right">
+        <img class="close" src='images/close.png'>
+      </div>
+
+      <div class="app">
+        <img src="images/popular-this-week/app-1.png">
+        <div class="app-text">
+          <h4>Duolingo Bots</h4>
+          <p>AI-powered characters teach language conversation</p>
+          <span class='buttons'>
+            <button class='btn vote'>1460</button>
+            <button class='btn comment'> 49 </button>
+            <div class='right'>
+              <p class='btn device'> IPHONE </p>
+              <p>+2</p>
+            </div>
+          </span>
+        </div>
+      </div>
+
+      <div class="app">
+        <img src="images/popular-this-week/app-2.png">
+        <div class="app-text">
+          <h4>Tribe 2.0</h4>
+          <p>Introducing Augment Messaging&trade;</p>
+          <span class='buttons'>
+            <button class='btn vote'>1465</button>
+            <button class='btn comment'> 188  </button>
+            <div class='right'>
+              <p class='btn device'> ANDROID </p>
+              <p>+4</p>
+            </div>
+          </span>
+        </div>
+      </div>
+
+      <div class="app">
+        <img src="images/popular-this-week/app-3.png">
+        <div class="app-text">
+          <h4>Workplace by Facebook</h4>
+          <p>Connect everyone in your company and tun ideas into action</p>
+          <span class='buttons'>
+            <button class='btn vote'>1003</button>
+            <button class='btn comment'> 80 </button>
+            <div class='right'>
+              <p class='btn device'> ANDROID </p>
+              <p>+2</p>
+            </div>
+          </span>
+        </div>
+      </div>
+
+<!-- TODAY APPS  -->
+
+      <div class='show-more'>
+        <img src='images/arrow-down.png'>
+        <p> SHOW MORE </p>
+      </div>
+    </div>
+    <div class="container today">
+      <div "today-header">
+        <h1>Today</h1>
+        <div class="right">
+          <a class='selected'>Popular</a>
+          <a>Newest</a>
+        </div>
+      </div>
+
+      <div class="app">
+        <img src="images/today/app-1.png">
+        <div class="app-text">
+          <h4>Sprayscape</h4>
+          <p>A perectly imperfect VR-ish camera experiment, by Google.</p>
+          <span class='buttons'>
+            <button class='btn vote'> 82 </button>
+            <button class='btn comment'> 8 </button>
+            <div class='right'>
+              <p class='btn device'> ANDROID </p>
+              <p>+3</p>
+            </div>
+          </span>
+        </div>
+      </div>
+
+      <div class="app">
+        <img src="images/today/app-2.png">
+        <div class="app-text">
+          <h4>Ask Gary Vee</h4><br>
+          <p>The unofficial Gary Vee persona chatbot on Messenger!</p>
+          <span class='buttons'>
+            <button class='btn vote'> 21 </button>
+            <button class='btn comment'> 9 </button>
+            <div class='right'>
+              <p class='btn device optional'> GET SHIT DONE </p>
+              <p class='optional'>+1</p>
+            </div>
+          </span>
+        </div>
+      </div>
+
+      <div class="app">
+        <img src="images/today/app-3.png">
+        <div class="app-text">
+          <h4> The Electron Wheel </h4>
+          <p>Turn your standard bicycle into an electric bike.</p>
+          <span class='buttons'>
+              <button class='btn vote'>23</button>
+              <button class='btn comment'> 2 </button>
+          </span>
+        </div>
+      </div>
+
+    </div>
+  </div>
 </body>
 </html>
