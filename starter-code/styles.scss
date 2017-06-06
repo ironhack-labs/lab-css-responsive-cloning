@@ -1,3 +1,159 @@
+@media (max-width: 400px) {
+  nav {
+    a {
+      font-size: 9px;
+    }
+  }
+
+.popularthisweek {
+  .x {
+    width: 5%;
+  }
+  .appname {
+    p {
+      font-size: 10px;
+    }
+  }
+}
+
+  .showmorediv {
+    border: 1px solid blue;
+    .centeredshowmorediv {
+      width:  200px !important;
+      border: 1px solid red;
+      img {
+        width: 5px !important;
+      }
+    }
+  }
+
+}
+
 body {
   background: #f9f9f9;
+  height: 100%;
+
+header {
+  .topheaderdiv {
+    .logodiv {
+      .logo {
+        width:5%;
+        float: left;
+      }
+    }
+    .searchbardiv {
+      border: 2px solid lightgray;
+      height: 25px;
+      width: 70%;
+      float: left;
+      margin-top: 6px;
+      .search {
+        float:left;
+      }
+      .searchbartext {
+        float: left;
+        margin-top: 5px;
+        margin-left: 2px;
+        color: lightgray;
+      }
+    }
+    .logindiv {
+      .loginbutton {
+        float:left;
+        margin-top: 15px;
+      }
+    }
+  }
+  .bottomheaderdiv {
+    .navdiv {
+      float:left;
+      clear: left;
+      width:100%;
+      nav {
+        float:left;
+      }
+      .arrowdiv {
+        display: inline;
+        .leftrightarrow {
+          width: 1%;
+        }
+      }
+    }
+  }
+}
+
+
+.popularthisweek {
+  float: left;
+  width: 80%;
+  height: 20%;
+  margin-top: 60px;
+  .h3div {
+    float: left;
+    width: 100%;
+    height: 8%;
+    h3 {
+      float: left;
+    }
+    .x {
+      float: right;
+    }
+  }
+  .popularapp {
+    height: 30%;
+    width: 100%;
+    float: left;
+    .appimage {
+      width: 10%;
+      height: 100%;
+      float: left;
+      .popappimg {
+      width: 70%;
+      }
+    }
+    .appname {
+      width: 89%;
+      height: 100%;
+      float: left;
+      h4 {
+        margin: 0px;
+        padding: 0px;
+      }
+      p {
+        margin: 0px;
+        padding: 0px;
+      }
+    }
+    .appbuttons {
+      width: 89%;
+      float: right;
+      clear: left;
+      button {
+        float: left;
+      }
+      p {
+        display: inline;
+      }
+    }
+  }
+    .showmorediv {
+      width: 100%;
+      float: left;
+      .centeredshowmorediv {
+        height: 100%;
+        width: 12%;
+        margin: 0 auto;
+        img {
+        width: 10%;
+        display: inline;
+        }
+        p {
+        font-size: 10px;
+        color: lightgray;
+        display: inline;
+        }
+      }
+    }
+}
+
 }
