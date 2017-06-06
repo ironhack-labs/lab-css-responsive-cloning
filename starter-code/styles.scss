@@ -1,3 +1,327 @@
-body {
-  background: #f9f9f9;
+$font-color: #A299A2;
+$header-text-size: 0.5em;
+$off-white: #f9f9f9;
+
+html, body {
+  margin: 0;
+  background: $off-white;
+  font-size: 16px;
+  color: $font-color;
+  font-family: 'Raleway', sans-serif;
+}
+
+header {
+  background-color: white;
+  width: 100%;
+  margin: 0;
+  padding-bottom: 5px;
+  border-bottom: 0.05em solid $off-white;
+
+  button, .next-prev {
+    color: $font-color;
+    font-size: $header-text-size;
+  }
+// NAVIGATION OF HEADER (BOTTOM)
+  nav {
+    height: 48%;
+    max-width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    border-top: 0.05em solid $off-white;
+    .next-prev {
+      width: 0.7em;
+    }
+
+    li {
+      display: inline;
+      font-size: 0.8em;
+      margin: 0;
+      padding: 0.1em;
+
+      a {
+        display: inline;
+        color: $font-color;
+        text-decoration: none;
+        margin: 0;
+        width: 1%;
+        padding: 1%;
+        font-size: 0.4em;
+      }
+
+      .test a {
+        color: black;
+      }
+    }
+
+  }
+
+}
+
+// SEARCH SECTION OF HEADER (TOP HALF)
+
+.search {
+  max-width: 27em;
+  text-align: center;
+  margin: 0 auto;
+  height: 48%;
+  img, input, button {
+    -webkit-appearance:none;
+    -moz-appearance: none;
+    vertical-align: middle;
+  }
+  // CONTAINS SEARCH BAR AND ICON
+  .searchContainer {
+    display: inline-block;
+    width: 70%;
+    min-width: 60%;
+    position: relative;
+    padding: 0;
+    margin: 0;
+    font-size: 1em;
+  }
+  .searchBar {
+    border: 0.1em solid $off-white;
+    border-radius: 2px;
+    background-color: white;
+    text-indent: 1.7em;
+    font-size: $header-text-size;
+    width: 100%;
+  }
+  .searchBar::placeholder {
+    color: #cbc1c1;
+  }
+
+  .searchImg {
+    width: 0.57em;
+    max-width: 27px;
+    position: absolute;
+    bottom: 15%;
+    left: 1.5%;
+  }
+  button {
+    background-color: white;
+    border: none;
+  }
+}
+
+.logo{
+  width: 1em;
+}
+
+// CONTAINER OF EACH SECTION (i.e 'today' or 'popular today')
+
+.container {
+  clear: both;
+  background-color: white;
+  padding: 2%;
+  h1, .close {
+    vertical-align: middle;
+  }
+
+  .popular-header {
+    display: inline-block;
+    font-size: 0.7em;
+    font-weight: lighter;
+    color: black;
+  }
+
+  .close {
+    width: 0.4em;
+  }
+}
+
+.app {
+  width: 100%;
+  display: inline-block;
+  border-top: 0.05em solid $off-white;
+  font-size: 1em;
+  padding: 3% 0;
+  // APP IMAGE
+  img {
+    float: left;
+    width: 17%;
+
+    margin-right: 3%;
+  }
+  // APP TEXT
+  .app-text {
+    float: left;
+    display: inline-block;
+    width: 80%;
+  }
+  // APP NAME
+  h4 {
+    color: black;
+    font-weight: 100;
+    margin: 0;
+    display: inline-block;
+    font-size: 0.7em;
+  }
+  // APP DESCRIPTION
+  p {
+    bottom: 1em;
+    margin: 0;
+    display:block;
+    font-size: 0.5em;
+  }
+  // APP BUTTON STYLES
+  .btn {
+    -webkit-appearance:none;
+    -moz-appearance: none;
+    background-color: white;
+    background-repeat: no-repeat;
+    border: 1px solid $font-color;
+    border-radius: 2px;
+    display: inline-block;
+    bottom: 1.2em;
+    padding: 0.6em;
+    font-size: 0.8em;
+    padding-left: 5%;
+    img {
+      width: 0.4em;
+    }
+   }
+    // UPVOTE IMAGE
+  .vote {
+    background-image: url(images/votes.png);
+      background-size: 2em 4em;
+      background-position: 10% 48%;
+  }
+    // COMMENT STYLE
+  .comment {
+    background-image: url(images/comments.png);
+    background-size: 1.2em 1em;
+    background-position: 15% 46%;
+  }
+  // BUTTON CONTAINER
+  .buttons {
+    width: 100%;
+    display: inline-block;
+    font-size: 0.45em;
+    vertical-align: middle;
+    p {
+      margin: 0;
+      display: inline-block;
+      border: 1px solid white;
+      font-weight: lighter;
+      font-size: 1em;
+      padding: 0.4em;
+    }
+    .device {
+      // margin-left: 35%;
+      color: black;
+      background-color: $off-white;
+    }
+  }
+}
+
+.right {
+  display: inline-block;
+  float: right;
+  vertical-align: middle;
+  text-align: right;
+}
+
+.show-more {
+  text-align: center;
+  img {
+    width: .4em;
+  }
+  p {
+    margin: 0;
+    font-size: $header-text-size;
+    display: inline-block;
+  }
+}
+
+.today {
+   h1{
+    display: inline-block;
+    font-size: 0.7em;
+    font-weight: lighter;
+    color: black;
+  }
+  a {
+    display: inline-block;
+    font-size: 0.5em;
+    margin-right: 0.7em;
+  }
+}
+
+
+.selected {
+  color: black;
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding: 2% 3%;
+    padding-bottom: 0;
+  }
+  .buttons p {
+      display: none !important;
+  }
+  .optional {
+    display: none;
+  }
+}
+
+@media (max-width: 350px) {
+  body {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 350px) and (max-width: 600px) {
+  body {
+    font-size: 21px;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 1000px) {
+  body {
+    font-size: 25px;
+  }
+  .search {
+    text-align: center;
+    margin-left: 15%;
+    margin-right: 15%;
+  }
+  nav {
+    margin-left: 15%;
+    margin-right: 15%;
+  }
+
+    .container {
+      margin: 25px 15%;
+    }
+
+    .buttons {
+      p {
+        display: none !important;
+      }
+    }
+}
+
+@media (min-width: 1000px) {
+  body {
+    font-size: 40px;
+  }
+  .container {
+    margin: 50px 15%;
+  }
+  header {
+    .search {
+      text-align: center;
+      margin-left: 15%;
+      margin-right: 15%;
+    }
+    nav {
+      margin-left: 15%;
+      margin-right: 15%;
+    }
+    nav .next-prev {
+      width: 1%;
+    }
+  }
 }
