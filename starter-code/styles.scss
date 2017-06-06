@@ -1,3 +1,180 @@
+$grey: rgb(193, 196, 201);
+
 body {
   background: #f9f9f9;
+}
+
+.header {
+  img {
+    float: left;
+    width: 2em;
+    height: 2em;
+  }
+
+  .search,
+  span {
+    color: $grey;
+    float: left;
+    padding-top: 0.4em;
+    height: 1em;
+    width: 1em;
+  }
+
+  .login {
+    padding-top: 0.4em;
+    float: right;
+    color: $grey;
+  }
+
+  a {
+    text-decoration: none;
+    color: $grey;
+  }
+}
+
+.menu {
+  clear: both;
+
+  ul {
+    text-align: center;
+    border-top: 1px solid $grey;
+    border-bottom: 1px solid $grey;
+    padding-left: 0;
+  }
+
+  li {
+    padding: 0.2em;
+    list-style-type: none;
+    display: inline;
+    font-size: 0.8em;
+  }
+
+  a {
+    text-decoration: none;
+    color: grey;
+  }
+
+  li:hover {
+    background-color: $grey;
+
+    a {
+      color: black;
+    }
+  }
+
+  nav {
+    display: none;
+  }
+
+  img {
+    padding-top: 0.2em;
+    float: right;
+    width: 1em;
+    height: 1em;
+  }
+}
+
+.popular {
+  img {
+    margin-top: -2em;
+    padding-right: 0.4em;
+    float: right;
+    width: 0.6em;
+    height: 0.6em;
+  }
+}
+
+.popular-this-week {
+  ul {
+    padding: 0;
+  }
+
+  li {
+    list-style-type: none;
+    border-top: 1px solid $grey;
+  }
+
+  img {
+    padding: 0.5em;
+    width: 4em;
+    height: 4em;
+  }
+
+  span {
+    margin: -4.5em 0 0 5em;
+    display: block;
+  }
+
+  p {
+    margin: 0 0 0 7.1em;
+    color: $grey;
+    font-size: 0.7em;
+  }
+
+  .scores {
+    padding: 0.3em 0 0.3em 4.8em;
+  }
+
+  .scores li {
+    padding: 0.2em;
+    border: none;
+    list-style-type: none;
+    display: inline;
+  }
+
+  .scores img {
+    float: left;
+    width: 0.7em;
+    height: 0.7em;
+  }
+
+  .scores button {
+    display: inline-block;
+    border: 1px solid $grey;
+    background-color: white;
+  }
+}
+
+.show-more {
+  h4 {
+    color: $grey;
+    text-align: center;
+  }
+
+  img {
+    margin-right: 0.5em;
+  }
+}
+
+.today {
+  padding-top: 1em;
+
+  h5 {
+    padding: 0 0.2em;
+    float: right;
+    display: inline;
+    margin: 0;
+  }
+
+  .grey {
+    color: $grey;
+  }
+
+  p {
+    display: inline;
+    margin: 1em 0 0;
+  }
+}
+@media (min-width: 700px) {
+  body {
+    font-size: 20px;
+    margin: 0 150px;
+  }
+
+  .header nav {
+    display: inline;
+  }
+  .header .arrow {
+    display: none;
+  }
 }
