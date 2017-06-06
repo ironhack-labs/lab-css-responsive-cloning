@@ -1,3 +1,144 @@
-body {
-  background: #f9f9f9;
+@import "variables.scss";
+@import "reset.scss";
+
+//based on smallest laptop size 1024px
+
+body{
+  background-color: $bodybackground;
+  width: 1000px;
 }
+
+.content {
+  background: #f9f9f9;
+  margin-left: 100px;
+}
+
+.navbar {
+    margin: 30px;
+
+  ul {
+      border: 1px solid $lightfont;
+      padding: 10px;
+      margin: 20px;
+
+  li {
+    display: inline;
+    list-style: none;
+    font-size: 14px;
+    margin-left: 20px;
+    text-align: center;
+    color: $lightfont;
+    }
+  }
+}
+
+.navbarLess {
+  display: none;
+}
+
+
+.subheader {
+  font-size: 20px;
+  color: $darkfont;
+}
+
+img{
+  display: inline-block;
+  width: 90px;
+  height: 90px;
+}
+
+.columntext {
+  display: inline-block;
+}
+
+h3,
+p {
+  color: $lightfont;
+}
+
+h3{
+  font-size: 18px;
+}
+
+p {
+  font-size: 14px;
+}
+
+.rightbuttonLess {
+  display: none;
+}
+
+.rightbutton {
+  button{
+    background-color: gray;
+    float: right;
+    margin-top: -50px;
+    margin-right: 50px;
+  }
+}
+
+@media (max-width: 400px) { // based on mobile M - 375px
+
+  body{
+    width: 370px;
+  }
+
+  .navbar {
+    display: none;
+    }
+
+  .navbarLess { //navbar is inside "button" which is displayed as (...)
+    display: inline;
+    }
+
+  .content {
+      margin: 0px 20px;
+    }
+
+  p{
+    font-size: 10px;
+  }
+
+  h3{
+    font-size: 14px;
+  }
+
+  .subheader {
+    font-size: 16px;
+  }
+
+  img{
+    height: 50px;
+    width: 50px;
+  }
+
+button img{
+  float: right;
+  height: 7px;
+  width: 15px;
+}
+
+  .rightbuttonLess {
+    margin-top: 30px;
+    float: right;
+    display: inline;
+    background-color: $bodybackground;
+  }
+
+  .rightbutton {
+    display: none;
+    }
+}
+
+
+
+
+// .column1,
+// .column2,
+// .column3,
+// .today1,
+// .today2,
+// .today3 {
+//
+// }
