@@ -1,13 +1,181 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>CSS Lab | Responsive Cloning | Product Hunt</title>
-  <link rel="stylesheet" href="styles.min.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>CSS Lab | Responsive Cloning | Product Hunt</title>
+	<link rel="stylesheet" href="styles.min.css">
+  <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
 </head>
 <body>
-  
+
+<div class="header">
+  <div class="header-content">
+    <div class="top">
+      <img src="images/logo.png" class="p-logo" alt="Product Hunt Logo">
+      <form>
+        <img src="images/search.png" class="search-icon" alt="Search">
+        <input type="search" placeholder="Discover..." class="searchbar">
+  		</form>
+
+      <div class="login" >
+        <span> ... Login </span>
+      </div>
+    </div>
+
+    <nav>
+      <a href="#"> Home </a>
+      <a href="#"> Tech </a>
+      <a href="#"> Games </a>
+      <a href="#"> Podcasts </a>
+      <a href="#"> Books </a>
+      <a href="#"> Bots </a>
+      <a href="#"> Developer Tools </a>
+      <a href="#"> iMessage Apps </a>
+      <a href="#"> iPhone </a>
+      <img src="images/arrow-next.png" alt="Arrow Next">
+      <img src="images/arrow-prev.png" alt="Arrow Previous">
+    </nav>
+  </div>
+</div>
+
+<!-- Subscribe -->
+<div class="subscribe wrapper hidden-subscribe">
+  <span> <i class="em em-wave"></i> Welcome to Product Hunt </span>
+  <span> Get the best new products in your inbox, daily. </span>
+  <input type="email" placeholder="Your email" class="subscribe-box">
+  <input type="submit" value="SUBSCRIBE" class="submit-button">
+</div>
+
+<div class="wrapper">
+  <h2> Popular this week </h2>
+  <img src="images/close.png" class="close-icon" alt="Close">
+
+<!-- Popular-this-week 1 -->
+  <div class="news">
+    <img src="images/popular-this-week/app-1.png" alt="News 1">
+    <div>
+      <h3> Duolingo Bots </h3>
+      <p> AI-powered to teach language conversation </p>
+      <button type="button">
+        <img src="images/votes.png" alt="Vote Up" class="vote-up-icon">
+        1460
+      </button>
+      <button type="button">
+        <img src="images/comments.png" alt="Comments">
+        49
+      </button>
+      <button type="button"> Save </button>
+      <button type="button"> Share </button>
+    </div>
+  </div>
+
+<!-- Popular-this-week 2 -->
+  <div class="news">
+    <img src="images/popular-this-week/app-2.png">
+    <div>
+      <h3> Tribe 2.0 </h3>
+      <p> Introducing Argumented Messaging&trade; </p>
+      <button type="button">
+        <img src="images/votes.png" alt="Vote Up" class="vote-up-icon">
+        1465
+      </button>
+      <button type="button">
+        <img src="images/comments.png" alt="Comments">
+        188
+      </button>
+      <button type="button"> Save </button>
+      <button type="button"> Share </button>
+    </div>
+  </div>
+
+<!-- Popular-this-week 3 -->
+  <div class="news">
+    <img src="images/popular-this-week/app-3.png">
+    <div>
+      <h3> Workplace by Facebook </h3>
+      <p> Connect, turn ideas into action </p>
+      <button type="button">
+        <img src="images/votes.png" alt="Vote Up" class="vote-up-icon">
+        1003
+      </button>
+      <button type="button">
+        <img src="images/comments.png" alt="Comments">
+        80
+      </button>
+      <button type="button"> Save </button>
+      <button type="button"> Share </button>
+    </div>
+  </div>
+
+<!-- Show More -->
+  <div class="show-more">
+    <img src="images/arrow-down.png">
+    <span class="text">SHOW MORE</span>
+  </div>
+</div>
+
+<div class="wrapper">
+  <h2 id="today"> Today </h2>
+  <span class="text popular"> POPULAR  |  NEWEST </span>
+
+<!-- Today 1 -->
+  <div class="news">
+    <img src="images/today/app-1.png">
+    <div>
+      <h3> Sprayscape </h3>
+      <p> A perfectly imperfect VR-ish camera experiment </p>
+      <button type="button">
+        <img src="images/votes.png" alt="Vote Up" class="vote-up-icon">
+        82
+      </button>
+      <button type="button">
+        <img src="images/comments.png" alt="Comments">
+        8
+      </button>
+      <button type="button"> Save </button>
+      <button type="button"> Share </button>
+    </div>
+  </div>
+
+<!-- Today 2 -->
+  <div class="news">
+    <img src="images/today/app-2.png">
+    <div>
+      <h3> Ask Gary Vee </h3>
+      <p> The Gary Vee persona chatbot on Messenger! </p>
+      <button type="button">
+        <img src="images/votes.png" alt="Vote Up" class="vote-up-icon">
+        21
+      </button>
+      <button type="button">
+        <img src="images/comments.png" alt="Comments">
+        9
+      </button>
+      <button type="button"> Save </button>
+      <button type="button"> Share </button>
+    </div>
+  </div>
+
+<!-- Today 3 -->
+  <div class="news">
+    <img src="images/today/app-3.png">
+    <div>
+      <h3> The Electron Wheel </h3>
+      <p> Turn your standard bicycle into an electric bike </p>
+      <button type="button">
+        <img src="images/votes.png" alt="Vote Up" class="vote-up-icon">
+        23
+      </button>
+      <button type="button">
+        <img src="images/comments.png" alt="Comments">
+        2
+      </button>
+      <button type="button"> Save </button>
+      <button type="button"> Share </button>
+    </div>
+  </div>
+</div>
 </body>
 </html>
