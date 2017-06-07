@@ -1,3 +1,103 @@
+$colorwhite-color: #f9f9f9;
+
 body {
-  background: #f9f9f9;
+  background: $colorwhite-color;
+  border: 1px solid lightgrey;
+  color: grey;
 }
+.maincontainer{
+  width:88%;
+}
+.headercontainer{
+
+  width: 100%;
+}
+.header1{
+  height:50%;
+  }
+#logo{
+  width: 3%;
+}
+input{
+  width: 80%;
+    float: right;
+    margin-right: 233px;
+    margin-top: -35px;
+}
+#placeholder{
+    width: 80%;
+    float: right;
+    margin-right: 194px;
+    margin-top: -32px;
+    border: 1px solid lightgrey;
+    padding: 3px;
+}
+#h5{
+      display: inline;
+    position: absolute;
+    bottom: 510px;
+    right: 295px;
+    color: lightgrey;
+}
+
+#search{
+display: inline;
+position: absolute;
+top: 19px;
+left: 54px;
+background: white;
+//border-left: 1px solid lightgrey;
+width: 18px;
+border-top: 1px solid lightgrey;
+border-bottom: 1px solid lightgrey;
+border-left: 1px solid lightgrey;
+}
+.anchordiv{
+margin-top: 5px;
+    padding: 10px;
+    background-color: white;
+
+}
+.header2 a{
+      color: lightgrey;
+      word-spacing: 41px;
+    margin-left: -10px
+}
+#home{
+  color: black;
+padding: 10px;
+}
+#previous{
+  width: 15px;
+}
+#next{
+width: 15px;
+}
+@media(max-width: 768px){//anything over 768px will use above code, anything under 768px will use the below code to adjust it to fit an ipad.
+//Added elements I wanted to change for anything under 768px.
+#placeholder{
+  margin-right: 88%;
+  margin-top:-27px;
+  border: 1px solid lightgrey;
+}
+#search{
+  width: 15px;
+  top: 13px;
+  left: 37px;
+}
+#logo{
+  width: 4%;
+}
+#h5{
+  top: -8px;
+  right: 120px;
+  bottom: 0px;
+}
+.header2 a{
+word-spacing: 40px;
+}
+.anchordiv{
+white-space:nowrap;
+}
+
+}//closes media query
