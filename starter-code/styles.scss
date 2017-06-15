@@ -1,3 +1,143 @@
+
+$break-medium: 1024px;
+
+$panel-color: #fff;
+$panel-padding: 25px;
+
+$panel-search: red;
+$panel-popular: green;
+$panel-today: blue;
+
+$panel-slack: orange;
+$panel-chat: yellow;
+$panel-twitter: gray;
+
+html {
+  margin:0px;
+}
+
 body {
   background: #f9f9f9;
+  margin:0px;
+}
+
+.content-container {
+  margin: auto;
+  width: 70%;
+  @media (max-width: $break-medium) {
+    width: 100%;
+  }
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  width: 70%;
+  padding: 0 15%;
+  border-bottom: 1px solid black;
+  background: $panel-color;
+  .upper-navigator {
+    .logo {
+      display: inline-block;
+      img {
+        max-width: 28px;
+      }
+      width: 10%;
+    }
+    .search-toolbox {
+      display: inline-block;
+      height: 28px;
+      border: 1px solid black;
+      width: 80%;
+      img {
+        max-width: 25px;
+        display: inline;
+      }
+      input {
+        vertical-align: top;
+        display: inline-block;
+        margin-top: 5px;
+        width: 95%;
+      }
+
+    }
+    .login {
+      width: 10%;
+      display: inline-block;
+    }
+  }
+  .menu-navigator {
+    height: 45px;
+    ul {
+      display: inline;
+      list-style-type: none;
+      padding: 0;
+      float: left;
+      @media (max-width: $break-medium) {
+        white-space: nowrap;
+      }
+    }
+    li {
+      display: inline;
+    }
+    div {
+      display: inline;
+      float: right;
+      img {
+        display: inline;
+      }
+    }
+  }
+  @media (max-width: $break-medium) {
+    padding: 0 5%;
+    width: 100%;
+  }
+}
+
+.panel {
+  background: $panel-color;
+  padding: $panel-padding;
+  border: 1px solid black;
+  margin: 10px;
+}
+
+.content-container {
+  .content-search-mail {
+    background: $panel-search;
+  }
+
+  .content-panel {
+    float: left;
+    width: 75%;
+    .content-popular-panel {
+      background: $panel-popular;
+      height: 60vh;
+    }
+    .content-today-panel {
+      background: $panel-today;
+      height: 80vh;
+    }
+    @media (max-width: $break-medium) {
+      width: 100%;
+    }
+  }
+  .content-right-panel {
+    float: left;
+    width: 25%;
+    .slack-panel {
+      background: $panel-slack;
+      height: 15vh;
+    }
+    .chat-panel {
+      background: $panel-chat;
+      height: 50vh;
+    }
+    .twitter-panel {
+      background: $panel-twitter;
+      height: 50vh;
+    }
+    @media (max-width: $break-medium) {
+      display: none;
+    }
+  }
 }
