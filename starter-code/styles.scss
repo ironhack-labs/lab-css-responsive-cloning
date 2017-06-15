@@ -1,3 +1,98 @@
 body {
   background: #f9f9f9;
 }
+
+.head {
+  width: 100%;
+}
+
+.head1 {
+  display: inline-block;
+  width: 75%;
+  margin: 0 200px;
+  background-color: gray;
+}
+
+.logo {
+  float: left;
+  background-image: url("./images/logo.png");
+  width: 40px;
+  height: 40px;
+  background-size: cover;
+}
+
+.search {
+  float: left;
+  background-color: blue;
+  width: 70%;
+}
+
+.dots {
+  float: left;
+  width: 100px;
+}
+
+.login {
+  float: left;
+  background-color: yellow;
+  width: 100px;
+}
+
+.head2 {
+  display: inline-block;
+  width: 75%;
+  margin: 0 200px;
+  background-color: gray;
+}
+
+.list {
+  float: left;
+  background-color: green;
+}
+
+.list-img-r {
+  float: left;
+}
+
+.body1 {
+  width: 75%;
+  height: 60px;
+  margin: 0 200px;
+  background-color: orange;
+}
+
+.body2 {
+  width: 75%;
+  height: 700px;
+  margin: 0 200px;
+  background-color: blue;
+}
+
+.div-l1 {
+  float: left;
+  width: 80%;
+  height: 700px;
+  background-color: pink;
+}
+
+.div-l2 {
+  float: right;
+  width: 20%;
+  height: 700px;
+  background-color: red;
+}
+
+@media (max-width: 768px){
+  .div-l2 {
+    display: none;
+  }
+  .div-l1 {
+    width: 100%;
+  }
+  .body1, .body2, .div-l1, .div-l2, .head1, .head2{
+    margin: 0px 0px;
+  }
+  body{
+    display: inline-block;
+  }
+}
