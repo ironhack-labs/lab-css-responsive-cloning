@@ -10,18 +10,17 @@ body {
 }
 
 .container-nav {
-  background-color: grey;
   height: 100px;
   width: 100%;
   text-decoration: none;
-  text-align: left;
   text-align: center;
 }
-@media (min-width: 600px) {
-  .c-nav-down {
-    display: inline;
+@media (max-width: 350px) {
+  .container-nav {
+    
   }
 }
+
 /*NAV UP*/
 .c-nav-up {
   height: 50%;
@@ -50,7 +49,13 @@ body {
 /*NAV DOWN */
 .c-nav-down {
   background-color: red;
-  height: 30%;
+  padding: 28px;
+}
+@media (max-width: 500px) {
+  .c-nav-down {
+
+    padding: 0;
+  }
 }
 
 a {
@@ -65,6 +70,12 @@ a {
   height: 100px;
   margin-top: 40px;
 }
+@media (max-width: 320px) {
+  .welcome {
+
+
+  }
+}
 
 section {
   margin-top: 40px;
@@ -75,7 +86,6 @@ section {
 .c-left-section {
   width: 65%;
   height: 100%;
-  background-color: blue;
   float: left;
 }
 @media (max-width: 600px) {
