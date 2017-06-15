@@ -1,3 +1,179 @@
-body {
-  background: #f9f9f9;
+body{
+  background-color: grey;
 }
+#primero{
+  padding:70px;
+  background-color: white;
+}
+#barra-mail{
+  padding:40px;
+  background-color: white;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-left: 70px;
+  margin-right: 70px;
+}
+#cajas{
+  padding: 200px;
+  background-color: white;
+  display: inline-block;
+  margin-left: 70px;
+  margin-right: 70px;
+  width: 400px;
+}
+#popular{
+  padding: 100px;
+  background-color: white;
+  display: inline-block;
+  margin-left: 20px;
+  margin-right: 70px;
+  height: 10px;
+  margin-top: 5px;
+  float: right;
+}
+#today{
+  padding: 200px;
+  background-color: white;
+  display:inline-block;
+  margin-left: 70px;
+  margin-right: 70px;
+  width: 400px;
+  margin-top: 20px;
+}
+#live{
+  padding: 100px;
+  background-color: white;
+  margin-left: 20px;
+  margin-right: 70px;
+  height: 340px;
+  margin-top: 10px;
+  display:inline-block;
+  float: right;
+  position: relative;
+  top: -150px;
+}
+
+  /* para 900 */
+	@media screen and (max-width:900px) {
+    body{
+      width: 900px;
+
+    }
+		#primero {
+			width:824px;
+      margin-left: 0px;
+      margin-right: 0px;
+      padding:30px;
+      margin: 1px solid grey;
+		}
+		#cajas {
+      width:765px;
+      margin-left: 0px;
+      margin-right: 0px;
+      padding:60px;
+      margin: auto;
+      height: 80px;
+		}
+    #barra-mail{
+      display:none;
+    }
+    #popular{
+      display: none;
+    }
+    #today{
+      width:765px;
+      margin-left: 0px;
+      margin-right: 0px;
+      padding:60px;
+      margin-top: 1px solid grey;
+      height: 80px;
+      margin: auto;
+
+    }
+    #live{
+      display:none;
+    }
+	}
+
+	/* para 380px */
+  @media screen and (max-width:380px) {
+    body{
+      width: 370px;
+
+    }
+		#primero {
+			width:50%;
+      margin-left: 0px;
+      margin-right: 0px;
+      padding:30px;
+      margin: 1px solid grey;
+		}
+		#cajas {
+      width:25%;
+      margin-left: 0px;
+      margin-right: 0px;
+      padding:60px;
+      margin: 1px solid grey;
+      height: 80px;
+      margin: auto;
+		}
+    #barra-mail{
+      display:none;
+    }
+    #popular{
+      display: none;
+    }
+    #today{
+      width:39%;
+      margin-left: 0px;
+      margin-right: 0px;
+      padding:60px;
+      margin:auto;
+      height: 80px;
+
+    }
+    #live{
+      display:none;
+    }
+	}
+
+	/* para 500px o menos */
+	@media screen and (max-width:500px) {
+      body{
+        width: 500px;
+
+      }
+  		#primero {
+  			width:84%;
+        margin-left: 0px;
+        margin-right: 0px;
+        padding:30px;
+        margin: 1px solid grey;
+  		}
+  		#cajas {
+        width:72%;
+        margin-left: 0px;
+        margin-right: 0px;
+        padding:60px;
+        margin: 1px solid grey;
+        height: 80px;
+  		}
+      #barra-mail{
+        display:none;
+      }
+      #popular{
+        display: none;
+      }
+      #today{
+        width:72%;
+        margin-left: 0px;
+        margin-right: 0px;
+        padding:60px;
+        margin-top: 1px solid grey;
+        height: 80px;
+
+      }
+      #live{
+        display:none;
+      }
+  	}
