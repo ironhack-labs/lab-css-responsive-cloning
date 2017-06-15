@@ -1,49 +1,96 @@
-$center-divs: 0 auto;
-$center-width: 60vw;
+
 body {
-  background: #FFF;
+  background: #f9f9f9;
   color: #000;
+  margin: 0;
+  padding: 0;
 }
 header {
-  background-color: red;
-  margin: $center-divs;
-  width: $center-width;
-  .topHeader {
-
-    > img {
-      width: 40px;
-    }
-    > input {
-      width: 45vw;
-    }
+  margin: 0;
+  width: 100%;
+  height: 80px;
+  background-color: white;
+}
+.topHeader {
+  margin-left: 23%;
+  width: 55vw;
+  height: 80px;
+  > img {
+    width: 40px;
   }
-  .menu {
-    li {
-      display: inline-block;
-    }
+  > input {
+    width: 40vw;
   }
 }
 section {
-  background: #f9f9f9;
-  margin: 20px;
-  .middleHeader {
-    margin: $center-divs;
-    width: $center-width;
-    background-color: white;
-    > input {
-      width: 45vw;
-    }
+  height: 500vh;
+
+}
+
+.middleHeader {
+  margin-left: 18%;
+  margin-top: 2%;
+  width: 55vw;
+  height: 15vh;
+  background-color: blue;
+}
+.msgBoard {
+  float: left;
+  margin-top: 2%;
+  margin-left: 18%;
+  width: 36%;
+  height: 100vh;
+      .msg {
+      width: 100%;
+      height: 50vh;
+      background-color: purple;
+      margin-bottom: 15px;
+  }
+}
+.headerRigth {
+  margin-top: 2%;
+  margin-right: 27%;
+  width: 18%;
+  height: 100vh;
+  float: right;
+    > div {
+      width: 100%;
+      height: 33vh;
+      background-color: black;
+      margin-bottom: 5%;
+  }
+}
+
+
+/*MEDIA QUERY*/
+
+@media (min-width: 750px) and (max-width: 1027px){
+  .headerRigth{
+    display: none;
   }
   .msgBoard {
-    margin: $center-divs;
-    background-color: white;
-    width: 40vw;
-    float: left;
+    width: 55%;
   }
-  .headerRigth {
-    margin: $center-divs;
-    background-color: white;
-    float: right;
-    width: 20vw;
+
+}
+
+@media (min-width: 400px) and (max-width: 740px){
+  .headerRigth{
+    display: none;
+  }
+  .msgBoard {
+    width: 55%;
+  }
+}
+
+@media (max-width: 399px){
+  .headerRigth{
+    display: none;
+  }
+  .msgBoard {
+    width: 55%;
+  }
+  .topHeader {
+    display: none;
   }
 }
