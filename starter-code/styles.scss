@@ -1,3 +1,49 @@
+$center-divs: 0 auto;
+$center-width: 60vw;
 body {
+  background: #FFF;
+  color: #000;
+}
+header {
+  background-color: red;
+  margin: $center-divs;
+  width: $center-width;
+  .topHeader {
+
+    > img {
+      width: 40px;
+    }
+    > input {
+      width: 45vw;
+    }
+  }
+  .menu {
+    li {
+      display: inline-block;
+    }
+  }
+}
+section {
   background: #f9f9f9;
+  margin: 20px;
+  .middleHeader {
+    margin: $center-divs;
+    width: $center-width;
+    background-color: white;
+    > input {
+      width: 45vw;
+    }
+  }
+  .msgBoard {
+    margin: $center-divs;
+    background-color: white;
+    width: 40vw;
+    float: left;
+  }
+  .headerRigth {
+    margin: $center-divs;
+    background-color: white;
+    float: right;
+    width: 20vw;
+  }
 }
