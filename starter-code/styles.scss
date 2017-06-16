@@ -1,4 +1,11 @@
+/*COMMON styles*/
+$center-body: 25%;
+$center-width: 55vw;
+$center-top: 2%;
+$heigth-section: 100vh;
+$full-width: 100%;
 
+/*STYLES*/
 body {
   background: #f9f9f9;
   color: #000;
@@ -7,13 +14,13 @@ body {
 }
 header {
   margin: 0;
-  width: 100%;
+  width: $full-width;
   height: 80px;
   background-color: white;
 }
 .topHeader {
-  margin-left: 23%;
-  width: 55vw;
+  margin-left: $center-body;
+  width: $center-width;
   height: 80px;
   > img {
     width: 40px;
@@ -23,38 +30,38 @@ header {
   }
 }
 section {
-  height: 500vh;
+  height: $heigth-section;
 
 }
 
 .middleHeader {
-  margin-left: 18%;
-  margin-top: 2%;
-  width: 55vw;
+  margin-left: $center-body;
+  margin-top: $center-top;
+  width: $center-width;
   height: 15vh;
   background-color: blue;
 }
 .msgBoard {
   float: left;
-  margin-top: 2%;
-  margin-left: 18%;
-  width: 36%;
-  height: 100vh;
+  margin-top: $center-top;
+  margin-left: $center-body;
+  width: 35%;
+  height: $heigth-section;
       .msg {
-      width: 100%;
+      width: $full-width;
       height: 50vh;
       background-color: purple;
       margin-bottom: 15px;
   }
 }
 .headerRigth {
-  margin-top: 2%;
-  margin-right: 27%;
+  margin-top: $center-top;
+  margin-right: 20%;
   width: 18%;
-  height: 100vh;
+  height: $heigth-section;
   float: right;
     > div {
-      width: 100%;
+      width: $full-width;
       height: 33vh;
       background-color: black;
       margin-bottom: 5%;
@@ -90,7 +97,7 @@ section {
   .msgBoard {
     width: 55%;
   }
-  .topHeader {
+  header {
     display: none;
   }
 }
