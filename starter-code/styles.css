@@ -1,0 +1,153 @@
+body {
+  background: #f9f9f9;
+  font-family: 'Open Sans';
+  margin : 0px;
+  padding: 0px;
+}
+
+.header{
+  background-color: yellow;
+  width: 100%;
+  height: 100px;
+  top:0;
+  left:0;
+  margin-left: 0%;
+  margin: 0%;
+}
+
+.search{
+  height: 30px;
+  margin-top: 15px;
+  width: 80%;
+  margin-bottom: 20px;
+  margin-left: 30%;
+}
+
+.logo{
+  height: 45px;
+  margin-top:  0px;
+}
+
+.form{
+  background-color: white;
+  border-radius: 5px;
+  border: 1px solid white;
+  display: inline-block;
+  width: 60%;
+  text-align: left;
+  margin-top: 12px;
+  margin-left: 10px;
+}
+
+.navigation{
+  height: 10px;
+  background-color: green;
+  padding-top: 8px;
+  padding-bottom:32px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+    padding-left: 25%;
+}
+
+.navigation li{
+  display: inline-block;
+  text-decoration: none;
+  line-height: 20px;
+  vertical-align: middle;
+}
+
+a{
+  text-decoration: none;
+  color: grey;
+}
+
+.subHeader{
+
+    background-color: yellow;
+    height: 120px;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top:40px;
+    margin-bottom: 40px;
+}
+
+.main{
+  background-color: pink;
+  margin-left: 15%;
+  margin-right: 15%;
+  height: 1000px;
+
+
+}
+
+.mainLeft{
+  background-color: yellow;
+  width: 65%;
+  float: left;
+  margin-right: 5%;
+
+
+}
+
+.mainRight{
+  display: inline-block;
+  width: 30%;
+  background-color: green;
+  float: right;
+
+}
+
+.mainLeftTop{
+  background-color: red;
+  height: 250px;
+  margin-bottom: 20px;
+}
+
+.mainLeftMiddle{
+  background-color: navy;
+  height: 600px;
+  margin-bottom: 20px;
+}
+
+.mainRightTop{
+  height: 150px;
+  background-color: blue;
+  margin-bottom: 20px;
+}
+
+.mainRightMiddle{
+  background-color: orange;
+  height: 350px;
+  margin-bottom: 20px;
+}
+
+.mainRightBottom{
+    height: 250px;
+    background-color: darkred;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 800px){
+  .mainRight{
+    display: none;
+  }
+
+  .main{
+    margin-right: 3%;
+    margin-left: 3%;
+  }
+
+  .subHeader{
+    margin-right: 3%;
+    margin-left: 3%;
+  }
+
+.mainLeft{
+  width: 100%;
+}
+
+a{
+  font-size: 0.8em;
+}
+
+}
