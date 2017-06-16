@@ -1,0 +1,449 @@
+/*mobile first*/
+body {
+  color: #757575;
+  margin: 0;
+  font-family: Nunito, Helvetica, Arial, sans-serif;
+}
+
+.header {
+  background-color: #ffffff;
+  height: 46px;
+  border-bottom: 2px solid #757575;
+}
+
+.input-discover {
+  width: 270px;
+  font-size: 10px;
+}
+
+.navigation {
+  width: 100%;
+  text-align: center;
+}
+
+.navigation ul {
+  padding-left: 0px;
+  display: inline;
+}
+
+.navigation li {
+  list-style-type: none;
+  padding: 0px;
+  display: inline-block;
+  font-size: 10px;
+}
+
+.navigation li:last-child {
+  display: none;
+}
+
+.navigation-container {
+  margin-top: 0px;
+  border-top: 1px solid #757575;
+  width: 100%;
+  color: #757575;
+  text-align: center;
+}
+
+.search img {
+  vertical-align: bottom;
+  width: 22px;
+}
+
+.welcome-container {
+  display: none;
+}
+
+.right-content {
+  display: none;
+}
+
+.main-content {
+  padding-top: 0px;
+}
+
+.left-content {
+  text-align: left;
+}
+
+.popular {
+  background-color: #fff;
+  height: 338px;
+}
+
+.popular-title {
+  margin-left: 30px;
+  margin-right: 30px;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  border-bottom: solid 1px;
+}
+
+.popular-close {
+  padding-left: 174px;
+  position: absolute;
+  width: 15px;
+}
+
+.popular-article {
+  padding: 6px;
+  display: inline-flex;
+  border-bottom: 1px solid;
+  width: 363px;
+}
+
+.popular-article-content {
+  margin-left: 10px;
+}
+
+.popular-article-social {
+  display: inline-flex;
+  display: inline-flex;
+  padding-top: 15px;
+  font-size: 11px;
+}
+
+.popular-article-votes {
+  margin-right: 15px;
+  border: 1px solid;
+  border-radius: 3px;
+  padding: 4px;
+  position: relative;
+  padding-left: 15px;
+}
+
+.popular-article-votes-image {
+  position: absolute;
+  left: -3px;
+  bottom: 1px;
+}
+
+.popular-article-comments {
+  margin-right: 15px;
+  border: 1px solid;
+  border-radius: 3px;
+  padding: 4px;
+  position: relative;
+  padding-left: 14px;
+}
+
+.popular-article-comments-image {
+  position: absolute;
+  left: 1px;
+  bottom: 6px;
+}
+
+.popular-article-device {
+  margin-right: 15px;
+  border-radius: 3px;
+  padding: 4px;
+  margin-left: 0px;
+  background-color: #f0f0f0;
+}
+
+.popular-article-device-number {
+  padding-top: 4px;
+}
+
+.popular-article-subtitle {
+  display: block;
+  font-size: 9px;
+}
+
+.today-close {
+  position: absolute;
+  padding-left: 255px;
+  width: 14px;
+  padding-top: 8px;
+}
+
+.today-article-device {
+  margin-right: 15px;
+  border-radius: 3px;
+  padding: 4px;
+  margin-left: 0px;
+  background-color: #f0f0f0;
+}
+
+/*laptop size */
+@media (min-width: 1200px) {
+  .header {
+    height: 87px;
+  }
+  body {
+    background: #f9f9f9;
+  }
+  .search {
+    text-align: center;
+    padding-top: 10px;
+  }
+  .search img {
+    vertical-align: bottom;
+    width: 36px;
+  }
+  .img-lense {
+    position: absolute;
+    width: 23px !important;
+    top: 16px;
+  }
+  .input-discover {
+    width: 750px;
+    height: 18px;
+    font-size: 14px;
+    margin-bottom: 7px;
+    padding-left: 30px;
+  }
+  .navigation {
+    width: 100%;
+    text-align: center;
+  }
+  .navigation ul {
+    padding-left: 0px;
+    display: inline;
+  }
+  .navigation li {
+    list-style-type: none;
+    padding: 0px;
+    display: inline-block;
+    font-size: 15px;
+    padding: 10px;
+  }
+  .navigation li:first-child {
+    background-color: #f9f9f9;
+    color: #000000;
+  }
+  .navigation li:last-child {
+    display: inline-block;
+  }
+  .navigation-container {
+    margin-top: 5px;
+    border-top: 1px solid #757575;
+    width: 851px;
+    margin: 0 auto;
+    color: #757575;
+  }
+  .main-container {
+    width: 1210px;
+  }
+  .welcome-container {
+    text-align: center;
+    width: 800px;
+    margin: 0 auto;
+    display: block;
+  }
+  .welcome {
+    background-color: #ffffff;
+    width: 100%;
+    display: inline-block;
+    height: 43px;
+    margin-top: 30px;
+    text-align: left;
+    padding-top: 22px;
+    font-size: 14px;
+  }
+  .welcome span {
+    color: #000000;
+    font-weight: bold;
+    padding-left: 45px;
+  }
+  .email {
+    height: 20px;
+  }
+  .btn-subscribe {
+    color: #ffffff;
+    background-color: #da552f;
+    border: none;
+    height: 25px;
+    text-transform: uppercase;
+    margin-left: 6px;
+    border-radius: 3px;
+  }
+  .close {
+    position: absolute;
+    padding-left: 83px;
+    width: 14px;
+    padding-top: 7px;
+  }
+  .main-content {
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+    padding-top: 30px;
+  }
+  .left-content {
+    text-align: left;
+    width: 570px;
+    margin-right: 28px;
+    float: left;
+    padding-left: 203px;
+  }
+  .popular {
+    background-color: #ffffff;
+    height: 488px;
+  }
+  .popular-title {
+    margin-left: 30px;
+    margin-right: 30px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    border-bottom: solid 1px;
+  }
+  .popular-close {
+    position: absolute;
+    padding-left: 365px;
+    width: 14px;
+    padding-top: 8px;
+  }
+  .popular-article {
+    padding: 30px;
+    display: inline-flex;
+    border-bottom: 1px solid;
+    width: 511px;
+  }
+  .right-content {
+    width: 200px;
+    text-align: left;
+    float: left;
+    display: block;
+  }
+  .popular-article-content {
+    margin-left: 10px;
+  }
+  .popular-article-social {
+    display: inline-flex;
+    display: inline-flex;
+    padding-top: 15px;
+    font-size: 11px;
+  }
+  .popular-article-votes {
+    margin-right: 15px;
+    border: 1px solid;
+    border-radius: 3px;
+    padding: 4px;
+    position: relative;
+    padding-left: 15px;
+  }
+  .popular-article-votes-image {
+    position: absolute;
+    left: -3px;
+    bottom: 1px;
+  }
+  .popular-article-comments {
+    margin-right: 15px;
+    border: 1px solid;
+    border-radius: 3px;
+    padding: 4px;
+    position: relative;
+    padding-left: 14px;
+  }
+  .popular-article-comments-image {
+    position: absolute;
+    left: 1px;
+    bottom: 6px;
+  }
+  .popular-article-device {
+    margin-right: 15px;
+    border-radius: 3px;
+    padding: 4px;
+    margin-left: 240px;
+    background-color: #f0f0f0;
+  }
+  .popular-article-device-number {
+    padding-top: 4px;
+  }
+  .popular-article-subtitle {
+    display: block;
+    font-size: 14px;
+  }
+  .kittybot {
+    background-color: #fff;
+    width: 160px;
+    padding: 20px;
+    position: relative;
+  }
+  .kittybot-close {
+    position: absolute;
+    top: 23px;
+    right: 12px;
+    width: 14px;
+  }
+  .kittybot-description {
+    font-size: 11px;
+  }
+  .btn-kittybot {
+    color: #ffffff;
+    background-color: #da552f;
+    border: none;
+    height: 25px;
+    text-transform: uppercase;
+    margin-left: 6px;
+    border-radius: 3px;
+    margin-top: 11px;
+  }
+  .upcoming {
+    background-color: #ffffff;
+    margin-top: 20px;
+    height: 450px;
+    padding: 20px;
+  }
+  .upcoming-title {
+    color: #000000;
+    text-transform: uppercase;
+    font-size: 11px;
+    text-align: left;
+    font-weight: bold;
+    border-bottom: 1px solid;
+    padding-bottom: 10px;
+  }
+  .upcoming-person {
+    display: inline-flex;
+    margin-top: 16px;
+  }
+  .upcoming-person-picture {
+    display: inline;
+  }
+  .upcoming-person-details {
+    display: inline;
+    padding-left: 5px;
+  }
+  .upcoming-person-image {
+    width: 30px;
+    border-radius: 50%;
+  }
+  .upcoming-person-name {
+    font-size: 15px;
+    color: #000000;
+    font-weight: bold;
+  }
+  .upcoming-person-job {
+    font-size: 11px;
+  }
+  .upcoming-remindme {
+    text-align: center;
+  }
+  .btn-remindme {
+    text-transform: uppercase;
+    border: 1px solid;
+    background-color: #fff;
+    border-radius: 2px;
+  }
+  .today {
+    background-color: #ffffff;
+    height: 607px;
+    margin-top: 40px;
+    display: block;
+  }
+  .today-close {
+    position: absolute;
+    padding-left: 450px;
+    width: 14px;
+    padding-top: 8px;
+  }
+  .today-article-device {
+    margin-right: 15px;
+    border-radius: 3px;
+    padding: 4px;
+    margin-left: 205px;
+    background-color: #f0f0f0;
+  }
+}
