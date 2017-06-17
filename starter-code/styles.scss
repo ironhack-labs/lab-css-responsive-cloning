@@ -1,3 +1,109 @@
+$color-naranja: orange;
+$color-rosa: pink;
+
 body {
   background: #f9f9f9;
+  font-family: "Helvetica";
+  margin: 0;
+}
+
+h1 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.contenido {
+  display: flex;
+}
+
+.contenedor {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.header {
+  background: #fff000;
+  height: 60px;
+  position: relative;
+  text-align: center;
+  padding: 10px;
+}
+
+.menu {
+  background: purple;
+  height: 50px;
+  text-align: center;
+  padding: 10px;
+}
+
+.caja-pequeña {
+  background-color: aqua;
+  height: 70px;
+  text-align: center;
+  margin: 40px 0;
+  padding: 10px;
+}
+
+.contenido-left{
+  width: 76%;
+}
+
+.contenido-right {
+  width: 20%;
+  margin-left: 40px;
+}
+
+.col1-l, .col2-l {
+  position: relative;
+  background: $color-naranja;
+  padding: 20px;
+  margin-bottom: 20px;
+  height: 400px;
+}
+
+.col1-r, .col2-r, .col3-r {
+  background-color: $color-rosa;
+  position: relative;
+  text-align: center;
+  padding: 20px 0;
+  margin-bottom: 20px;
+  width: 80%;
+}
+
+.col1-r, .col3-r {
+  height: 100px;
+}
+
+.col1-l, .col1-r {
+  margin-top: 20px;
+}
+
+.col2-r {
+  height: 535px;
+}
+
+
+
+/*media query*/
+@media only screen and (max-width:800px){
+    .contenido {
+      display: inherit;
+     }
+
+    .contenido-left {
+      width: 100%;
+    }
+
+    .contenido-right {
+      width: 100%;
+      margin-left: 0;
+    }
+
+    .col1-r, .col2-r, .col3-r {
+      width: 100%;
+    }
+
+    .col2-r {
+      height: 300px;
+    }
 }
