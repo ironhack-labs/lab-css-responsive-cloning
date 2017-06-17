@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>CSS Lab | Responsive Cloning | Product Hunt</title>
-  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="main.min.css">
 </head>
 <body>
   <header class="header">
@@ -43,15 +43,14 @@
       </nav>
     </div>
   </header>
+
   <section class="content">
-    <div class="content-subscribe">
+    <div class="content-subscribe pane">
       <div class="content-subscribe-hand">
         <img src="images/hand.png" alt="hand shake">
       </div>
       <div class="content-subscribe-info">
         <strong>Welcome to Product Hunt</strong> Get the best new products in yout inbox, daily
-      </div>
-      <div class="content-subscribe-input">
         <form class="content-subsctibe-input-form" action="index.html" method="post">
           <input type="text" name="" value="" placeholder="Your email">
           <input type="button" name="" value="">
@@ -61,13 +60,19 @@
         <img src="images/close.png" alt="closing cross">
       </div>
     </div>
+
     <div class="content-wrapper">
       <div class="content-wrapper-left">
-        <div class="content-wrapper-left-popular">
-          <header class="content-wrapper-left-header">
+        <div class="content-wrapper-left-popular pane">
+
+          <header class="content-wrapper-left-header pane-head">
             <h2> Popular this weeks</h2>
             <img src="images/close.png" alt="closing cross">
           </header>
+
+          <div class= "separator">
+            <hr>
+          </div>
 
           <div class="content-wrapper-left-item">
             <div class="content-wrapper-left-item-figure">
@@ -96,10 +101,11 @@
               </div>
             </div>
           </div>
+          <hr>
 
           <div class="content-wrapper-left-item">
             <div class="content-wrapper-left-item-figure">
-              <img src="images/popular-popular-this-week/app-2.png" alt="image figure">
+              <img src="images/popular-this-week/app-2.png" alt="image figure">
             </div>
             <div class="content-wrapper-left-item-info">
               <h1>Tribe 2.0</h1>
@@ -115,6 +121,7 @@
                 </span>
                 <span class="content-wrapper-left-item-info-badge">
                   <img src="images/cup.png" alt="Winner's cup">
+                  #1 in tech
                 </span>
                 <span class="content-wrapper-left-item-info-platform">
                   android
@@ -125,10 +132,11 @@
               </div>
             </div>
           </div>
+          <hr>
 
           <div class="content-wrapper-left-item">
             <div class="content-wrapper-left-item-figure">
-              <img src="images/popular-popular-this-week/app-3.png" alt="image figure">
+              <img src="images/popular-this-week/app-3.png" alt="image figure">
             </div>
             <div class="content-wrapper-left-item-info">
               <h1>Workplace by Facebook</h1>
@@ -154,19 +162,26 @@
             </div>
           </div>
 
+
           <div class="content-wrapper-left-showmore">
             <img src="images/arrow-down.png" alt="arrow down">
-            show more
+            <h5>
+              show more
+            </h5>
           </div>
         </div>
-        <div class="content-wrapper-left-Today">
-          <header class="content-wrapper-left-header">
+        <div class="content-wrapper-left-today pane">
+          <header class="content-wrapper-left-header pane-head">
             <h2> Today</h2>
-            <div class="content-wrapper-left-todayselector">
-              <a href="#">popular</a>
+            <div class="pane-head-typeselector">
+              <a class="selected" href="#">popular</a>
               <a href="#">newest</a>
             </div>
           </header>
+
+          <div class= "separator">
+            <hr>
+          </div>
 
           <div class="content-wrapper-left-item">
             <div class="content-wrapper-left-item-figure">
@@ -197,10 +212,11 @@
               </div>
             </div>
           </div>
+          <hr>
 
           <div class="content-wrapper-left-item">
             <div class="content-wrapper-left-item-figure">
-              <img src="images/popular-this-week/app-2.png" alt="image figure">
+              <img src="images/today/app-2.png" alt="image figure">
             </div>
             <div class="content-wrapper-left-item-info">
               <h1>Ask Gary Vee</h1>
@@ -225,10 +241,11 @@
               </div>
             </div>
           </div>
+          <hr>
 
           <div class="content-wrapper-left-item">
             <div class="content-wrapper-left-item-figure">
-              <img src="images/popular-this-week/app-3.png" alt="image figure">
+              <img src="images/today/app-3.png" alt="image figure">
             </div>
             <div class="content-wrapper-left-item-info">
               <h1>The Electron Wheel</h1>
@@ -255,9 +272,9 @@
         </div>
       </div>
       <div class="content-wrapper-right">
-        <div class="content-wrapper-right-kittybot">
-          <div class="content-wrapper-right-kittybot-header">
-            <h1>Kittybot for Slack</h1>
+        <div class="content-wrapper-right-kittybot pane">
+          <div class="content-wrapper-right-kittybot-header pane-head">
+            <h2>Kittybot for Slack</h2>
             <img src="images/close.png" alt="closing cross">
           </div>
           <p>
