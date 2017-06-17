@@ -5,9 +5,330 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>CSS Lab | Responsive Cloning | Product Hunt</title>
-  <link rel="stylesheet" href="styles.min.css">
+  <link rel="stylesheet" href="main.min.css">
 </head>
 <body>
-  
+  <header class="header">
+    <div class="header-wrapper">
+      <div class="header-wrapper-search">
+        <div class="header-wrapper-search-logo">
+          <img src="images/logo.png" alt="product hunt logo">
+        </div>
+        <div class="header-wrapper-search-bar">
+          <form class="" action="index.html" method="post">
+            <input type="text" name="" value="" placeholder="Discover your next favorite things...">
+
+          </form>
+        </div>
+        <div class="header-wrapper-search-dots">
+          ...
+        </div>
+        <div class="header-wrapper-search-login">
+          Login
+        </div>
+      </div>
+      <nav class="header-wrapper-nav">
+        <a href="#" class="selected">Home</a>
+        <a href="#">Tech</a>
+        <a href="#">Games</a>
+        <a href="#">Podcasts</a>
+        <a href="#">Books</a>
+        <a href="#">Bots</a>
+        <a href="#">Developer Tools</a>
+        <a href="#">iMessage Apps</a>
+        <a href="#">iPhone</a>
+        <a href="#">Photograpy Tools</a>
+        <a href="#"><img src="images/arrow-prev.png" alt="previus"></a>
+        <a href="#"><img src="images/arrow-next.png" alt="next"></a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="content">
+    <div class="content-subscribe pane">
+      <div class="content-subscribe-info">
+        <img src="images/hand.png" alt="hand shake">
+        <strong>Welcome to Product Hunt</strong> Get the best new products in yout inbox, daily
+        <form class="content-subsctibe-input-form" action="index.html" method="post">
+          <input type="text" name="" value="" placeholder="Your email">
+          <input class="red-btn" type="button" name="" value="subscribe">
+        </form>
+      </div>
+      <div class="content-subscribe-close">
+        <img src="images/close.png" alt="closing cross">
+      </div>
+    </div>
+
+    <div class="content-wrapper">
+      <div class="content-wrapper-left">
+        <div class="content-wrapper-left-popular pane">
+
+          <header class="content-wrapper-left-header pane-head">
+            <h2> Popular this weeks</h2>
+            <img src="images/close.png" alt="closing cross">
+          </header>
+
+          <div class= "separator">
+            <hr>
+          </div>
+
+          <div class="content-wrapper-left-item">
+            <div class="content-wrapper-left-item-figure">
+              <img src="images/popular-this-week/app-1.png" alt="image figure">
+            </div>
+            <div class="content-wrapper-left-item-info">
+              <h1>Duolingo Bots</h1>
+              <p>Al-powered characters to teach language conversation</p>
+              <div class="content-wrapper-left-item-info-buttons">
+                <span class="content-wrapper-left-item-info-upvote">
+                  <img src="images/votes.png" alt="up votes">
+                  1460
+                </span>
+                <span class="content-wrapper-left-item-info-comment">
+                  <img src="images/comments.png" alt="comments">
+                  49
+                </span>
+                <span class="content-wrapper-left-item-info-badge">
+                </span>
+                <span class="content-wrapper-left-item-info-platform">
+                  iphone
+                </span>
+                <span class="content-wrapper-left-item-info-adder">
+                  +2
+                </span>
+              </div>
+            </div>
+          </div>
+          <hr>
+
+          <div class="content-wrapper-left-item">
+            <div class="content-wrapper-left-item-figure">
+              <img src="images/popular-this-week/app-2.png" alt="image figure">
+            </div>
+            <div class="content-wrapper-left-item-info">
+              <h1>Tribe 2.0</h1>
+              <p>Introducing Augmented Messaging</p>
+              <div class="content-wrapper-left-item-info-buttons">
+                <span class="content-wrapper-left-item-info-upvote">
+                  <img src="images/votes.png" alt="up votes">
+                  1465
+                </span>
+                <span class="content-wrapper-left-item-info-comment">
+                  <img src="images/comments.png" alt="comments">
+                  188
+                </span>
+                <span class="content-wrapper-left-item-info-badge">
+                  <img src="images/cup.png" alt="Winner's cup">
+                  #1 in tech
+                </span>
+                <span class="content-wrapper-left-item-info-platform">
+                  android
+                </span>
+                <span class="content-wrapper-left-item-info-adder">
+                  +4
+                </span>
+              </div>
+            </div>
+          </div>
+          <hr>
+
+          <div class="content-wrapper-left-item">
+            <div class="content-wrapper-left-item-figure">
+              <img src="images/popular-this-week/app-3.png" alt="image figure">
+            </div>
+            <div class="content-wrapper-left-item-info">
+              <h1>Workplace by Facebook</h1>
+              <p>Connect everyone in your company and turn ideas into action</p>
+              <div class="content-wrapper-left-item-info-buttons">
+                <span class="content-wrapper-left-item-info-upvote">
+                  <img src="images/votes.png" alt="up votes">
+                  1003
+                </span>
+                <span class="content-wrapper-left-item-info-comment">
+                  <img src="images/comments.png" alt="comments">
+                  80
+                </span>
+                <span class="content-wrapper-left-item-info-badge">
+                </span>
+                <span class="content-wrapper-left-item-info-platform">
+                  android
+                </span>
+                <span class="content-wrapper-left-item-info-adder">
+                  +2
+                </span>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="content-wrapper-left-showmore">
+            <img src="images/arrow-down.png" alt="arrow down">
+            <h5>
+              show more
+            </h5>
+          </div>
+        </div>
+        <div class="content-wrapper-left-today pane">
+          <header class="content-wrapper-left-header pane-head">
+            <h2> Today</h2>
+            <div class="pane-head-typeselector">
+              <a class="selected" href="#">popular</a>
+              <a href="#">newest</a>
+            </div>
+          </header>
+
+          <div class= "separator">
+            <hr>
+          </div>
+
+          <div class="content-wrapper-left-item">
+            <div class="content-wrapper-left-item-figure">
+              <img src="images/today/app-1.png" alt="image figure">
+            </div>
+            <div class="content-wrapper-left-item-info">
+              <h1>Sprayscape</h1>
+              <p>A perfectly imperfect VR-ish camera experiment, by Google</p>
+              <div class="content-wrapper-left-item-info-buttons">
+                <span class="content-wrapper-left-item-info-upvote">
+                  <img src="images/votes.png" alt="up votes">
+                  82
+                </span>
+                <span class="content-wrapper-left-item-info-comment">
+                  <img src="images/comments.png" alt="comments">
+                  8
+                </span>
+                <span class="content-wrapper-left-item-info-badge">
+                  <img src="images/cup.png" alt="Winner's cup">
+                  #1 in tech
+                </span>
+                <span class="content-wrapper-left-item-info-platform">
+                  android
+                </span>
+                <span class="content-wrapper-left-item-info-adder">
+                  +3
+                </span>
+              </div>
+            </div>
+          </div>
+          <hr>
+
+          <div class="content-wrapper-left-item">
+            <div class="content-wrapper-left-item-figure">
+              <img src="images/today/app-2.png" alt="image figure">
+            </div>
+            <div class="content-wrapper-left-item-info">
+              <h1>Ask Gary Vee</h1>
+              <p>The unofficial Gary Vee persona chatbot on Messenger</p>
+              <div class="content-wrapper-left-item-info-buttons">
+                <span class="content-wrapper-left-item-info-upvote">
+                  <img src="images/votes.png" alt="up votes">
+                  21
+                </span>
+                <span class="content-wrapper-left-item-info-comment">
+                  <img src="images/comments.png" alt="comments">
+                  9
+                </span>
+                <span class="content-wrapper-left-item-info-badge">
+                </span>
+                <span class="content-wrapper-left-item-info-platform">
+                  get shit done
+                </span>
+                <span class="content-wrapper-left-item-info-adder">
+                  +1
+                </span>
+              </div>
+            </div>
+          </div>
+          <hr>
+
+          <div class="content-wrapper-left-item">
+            <div class="content-wrapper-left-item-figure">
+              <img src="images/today/app-3.png" alt="image figure">
+            </div>
+            <div class="content-wrapper-left-item-info">
+              <h1>The Electron Wheel</h1>
+              <p>Turn yout standard bycicle into an electric bike</p>
+              <div class="content-wrapper-left-item-info-buttons">
+                <span class="content-wrapper-left-item-info-upvote">
+                  <img src="images/votes.png" alt="up votes">
+                  23
+                </span>
+                <span class="content-wrapper-left-item-info-comment">
+                  <img src="images/comments.png" alt="comments">
+                  2
+                </span>
+                <span class="content-wrapper-left-item-info-badge">
+                </span>
+                <span class="content-wrapper-left-item-info-platform">
+                </span>
+                <span class="content-wrapper-left-item-info-adder">
+                </span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <div class="content-wrapper-right">
+        <div class="content-wrapper-right-kittybot pane">
+          <div class="content-wrapper-right-kittybot-header pane-head">
+            <h2>Kittybot for Slack</h2>
+            <img src="images/close.png" alt="closing cross">
+          </div>
+          <p>
+            A firendly feline that sends you cool new things
+          </p>
+          <a  href="#">
+            <div class="red-btn">
+                <b>#</b> add kittybot to slack
+            </div>
+          </a>
+        </div>
+        <div class="content-wrapper-right-chats pane">
+          <div class="content-wrapper-right-chats-header">
+            <h4>upcoming live chats</h4>
+          </div>
+
+          <div class= "separator">
+            <hr>
+          </div>
+
+          <div class="content-wrapper-right-chats-item">
+            <div class="content-wrapper-right-chats-item-image">
+              <img src="images/people/1.jpg" alt="">
+            </div>
+            <div class="content-wrapper-right-chats-item-info">
+              <h2>Adam Besvinivk</h2>
+              <p>VC at Deep Fork Capital</p>
+              <a href="#">remind me</a>
+            </div>
+          </div>
+
+          <div class="content-wrapper-right-chats-item">
+            <div class="content-wrapper-right-chats-item-image">
+              <img src="images/people/2.jpg" alt="">
+            </div>
+            <div class="content-wrapper-right-chats-item-info">
+              <h2>Susan David</h2>
+              <p>Author of Emotionally</p>
+              <a href="#">remind me</a>
+            </div>
+          </div>
+
+          <div class="content-wrapper-right-chats-item">
+            <div class="content-wrapper-right-chats-item-image">
+              <img src="images/people/2.jpg" alt="">
+            </div>
+            <div class="content-wrapper-right-chats-item-info">
+              <h2>Avid Larizadeh Duggan</h2>
+              <p>General Partner at GV</p>
+              <a href="#">remind me</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
 </body>
 </html>
