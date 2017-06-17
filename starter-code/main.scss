@@ -5,7 +5,13 @@ $light-grey: #e9e9e9;
 $grey: #d3d3d3;
 $dark-grey: #898989;
 $white: white;
-$columm-ratio: 70%;
+$red: #da552f;
+$columm-ratio: 100;
+
+$xs: 500px;
+$sm: 600px;
+$md: 700px;
+$lg: 1000px;
 
 hr{
   margin: 0px;
@@ -23,6 +29,8 @@ a{
 
 
 body{
+  overflow-x: hidden;
+  max-width: 100%;
   font-family: 'Roboto', sans-serif;
   background-color: $light-grey;
   margin: 0;
@@ -32,15 +40,21 @@ body{
 
     .header-wrapper{
       width: 1200px;
-      max-width: 90%;
+      max-width: calc(100% - 25px);
       margin: auto;
 
       .header-wrapper-search{
         display: flex;
+        justify-content: space-between;
         align-items: center;
+        color: $grey;
+
+        >div{
+          margin-left: 10px;
+        }
 
         .header-wrapper-search-logo{
-          width: 40px;
+          width: 42px;
 
           > img{
             width: 100%;
@@ -49,11 +63,13 @@ body{
 
         .header-wrapper-search-bar{
           flex-grow: 1;
+          padding: 15px;
 
           form{
             width: 100%;
 
             input[type="text"]{
+              padding: 3px;
               width: 100%;
             }
           }
@@ -70,11 +86,24 @@ body{
       }
 
       .header-wrapper-nav{
+        overflow: hidden;
         display: flex;
         justify-content: space-between;
+        border-top: 1px solid $grey;
 
-        a > img{
-          height: 18px;
+        a{
+          padding: 15px;
+          color: $grey;
+
+          &.selected{
+            background-color: $light-grey;
+            color: black;
+            font-weight: bold;
+          }
+
+          > img{
+            height: 18px;
+          }
         }
       }
     }
@@ -83,6 +112,12 @@ body{
   .content {
     margin: 25px auto;
     width: 1200px;
+    max-width: calc(100% - 50px);
+
+    @media screen and (max-width: $md){
+      max-width: 100%;
+      margin: 0px;
+    }
 
     .content-subscribe{
       box-sizing: border-box;
@@ -92,23 +127,32 @@ body{
       justify-content: space-between;
       background-color: $white;
 
-      .content-subscribe-hand{
+      @media screen and (max-width: $md){
+        display: none;
+      }
+
+      .content-subscribe-info{
         flex-grow: 1;
-        text-align: right;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0px 10px;
+
+        @media screen and (max-width: $lg){
+          flex-wrap: wrap;
+        }
 
         img{
           height: 18px;
         }
-      }
 
-      .content-subscribe-info{
-        text-align: center;
-        display: flex;
-        align-items: center;
+        .content-subscribe-info-form{
+          padding: 3px;
+        }
       }
 
       .content-subscribe-close{
-        flex-grow: 1;
+        width: 20px;
         text-align: right;
 
         img{
@@ -122,8 +166,7 @@ body{
       justify-content: space-between;
 
       .content-wrapper-left{
-        width: $columm-ratio;
-
+        flex-grow: $columm-ratio;
 
         .content-wrapper-left-item{
           padding: 25px;
@@ -162,6 +205,10 @@ body{
               display: flex;
               justify-content: space-between;
               align-items: center;
+
+              @media screen and (max-width: $xs){
+                display: none;
+              }
 
               >*{
                 margin-right: 5px;
@@ -221,10 +268,78 @@ body{
       }
 
       .content-wrapper-right{
-        width: calc(100% - #{$columm-ratio} - 25px);
+        flex-grow: 1;
+        margin-left: 25px;
 
+        @media screen and (max-width: $lg){
+          display: none;
+        }
+
+        .content-wrapper-right-kittybot{
+          padding-bottom: 25px;
+
+          p{
+            color: $dark-grey;
+            margin: 0px;
+            padding: 5px 25px;
+          }
+
+          .red-btn{
+            width: calc(100% - 50px);
+            box-sizing: border-box;
+            margin: 15px auto;
+            text-align: center;
+          }
+        }
+
+        .content-wrapper-right-chats{
+          padding: 0 25px;
+          .content-wrapper-right-chats-header h4{
+            text-align: left;
+            text-transform: uppercase;
+          }
+
+          .content-wrapper-right-chats-item{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 25px 0px;
+
+            .content-wrapper-right-chats-item-image{
+              width: 64px;
+
+              img{
+                width: 100%;
+                border-radius: 50%;
+              }
+            }
+
+            .content-wrapper-right-chats-item-info{
+              flex-grow: 1;
+              padding: 0px 15px;
+
+              h2{
+                font-size: 16px;
+                margin: 5px 0px;
+              }
+
+              p{
+                margin-top: 0;
+                margin-bottom: 15px;
+                color: $grey;
+              }
+
+              a{
+                box-sizing: border-box;
+                padding: 3px 10px;
+                border: 1px solid $grey;
+                color: $grey;
+                text-transform: uppercase;
+              }
+            }
+          }
+        }
       }
-
     }
   }
 
@@ -232,6 +347,10 @@ body{
     background-color: $white;
     border: 1px solid $grey;
     margin: 25px 0px;
+
+    @media screen and (max-width: $md){
+      margin: 0;
+    }
 
     .pane-head{
       display: flex;
@@ -256,6 +375,16 @@ body{
         }
       }
     }
+  }
+
+  .red-btn{
+    background-color: $red;
+    color: $white;
+    border: none;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 8px;
+    text-transform: uppercase;
   }
 
   .separator{
