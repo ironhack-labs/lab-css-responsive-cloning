@@ -1,0 +1,24 @@
+$bordercolor: #f4f4f4;
+$transition-length: 0.7s;
+
+.subscribe-email {
+  height: 6rem;
+  border: 1px solid $bordercolor;
+  transition: $transition-length;
+
+  .email-send-container {
+    position: relative;
+
+    .handwave {
+      position: absolute;
+      left: 4rem;
+      bottom: 0rem;
+    }
+
+    .close-cross {
+      position: absolute;
+      right: -0.2rem;
+      bottom: 1rem;
+    }
+  }
+}

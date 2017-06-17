@@ -1,3 +1,472 @@
+@import 'partials/_cssreset';
+@import 'partials/_search';
+@import 'partials/_nav';
+@import 'partials/_subscribe';
+
+$bordercolor: #f4f4f4;
+$transition-length: 0.7s;
+
+*, :before, :after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+  font-family: sans-serif;
+}
+
 body {
   background: #f9f9f9;
+  margin: 0;
+  transition: $transition-length;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+a, input,
+p {
+  color: gray;
+}
+
+a {
+  text-decoration: none;
+}
+
+input {
+  font-size: 0.8rem;
+}
+
+section {
+  transition: $transition-length;
+}
+
+/* Generic class styles */
+
+.h2-popular,
+.h2-kittybot {
+  padding-left: 0.5rem;
+  font-weight: 200;
+  color: black;
+}
+
+.header {
+ border-bottom: 1px solid $bordercolor;
+ height: 3rem;
+ padding-top: 1rem;
+ color: gray;
+ background-color: white;
+
+  .popular-filter {
+   float: right;
+   font-size: 0.3rem;
+   margin-right: 0.7rem;
+   margin-top: 0.4rem;
+
+ }
+
+ .active {
+   color: black;
+   font-weight: bold;
+ }
+}
+
+.strong {
+  color: black;
+}
+
+.showmore {
+  background-color: white;
+}
+
+.showmore .showmore-content > * {
+  display: inline;
+  font-size: 0.5rem;
+  font-weight: bold;
+}
+
+.showmore-content {
+  text-align: center;
+
+  img {
+    width: 7px;
+  }
+}
+
+.close-cross {
+  float: right;
+  width: 0.8rem;
+  margin-right: 0.5rem;
+}
+
+.h3-gray {
+  color: gray;
+}
+
+.subscribe-email,
+.prize,
+.nametag,
+.chat-bubble,
+.aside-box,
+.tweets {
+  display: none;
+}
+
+/* XS Extra Small Devices, Phones */
+@media only screen and (min-width : 315px) {
+  .company-logo {
+    width: 40px;
+    height: 40px;
+  }
+  .nav ul li {
+    margin: 0;
+    font-size: 0.60rem;
+  }
+}
+
+/* SM Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+  .nav,
+  .popular-week-list,
+  .popular-today-list {
+    margin: 0 1.2rem 1.2rem 1.2rem;
+    border-radius: 3px;
+  }
+
+  .company-logo {
+    margin-left: 0.5rem;
+  }
+
+  .search {
+    margin: 0 1.2rem 0 1.2rem;
+  }
+
+  .search-menu a {
+    font-size: 0.9rem;
+  }
+
+  .search-input {
+    border: 1px solid $bordercolor;
+    border-radius: 5px;
+    height: 1.5rem;
+    margin-top: 0.5rem;
+  }
+
+  .search-content {
+    width: 80% !important;
+  }
+
+  .nav ul li {
+    font-size: 0.9rem;
+    margin: 0 0.9rem;
+  }
+
+  .subscribe-email {
+    display: block;
+    background-color: white;
+    margin: 0 1.2rem 1.7rem 1.2rem;
+    border-radius: 3px;
+  }
+
+  .email-input {
+    border: 1px solid $bordercolor;
+    border-radius: 2px;
+    height: 80%;
+    padding-left: 0.5rem;
+    color: gray;
+  }
+
+  .email-button,
+  .kittybot-button {
+    background-color: #da552f;
+    text-decoration: none;
+    font-family: sans-serif;
+    border: none;
+    border-radius: 2px;
+    color: white;
+    text-align: center;
+    padding: 0.3rem 0.7rem;
+    height: 80%;
+    margin: 0.5rem 0 0 0.3rem;
+  }
+
+  .email-send-container {
+    height: 2rem;
+    text-align: center;
+    margin-top: 1.1rem;
+  }
+
+  .close-cross {
+    margin-right: 1rem;
+  }
+
+  .handwave {
+    float: left;
+    width: 2.5rem;
+  }
+
+  .save-button,
+  .newwindow-button {
+    display: none;
+    transition: $transition-length;
+  }
+
+  .prize {
+    display: inline;
+    width: 5.5rem;
+
+    p {
+      display: inline;
+    }
+  }
+
+  .list-item {
+    position: relative;
+
+    .nametag {
+      position: absolute;
+      right: 2%;
+      float: left;
+      display: inline;
+
+      button, p {
+        display: inline;
+      }
+
+      button {
+        margin: 0;
+        color: black;
+        background-color: #f2f2f2;
+        border: none;
+        float: left;
+      }
+      p {
+        margin-left: 0.2rem;
+      }
+
+      img {
+        width: 4rem;
+      }
+    }
+  }
+
+  .chat-bubble {
+    display: inline;
+    position: fixed;
+    bottom: 1%;
+    right: 2%;
+
+    img {
+      width: 4rem;
+    }
+  }
+}
+
+/* MD Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+  .search,
+  .nav {
+    width: 100%;
+    margin: 0;
+    padding: 0 1.2rem;
+  }
+
+  ul li {
+    font-size: 1.1rem !important;
+  }
+
+  .nametag {
+    float: right;
+  }
+
+  .subscribe-email {
+    margin-top: 1.5rem;
+    height: 4rem !important;
+
+    .email-send-container {
+      display: inline-block;
+      margin: 1rem 0 0 0;
+      width: 100%;
+
+      p {
+        display: inline-block;
+        margin-left: 3rem;
+      }
+
+      p, .email-input,
+      .email-button {
+        height: 1.8rem;
+      }
+
+      .email-input,
+      .email-button {
+        margin-top: 0;
+      }
+
+      .email-input {
+        margin-left: 1rem;
+      }
+
+      .email-button {
+        width: 6rem;
+      }
+    }
+  }
+}
+
+/* LG Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+  section {
+    margin-left: 15% !important;
+    width: 50%;
+  }
+
+  .list-item {
+    height: 7.5rem !important;
+    padding: 1rem;
+  }
+
+  .search-content {
+    width: 90% !important;
+  }
+  .subscribe-email {
+    margin-left: 15% !important;
+    margin-right: 15% !important;
+  }
+
+  .chat-bubble {
+    display: none;
+  }
+
+  .aside-box {
+    display: inline-block;
+    float: right;
+    margin-right: 15%;
+    width: 18.5%;
+    border-radius: 3px;
+    background-color: white;
+    transition: $transition-length;
+  }
+
+  .kittybot {
+    height: 8rem;
+
+    p {
+      font-size: 0.8rem;
+      margin-top: 0.7rem;
+    }
+
+    button {
+      text-transform: uppercase;
+      height: 2rem !important;
+      width: 100%;
+
+      .slack-icon {
+        width: 1.2rem;
+        float: left;
+        display: inline-block;
+        margin-top: 0.1rem;
+      }
+      p {
+        color: white;
+        display: inline-block;
+        margin-top: 0.3rem;
+      }
+    }
+
+    .kittybot-container {
+      padding: 1rem;
+    }
+
+    .h2-kittybot {
+      padding-left: 0;
+    }
+
+    .close-cross {
+      margin-right: 0;
+    }
+  }
+
+  .livechat {
+    position: absolute;
+    right: 0%;
+    top: 21.5rem;
+    margin-top: 1rem;
+
+    .livechat-container {
+
+      margin: 2rem;
+
+      .livechat-header {
+        text-transform: uppercase;
+        font-weight: bold;
+        color: black;
+        font-size: 0.7rem;
+        padding-bottom: 1rem;
+        border-bottom: 2px solid $bordercolor;
+      }
+
+      .chat-content {
+        margin-top: 1rem;
+        display: inline-block;
+
+        .name-container {
+          margin-left: 3.4rem;
+        }
+
+        p {
+          display: inline-block;
+          font-size: 0.7rem;
+        }
+
+        button {
+          margin: 0.3rem 25% 0 25%;
+        }
+
+        .chat-name {
+          font-weight: bold;
+          color: black;
+          font-size: 0.8rem;
+          display: inline;
+        }
+      }
+
+      img {
+        float: left;
+        border-radius: 50%;
+        width: 3rem;
+      }
+
+      .livechat-footer {
+
+        margin-top: 1rem;
+        border-top: 2px solid $bordercolor;
+        text-align: center;
+
+        p {
+          color: #da552f;
+          padding-top: 1rem;
+        }
+      }
+    }
+  }
+
+  .tweets {
+    position: absolute;
+    right: 0%;
+    bottom: -32rem;
+
+    .tweet-container {
+      border-bottom: 2px solid $bordercolor;
+      margin-bottom: 1rem;
+    }
+
+  }
 }
