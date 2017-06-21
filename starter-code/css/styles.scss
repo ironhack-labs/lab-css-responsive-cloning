@@ -1,62 +1,247 @@
 @import 'reset', 'variables';
 
-// Standard layout================
 #grey-background-container {
 background-color :#F7F7F7;
 }
 #white-background-container {
   background-color: white;
 }
-
-
 #grey-background-container, #white-background-container {
   display: flex;
   justify-content: center;
 }
+
+#welcome-banner-subscribe, #popular-this-week-container, #today-container, #kittybot-slack, #upcoming-chats-contained {
+  background-color: white;
+  margin: 20px 0;
+  border: $light-grey-border-style;
+  border-radius: 3px;
+}
+
+#logo-and-search {
+  width: 100%;
+  border-bottom: $light-grey-border-style;
+  padding: 3px 0;
+  img {
+    // height: 40px;
+    width: 40px;
+  }
+  p {
+    width: 7%;
+    text-align: center;
+  }
+  #search {
+    width: 85%;
+    border: $light-grey-border-style;
+    border-radius: 3px;
+      img {
+          width: 25px;
+          height: 25px;
+          padding: 3px;
+      }
+      > div {
+          width: 95%;
+          text-align: left;
+      }
+    }
+}
+
+#navigation {
+  ul {
+    width: 90%;
+  }
+  li {
+    margin: 1% 1%;
+  }
+  a {
+    text-decoration: none;
+    color: #A5A4AD;
+  }
+  img {
+    width: 16px;
+    margin-right: 10px;
+  }
+}
+
+#welcome-banner-subscribe {
+  padding: 12px 0;
+  margin-bottom: 0;
+  justify-content: center;
+  * {
+    margin: 0 5px;
+  }
+  .hand-wave-message {
+    color: black;
+    font-weight: 600;
+  }
+  .email {
+    padding: 5px 0 5px 10px;
+    text-align: left;
+  }
+  .subscribe {
+    background-color: $orange;
+    padding: 7px 0;
+    color: white;
+    font-size: .8em;
+    font-weight: 400;
+    text-align: center;
+  }
+  img {
+    margin-left: 20px;
+  }
+}
+
 #main-body-container {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
 }
 
-#logo-and-search {
-  border-bottom: 1px solid #F0F0F0;
-  img {
-    height: 40px;
-    width: auto;
+// Popular item individual containers =============
+#popular-this-week-container, #today-container {
+  h2 {
+    color: $dark-grey-text;
+  }
+  > div {
+    justify-content: center;
+    > h2 {
+        width: 92%;
+        padding: 15px 0;
+        border-bottom: 1px solid $light-grey;
+      }
+  }
+
+  .show-more {
+    padding: 1% 0;
+    img {
+      width: 8px;
+      height: 8px;
+      margin: .5% 2%;
+    }
   }
 }
 
-#welcome-banner-subscribe, #popular-this-week-container, #today-container, #side-panel-container {
-  background-color: white;
-  margin: 20px 0;
-  border: 1px solid #F0F0F0;
-  border-radius: 3px;
-}
 .popular-item-container {
-border-bottom: 1px solid #F0F0F0;
-  > img {
+  border-bottom: $light-grey-border-style;
+
+  >img {
     width: 10%;
     margin: 20px;
   }
+
   .popular-item-description {
     width: 85%;
     text-align: left;
+      p {
+        padding: 5px 0;
+      }
+      .up-vote-count {
+        width: 25%;
+        height: 25px;
+        padding: 0;
+        color: black;
+        font-weight: bold;
+      }
+      .comment-count {
+        width: 18%;
+          img {
+          margin-right: 10%;
+          }
+      }
+      .popular-item-social-info-100 {
+        padding: 1% 5% 0 0;
+      }
+      div:nth-child(1) {
+        justify-content: flex-start;
+      }
+      div:nth-child(2) {
+        justify-content: flex-end;
+      }
   }
-}
-.upcoming-chats-description {
-  .upcoming-speaker-image {
-    padding: 15px;
-    width: 40%;
-    height: 50px;
-    border-radius: 100%;
-    background-image:url("../images/today/app-2.png");
+  .stretched-out-social-icons {
+    width: 45%;
+      .comment-count, .up-vote-count, .iphone-share,.share-count {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .iphone-share  {
+      background-color: $light-grey;
+      color: black;
+      font-weight: bold;
+    }
   }
 }
 
-.stretched-out-social-icons {
-  width: 45%;
+
+#kittybot-slack {
+  margin-bottom: 10%;
+  padding: 10%;
+    h2 {
+      color: black;
+    }
+    h2, p {
+      margin-bottom:10%;
+    }
+    h2 img{
+      margin-left:15%;
+    }
+    div{
+      width: 100%;
+      background-color: $orange;
+      color: white;
+      padding-top: 4%;
+      font-size: .6rem;
+    }
+
 }
+
+#upcoming-chats-contained{
+  padding: 10% 10% 0 10%;
+  h3 {
+    color: black;
+    padding-bottom: 10%;
+    margin-bottom: 10%;
+    border-bottom: $light-grey-border-style;
+  }
+  .show-more {
+    color: $orange;
+    font-weight: bold;
+    border-top: $light-grey-border-style;
+    padding: 6% 0 6% 0;
+  }
+  .upcoming-chats-description {
+    margin-bottom: 10%;
+      .upcoming-speaker-image {
+        padding: 15px;
+        margin-right: 5%;
+        width: 35px;
+        height: 35px;
+        border-radius: 100%;
+        background-image:url("../images/today/app-2.png");
+        background-size: contain;
+      }
+      h4 {
+        color: black;
+        margin-bottom: 3%;
+        font-weight: bold;
+      }
+      p {
+        margin-bottom: 3%;
+      }
+      .remind-me-button {
+        width: 60%;
+        color: black;
+        font-size: .6rem;
+        padding-top: 4%;
+        height: 20px;
+        font-weight: bold;
+      }
+  }
+}
+
+
 
 
 // Large screen starting at 850px + =============
@@ -64,6 +249,7 @@ border-bottom: 1px solid #F0F0F0;
 
 header, #grey-background-content {
   width: 85%;
+  max-width: 900px;
 }
 #main-body-container {
   justify-content:space-between;
@@ -72,18 +258,18 @@ header, #grey-background-content {
 #popular-this-week-and-today-container {
   width: 75%;
 }
-#side-panel-container {
-  width: 23%
-}
 
 #welcome-banner-subscribe {
   .hand-wave-message{width: 25%; text-align: right;}
   .get-best-prod {width: 30%;}
   .email {width: 20%;}
-  .subscribe {width: 12%;}
-  img {width: 2.5%; height: auto;}
+  .subscribe {width: 9%;}
+  // img {width: 2.5%; height: auto;}
 }
 
+#side-panel-container {
+  width: 23%
+}
 }
 
 // Medium and small screen < 850px ============
@@ -102,16 +288,23 @@ header, #grey-background-content {
 }
 
   #side-panel-container * {
-  display: none !important;
+  display: none;
 }
 
 #welcome-banner-subscribe {
+  img {display: none;}
   flex-wrap: wrap;
-  .hand-wave-message{width: 50%; text-align: right;}
-  .get-best-prod {width: 50%;}
-  .email {width: 30%;}
-  .subscribe {width: 20%;}
-  img {width: 2.5%; height: auto;}
-}
+  // justify-content: center;
+  // align-items: center;
+  .hand-wave-message{width: 40%; text-align: right; padding-bottom: .5%;}
+  .get-best-prod {width: 50%; text-align:left; padding-bottom: .5%;}
+  .email {width: 25%;}
+  .subscribe {width: 10%;}
 
+}
+#navigation {
+  .toomany-nav {
+  display: none;
+  }
+}
 }

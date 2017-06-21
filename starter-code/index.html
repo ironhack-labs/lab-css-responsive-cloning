@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>CSS Lab | Responsive Cloning | Product Hunt</title>
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,500,600" rel="stylesheet">
   <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.min.css">
 </head>
@@ -16,16 +16,16 @@
     <header>
 
       <div id="logo-and-search" class="width100 flex-box-row-between">
-        <img  class="width100"src="images/logo.png" alt="Product Hunt Logo">
-        <div id="search" class="width100 flex-box-row-between">
+        <img src="images/logo.png" alt="Product Hunt Logo">
+        <div id="search" class="flex-box-row-between">
           <img src="images/search.png" alt="Search icon">
-          <div id="search-text-field">Discover your next favorite thing...</div>
+          <div>Discover your next favorite thing...</div>
         </div>
         <p>...</p>
         <p>Login</p>
       </div>
 
-      <div id="navigation-100" class="width100 flex-box-row-between">
+      <div id="navigation" class="width100 flex-box-row-between">
         <ul class="flex-box-row-between">
           <li><a href="#">Home</a></li>
           <li><a href="#">Tech</a></li>
@@ -34,12 +34,14 @@
           <li><a href="#">Books</a></li>
           <li><a href="#">Bots</a></li>
           <li><a href="#">Developer Tools</a></li>
-          <li><a href="#">iMessage Apps</a></li>
-          <li><a href="#">iPhone</a></li>
-          <li><a href="#">Photography Tools</a></li>
+          <li class="toomany-nav"><a href="#">iMessage Apps</a></li>
+          <li class="toomany-nav"><a href="#">iPhone</a></li>
+          <li class="toomany-nav"><a href="#">Photography Tools</a></li>
         </ul>
-        <img src="images/arrow-prev.png" alt="Arrow previous">
-        <img src="images/arrow-next.png" alt="Arrow next">
+        <div>
+          <img src="images/arrow-prev.png" alt="Arrow previous">
+          <img src="images/arrow-next.png" alt="Arrow next">
+        </div>
       </div>
     </header>
   </div>
@@ -51,12 +53,12 @@
     <div id="welcome-banner-subscribe" class="width100 flex-box-row-between">
       <div class="hand-wave-message">
           <i class="em em-wave"></i>
-          Welcome to Product Hunt
+          <b>Welcome to Product Hunt</b>
       </div>
       <div class="get-best-prod">Get the best new products in your inbox, daily.</div>
       <div class="email button">Your email</div>
       <div class="subscribe button">SUBSCRIBE</div>
-      <img src="images/close.png" alt="Close icon">
+      <img class="close-icon" src="images/close.png" alt="Close icon">
     </div>
 
 <!-- ========== Body content made up of two columns - START ============= -->
@@ -69,7 +71,7 @@
         <div id="popular-this-week-container" class="width100">
           <div class="flex-box-row-between">
             <h2>Popular this week</h2>
-            <img src="images/close.png" alt="Close icon">
+            <img class="close-icon"src="images/close.png" alt="Close icon">
           </div>
       <!-- Column of repeated popular item details -->
         <div class="popular-item-container width100 flex-box-row-between">
@@ -135,7 +137,7 @@
         <div id="today-container">
           <div class="flex-box-row-between">
             <h2>Today</h2>
-            <img src="images/close.png" alt="Close icon">
+            <img class="close-icon" src="images/close.png" alt="Close icon">
           </div>
         <!-- Column of repeated today item details -->
         <div class="popular-item-container width100 flex-box-row-between">
@@ -201,7 +203,7 @@
       <div id="side-panel-container">
 <!-- ========== kittybot for slack - START ================ -->
         <div id="kittybot-slack">
-          <h2>Kittybot for Slack<img src="images/close.png" alt="Close icon"></h2>
+          <h2>Kittybot for Slack<img class="close-icon" src="images/close.png" alt="Close icon"></h2>
           <p>A friendly feline that sends you cool new things.</p>
           <div class="orange-button button">ADD KITTYBOT TO SLACK</div>
         </div>
@@ -249,29 +251,8 @@
               <div class="remind-me-button button">REMIND ME</div>
             </div>
           </div>
-          <div class="upcoming-chats-description flex-box-row-between">
-            <div class="upcoming-speaker-image"></div>
-            <div class="upcoming-details">
-              <h4>Name LastName</h4>
-              <p>Isn't this person amazing?</p>
-              <div class="remind-me-button button">REMIND ME</div>
-            </div>
-          </div>
-          <div class="upcoming-chats-description flex-box-row-between">
-            <div class="upcoming-speaker-image"></div>
-            <div class="upcoming-details">
-              <h4>Name LastName</h4>
-              <p>Isn't this person amazing?</p>
-              <div class="remind-me-button button">REMIND ME</div>
-            </div>
-          </div>
-          <div class="upcoming-chats-description flex-box-row-between">
-            <div class="upcoming-speaker-image"></div>
-            <div class="upcoming-details">
-              <h4>Name LastName</h4>
-              <p>Isn't this person amazing?</p>
-              <div class="remind-me-button button">REMIND ME</div>
-            </div>
+          <div class="show-more flex-box-row-center width100">
+            <p>SEE MORE</p>
           </div>
 
 
