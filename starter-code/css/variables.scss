@@ -1,0 +1,13 @@
+$font-stack:
+/* 1 */ -apple-system, BlinkMacSystemFont,
+/* 2 */ "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+/* 3 */ "Helvetica Neue", sans-serif;
+
+/*colors*/
+$ph-red: rgba(217, 77, 38, 1.0);
+$soft-grey: rgba(170, 170, 170, 0.4);
+$medium-grey: rgba(150, 150, 150, 0.9);
+$hard-grey: rgb(130, 130, 130);
+$transparent: rgba(0,0,0,0);
+
+$soft-grey-border: solid 1px $soft-grey;
