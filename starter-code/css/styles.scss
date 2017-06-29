@@ -1,0 +1,273 @@
+/* Import Reset and Variables*/
+@import 'reset';
+@import 'variables';
+
+/* General html properties*/
+html {
+  font-family: $font-stack;
+  font-size: 10px;
+}
+
+hr {
+  width: auto;
+  display: block;
+  height: 1px;
+  border: none;
+  background-color: $soft-grey;
+}
+
+/*Navigation menu*/
+nav {
+  height: 60px;
+  padding: 0 20px;
+  /*border-bottom: $soft-grey-border;*/
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1100px;
+  margin: auto;
+
+  #top-left {
+    height: 80%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    #logo {
+    display: block;
+    margin-right: 10px;
+      img {
+        height: 50px;
+      }
+    }
+
+    #company-title {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      strong {
+        display: block;
+        color: $ph-red;
+        font-weight: 600;
+        font-size: 1.9rem;
+        margin-bottom: 2px;
+      }
+      span {
+        display: block;
+        font-weight: 300;
+        color: $hard-grey;
+        font-size: 1.3rem;
+      }
+
+    }
+  }
+
+
+  #search-block {
+    border: $soft-grey-border;
+    height: 50%;
+    width: 300px;
+    padding: 0 8px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    #search-icon {
+      width: 10%;
+      display: block;
+    }
+
+    #search-field{
+      border: none;
+      display: block; /*block @ 650+*/
+      margin-left: 5%;
+      width: 80%;
+      outline: none;
+      font-size: 1.25rem;
+      background-color: $transparent;
+      color: $hard-grey;
+    }
+  }
+
+  #top-right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: auto;
+    height: 80%;
+
+    #ask {
+      display: block;
+      font-size: 1.4rem;
+      color: $hard-grey;
+      padding: 5px;
+      text-decoration: none;
+    }
+
+    #ask:hover {
+      text-decoration: underline;
+    }
+
+    #dots-dropdown {
+      display: block;
+      letter-spacing: 1px;
+      font-size: 1rem;
+      color: $hard-grey;
+      text-decoration: none;
+      line-height: 1px;
+      padding: 5px;
+    }
+
+    #separator {
+      display: block;
+      padding: 0 3px;
+      color: $hard-grey;
+      font-weight: 200;
+      font-size: 1.7rem;
+    }
+
+    #login-btn {
+      display: block;
+      height: auto;
+      background-color: $transparent;
+      border: $soft-grey-border;
+      border-radius: 3px;
+      padding: 7px 12px;
+      font-size: 1.1rem;
+      font-weight: 500;
+      text-decoration: none;
+      color: rgba(0,0,0,0.7);
+      margin-left: 5px;
+    }
+
+    #login-btn:hover {
+      background-color: $soft-grey;
+    }
+
+    #signup-btn-nav {
+      display: block;
+      height: auto;
+      background-color: $ph-red;
+      border: $soft-grey-border;
+      border-radius: 3px;
+      padding: 7px 12px;
+      font-size: 1.1rem;
+      font-weight: 500;
+      text-decoration: none;
+      text-align: center;
+      color: white;
+      margin-left: 5px;
+    }
+  }
+}
+
+/*Header*/
+
+header {
+  display: flex;
+  align-content: flex-start;
+  justify-content: space-between;
+  padding: 50px 20px 30px;
+  height: auto;
+  max-width: 1100px;
+  margin: auto;
+
+  #header-content {
+    width: 40%;
+    margin-left: 10px;
+
+    h1 {
+      color: black;
+      font-size: 3rem;
+      margin-bottom: 30px;
+    }
+
+    p {
+      font-size: 1.8rem;
+      color: $medium-grey;
+      margin-bottom: 25px;
+      font-weight: 100;
+      line-height: 25px;
+    }
+
+    #signup-btn {
+      display: block;
+      height: auto;
+      width: 150px;
+      background-color: $ph-red;
+      border: $soft-grey-border;
+      border-radius: 3px;
+      padding: 12px 20px;
+      font-size: 1.6rem;
+      font-weight: 500;
+      text-decoration: none;
+      text-align: center;
+      color: white;
+      margin-left: 5px;
+    }
+
+  }
+
+  img {
+    height: 300px;
+    margin-right: 30px;
+  }
+}
+
+
+
+
+//--------------------------------------------------------
+// -------------------- Media queries --------------------
+//--------------------------------------------------------
+
+// Small Screen - 600px or less
+@media only screen and (max-width: 600px) {
+
+  nav {
+    #top-left {
+      order: 2;
+      #company-title {
+        display: none;
+      }
+    }
+
+    #search-block {
+      order: 1;
+      border: none;
+      width: auto;
+      #search-field {
+        display: none;
+      }
+    }
+
+    #top-right {
+      order: 3;
+      #ask, #separator, #login-btn, #signup-btn-nav {
+        display: none;
+      }
+    }
+  }
+
+  header {
+
+    #header-content {
+      width: 100%;
+    }
+
+    img {
+      display: none;
+    }
+  }
+
+}
+
+
+// Medium Screen - 600 to 1000 px
+@media only screen and (min-width: 600px) and (max-width: 1000px) {
+
+  nav #top-left #company-title {
+    display: none;
+  }
+
+}
