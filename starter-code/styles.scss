@@ -1,3 +1,174 @@
 body {
   background: #f9f9f9;
+  font-size: 10px;
+  font-family: Helvetica;
+  color: #000;
+}
+
+#logo {
+  max-width: 75px;
+  @media (min-width: 720px) {
+    max-width: 75px;
+  }
+  @media (min-width: 960px) {
+    max-width: 150px;
+  }
+  @media (min-width: 1280px) {}
+}
+#top-navbar, #bottom-navbar{
+  font-size: 1.2em;
+  margin: 0 2%;
+  li{
+    margin: 0 5px;
+  }
+  span{
+    display: inline-block;
+  }
+  text-transform: capitalize;
+}
+#top-navbar {
+  img, input{
+    float: left;
+  }
+  span{
+    float: right;
+  }
+  input{
+    width: 100%;
+    max-width: 70%;
+  }
+  :not(:first-child){
+    padding: 10px 5px;
+  }
+}
+
+
+#bottom-navbar {
+  clear:both;
+  ul li {
+    text-align: center;
+    display: inline-block;
+  }
+}
+
+#popular {
+  border-bottom: 1px solid #eee;
+}
+
+#today {
+  #newest-span,
+  #popular-span {
+    float: right;
+  }
+
+  img {
+    max-width: 75px;
+  }
+}
+
+#popular,
+#today {
+  li{width: 100%;}
+  span{
+    width: auto;
+  }
+  li .popular-text,
+  li img {
+    float: left;
+  }
+
+  span,
+  ul li {
+    display: inline-block;
+    border-bottom: 1px solid #eee;
+  }
+
+  p {
+    color: #1a1a1a;
+  }
+  h3{
+    font-size: 1.75em;
+  }
+  background: #fff;
+}
+.show-more{
+  text-align: center;
+  margin: 10px 0;
+}
+.buttons {
+  color: #1a1a1a;
+
+  .votes-button {
+    color: #000;
+  }
+}
+
+.popular-text {
+  margin-left: 20px;
+}
+
+.vote-button:before {
+  content: "";
+  display: block;
+  background: url("images/votes.png") no-repeat;
+  width: 20px;
+  height: 20px;
+  float: left;
+  margin: 0 0 0 5px;
+}
+
+.comments-button:before {
+  content: "";
+  display: block;
+  background: url("images/comments.png") no-repeat;
+  width: 20px;
+  height: 20px;
+  float: left;
+margin: 0 0 0 5px;}
+
+.save-button:before {
+  content: "+";
+  float: left;
+margin: 0 0 0 5px;}
+
+.new-window-button:before {
+  content: "^";
+  float: left;
+margin: 0 0 0 5px;}
+
+.close-button{
+  position: relative;
+  left: 97%;
+  color: #ddd;
+  max-width: 15px !important;
+  top: 10px;
+}
+#welcome{
+  display: none;
+  @media (min-width: 720px){
+    display: block;
+  margin: 20px auto;
+  width: 100%;
+  background: #fff;
+  div{
+    margin: 0 30%;
+    padding: 10px 0;
+  }
+  .subscribe-button{
+    color: #fff;
+    background: orange;
+    text-transform: uppercase;
+    padding: 5px 10px;
+    border-bottom: 1px solid orange;
+    border-radius: 3px;
+  }
+  #welcome-message{
+    h3{
+      color: #000;
+    }
+    span{
+
+    }
+  }
+  }
 }
