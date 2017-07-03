@@ -6,48 +6,66 @@ body {
 }
 
 #logo {
-  max-width: 75px;
-  @media (min-width: 720px) {
-    max-width: 75px;
-  }
-  @media (min-width: 960px) {
-    max-width: 150px;
-  }
-  @media (min-width: 1280px) {}
+  max-width: 50px;
 }
-#top-navbar, #bottom-navbar{
+.navbar-selected{
+  color: #000;
+  background: #CCD3D3;
+  padding: 5px;
+  border: 1px solid #ccd3d3;
+  border-radius: 2px;
+
+}
+
+#bottom-navbar,
+#top-navbar {
   font-size: 1.2em;
   margin: 0 2%;
-  li{
+
+  li {
     margin: 0 5px;
   }
-  span{
+
+  span {
     display: inline-block;
   }
   text-transform: capitalize;
 }
+
 #top-navbar {
-  img, input{
+  color: #CCD3D3;
+  img,
+  input {
     float: left;
   }
-  span{
+
+  span {
     float: right;
   }
-  input{
+
+  input {
     width: 100%;
     max-width: 70%;
   }
-  :not(:first-child){
+
+  :not(:first-child) {
     padding: 10px 5px;
   }
 }
 
-
 #bottom-navbar {
-  clear:both;
+  color: #CCD3D3;
+  clear: both;
+  text-align: center;
+
   ul li {
     text-align: center;
     display: inline-block;
+  }
+  @media (min-width: 720px) {
+    ul li {
+      margin-left: 15px;
+    }
   }
 }
 
@@ -59,6 +77,7 @@ body {
   #newest-span,
   #popular-span {
     float: right;
+    margin: 0 3px;
   }
 
   img {
@@ -68,10 +87,22 @@ body {
 
 #popular,
 #today {
-  li{width: 100%;}
-  span{
+  @media (min-width: 720px) {
+    margin: 0 2%;
+  }
+
+  .category-button {
+    display: none;
+  }
+
+  li {
+    width: 100%;
+  }
+
+  span {
     width: auto;
   }
+
   li .popular-text,
   li img {
     float: left;
@@ -86,15 +117,31 @@ body {
   p {
     color: #1a1a1a;
   }
-  h3{
+
+  h3 {
     font-size: 1.75em;
   }
   background: #fff;
+  @media (min-width: 960px) {
+    .category-button {
+      display: block;
+      width: 80px;
+      position: relative;
+      margin-left: 90%;
+      margin-top: 5%;
+      background: #eee;
+      padding: 2px;
+      border-radius: 2px;
+      border: 1px solid #eee
+    }
+  }
 }
-.show-more{
+
+.show-more {
   text-align: center;
   margin: 10px 0;
 }
+
 .buttons {
   color: #1a1a1a;
 
@@ -124,51 +171,121 @@ body {
   width: 20px;
   height: 20px;
   float: left;
-margin: 0 0 0 5px;}
+  margin: 0 0 0 5px;
+}
 
 .save-button:before {
   content: "+";
   float: left;
-margin: 0 0 0 5px;}
+  margin: 0 0 0 5px;
+}
 
 .new-window-button:before {
   content: "^";
   float: left;
-margin: 0 0 0 5px;}
+  margin: 0 0 0 5px;
+}
 
-.close-button{
+.close-button {
   position: relative;
   left: 97%;
   color: #ddd;
   max-width: 15px !important;
   top: 10px;
 }
-#welcome{
+
+#welcome {
   display: none;
-  @media (min-width: 720px){
+  @media (min-width: 720px) {
+    text-align: center;
     display: block;
-  margin: 20px auto;
-  width: 100%;
-  background: #fff;
-  div{
-    margin: 0 30%;
-    padding: 10px 0;
+    margin: 20px auto;
+    width: 100%;
+    background: #fff;
+
+    div {
+      display: inline-block;
+      margin: 0 20%;
+      padding: 10px 0;
+    }
+
+    h3,
+    input,
+    span {
+      margin-left: 5px;
+      display: inline-block;
+    }
+
+    .subscribe-button {
+      color: #fff;
+      background: #D6573D;
+      text-transform: uppercase;
+      padding: 5px 10px;
+      border-bottom: 1px solid orange;
+      border-radius: 3px;
+    }
   }
-  .subscribe-button{
+}
+
+#right-panel {
+  display: none;
+  @media (min-width: 1280px) {
+    display: block;
+    width: 20%;
+    float: right;
+  }
+
+  h3 {
+    border-bottom: 1px solid #cdc2c2;
+    padding-bottom: 10px;
+  }
+
+  #live-chat,
+  #slack,
+  #tweets {
+    background: #fff;
+    margin: 20px 5px;
+    padding: 5px;
+    border: 1px solid #fff;
+    border-radius: 2px;
+
+    p {
+      color: #CDC2C2;
+    }
+  }
+
+  ul {
+    list-style: none;
+  }
+
+  ul li img {
+    max-width: 40px;
+    position: absolute;
+    left: 80%;
+  }
+
+  #slack .subscribe-button {
     color: #fff;
-    background: orange;
+    background: #D6573D;
     text-transform: uppercase;
     padding: 5px 10px;
     border-bottom: 1px solid orange;
     border-radius: 3px;
   }
-  #welcome-message{
-    h3{
-      color: #000;
-    }
-    span{
 
-    }
+  .remind-me-button {
+    padding: 2px;
+    border: 1px solid #cdc2c2;
+    color: #000;
+    border-radius: 2px;
   }
+}
+
+#popular,
+#today,
+.show-more {
+  @media (min-width: 1280px) {
+    display: inline-block;
+    width: 70%;
   }
 }
