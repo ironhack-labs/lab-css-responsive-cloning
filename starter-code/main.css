@@ -1,0 +1,718 @@
+body{
+/*border: 1px solid black;*/
+/*width:100%;*/
+font-family: sans-serif;
+}
+
+/*NAVBAR BEGIN*/
+.navbar{
+  width: 100%;
+  height: 10%;
+  border-bottom: 1px solid #dcdfe5;
+  display: inline-block;
+  padding: 0% 1%;
+}
+
+.search{
+  height: 30px;
+  position: relative;
+  top: 4px;
+}
+
+.logo{
+  width: 45px;
+  position: relative;
+  left: 34%;
+  top: 12px;
+}
+
+.navbar p {
+
+  display: inline-block;
+  font-size: 22px;
+  font-weight: bold;
+  position: relative;
+  left:  67%;
+  bottom: 9px;
+
+}
+
+.submitButton1 {
+display: none;
+}
+
+/*NAVBAR END*/
+
+/*SIGNUP START*/
+.signUp{
+  padding: 0% 5%;
+  width: 100%;
+  border-bottom: 1px solid #dcdfe5;
+  padding-bottom: 10px;
+
+
+}
+
+p.signUp {
+  width: inherit;
+  font-size: 17px;
+  color: #dcdfe5;
+  line-height: 1.5;
+  font: helvetica;
+  position: relative;
+  right: 5%;
+    border-bottom: 0px solid ;
+}
+
+.submitButton2 {
+  width: 35%;
+  border: 1px solid #e04212;
+  border-radius: 3px;
+  background-color: #e05d35;
+  color: white;
+  height: 30px;
+  text-align: center;  /*margin-left: 14%;*/*/
+  font-weight: bold;
+  font-size: 16px;
+  padding-top: 12px;
+  /*position: relative;
+  top: 10px;*/
+}
+.cat {
+  display:none;
+}
+/*SIGNUP END*/
+
+.navigation1 {
+  display: inline-block;
+  width: 100%;
+  text-align: 100%;
+}
+
+.navigationArrow, .navigationHeading{
+  height: 10px;
+  font-size: 15px;
+  display: inline-block;
+  text-align: center;
+  position: relative;
+  left: 40%;
+}
+
+/*TODAY*/
+.todayApps{
+  width: 100%;
+  border-bottom: 1px solid #dcdfe5;
+  padding-top: 0px;
+  margin: 0px;
+  display: inline-block;
+  padding-left: 3px;
+  /*margin-bottom: 3%;*/
+}
+
+.todayApps h3, .todayApps p {
+  display: inline-block;
+}
+
+.todayApps h3 {
+  padding-left: 2px;
+  font-weight: lighter;
+  font-size: 22px;
+
+}
+
+.popular{
+  position: relative;
+  margin-left: 35%;
+  font-weight: bold;
+}
+
+.newest {
+  color: #dcdfe5;
+  font-weight: bold;
+}
+/*FEED ITEMS*/
+
+.feedCardItem, .appImage, .appTitle,
+.appInfo, .votes, .comments {
+  display: inline-block;
+
+}
+
+.feedCardItem {
+  padding: 3% 0%;
+  border-bottom: 1px solid #dcdfe5;
+
+
+}
+.appImage {
+  float: left;
+}
+
+.appTitle {
+  width: 70%;
+  /*border: 1px solid black;*/
+  font-size: 18px;
+  /*position: relative;
+  bottom: 25px;*/
+  margin: 0% 0% 0% 1%;
+
+}
+
+.appInfo {
+  width: 70%;
+  /*border: 1px solid black;*/
+  font-size: 12px;
+  margin: 0% 0% 0% 1%;
+  /*position: relative;*/
+  /*bottom: 95px;
+  left: 23%;*/
+}
+
+.votes, .comments {
+  border: 1px solid black;
+  border-radius: 3px;
+  height: 20px;
+  float: left;
+  position: relative;
+  bottom: 10px;
+  margin: 0% 1%;
+
+}
+
+.votes{
+  width: 20%;
+  float: left;
+
+}
+
+.votes img {
+  /*height: 80%;*/
+  float: left;
+}
+
+.comments {
+  width: 13%;
+  padding-left: 1%
+}
+
+.appImage2 {
+  float: left;
+  width: 22%;
+}
+
+.col3{
+  display: none;
+}
+/*----------------------------------------------------*/
+/*RESPONSIVE FOR IPAD  WIDTH: 764PX HEIGHT: 1024PX     */
+
+@media all and (min-width: 700px) {
+
+  body{
+    height: 100%;
+    overflow: scroll;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .navbar{
+    width: 100%;
+    height: 10%;
+    border-bottom: 1px solid #dcdfe5;
+    display: inline-block;
+    padding: 0% 1%;
+  }
+
+  .search{
+    height: 30px;
+    position: relative;
+    top: 4px;
+  }
+
+  .logo{
+    width: 45px;
+    position: relative;
+    left: 40%;
+    top: 12px;
+  }
+
+  .navbar p {
+
+    display: inline-block;
+    font-size: 22px;
+    font-weight: bold;
+    position: relative;
+    left:  85%;
+    bottom: 9px;
+
+  }
+
+  .submitButton1 {
+  display: none;
+  }
+  /*SIGNUP START*/
+  .signUp{
+    padding: 0% 5%;
+    width: 100%;
+    border-bottom: 1px solid #dcdfe5;
+
+  }
+
+  p.signUp {
+    width: inherit;
+    font-size: 17px;
+    color: #dcdfe5;
+    line-height: 1.5;
+    font: helvetica;
+    position: relative;
+    right: 5%;
+      border-bottom: 0px solid ;
+  }
+
+  .cat {
+    display:none;
+  }
+
+  .submitButton2 {
+    width: 35%;
+    border: 1px solid #e04212;
+    border-radius: 3px;
+    background-color: #e05d35;
+    color: white;
+    height: 30px;
+    text-align: center;  /*margin-left: 14%;*/*/
+    font-weight: bold;
+    font-size: 16px;
+    padding-top: 12px;
+    /*position: relative;
+    top: 10px;*/
+  }
+/*NAVIGATION feed*/
+  .navigation1 {
+    display: inline-block;
+    width: 100%;
+    text-align: 100%;
+  }
+
+  .navigationArrow, .navigationHeading{
+    height: 15px;
+    font-size: 20px;
+    font-weight: lighter;
+    display: inline-block;
+    text-align: center;
+    position: relative;
+    left: 42%;
+  }
+  .todayApps{
+    width: 100%;
+    border-bottom: 1px solid #dcdfe5;
+    padding-top: 0px;
+    margin: 0px;
+    display: inline-block;
+    padding-left: 3px;
+    /*margin-bottom: 3%;*/
+  }
+
+  .todayApps h3, .todayApps p {
+    display: inline-block;
+  }
+/*TODAY*/
+
+
+  .todayApps h3 {
+    padding-left: 2px;
+    font-weight: lighter;
+    font-size: 22px;
+
+  }
+
+  .popular{
+    position: relative;
+    margin-left: 68%;
+    font-weight: bold;
+  }
+
+  .newest {
+    color: #dcdfe5;
+    font-weight: bold;
+  }
+
+  /*FEED ITEMS*/
+
+  .feedCardItem, .appImage, .appTitle,
+  .appInfo, .votes, .comments {
+    display: inline-block;
+
+  }
+
+  .feedCardItem {
+    padding: 3% 0%;
+    border-bottom: 1px solid #dcdfe5;
+    width:100%;
+
+
+  }
+  .appImage {
+    float: left;
+  }
+
+  .appTitle {
+    width: 70%;
+    /*border: 1px solid black;*/
+    font-size: 18px;
+    /*position: relative;
+    bottom: 25px;*/
+    margin: 0% 0% 0% 1%;
+
+  }
+
+  .appInfo {
+    width: 70%;
+    /*border: 1px solid black;*/
+    font-size: 12px;
+    margin: 0% 0% 0% 1%;
+    /*position: relative;*/
+    /*bottom: 95px;
+    left: 23%;*/
+  }
+
+  .votes, .comments {
+    border: 1px solid black;
+    border-radius: 3px;
+    height: 20px;
+    float: left;
+    position: relative;
+    bottom: 10px;
+    margin: 0% 1%;
+
+  }
+
+  .votes{
+    width: 20%;
+    float: left;
+
+  }
+
+  .votes img {
+    /*height: 80%;*/
+    float: left;
+  }
+
+  .comments {
+    width: 13%;
+    padding-left: 1%
+  }
+
+  .appImage2 {
+    float: left;
+    width: 10%;
+  }
+.col3{
+  display: none;
+}
+
+}
+/*-----------------------------------*/
+
+/*RESPONSIVE FOR DESKTOP WIDTH: MIN-850PX HEIGHT: 1024PX     */
+
+@media all and (min-width: 1100px) {
+
+  body{
+    height: 100%;
+    overflow: scroll;
+    -webkit-overflow-scrolling: touch;
+    background-color: #f9f9f9;
+    padding: 0;
+    margin: 0;
+  }
+  /*NAVBAR BEGIN*/
+  .navbar{
+    width: 100%;
+    height: 10%;
+    border-bottom: 1px solid #dcdfe5;
+    display: inline-block;
+    padding: 0% 1%;
+    background-color: white;
+  }
+
+  .search{
+    height: 30px;
+    position: relative;
+    top: 4px;
+    left: 45%;
+    /*border: 1px solid #dcdfe5;*/
+  }
+
+  .logo{
+    width: 45px;
+    /*float: left;*/
+    position: relative;
+    left: 1%;
+    top: 12px;
+  }
+
+  .navbar p {
+
+    display: inline-block;
+    font-size: 22px;
+    font-weight: bold;
+    position: relative;
+    left:  80%;
+    bottom: 9px;
+
+  }
+
+  .submitButton1 {
+    display: inline-block;
+    width: 5%;
+    border: 1px solid #e04212;
+    border-radius: 3px;
+    background-color: #e05d35;
+    color: white;
+    height: 6%;
+    text-align: center;
+    padding: .8% .8%;
+    margin-left: 1%;
+    font-weight: bold;
+    position: relative;
+    left: 80%;
+    bottom: 6px;
+
+  }
+  /*SIGNUP START*/
+  .signUp{
+    padding: 0% 5%;
+    width: 100%;
+    border-bottom: 1px solid #dcdfe5;
+    background-color: white;
+
+
+  }
+
+  p.signUp {
+    width: 40%;
+    font-size: 17px;
+    color: #dcdfe5;
+    line-height: 1.5;
+    font: helvetica;
+    position: relative;
+    right: 5%;
+    border-bottom: 0px solid ;
+  }
+
+  .submitButton2 {
+    width: 20%;
+    border: 1px solid #e04212;
+    border-radius: 3px;
+    background-color: #e05d35;
+    color: white;
+    height: 30px;
+    text-align: center;  /*margin-left: 14%;*/*/
+    font-weight: bold;
+    font-size: 16px;
+    padding-top: 12px;
+    margin: 2% 0%;
+    /*position: relative;
+    top: 10px;*/
+  }
+
+  h1.discover {
+    /*padding: 2% 0;*/
+    margin: 0;
+    display: inline-block;
+  }
+
+  .cat {
+    display: inline-block;
+    width: 170px;
+    margin: 0;
+    padding:0;
+    position: relative;
+    left: 25%;
+    top: 80px;
+  }
+
+  /*SIGNUP END*/
+
+  /*TODAY*/
+  .todayApps{
+    width: 70%;
+    border-bottom: 1px solid #dcdfe5;
+    padding-top: 0px;
+    margin: 0px;
+    display: inline-block;
+    padding-left: 3px;
+    background-color: white;
+    position: relative;
+    left: 6%;
+    /*margin-bottom: 3%;*/
+  }
+
+  .todayApps h3, .todayApps p {
+    display: inline-block;
+    position: relative;
+  }
+
+
+
+  .todayApps h3 {
+    padding-left: 1%;
+    font-weight: lighter;
+    font-size: 22px;
+
+  }
+
+  .popular{
+    position: relative;
+    margin-left: 70%;
+    font-weight: bold;
+  }
+
+  .newest {
+    color: #dcdfe5;
+    font-weight: bold;
+  }
+
+  /*FEED ITEMS*/
+
+  .feedCardItem, .appImage, .appTitle,
+  .appInfo, .votes, .comments {
+    display: inline-block;
+
+  }
+
+  .feedCardItem {
+    padding: 3% 0%;
+    border-bottom: 1px solid #dcdfe5;
+    width: 70.25%;
+    background-color: white;
+    position: relative;
+    left: 6%;
+
+
+  }
+  .appImage {
+    float: left;
+    padding-left: 2%;
+  }
+
+  .appTitle {
+    width: 70%;
+    /*border: 1px solid black;*/
+    font-size: 18px;
+    /*position: relative;
+    bottom: 25px;*/
+    margin: 0% 0% 0% 1%;
+
+  }
+
+  .appInfo {
+    width: 70%;
+    /*border: 1px solid black;*/
+    font-size: 12px;
+    margin: 0% 0% 0% 1%;
+    /*position: relative;*/
+    /*bottom: 95px;
+    left: 23%;*/
+  }
+
+  .votes, .comments {
+    border: 1px solid black;
+    border-radius: 3px;
+    height: 20px;
+    float: left;
+    position: relative;
+    bottom: 10px;
+    margin: 0% 1%;
+
+  }
+
+  .votes{
+    width: 20%;
+    float: left;
+
+  }
+
+  .votes img {
+    /*height: 80%;*/
+    float: left;
+  }
+
+  .comments {
+    width: 13%;
+    padding-left: 1%
+  }
+
+  .appImage2 {
+    float: left;
+    width: 9%;
+    padding-left: 2%;
+  }
+/*
+-------------------------------------
+COLUMN3*/
+
+
+
+
+.col3{
+  /*display: inline-block;*/
+  width: 20vw;
+  height: 92vh;
+  /*border-style: solid;
+  border-width: 1px;*/
+  /*float: left;*/
+  /*margin: 10px;*/
+  position: relative;
+  bottom: 1014px;
+  left: 77%;
+}
+
+.newsletter {
+  width: 100%;
+  border: 1px solid #dcdfe5;
+  border-radius: 3px;
+  height: 450px;
+  margin: 0px;
+  background-color: white;
+}
+
+.phunt {
+  width: 80%;
+  position: relative;
+  margin: 10% 10% 0% 10%;
+  margin-bottom: 0px;
+}
+
+.subscribeText {
+  width: 80%;
+  text-align: center;
+  margin-left: 10%;
+  padding: 0px;
+  font-weight: bold;
+}
+
+.newsletter .subscribeInput{
+  width: 70%;
+  margin-left: 12%;
+  height: 5%;
+  padding-top: 1%;
+  margin-bottom: 12%;
+  border: 1px solid #dcdfe5;
+  border-radius: 3px;
+}
+
+.submitButton4 {
+  width: 70%;
+  border: 1px solid #e04212;
+  border-radius: 3px;
+  background-color: #e05d35;
+  color: white;
+  height: 6%;
+  text-align: center;
+  padding-top: 3%;
+  margin-left: 14%;
+  font-weight: bold;
+}
+
+}
