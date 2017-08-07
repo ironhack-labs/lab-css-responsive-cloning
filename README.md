@@ -45,16 +45,16 @@ We have added one line in the SCSS file that will colorize the `<body>` backgrou
 
 Product Hunt has an interesting Responsive design. We have done four different screenshots representing each of the different layouts you have to reproduce. Pay attention to the small details to see which are the differences between all of them, and be sure you do your best to copy each of this details.
 
-### LG
+### LG (large - width > 1200px)
 ![](https://i.imgur.com/IrOCbjL.png)
 
-### MD
+### MD (medium - width > 992px)
 ![](https://i.imgur.com/nDVp2dv.png)
 
-### SM
+### SM (small - width > 600px)
 ![](https://i.imgur.com/uudBk5K.png)
 
-### XS
+### XS (extra-small - width <= 600px)
 ![](https://i.imgur.com/s8FpbyH.png)
 
 ## Extra Resources
