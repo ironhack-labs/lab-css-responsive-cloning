@@ -43,7 +43,11 @@ We have added one line in the SCSS file that will colorize the `<body>` backgrou
 
 ## ViewPorts
 
-Product Hunt has an interesting Responsive design. We have done four different screenshots representing each of the different layouts you have to reproduce. Pay attention to the small details to see which are the differences between all of them, and be sure you do your best to copy each of this details.
+Product Hunt has an interesting Responsive design. We have done four different screenshots representing each of the different layouts you have to reproduce. 
+
+Forget about super detail things on each box, the main goal of this exercise is to practice our skill to adapt content to differents screen sizes, and the main thing that changes from one resolution to another are the big boxes and how they are been displayed. Just pay attention to see which are the differences between all of them, and be sure you do your best to copy each.
+
+
 
 ### LG (large - width > 1200px)
 ![](https://i.imgur.com/IrOCbjL.png)
