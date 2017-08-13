@@ -1,3 +1,160 @@
+html{
+  font-size: 16px;
+  font-family: sans-serif;
+}
 body {
   background: #f9f9f9;
+}
+.topbar{
+  border-bottom: 1px solid #a4a6b6;
+  display: flex;
+  justify-content: space-between;
+}
+.searchbar{
+  display: flex;
+  justify-content: flex-start;
+}
+.search {
+  object-fit: contain;
+}
+.bottombar{
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #a4a6b6;
+}
+.nav {
+  display: flex;
+  justify-content: flex-start;
+  list-style-type: none;
+  padding-left: 0
+}
+.nav > li {
+  margin-left: 10px;
+  color: #a4a6b6;
+}
+.nav > .home {
+  color: black;
+}
+.arrows{
+  display: flex;
+  justify-content: flex-end;
+}
+.prev{
+  object-fit: contain;
+}
+.next{
+  object-fit: contain;
+}
+.popular{
+  display: flex;
+  justify-content: space-between;
+}
+.pop1 {
+  border-top: 1px solid #a4a6b6;
+  border-bottom: 1px solid #a4a6b6;
+  display: flex;
+  align-items: center;
+}
+h2 {
+  font-weight: normal;
+  font-size: 18px;
+  margin: 0;
+}
+.description {
+  margin: 0;
+}
+.popcolumn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.buttons {
+  display: flex;
+  align-items: flex-start;
+}
+.votebutton {
+  display: flex;
+  align-items: flex-start;
+  border: 1px solid #a4a6b6;
+  margin: 10px 5px 0px 0px;
+  padding: 3px 6px 3px 3px;
+}
+.votebutton > p{
+  margin: 0;
+}
+.commentbutton {
+  display: flex;
+  align-items: flex-start;
+  border: 1px solid #a4a6b6;
+  margin: 10px 5px 0px 0px;
+  padding: 3px
+}
+.commentbutton > p{
+  margin: 0 3px 2px 5px;
+}
+.save {
+  margin: 0;
+  padding: 3px 10px 7px 10px;
+  font-size: 14px;
+  border: 1px solid #a4a6b6;
+  margin: 10px 5px 0px 0px;
+}
+.comments, .save {
+  margin-left: 7px;
+}
+.duo {
+  margin: 20px 20px 20px 0px;
+}
+.popnew{
+  display: flex;
+  justify-content: space-around;
+  font-size: 16px;
+}
+.newest {
+  margin-left: 10px;
+  color: #a4a6b6;
+  font-weight: bold;
+}
+@media (max-width: 600px) {
+  .nav > li {
+    font-size: 14px;
+  }
+  .logo{
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+  }
+  .discover{
+    color: #a4a6b6;
+    font-weight: bold;
+  }
+  .login{
+    color: #a4a6b6;
+    font-weight: bold;
+  }
+  .prev{
+    width:16px;
+  }
+  .next{
+    width:16px;
+  }
+  h1 {
+    font-weight: normal;
+    font-size: 20px;
+  }
+  .close{
+    object-fit: contain;
+    width: 16px;
+  }
+  .popular{
+    margin-top: 20px;
+  }
+  .description {
+    font-size: 14px;
+  }
+  .duo {
+    object-fit: contain;
+    width: 90px;
+  }
 }
