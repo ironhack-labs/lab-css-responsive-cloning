@@ -97,7 +97,7 @@ nav input {
 }
 
 // Welcome Banner
-.welcome-banner {
+.welcome-banner-container {
   display: none; // Hidden for mobile
 }
 
@@ -117,6 +117,9 @@ nav input {
 .close-icon {
   width: 20px;
   height: 20px;
+}
+
+.popular-header .close-icon {
   margin-left: auto;
 }
 
@@ -227,23 +230,57 @@ nav input {
     border-radius: 3px;
   }
 
-  .welcome-banner {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
+  .welcome-banner-container {
+    display: block;
   }
 
-  .welcome-banner h3 {
+  .welcome-banner-content, .all-articles-container {
+    margin: 30px auto;
+    width: 1024px;
+    height: auto;
+    background-color: $background-color;
+    border: 1px solid $light-grey;
+    border-radius: 3px;
+  }
+
+  // Clearfix
+  .welcome-banner-content::after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+
+  .welcome-banner-left {
+    display: flex;
+    justify-content: center;
+    align-self: auto;
+  }
+
+  .welcome-banner-left ul {
+    list-style: none;
+  }
+
+  .welcome-banner-left li {
+    display: inline-block;
+  }
+
+  .welcome-banner-right {
+    float: right;
+    margin-right: 10px;
+    position: relative;
+    top: -55px;
+  }
+
+  .welcome-banner-content h3 {
     font-size: 16px;
   }
 
-  .welcome-banner p {
+  .welcome-banner-content li:nth-child(2) {
     font-size: 16px;
     color: $dark-grey;
   }
 
-  .subscribe-input {
-
+  .popular-this-week, .today {
+    margin: 2px 30px;
   }
 }
