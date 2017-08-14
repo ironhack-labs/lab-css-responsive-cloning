@@ -1,3 +1,81 @@
+// Color Variables
+$background-color: #f9f9f9;
+$dark-grey: #a2a1a7; // Used for Login and Other Links buttons in nav bar.
+$light-grey: #dad9db; // Used for borders.
+
 body {
-  background: #f9f9f9;
+  background: $background-color;
+  font-family: Helvetica;
+}
+
+// Navigation
+nav.top-nav {
+  // height: 60px;
+  margin-top: -15px;
+  margin-bottom: 40px;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+nav li {
+  padding-right: 15px;
+}
+
+nav input {
+  width: 100%;
+  padding-right: 360px;
+  font-size: 16px;
+  box-shadow: none;
+  border-radius: none;
+  border: none;
+  background-color: $background-color;
+}
+
+nav a {
+  text-decoration: none;
+  color: $dark-grey;
+}
+
+nav a.other-links-button {
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 3px;
+  justify-content: flex-end;
+}
+
+nav a.login-button {
+  font-size: 16px;
+  font-weight: bold;
+  justify-content: flex-end;
+}
+
+nav img.ph-logo {
+  width: 50px;
+  height: 50px;
+  margin-left: -40px;
+}
+
+// Categories
+section.categories {
+  margin-top: -35px;
+  border-top: 1px solid $light-grey;
+  border-bottom: 1px solid $light-grey;
+}
+
+section.categories ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+section.categories li {
+  padding-right: 15px;
 }

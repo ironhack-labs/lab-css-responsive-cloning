@@ -11,24 +11,32 @@
 
 <body>
   <main>
-    <nav>
-      <img class="ph-logo" src="./images/logo.png" alt="Product Hunt Logo" />
+    <nav class="top-nav">
+      <!-- <img class="ph-logo" src="./images/logo.png" alt="Product Hunt Logo" />
       <input type="search" name="searchsite" placeholder="Discover..." />
-      <a>...</a>
-      <a>Login</a>
+      <a href="#0">...</a>
+      <a href="#1">Login</a> -->
+
+      <ul>
+        <li><img class="ph-logo" src="./images/logo.png" alt="Product Hunt Logo" /></li>
+        <li><img class="search-icon" src="./images/search.png" alt="Search Icon" /></li>
+        <li><input type="search" name="searchsite" placeholder="Discover..." /></li>
+        <li><a class="other-links-button" href="#0">...</a></li>
+        <li><a class="login-button" href="#1">Login</a></li>
+      </ul>
     </nav>
 
     <!-- Site Categories -->
     <section class="categories">
       <ul>
-        <li>Home</li>
-        <li>Tech</li>
-        <li>Games</li>
-        <li>Podcasts</li>
-        <li>Books</li>
-        <li>Bots</li>
-        <li>Developer Tools</li>
-        <li>iMessage Apps</li>
+        <li><a href="#2">Home</a></li>
+        <li><a href="#3">Tech</a></li>
+        <li><a href="#4">Games</a></li>
+        <li><a href="#5">Podcasts</a></li>
+        <li><a href="#6">Books</a></li>
+        <li><a href="#6">Bots</a></li>
+        <li><a href="#7">Developer Tools</a></li>
+        <li><a href="#8">iMessage Apps</a></li>
       </ul>
     </section>
 
@@ -41,7 +49,7 @@
 
       <article class="duolingo">
         <div class="article-img">
-          <img src=".images/popular-this-week/app-1.png" alt="Duolingo Bots">
+          <img src="./images/popular-this-week/app-1.png" alt="Duolingo Bots">
         </div>
 
         <div class="article-content">
@@ -58,7 +66,7 @@
 
       <article class="tribe">
         <div class="article-img">
-          <img src=".images/popular-this-week/app-2.png" alt="Tribe 2.0">
+          <img src="./images/popular-this-week/app-2.png" alt="Tribe 2.0">
         </div>
 
         <div class="article-content">
@@ -75,7 +83,7 @@
 
       <article class="facebook-workplace">
         <div class="article-img">
-          <img src=".images/popular-this-week/app-3.png" alt="Duolingo Bots">
+          <img src="./images/popular-this-week/app-3.png" alt="Duolingo Bots">
         </div>
 
         <div class="article-content">
@@ -91,6 +99,11 @@
       </article>
     </section>
 
+    <div class="show-more">
+      <img src="./images/arrow-down.png" alt="Show More Arrow Icon">
+      SHOW MORE
+    </div>
+
     <!-- Today section: each article tag represents an item featured -->
     <section class="today">
       <div class="today-header">
@@ -101,7 +114,7 @@
 
       <article class="sprayscape">
         <div class="article-img">
-          <img src=".images/today/app-1.png" alt="Sprayscape">
+          <img src="./images/today/app-1.png" alt="Sprayscape">
         </div>
 
         <div class="article-content">
@@ -118,7 +131,7 @@
 
       <article class="ask-gary-vee">
         <div class="article-img">
-          <img src=".images/today/app-2.png" alt="Ask Gary Vee">
+          <img src="./images/today/app-2.png" alt="Ask Gary Vee">
         </div>
 
         <div class="article-content">
@@ -133,9 +146,9 @@
         </div>
       </article>
 
-      <article class="ask-gary-vee">
+      <article class="electron-wheel">
         <div class="article-img">
-          <img src=".images/today/app-3.png" alt="The Electron Wheel">
+          <img src="./images/today/app-3.png" alt="The Electron Wheel">
         </div>
 
         <div class="article-content">
