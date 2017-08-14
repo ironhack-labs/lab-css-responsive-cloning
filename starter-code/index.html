@@ -5,9 +5,261 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>CSS Lab | Responsive Cloning | Product Hunt</title>
-  <link rel="stylesheet" href="styles.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,500,600" rel="stylesheet">
+  <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.min.css">
 </head>
 <body>
-  
+
+<!-- White header with logo, search and navigation -->
+  <div id="white-background-container" class="width100">
+    <header>
+
+      <div id="logo-and-search" class="width100 flex-box-row-between">
+        <img src="images/logo.png" alt="Product Hunt Logo">
+        <div id="search" class="flex-box-row-between">
+          <img src="images/search.png" alt="Search icon">
+          <div>Discover your next favorite thing...</div>
+        </div>
+        <p>...</p>
+        <p>Login</p>
+      </div>
+
+      <div id="navigation" class="width100 flex-box-row-between">
+        <ul class="flex-box-row-between">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Tech</a></li>
+          <li><a href="#">Games</a></li>
+          <li><a href="#">Podcasts</a></li>
+          <li><a href="#">Books</a></li>
+          <li><a href="#">Bots</a></li>
+          <li><a href="#">Developer Tools</a></li>
+          <li class="toomany-nav"><a href="#">iMessage Apps</a></li>
+          <li class="toomany-nav"><a href="#">iPhone</a></li>
+          <li class="toomany-nav"><a href="#">Photography Tools</a></li>
+        </ul>
+        <div>
+          <img src="images/arrow-prev.png" alt="Arrow previous">
+          <img src="images/arrow-next.png" alt="Arrow next">
+        </div>
+      </div>
+    </header>
+  </div>
+
+<!-- ============== Grey main body container -START ====================-->
+  <div id="grey-background-container" class="width100">
+  <div id="grey-background-content">
+<!-- ========== Welcome banner and subscribe ==================== -->
+    <div id="welcome-banner-subscribe" class="width100 flex-box-row-between">
+      <div class="hand-wave-message">
+          <i class="em em-wave"></i>
+          <b>Welcome to Product Hunt</b>
+      </div>
+      <div class="get-best-prod">Get the best new products in your inbox, daily.</div>
+      <div class="email button">Your email</div>
+      <div class="subscribe button">SUBSCRIBE</div>
+      <img class="close-icon" src="images/close.png" alt="Close icon">
+    </div>
+
+<!-- ========== Body content made up of two columns - START ============= -->
+    <div id="main-body-container" class="width100">
+
+<!-- ========== Popular this week + Today column 1/2 - START ================ -->
+      <div id="popular-this-week-and-today-container">
+
+<!-- ========== Popular week items - START ==================== -->
+        <div id="popular-this-week-container" class="width100">
+          <div class="flex-box-row-between">
+            <h2>Popular this week</h2>
+            <img class="close-icon"src="images/close.png" alt="Close icon">
+          </div>
+      <!-- Column of repeated popular item details -->
+        <div class="popular-item-container width100 flex-box-row-between">
+          <img src="images/popular-this-week/app-1.png" alt="Item image">
+          <div class="popular-item-description">
+            <h2>App name2</h2>
+            <p>App description. Isn't it so cool?!</p>
+            <div class="popular-item-social-info-100 flex-box-row-between">
+              <div class="stretched-out-social-icons flex-box-row-between">
+                <div class="up-vote-count button"><img src="images/votes.png" alt="Votes icon">1460</div>
+                <div class="comment-count button"><img src="images/comments.png" alt="Coments Icon">49</div>
+              </div>
+              <div class="stretched-out-social-icons flex-box-row-between">
+                <div class="iphone-share button">IPHONE</div>
+                <div class="share-count">+2</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="popular-item-container width100 flex-box-row-between">
+          <img src="images/popular-this-week/app-1.png" alt="Item image">
+          <div class="popular-item-description">
+            <h2>App name2</h2>
+            <p>App description. Isn't it so cool?!</p>
+            <div class="popular-item-social-info-100 flex-box-row-between">
+              <div class="stretched-out-social-icons flex-box-row-between">
+                <div class="up-vote-count button"><img src="images/votes.png" alt="Votes icon">1460</div>
+                <div class="comment-count button"><img src="images/comments.png" alt="Coments Icon">49</div>
+              </div>
+              <div class="stretched-out-social-icons flex-box-row-between">
+                <div class="iphone-share button">IPHONE</div>
+                <div class="share-count">+2</div>
+              </div>
+            </div>
+          </div>
+        </div>
+          <div class="popular-item-container width100 flex-box-row-between">
+            <img src="images/popular-this-week/app-1.png" alt="Item image">
+            <div class="popular-item-description">
+              <h2>App name2</h2>
+              <p>App description. Isn't it so cool?!</p>
+              <div class="popular-item-social-info-100 flex-box-row-between">
+                <div class="stretched-out-social-icons flex-box-row-between">
+                  <div class="up-vote-count button"><img src="images/votes.png" alt="Votes icon">1460</div>
+                  <div class="comment-count button"><img src="images/comments.png" alt="Coments Icon">49</div>
+                </div>
+                <div class="stretched-out-social-icons flex-box-row-between">
+                  <div class="iphone-share button">IPHONE</div>
+                  <div class="share-count">+2</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="show-more flex-box-row-center width100">
+            <img src="images/arrow-down.png" alt="Show more icon">
+            <p>SHOW MORE</p>
+          </div>
+          </div>
+
+<!-- ========== Popular week items - END ==================== -->
+
+<!-- ========== Popular today items - START==================== -->
+        <div id="today-container">
+          <div class="flex-box-row-between">
+            <h2>Today</h2>
+            <img class="close-icon" src="images/close.png" alt="Close icon">
+          </div>
+        <!-- Column of repeated today item details -->
+        <div class="popular-item-container width100 flex-box-row-between">
+          <img src="images/today/app-2.png" alt="Item image">
+          <div class="popular-item-description">
+            <h2>App name2</h2>
+            <p>App description. Isn't it so cool?!</p>
+            <div class="popular-item-social-info-100 flex-box-row-between">
+              <div class="stretched-out-social-icons flex-box-row-between">
+                <div class="up-vote-count button"><img src="images/votes.png" alt="Votes icon">1460</div>
+                <div class="comment-count button"><img src="images/comments.png" alt="Coments Icon">49</div>
+              </div>
+              <div class="stretched-out-social-icons flex-box-row-between">
+                <div class="iphone-share button">IPHONE</div>
+                <div class="share-count">+2</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="popular-item-container width100 flex-box-row-between">
+          <img src="images/today/app-2.png" alt="Item image">
+          <div class="popular-item-description">
+            <h2>App name2</h2>
+            <p>App description. Isn't it so cool?!</p>
+            <div class="popular-item-social-info-100 flex-box-row-between">
+              <div class="stretched-out-social-icons flex-box-row-between">
+                <div class="up-vote-count button"><img src="images/votes.png" alt="Votes icon">1460</div>
+                <div class="comment-count button"><img src="images/comments.png" alt="Coments Icon">49</div>
+              </div>
+              <div class="stretched-out-social-icons flex-box-row-between">
+                <div class="iphone-share button">IPHONE</div>
+                <div class="share-count">+2</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="popular-item-container width100 flex-box-row-between">
+          <img src="images/today/app-2.png" alt="Item image">
+          <div class="popular-item-description">
+            <h2>App name2</h2>
+            <p>App description. Isn't it so cool?!</p>
+            <div class="popular-item-social-info-100 flex-box-row-between">
+              <div class="stretched-out-social-icons flex-box-row-between">
+                <div class="up-vote-count button"><img src="images/votes.png" alt="Votes icon">1460</div>
+                <div class="comment-count button"><img src="images/comments.png" alt="Coments Icon">49</div>
+              </div>
+              <div class="stretched-out-social-icons flex-box-row-between">
+                <div class="iphone-share button">IPHONE</div>
+                <div class="share-count">+2</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="show-more flex-box-row-center width100">
+          <img src="images/arrow-down.png" alt="Show more icon">
+          <p>SHOW MORE</p>
+        </div>
+        </div><!--  Popular today items - END ==================== -->
+      </div><!-- Popular this week + Today column - END ================ -->
+
+
+<!-- ========== Side panel container 2/2- START ================ -->
+      <div id="side-panel-container">
+<!-- ========== kittybot for slack - START ================ -->
+        <div id="kittybot-slack">
+          <h2>Kittybot for Slack<img class="close-icon" src="images/close.png" alt="Close icon"></h2>
+          <p>A friendly feline that sends you cool new things.</p>
+          <div class="orange-button button">ADD KITTYBOT TO SLACK</div>
+        </div>
+<!-- ========== kittybot for slack - END ================ -->
+<!-- ========== Upcoming live chat - START ================ -->
+        <div id="upcoming-chats-contained">
+          <h3>UPCOMING LIVE CHATS</h3>
+          <div class="upcoming-chats-description flex-box-row-between">
+            <div class="upcoming-speaker-image"></div>
+            <div class="upcoming-details">
+              <h4>Name LastName</h4>
+              <p>Isn't this person amazing?</p>
+              <div class="remind-me-button button">REMIND ME</div>
+            </div>
+          </div>
+          <div class="upcoming-chats-description flex-box-row-between">
+            <div class="upcoming-speaker-image"></div>
+            <div class="upcoming-details">
+              <h4>Name LastName</h4>
+              <p>Isn't this person amazing?</p>
+              <div class="remind-me-button button">REMIND ME</div>
+            </div>
+          </div>
+          <div class="upcoming-chats-description flex-box-row-between">
+            <div class="upcoming-speaker-image"></div>
+            <div class="upcoming-details">
+              <h4>Name LastName</h4>
+              <p>Isn't this person amazing?</p>
+              <div class="remind-me-button button">REMIND ME</div>
+            </div>
+          </div>
+          <div class="upcoming-chats-description flex-box-row-between">
+            <div class="upcoming-speaker-image"></div>
+            <div class="upcoming-details">
+              <h4>Name LastName</h4>
+              <p>Isn't this person amazing?</p>
+              <div class="remind-me-button button">REMIND ME</div>
+            </div>
+          </div>
+          <div class="upcoming-chats-description flex-box-row-between">
+            <div class="upcoming-speaker-image"></div>
+            <div class="upcoming-details">
+              <h4>Name LastName</h4>
+              <p>Isn't this person amazing?</p>
+              <div class="remind-me-button button">REMIND ME</div>
+            </div>
+          </div>
+          <div class="show-more flex-box-row-center width100">
+            <p>SEE MORE</p>
+          </div>
+
+
+        </div><!-- Upcoming live chat - END ================ -->
+      </div><!--  Side panel container - END ================ -->
+    </div> <!-- Body content made up of two columns - END ============= -->
+  </div><!-- Grey main body content - END ====================-->
+  </div><!--  Grey main body container - END ====================-->
 </body>
 </html>
