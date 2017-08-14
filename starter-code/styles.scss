@@ -1,3 +1,256 @@
+
+//took time to manipulate pixels, but saw that we would see Bootstrap on Monday :). I will take time to manipulate more the pixels during the week 2.
+
+//Iphone 5
+
 body {
-  background: #f9f9f9;
+  background: white;
 }
+
+h1 {
+  font-size: 12px;
+  float: left;
+}
+
+
+#navBar {
+  height: 40px;
+  width: 100%;
+  background-color: white;
+}
+
+#brandLogo {
+  width: 40px;
+  height: auto;
+  float: left;
+}
+
+#searchLogo {
+  float:left;
+  width: 20px;
+  height: auto;
+  margin: 8px 10px;
+}
+
+#searcher {
+  float:left;
+  height: auto;
+  margin: 15px 10px;
+  font-size: 8px;
+}
+
+#login {
+  float:right;
+  height: auto;
+  margin: 15px 10px;
+  font-size: 8px;
+}
+
+#menuText {
+  text-align: center;
+  line-height: 20px;
+  font-size: 6px;
+  float: left;
+}
+
+.arrows {
+  float:right;
+  width: 10px;
+  height: auto;
+  padding-bottom: 20px;
+  margin-top: 5px
+}
+
+#menu {
+  height: 20px;
+  border-top: 0.5px;
+  border-bottom: 0.5px;
+  border-left: 0px;
+  border-right: 0px;
+  border-style: ridge;
+  border-color: grey;
+  padding: 10px;
+  text-align: center;
+  word-spacing: 3px;
+}
+
+#cross {
+  float: right;
+  width: 12px;
+  height: auto;
+  margin: 10px -15px 0px 0px;
+}
+
+.rightBigPart {
+  float: right;
+}
+
+.bigPart {
+  height: 30px;
+  font-size: 12px;
+}
+
+.contentBar {
+  float: left;
+  height: auto;
+}
+
+.barMainPicture {
+  float: left;
+  width: 60px;
+  height: auto;
+}
+
+.textIcons {
+  float: left;
+}
+
+.barText {
+  float: left;
+
+
+.barWritings {
+  float: left;
+  position: relative;
+  top: -60px;
+  left: 70px;
+  width: 60%;
+  font-size: 12px;
+}
+
+.saveImage, .shareImage, .commentsImage, .voteImage {
+  float: left;
+}
+
+.separationLines {
+  float: left;
+}
+
+
+//Iphone 6S
+
+
+@media (min-width: 320px) and (max-width: 500px) {
+  body {
+    background: white;
+  }
+
+  h1 {
+    font-size: 12px;
+    float: left;
+  }
+
+
+  #navBar {
+    height: 40px;
+    width: 100%;
+    background-color: white;
+  }
+
+  #brandLogo {
+    width: 40px;
+    height: auto;
+    float: left;
+  }
+
+  #searchLogo {
+    float:left;
+    width: 20px;
+    height: auto;
+    margin: 8px 10px;
+  }
+
+  #searcher {
+    float:left;
+    height: auto;
+    margin: 15px 10px;
+    font-size: 8px;
+  }
+
+  #login {
+    float:right;
+    height: auto;
+    margin: 15px 10px;
+    font-size: 8px;
+  }
+
+  #menuText {
+    text-align: center;
+    line-height: 20px;
+    font-size: 6px;
+    float: left;
+  }
+
+  .arrows {
+    float:right;
+    width: 10px;
+    height: auto;
+    padding-bottom: 20px;
+    margin-top: 5px
+  }
+
+  #menu {
+    height: 20px;
+    border-top: 0.5px;
+    border-bottom: 0.5px;
+    border-left: 0px;
+    border-right: 0px;
+    border-style: ridge;
+    border-color: grey;
+    padding: 10px;
+    text-align: center;
+    word-spacing: 3px;
+  }
+
+  #cross {
+    float: right;
+    width: 12px;
+    height: auto;
+    margin: 10px -15px 0px 0px;
+  }
+
+  .rightBigPart {
+    float: right;
+  }
+
+  .bigPart {
+    height: 30px;
+    font-size: 12px;
+  }
+
+  .contentBar {
+    float: left;
+    height: auto;
+  }
+
+  .barMainPicture {
+    float: left;
+    width: 60px;
+    height: auto;
+  }
+
+  .textIcons {
+    float: left;
+  }
+
+  .barText {
+    float: left;
+  }
+
+  .barWritings {
+    float: left;
+    position: relative;
+    top: -60px;
+    left: 70px;
+    width: 60%;
+    font-size: 12px;
+  }
+
+  .saveImage, .shareImage, .commentsImage, .voteImage {
+    float: left;
+  }
+
+  .separationLines {
+    float: left;
+  }
+}}
