@@ -1,14 +1,26 @@
+$grey-color: #a4a6b6;
+$background-color: #f9f9f9;
+
 html{
-  font-size: 16px;
+  font-size: 14px;
   font-family: sans-serif;
 }
 body {
-  background: #f9f9f9;
+  background-color: $background-color;
+  margin:0;
+}
+main {
+  background-color: white;
+}
+header{
+  width: 100%;
+  background-color: white;
 }
 .topbar{
-  border-bottom: 1px solid #a4a6b6;
+  border-bottom: 1px solid $grey-color;
   display: flex;
   justify-content: space-between;
+  background-color: white;
 }
 .searchbar{
   display: flex;
@@ -20,21 +32,26 @@ body {
 .bottombar{
   display: flex;
   justify-content: space-between;
-  border-bottom: 1px solid #a4a6b6;
+  border-bottom: 1px solid $grey-color;
+  background-color: white;
 }
 .nav {
   display: flex;
   justify-content: flex-start;
   list-style-type: none;
-  padding-left: 0
+  padding-left: 0;
+
+  li {
+    margin-left: 10px;
+    color: $grey-color;
+    font-size: 14px;
+  }
+
+  .home {
+    color: black;
+  }
 }
-.nav > li {
-  margin-left: 10px;
-  color: #a4a6b6;
-}
-.nav > .home {
-  color: black;
-}
+
 .arrows{
   display: flex;
   justify-content: flex-end;
@@ -48,10 +65,12 @@ body {
 .popular{
   display: flex;
   justify-content: space-between;
+  background-color: white;
+  padding-top: 20px;
 }
 .pop1 {
-  border-top: 1px solid #a4a6b6;
-  border-bottom: 1px solid #a4a6b6;
+  border-top: 1px solid $grey-color;
+  border-bottom: 1px solid $grey-color;
   display: flex;
   align-items: center;
 }
@@ -62,12 +81,14 @@ h2 {
 }
 .description {
   margin: 0;
+  color:$grey-color;
 }
 .popcolumn {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
+  width: 100%;
 }
 .buttons {
   display: flex;
@@ -76,28 +97,30 @@ h2 {
 .votebutton {
   display: flex;
   align-items: flex-start;
-  border: 1px solid #a4a6b6;
+  border: 1px solid $grey-color;
   margin: 10px 5px 0px 0px;
   padding: 3px 6px 3px 3px;
-}
-.votebutton > p{
-  margin: 0;
+
+  p {
+    margin: 0;
+  }
 }
 .commentbutton {
   display: flex;
   align-items: flex-start;
-  border: 1px solid #a4a6b6;
+  border: 1px solid $grey-color;
   margin: 10px 5px 0px 0px;
-  padding: 3px
-}
-.commentbutton > p{
-  margin: 0 3px 2px 5px;
+  padding: 3px;
+
+  p {
+    margin: 0 3px 2px 5px;
+  }
 }
 .save {
   margin: 0;
   padding: 3px 10px 7px 10px;
   font-size: 14px;
-  border: 1px solid #a4a6b6;
+  border: 1px solid $grey-color;
   margin: 10px 5px 0px 0px;
 }
 .comments, .save {
@@ -113,48 +136,262 @@ h2 {
 }
 .newest {
   margin-left: 10px;
-  color: #a4a6b6;
+  color: $grey-color;
   font-weight: bold;
 }
-@media (max-width: 600px) {
-  .nav > li {
-    font-size: 14px;
+
+.logo{
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+}
+.discover, .discoverfull{
+  color: $grey-color;
+  font-weight: bold;
+}
+.discoverfull, .hiddennav{
+  display: none;
+}
+.login{
+  color: $grey-color;
+  font-weight: bold;
+}
+.prev{
+  width:16px;
+}
+.next{
+  width:16px;
+}
+h1 {
+  font-weight: normal;
+  font-size: 20px;
+}
+.close{
+  object-fit: contain;
+  width: 16px;
+}
+.closeemail{
+  object-fit: contain;
+  width: 16px;
+  position: absolute;
+  top: 14px;
+  right: 14px;
+}
+.description {
+  font-size: 14px;
+}
+.duo {
+  object-fit: contain;
+  width: 90px;
+}
+.morecontainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+
+  p {
+    color: $grey-color;
+    margin-left: 5px;
   }
-  .logo{
-    width: 50px;
-    height: 50px;
-    object-fit: contain;
+}
+.category {
+  background-color: $background-color;
+  display: flex;
+  border: 1px solid $grey-color;
+  margin: 10px 5px 7px 0px;
+  padding: 3px 6px 3px 3px;
+}
+.category > p {
+  font-size: 14px;
+  display: inline-block;
+  margin: 0;
+}
+.rightbuttons > p {
+  font-size: 14px;
+  color: $grey-color;
+}
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.buttonslast{
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+}
+.leftbuttons{
+  display: flex;
+  justify-content: space-between;
+}
+.rightbuttons{
+  justify-content: space-between;
+  display: none;
+}
+.emailcontainer{
+  width: 93%;
+  background-color: white;
+  margin: 30px auto 0px auto;
+  display: none;
+  position: relative;
+  border: 1px solid $grey-color;
+}
+.emailtext, .emailentry{
+  display: flex;
+  justify-content: center;
+}
+.welcome {
+  font-weight: bold;
+}
+.inbox{
+  color: $grey-color;
+  margin-left: 10px;
+  font-size: 14px;
+}
+.email {
+  border: 1px solid $grey-color;
+  padding: 7px 120px 7px 7px;
+  color: $grey-color;
+  font-size: 14px;
+  margin: 0 0 20px 0;
+}
+.subscribe{
+  color: white;
+  background-color: #da552f;
+  padding: 7px;
+  font-size: 14px;
+  margin: 0 0 20px 10px;
+}
+.columncontainer{
+  margin: 30px 0 0 30px;
+  display: none;
+  width: 250px;
+  align-items: stretch;
+  background-color: $background-color;
+  flex-wrap: wrap;
+}
+@media (min-width: 601px){
+  main {
+    width: 93%;
+    margin: 0 auto;
+    background-color: $background-color;
   }
-  .discover{
-    color: #a4a6b6;
-    font-weight: bold;
-  }
-  .login{
-    color: #a4a6b6;
-    font-weight: bold;
-  }
-  .prev{
-    width:16px;
-  }
-  .next{
-    width:16px;
-  }
-  h1 {
-    font-weight: normal;
-    font-size: 20px;
-  }
-  .close{
-    object-fit: contain;
-    width: 16px;
+  .tophalf{
+    border: 1px solid $grey-color;
+    padding: 10px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background-color: white;
   }
   .popular{
-    margin-top: 20px;
+    padding-top: 0px;
   }
-  .description {
-    font-size: 14px;
+  .bottomhalf {
+    background-color: white;
   }
-  .duo {
-    object-fit: contain;
-    width: 90px;
+  .bottomhalf{
+    border: 1px solid $grey-color;
+    padding: 10px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background-color: white;
+}
+  .rightbuttons{
+    display: flex;
+    justify-content: space-between;
+  }
+  .save {
+    display: none;
+  }
+  .discover{
+    display: none;
+  }
+  .discoverfull{
+    display: inline;
+  }
+  .emailcontainer{
+    display: block;
+  }
+  .nav {
+    width: 100%;
+    justify-content: space-between;
+  }
+  .topbar, .bottombar {
+    width: 93%;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 992px) {
+  .emailcontainer, .hiddennav{
+    display: block;
+  }
+  .onelineemail {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .emailentry {
+    margin: 15px 0 0 10px;
+  }
+}
+@media (min-width: 1200px) {
+  .topbar, .bottombar, .emailcontainer, main {
+    width: 1000px;
+    margin: 0 auto;
+  }
+  .emailcontainer{
+    margin: 30px auto 0px auto;
+  }
+  .columncontainer{
+    display: flex;
+  }
+  .productlist {
+    width: 730px;
+  }
+  main {
+    display: flex;
+    justify-content: center;
+  }
+  .kittybot {
+    border: 1px solid $grey-color;
+    width: 100%;
+    height: 130px;
+    background-color: white;
+    padding: 20px;
+    position: relative;
+  }
+  .kittybutton{
+    color: white;
+    background-color: #da552f;
+    padding: 7px;
+    text-align: center;
+  }
+  .closekitty {
+      object-fit: contain;
+      width: 16px;
+      position: absolute;
+      top: 14px;
+      right: 14px;
+  }
+  .livechat {
+    border: 1px solid $grey-color;
+    width: 100%;
+    height: 600px;
+    background-color: white;
+    padding: 20px;
+    position: relative;
+    bottom: 60px;
+
+    p {
+      margin:0 0 20px 0;
+      padding-bottom: 10px;
+      border-bottom: 1px solid $grey-color;
+    }
+  }
+  .names {
+    width: 100%;
+    height: 100px;
   }
 }
