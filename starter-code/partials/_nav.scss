@@ -1,0 +1,31 @@
+$bordercolor: #f4f4f4;
+$transition-length: 0.7s;
+
+.nav {
+  color: gray;
+  height: 3rem;
+  text-align: center;
+  border-top: 1px solid $bordercolor;
+  border-bottom: 1px solid $bordercolor;
+  background-color: white;
+  transition: $transition-length;
+
+  ul {
+    padding-top: 1rem;
+    height: 100%;
+    font-size: 0.6rem;
+  }
+
+  li {
+    display: inline;
+    margin: 0.5rem;
+  }
+}
+
+.nav-direction {
+  display: inline;
+
+  img {
+    width: 13px;
+  }
+}

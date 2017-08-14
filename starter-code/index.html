@@ -6,8 +6,264 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>CSS Lab | Responsive Cloning | Product Hunt</title>
   <link rel="stylesheet" href="styles.min.css">
+  <link rel="stylesheet" href="partials/_cssreset.min.css">
+  <link rel="stylesheet" href="partials/_search.min.css">
+  <link rel="stylesheet" href="partials/_nav.min.css">
+  <link rel="stylesheet" href="partials/_listitem.min.css">
+  <link rel="stylesheet" href="partials/_subscribe.min.css">
 </head>
 <body>
-  
+  <div class="search">
+    <img src="./images/logo.png" alt="Product hunt logo" class="company-logo">
+    <div class="search-content">
+      <img class="search-magnifying-glass" src="./images/search.png" alt="Search">
+      <input class="search-input" type="text" name="" value="" placeholder="Discover your next favorite thing...">
+    </div>
+    <div class="search-menu">
+      <a href="#">...</a>
+      <a class="a-login" href="#">Login</a>
+    </div>
+  </div>
+  <nav class="nav">
+    <ul>
+      <li>Home</li>
+      <li>Tech</li>
+      <li>Games</li>
+      <li>Podcasts</li>
+      <li>Books</li>
+      <li>Bots</li>
+      <li>Developer Tools</li>
+      <li>iMessage Apps</li>
+      <div class="nav-direction">
+        <a href="#">
+          <img src="./images/arrow-prev.png" alt="Previous">
+        </a>
+        <a href="#">
+          <img src="./images/arrow-next.png" alt="Next">
+        </a>
+      </div>
+    </ul>
+  </nav>
+  <div class="subscribe-email">
+    <div class="email-send-container">
+      <img class="handwave" src="./images/noun_837189_cc.png" alt="Waving hand">
+      <p><strong class="strong">Welcome to Product hunt</strong> Get the best new products in your inbox, daily.</p>
+      <img class="close-cross" src="./images/close.png" alt="Close">
+      <input class="email-input" type="email" name="email" value="" placeholder="Your email">
+      <button class="email-button" type="button" name="subscribe">Subscribe</button>
+    </div>
+  </div>
+  <aside class="kittybot aside-box">
+    <div class="kittybot-container">
+      <h2 class="h2-kittybot">Kittybot for Slack.
+        <img class="close-cross" src="./images/close.png" alt="Close">
+      </h2>
+      <p>A friendly feline that sends you cool new things.</p>
+      <button class="kittybot-button" type="button" name="button">
+        <p>Add kittybot to Slack</p>
+        <img class="slack-icon" src="./images/slack-icon.png" alt="Slack icon">
+      </button>
+    </div>
+  </aside>
+  <section class="popular-week-list">
+    <div class="popular">
+      <div class="header">
+        <h2 class="h2-popular">Popular this week
+          <a href="#">
+            <img class="close-cross" src="./images/close.png" alt="Close">
+          </a>
+        </h2>
+      </div>
+    </div>
+    <div class="list-item">
+      <img src="./images/popular-this-week/app-1.png" alt="App 1">
+      <div class="list-item-text-content">
+        <h3>Duolingo Bots</h3>
+        <p>AI-powered characters to teach language conversation</p>
+        <div class="list-button-container">
+          <button class="active" type="button" name="button">&#9650; 1460</button>
+          <button type="button" name="button">&#128488; 49</button>
+          <button class="save-button" type="button" name="button">&#43; SAVE</button>
+          <button class="newwindow-button" type="button" name="button">&#10697;</button>
+          <aside class="nametag">
+            <button type="button" name="button">IPHONE</button>
+            <p>+ 2</p>
+          </aside>
+        </div>
+      </div>
+    </div>
+    <div class="list-item">
+      <img src="./images/popular-this-week/app-2.png" alt="App 1">
+      <div class="list-item-text-content">
+        <h3>Tribe 2.0</h3>
+        <p>Introducing Augmented Messaging</p>
+        <div class="list-button-container">
+          <button class="active" type="button" name="button">&#9650; 1465</button>
+          <button type="button" name="button">&#128488; 188</button>
+          <span class="prize">
+            <p>	&#127942; #1 IN TECH</p>
+          </span>
+          <button class="save-button" type="button" name="button">&#43; SAVE</button>
+          <button class="newwindow-button" type="button" name="button">&#10697;</button>
+          <aside class="nametag">
+            <button type="button" name="button">ANDROID</button>
+            <p>+ 4</p>
+          </aside>
+        </div>
+      </div>
+    </div>
+    <div class="list-item last">
+      <img src="./images/popular-this-week/app-3.png" alt="App 1">
+      <div class="list-item-text-content">
+        <h3 class="h3-gray">Workplace by Facebook</h3>
+        <p>AI-powered characters to teach language conversation</p>
+        <div class="list-button-container">
+          <button class="active" type="button" name="button">&#9650; 1003</button>
+          <button type="button" name="button">&#128488; 80</button>
+          <button class="save-button" type="button" name="button">&#43; SAVE</button>
+          <button class="newwindow-button" type="button" name="button">&#10697;</button>
+          <aside class="nametag">
+            <button type="button" name="button">ANDROID</button>
+            <p>+ 2</p>
+          </aside>
+        </div>
+      </div>
+    </div>
+    <div class="showmore">
+      <div class="showmore-content">
+        <img src="./images/arrow-down.png" alt="More">
+        <p>SHOW MORE</p>
+      </div>
+    </div>
+  </section>
+  <aside class="livechat aside-box">
+    <div class="livechat-container">
+      <p class="livechat-header">Upcoming live chats</p>
+      <div class="chat-content">
+        <img src="./images/tonnin_seteli.jpg" alt="1000mk bill">
+        <div class="name-container">
+          <p class="chat-name">Adam Besvinick</p>
+          <p>VC at Deep Fork Capital</p>
+        </div>
+        <button type="button" name="button">REMIND ME</button>
+      </div>
+      <div class="chat-content">
+        <img src="./images/tonnin_seteli.jpg" alt="1000mk bill">
+        <div class="name-container">
+          <p class="chat-name">Susan David</p>
+          <p>Author of Emotionally Guilty</p>
+        </div>
+        <button type="button" name="button">REMIND ME</button>
+      </div>
+      <div class="chat-content">
+        <img src="./images/tonnin_seteli.jpg" alt="1000mk bill">
+        <div class="name-container">
+          <p class="chat-name">Avid Larizadeh Duggan</p>
+          <p>General Partner at GV</p>
+        </div>
+        <button type="button" name="button">REMIND ME</button>
+      </div>
+      <div class="chat-content">
+        <img src="./images/tonnin_seteli.jpg" alt="1000mk bill">
+        <div class="name-container">
+          <p class="chat-name">Katerina Markov Schneider</p>
+          <p>Founder and CEO of Ritual</p>
+      </div>
+        <button type="button" name="button">REMIND ME</button>
+      </div>
+      <div class="chat-content">
+        <img src="./images/tonnin_seteli.jpg" alt="1000mk bill">
+        <div class="name-container">
+          <p class="chat-name">Jocelyn Giel</p>
+          <p>Master of Productivity, founder and author...</p>
+        </div>
+        <button type="button" name="button">REMIND ME</button>
+      </div>
+      <div class="livechat-footer">
+        <p>SEE MORE</p>
+      </div>
+    </div>
+  </aside>
+  <section class="popular-today-list">
+    <div class="header">
+      <h2 class="h2-popular">Today
+        <div class="popular-filter">
+          <a class="popular-today active" href="#">POPULAR</a>
+          <span> | </span>
+          <a class="newest-today" href="#">NEWEST</a>
+        </div>
+      </h2>
+    </div>
+    <div class="list-item">
+      <img src="./images/today/app-1.png" alt="App 1">
+      <div class="list-item-text-content">
+        <h3>Sprayscape</h3>
+        <p>A perfectly imperfect VR-ish camera experiment, by Google</p>
+        <div class="list-button-container">
+          <button class="active" type="button" name="button">&#9650; 82</button>
+          <button type="button" name="button">&#128488; 8</button>
+          <span class="prize">
+            <p>	&#127942; #1 IN TECH</p>
+          </span>
+          <button class="save-button" type="button" name="button">&#43; SAVE</button>
+          <button class="newwindow-button" type="button" name="button">&#10697;</button>
+          <aside class="nametag">
+            <button type="button" name="button">ANDROID</button>
+            <p>+ 3</p>
+          </aside>
+        </div>
+      </div>
+    </div>
+    <div class="list-item">
+      <img src="./images/today/app-2.png" alt="App 1">
+      <div class="list-item-text-content">
+        <h3>Ask Gary Vee</h3>
+        <p>The unofficial Gary Vee persona chatbot on Messenger!</p>
+        <div class="list-button-container">
+          <button class="active" type="button" name="button">&#9650; 21</button>
+          <button type="button" name="button">&#128488; 9</button>
+          <button class="save-button" type="button" name="button">&#43; SAVE</button>
+          <button class="newwindow-button" type="button" name="button">&#10697;</button>
+          <aside class="nametag">
+            <button type="button" name="button">GET SHIT DONE</button>
+            <p>+ 1</p>
+          </aside>
+        </div>
+      </div>
+    </div>
+    <div class="list-item">
+      <img src="./images/today/app-3.png" alt="App 1">
+      <div class="list-item-text-content">
+        <h3>The Electron Wheel</h3>
+        <p>Turn your standard bicycle into an electric bike.</p>
+        <div class="list-button-container">
+          <button class="active" type="button" name="button">&#9650; 23</button>
+          <button type="button" name="button">&#128488; 2</button>
+          <button class="save-button" type="button" name="button">&#43; SAVE</button>
+          <button class="newwindow-button" type="button" name="button">&#10697;</button>
+        </div>
+      </div>
+    </div>
+    <div class="list-item last">
+      <img src="./images/today/app-3.png" alt="App 1">
+      <div class="list-item-text-content">
+        <h3>Lattice Reviews</h3>
+        <p>360 degree feedback and performance reviews</p>
+        <div class="list-button-container">
+          <button class="active" type="button" name="button">&#9650; 19</button>
+          <button type="button" name="button">&#128488; 4</button>
+          <button class="save-button" type="button" name="button">&#43; SAVE</button>
+          <button class="newwindow-button" type="button" name="button">&#10697;</button>
+        </div>
+      </div>
+    </div>
+    <div class="chat-bubble">
+      <img class="chat-bubble-img" src="./images/chatbubble-working.png" alt="Chat bubble">
+    </div>
+  </section>
+  <aside class="tweets aside-box">
+    <a class="twitter-timeline" data-height="400" href="https://twitter.com/ProductHuntLOVE/likes">Tweets Liked by @ProductHuntLOVE</a>
+  </aside>
+  <script async src="widgets.js" charset="utf-8"></script>
 </body>
 </html>

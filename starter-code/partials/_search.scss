@@ -1,0 +1,36 @@
+$transition-length: 0.7s;
+
+.search {
+  display: flex;
+  justify-content: space-between;
+  height: 3rem;
+  background-color: white;
+  transition: $transition-length;
+}
+
+.search-content {
+  width: 70%;
+  position: relative;
+}
+
+.search-magnifying-glass {
+  position: absolute;
+  top: 0.5rem;
+  padding: 0 0.5rem 0 0.2rem;
+}
+
+.search-input {
+  width: 100%;
+  padding: 0.6rem 0 1rem 2rem;
+  background-color: white;
+}
+
+.search-menu {
+  font-size: 0.7rem;
+  padding: 1rem 0.5rem 0 0;
+
+  a {
+    margin-left: 0.4rem;
+  }
+
+}
