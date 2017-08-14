@@ -1,7 +1,8 @@
 // Color Variables
-$background-color: #f9f9f9;
-$dark-grey: #a2a1a7; // Used for Login and Other Links buttons in nav bar.
+$background-color: #fff;
+$dark-grey: #aeacaf; // Used for Login and Other Links buttons in nav bar.
 $light-grey: #dad9db; // Used for borders.
+$selected-category-bg: #f9f9f9;
 
 body {
   background: $background-color;
@@ -9,8 +10,8 @@ body {
 }
 
 // Navigation
-nav.top-nav {
-  // height: 60px;
+.top-nav {
+  height: 50px;
   margin-top: -15px;
   margin-bottom: 40px;
 }
@@ -42,40 +43,133 @@ nav a {
   color: $dark-grey;
 }
 
-nav a.other-links-button {
+.other-links-button {
   font-size: 16px;
   font-weight: bold;
   letter-spacing: 3px;
   justify-content: flex-end;
 }
 
-nav a.login-button {
+.login-button {
   font-size: 16px;
   font-weight: bold;
   justify-content: flex-end;
 }
 
-nav img.ph-logo {
+.ph-logo {
   width: 50px;
   height: 50px;
   margin-left: -40px;
 }
 
 // Categories
-section.categories {
+.categories {
   margin-top: -35px;
   border-top: 1px solid $light-grey;
   border-bottom: 1px solid $light-grey;
 }
 
-section.categories ul {
+.categories ul {
   display: flex;
   align-items: center;
   list-style: none;
-  flex-direction: row;
-  flex-wrap: wrap;
+  justify-content: flex-start;
 }
 
-section.categories li {
-  padding-right: 15px;
+.categories li {
+  padding-right: 50px;
+  margin-left: -30px;
+}
+
+.categories a {
+  text-decoration: none;
+  font-size: 16px;
+  color: $dark-grey;
+}
+
+.categories img {
+  width: 17px;
+  height: 17px;
+  margin-left: -10px;
+}
+
+// Popular this week
+.popular-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-bottom: 1px solid $light-grey;
+}
+
+.popular-header h2 {
+  font-size: 23px;
+  font-weight: normal;
+}
+
+.popular-header img {
+  width: 20px;
+  height: 20px;
+  margin-left: auto;
+}
+
+// Articles
+.article-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 20px;
+  border-bottom: 1px solid $light-grey;
+}
+
+.article-img img {
+  width: 100px;
+  height: 100px;
+  margin-right: 25px;
+}
+
+.article-img, .article-content {
+  margin-bottom: 20px;
+}
+
+.article-content h2 {
+  font-size: 23px;
+  font-weight: normal;
+  margin-bottom: -15px;
+}
+
+.article-content p {
+  font-size: 16px;
+  color: $dark-grey;
+}
+
+.article-content ul {
+  list-style: none;
+  margin-left: -40px;
+}
+
+.article-content li {
+  display: inline-block;
+  margin-right: 7px;
+  padding: 1px 8px 1px 8px;
+  font-size: 15px;
+  color: $dark-grey;
+  border: 1px solid $light-grey;
+  border-radius: 7%;
+}
+
+.show-more {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+    font-weight: 600;
+    color: $dark-grey;
+}
+
+.show-more img {
+  width: 15px;
+  height: 15px;
+  margin-right: 7px;
 }
