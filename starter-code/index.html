@@ -6,8 +6,317 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>CSS Lab | Responsive Cloning | Product Hunt</title>
   <link rel="stylesheet" href="styles.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
 </head>
 <body>
-  
+  <header class="header">
+    <div class="search-container">
+      <div class="search">
+       <img src="images/logo.png" alt="logo"><img src="images/search.png" class="img-lense" alt="search" /><input type="text" class="input-discover" placeholder="Discover your next favorite thing..." id="search">
+      Login
+      </div>
+    </div>
+    <nav class="navigation">
+      <div class="navigation-container">
+        <ul>
+          <li>Home</li>
+          <li>Tech</li>
+          <li>Games</li>
+          <li>Podcasts</li>
+          <li>Books</li>
+          <li>Bots</li>
+          <li>Developer Tools</li>
+          <li>iMessage Apps iPhone</li>
+          <li>Photography Tools</li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <div class="main-container">
+  <section class="welcome-container">
+    <div class="welcome">
+      <span>Welcome to Product Hunt</span> Get the best products in your inbox, daily.
+      <input class="email" placeholder="Your email" type="text" id="email" />
+      <input class="btn-subscribe" type="submit" value="Subscribe" />
+      <img class="close" src="images/close.png" alt="close">
+    </div>
+  </section>
+  <section class="main-content">
+    <div class="left-content">
+      <!-- Popular this week -->
+      <div class="popular">
+        <div class="popular-title">
+          Popular this week
+          <img class="popular-close" src="images/close.png" alt="close">
+        </div>
+        <div class="popular-article">
+          <div class="popular-article-image">
+            <img src="images/popular-this-week/app-1.png" alt="app-1" />
+          </div>
+          <div class="popular-article-content">
+            <div class="popular-article-title">
+              Duolingo Bots
+              <span class="popular-article-subtitle">
+                Al-powered characters to teach language conversation
+              </span>
+            </div>
+            <div class="popular-article-social">
+              <div class="popular-article-votes">
+                <img class="popular-article-votes-image" src="images/votes.png" alt="votes"/> 1460
+              </div>
+              <div class="popular-article-comments">
+                  <img class="popular-article-comments-image" src="images/comments.png" alt="votes"/> 49
+              </div>
+              <div class="popular-article-device">
+                IPHONE  
+              </div>
+              <div class="popular-article-device-number">
+                +2
+              </div>
+            </div>
+          </div>   
+        </div>
+         <div class="popular-article">
+          <div class="popular-article-image">
+            <img src="images/popular-this-week/app-2.png" alt="app-2" />
+          </div>
+          <div class="popular-article-content">
+            <div class="popular-article-title">
+              Tribe 2.0
+              <span class="popular-article-subtitle">
+                Introducing Augmenting Messaging
+              </span>
+            </div>
+            <div class="popular-article-social">
+              <div class="popular-article-votes">
+                <img class="popular-article-votes-image" src="images/votes.png" alt="votes"/> 1465
+              </div>
+              <div class="popular-article-comments">
+                  <img class="popular-article-comments-image" src="images/comments.png" alt="votes"/> 188
+              </div>
+              <div class="popular-article-device">
+                ANDROID  
+              </div>
+              <div class="popular-article-device-number">
+                +4
+              </div>
+            </div>
+          </div>   
+        </div>
+         <div class="popular-article">
+          <div class="popular-article-image">
+            <img src="images/popular-this-week/app-3.png" alt="app-3" />
+          </div>
+          <div class="popular-article-content">
+            <div class="popular-article-title">
+              Workplace by Facebook
+              <span class="popular-article-subtitle">
+                Connect everyone in your company and turn ideas into actions
+              </span>
+            </div>
+            <div class="popular-article-social">
+              <div class="popular-article-votes">
+                <img class="popular-article-votes-image" src="images/votes.png" alt="votes"/> 1003
+              </div>
+              <div class="popular-article-comments">
+                  <img class="popular-article-comments-image" src="images/comments.png" alt="votes"/> 80
+              </div>
+              <div class="popular-article-device">
+                ANDROID  
+              </div>
+              <div class="popular-article-device-number">
+                +2
+              </div>
+            </div>
+          </div>   
+        </div>
+      </div>
+       <!-- /Popular this week -->
+       <!-- Today -->
+            <div class="today">
+        <div class="popular-title">
+          Today
+          <img class="today-close" src="images/close.png" alt="close">
+        </div>
+        <div class="popular-article">
+          <div class="popular-article-image">
+            <img src="images/today/app-1.png" alt="app-1" />
+          </div>
+          <div class="popular-article-content">
+            <div class="popular-article-title">
+              Sprayscape
+              <span class="popular-article-subtitle">
+                A perfect imperfect
+              </span>
+            </div>
+            <div class="popular-article-social">
+              <div class="popular-article-votes">
+                <img class="popular-article-votes-image" src="images/votes.png" alt="votes"/> 1460
+              </div>
+              <div class="popular-article-comments">
+                  <img class="popular-article-comments-image" src="images/comments.png" alt="votes"/> 49
+              </div>
+              <div class="today-article-device">
+                ANDROID  
+              </div>
+              <div class="popular-article-device-number">
+                +3
+              </div>
+            </div>
+          </div>   
+        </div>
+         <div class="popular-article">
+          <div class="popular-article-image">
+            <img src="images/today/app-2.png" alt="app-2" />
+          </div>
+          <div class="popular-article-content">
+            <div class="popular-article-title">
+              Ask Gary Vee
+              <span class="popular-article-subtitle">
+                The unofficial Gary Vee persona
+              </span>
+            </div>
+            <div class="popular-article-social">
+              <div class="popular-article-votes">
+                <img class="popular-article-votes-image" src="images/votes.png" alt="votes"/> 1465
+              </div>
+              <div class="popular-article-comments">
+                  <img class="popular-article-comments-image" src="images/comments.png" alt="votes"/> 188
+              </div>
+              <div class="today-article-device">
+                IPHONE
+              </div>
+              <div class="popular-article-device-number">
+                +1
+              </div>
+            </div>
+          </div>   
+        </div>
+         <div class="popular-article">
+          <div class="popular-article-image">
+            <img src="images/today/app-3.png" alt="app-3" />
+          </div>
+          <div class="popular-article-content">
+            <div class="popular-article-title">
+              The Electron Wheel
+              <span class="popular-article-subtitle">
+                Turn your standard bicycle into an electric bike
+              </span>
+            </div>
+            <div class="popular-article-social">
+              <div class="popular-article-votes">
+                <img class="popular-article-votes-image" src="images/votes.png" alt="votes"/> 1003
+              </div>
+              <div class="popular-article-comments">
+                  <img class="popular-article-comments-image" src="images/comments.png" alt="votes"/> 80
+              </div>
+              <div class="today-article-device">
+              </div>
+              <div class="popular-article-device-number">
+              </div>
+            </div>
+          </div>   
+        </div>
+      </div>
+       <!-- /Today -->
+    </div>
+    <div class="right-content">
+      <div class="kittybot">
+        Kittybot for Slack.
+        <div class="kittybot-description">
+          A friendly feline that sends you cool new things.
+          <img class="kittybot-close" src="images/close.png" alt="close">
+          <input class="btn-kittybot" type="submit" value="Add Kittybot to slack" />
+        </div>
+      </div>
+      <div class="upcoming">
+        <div class="upcoming-title">
+        Upcoming live chats
+        </div>
+        <div class="upcoming-person">
+          <div class="upcoming-person-picture">
+            <img class="upcoming-person-image" src="images/today/app-1.png" alt="person-1" />
+          </div>
+          <div class="upcoming-person-details">
+            <div class="upcoming-person-name">
+              Adam Besvinick
+            </div>
+            <div class="upcoming-person-job">
+              VC at Deep Fork Capital
+            </div>
+          </div>
+        </div>
+         <div class="upcoming-remindme">
+           <input class="btn-remindme" type="submit" value="Remind me" />
+          </div>
+           <div class="upcoming-person">
+          <div class="upcoming-person-picture">
+            <img class="upcoming-person-image" src="images/popular-this-week/app-1.png" alt="person-1" />
+          </div>
+          <div class="upcoming-person-details">
+            <div class="upcoming-person-name">
+              Susan David
+            </div>
+            <div class="upcoming-person-job">
+              Author of emotionally guilty
+            </div>
+          </div>
+        </div>
+         <div class="upcoming-remindme">
+           <input class="btn-remindme" type="submit" value="Remind me" />
+          </div>
+           <div class="upcoming-person">
+          <div class="upcoming-person-picture">
+            <img class="upcoming-person-image" src="images/popular-this-week/app-1.png" alt="person-1" />
+          </div>
+          <div class="upcoming-person-details">
+            <div class="upcoming-person-name">
+              Avid Duggan
+            </div>
+            <div class="upcoming-person-job">
+              General partner at GV
+            </div>
+          </div>
+        </div>
+         <div class="upcoming-remindme">
+           <input class="btn-remindme" type="submit" value="Remind me" />
+          </div>
+           <div class="upcoming-person">
+          <div class="upcoming-person-picture">
+            <img class="upcoming-person-image" src="images/popular-this-week/app-1.png" alt="person-1" />
+          </div>
+          <div class="upcoming-person-details">
+            <div class="upcoming-person-name">
+              Katherina Schneider
+            </div>
+            <div class="upcoming-person-job">
+             Founder and CEO of Ritual
+            </div>
+          </div>
+        </div>
+         <div class="upcoming-remindme">
+           <input class="btn-remindme" type="submit" value="Remind me" />
+          </div>
+           <div class="upcoming-person">
+          <div class="upcoming-person-picture">
+            <img class="upcoming-person-image" src="images/popular-this-week/app-1.png" alt="person-1" />
+          </div>
+          <div class="upcoming-person-details">
+            <div class="upcoming-person-name">
+              Jocelyn Glei
+            </div>
+            <div class="upcoming-person-job">
+              Master of productivity
+            </div>
+          </div>
+        </div>
+         <div class="upcoming-remindme">
+           <input class="btn-remindme" type="submit" value="Remind me" />
+          </div>
+      </div>
+    </div>
+  </section>
+  </div>
+  </main>
 </body>
 </html>
