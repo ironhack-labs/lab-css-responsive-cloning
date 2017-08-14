@@ -1,12 +1,17 @@
 // Color Variables
 $background-color: #fff;
-$dark-grey: #aeacaf; // Used for Login and Other Links buttons in nav bar.
-$light-grey: #dad9db; // Used for borders.
-$selected-category-bg: #f9f9f9;
+$background-color-grey: #f9f9f9;
+$dark-grey: #aeacaf; // Used for Login and Other Links buttons in nav bar
+$light-grey: #dad9db; // Used for borders
+$heading-grey: #595656; // Used for h2 and "popular"
 
 body {
   background: $background-color;
   font-family: Helvetica;
+}
+
+h2 {
+  color: $heading-grey;
 }
 
 a {
@@ -91,6 +96,11 @@ nav input {
   margin-left: -10px;
 }
 
+// Welcome Banner
+.welcome-banner {
+  display: none; // Hidden for mobile
+}
+
 // Popular this week
 .popular-header {
   display: flex;
@@ -104,7 +114,7 @@ nav input {
   font-weight: normal;
 }
 
-.popular-header img {
+.close-icon {
   width: 20px;
   height: 20px;
   margin-left: auto;
@@ -115,7 +125,6 @@ nav input {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: flex-start;
   margin-bottom: 20px;
   border-bottom: 1px solid $light-grey;
 }
@@ -154,6 +163,14 @@ nav input {
   color: $dark-grey;
   border: 1px solid $light-grey;
   border-radius: 7%;
+}
+
+.article-content li:first-child {
+  color: $heading-grey;
+}
+
+.votes-img {
+  vertical-align: middle;
 }
 
 .show-more {
@@ -196,5 +213,37 @@ nav input {
 }
 
 .popular-newest a:first-child {
-  color: #595656;
+  color: $heading-grey;
+}
+
+// Media Queries
+@media (min-width: 800px) {
+  .content-container {
+    background-color: $background-color-grey;
+  }
+
+  nav input {
+    border: 1px solid $light-grey;
+    border-radius: 3px;
+  }
+
+  .welcome-banner {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .welcome-banner h3 {
+    font-size: 16px;
+  }
+
+  .welcome-banner p {
+    font-size: 16px;
+    color: $dark-grey;
+  }
+
+  .subscribe-input {
+
+  }
 }
