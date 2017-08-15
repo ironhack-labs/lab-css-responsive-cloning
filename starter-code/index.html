@@ -1,13 +1,195 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>CSS Lab | Responsive Cloning | Product Hunt</title>
+  <title>Product Hunt</title>
   <link rel="stylesheet" href="styles.min.css">
 </head>
+
 <body>
-  
+  <main>
+    <nav class="top-nav">
+      <ul>
+        <li><img class="ph-logo" src="./images/logo.png" alt="Product Hunt Logo" /></li>
+        <li><img class="search-icon" src="./images/search.png" alt="Search Icon" /></li>
+        <li><input type="search" name="searchsite" placeholder="Discover..." /></li>
+        <li><a class="other-links-button" href="#0">...</a></li>
+        <li><a class="login-button" href="#1">Login</a></li>
+      </ul>
+    </nav>
+
+      <!-- Site Categories -->
+    <section class="categories">
+      <ul>
+        <li><a href="#2">Home</a></li>
+        <li><a href="#3">Tech</a></li>
+        <li><a href="#4">Games</a></li>
+        <li><a href="#5">Podcasts</a></li>
+        <li><a href="#6">Books</a></li>
+        <li><a href="#6">Bots</a></li>
+        <li><a href="#7">Developer Tools</a></li>
+        <li><a href="#8">iMessage Apps</a></li>
+        <li><a href="#9"><img src="./images/arrow-prev.png" alt="Previous Category"></a></li>
+        <li><a href="#10"><img src="./images/arrow-next.png" alt="Next Category"></a></li>
+      </ul>
+    </section>
+
+    <!-- Container for: welcome banner, articles (popular this week, today) -->
+    <div class="content-container">
+      <!-- Welcome banner -->
+      <section class="welcome-banner-container">
+        <div class="welcome-banner-content">
+          <div class="welcome-banner-left">
+            <ul>
+              <li><h3>Welcome to Product Hunt</h3></li>
+              <li>Get the best new products in your inbox, daily.</li>
+              <li>
+                <input type="text" name="email" placeholder="Your email">
+                <input type="button" name="subscribe" value="Subscribe">
+              </li>
+            </ul>
+          </div>
+
+          <span class="welcome-banner-right">
+            <img class="close-icon" src="./images/close.png" alt="Close Icon" />
+          </span>
+        </div>
+      </section>
+
+      <!-- Popular this week: each article tag represents an item featured -->
+      <section class="all-articles-container">
+        <section class="popular-this-week">
+          <div class="popular-header">
+            <h2>Popular this week</h2>
+            <img class="close-icon" src="./images/close.png" alt="Close Icon" />
+          </div>
+
+          <!-- Articles have: a main image, app name, description and details -->
+          <article class="article-container">
+            <div class="article-img">
+              <img src="./images/popular-this-week/app-1.png" alt="Duolingo Bots">
+            </div>
+
+            <div class="article-content">
+              <h2>Duolingo Bots</h2>
+              <p>AI-powered characters to teach language conversation</p>
+              <ul>
+                <li><img class="votes-img" src="./images/votes.png" alt="Votes Icon"><strong>1460</strong></li>
+                <li><img src="./images/comments.png" alt="Comments Icon">&nbsp;49</li>
+                <li>SAVE</li>
+                <li>Out</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="article-container">
+            <div class="article-img">
+              <img src="./images/popular-this-week/app-2.png" alt="Tribe 2.0">
+            </div>
+
+            <div class="article-content">
+              <h2>Tribe 2.0</h2>
+              <p>Introducing Augmented Messaging</p>
+              <ul>
+                <li><img class="votes-img" src="./images/votes.png" alt="Votes Icon"><strong>1465</strong></li>
+                <li><img src="./images/comments.png" alt="Comments Icon">&nbsp;188</li>
+                <li>SAVE</li>
+                <li>Out</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="article-container">
+            <div class="article-img">
+              <img src="./images/popular-this-week/app-3.png" alt="Duolingo Bots">
+            </div>
+
+            <div class="article-content">
+              <h2>Workplace by Facebook</h2>
+              <p>Connect everyone in your company and turn ideas into action</p>
+              <ul>
+                <li><img class="votes-img" src="./images/votes.png" alt="Votes Icon"><strong>1003</strong></li>
+                <li><img src="./images/comments.png" alt="Comments Icon">&nbsp;80</li>
+                <li>SAVE</li>
+                <li>Out</li>
+              </ul>
+            </div>
+          </article>
+        </section>
+
+        <div class="show-more">
+          <img src="./images/arrow-down.png" alt="Show More Arrow Icon">
+          <p>SHOW MORE</p>
+        </div>
+
+        <!-- Today section: each article tag represents an item featured -->
+        <section class="today">
+          <div class="today-header">
+            <h2>Today</h2>
+
+            <div class="popular-newest">
+              <a href="#11">POPULAR</a>
+              <span>|</span>
+              <a href="#12">NEWEST</a>
+            </div>
+          </div>
+
+          <article class="article-container">
+            <div class="article-img">
+              <img src="./images/today/app-1.png" alt="Sprayscape">
+            </div>
+
+            <div class="article-content">
+              <h2>Sprayscape</h2>
+              <p>A perfectly imperfect VR-ish camera experiment, by Google</p>
+              <ul>
+                <li><img class="votes-img" src="./images/votes.png" alt="Votes Icon"><strong>82</strong></li>
+                <li><img src="./images/comments.png" alt="Comments Icon">&nbsp;8</li>
+                <li>SAVE</li>
+                <li>Out</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="article-container">
+            <div class="article-img">
+              <img src="./images/today/app-2.png" alt="Ask Gary Vee">
+            </div>
+
+            <div class="article-content">
+              <h2>Ask Gary Vee</h2>
+              <p>The unofficial Gary Vee persona chatbot on Messenger!</p>
+              <ul>
+                <li><img class="votes-img" src="./images/votes.png" alt="Votes Icon"><strong>21</strong></li>
+                <li><img src="./images/comments.png" alt="Comments Icon">&nbsp;9</li>
+                <li>SAVE</li>
+                <li>Out</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="article-container">
+            <div class="article-img">
+              <img src="./images/today/app-3.png" alt="The Electron Wheel">
+            </div>
+
+            <div class="article-content">
+              <h2>The Electron Wheel</h2>
+              <p>Turn your standard bicycle into an electric bike.</p>
+              <ul>
+                <li><img class="votes-img" src="./images/votes.png" alt="Votes Icon"><strong>23</strong></li>
+                <li><img src="./images/comments.png" alt="Comments Icon">&nbsp;2</li>
+                <li>SAVE</li>
+                <li>Out</li>
+              </ul>
+            </div>
+          </article>
+        </section>
+      </section>
+    </div> <!-- End content-container -->
+  </main>
 </body>
 </html>

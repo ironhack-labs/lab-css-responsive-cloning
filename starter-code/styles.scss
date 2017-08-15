@@ -1,3 +1,286 @@
+// Color Variables
+$background-color: #fff;
+$background-color-grey: #f9f9f9;
+$dark-grey: #aeacaf; // Used for Login and Other Links buttons in nav bar
+$light-grey: #dad9db; // Used for borders
+$heading-grey: #595656; // Used for h2 and "popular"
+
 body {
-  background: #f9f9f9;
+  background: $background-color;
+  font-family: Helvetica;
+}
+
+h2 {
+  color: $heading-grey;
+}
+
+a {
+  text-decoration: none;
+  color: $dark-grey;
+}
+
+// Navigation
+.top-nav {
+  height: 50px;
+  margin-top: -15px;
+  margin-bottom: 40px;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+nav li {
+  padding-right: 15px;
+}
+
+nav input {
+  width: 100%;
+  padding-right: 360px;
+  font-size: 16px;
+  box-shadow: none;
+  border-radius: none;
+  border: none;
+  background-color: $background-color;
+}
+
+.other-links-button {
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 3px;
+  justify-content: flex-end;
+}
+
+.login-button {
+  font-size: 16px;
+  font-weight: bold;
+  justify-content: flex-end;
+}
+
+.ph-logo {
+  width: 50px;
+  height: 50px;
+  margin-left: -40px;
+}
+
+// Categories
+.categories {
+  margin-top: -35px;
+  border-top: 1px solid $light-grey;
+  border-bottom: 1px solid $light-grey;
+}
+
+.categories ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  justify-content: flex-start;
+}
+
+.categories li {
+  padding-right: 50px;
+  margin-left: -30px;
+}
+
+.categories a {
+  font-size: 16px;
+}
+
+.categories img {
+  width: 17px;
+  height: 17px;
+  margin-left: -10px;
+}
+
+// Welcome Banner
+.welcome-banner-container {
+  display: none; // Hidden for mobile
+}
+
+// Popular this week
+.popular-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-bottom: 1px solid $light-grey;
+}
+
+.popular-header h2 {
+  font-size: 23px;
+  font-weight: normal;
+}
+
+.close-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.popular-header .close-icon {
+  margin-left: auto;
+}
+
+// Articles
+.article-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 20px;
+  border-bottom: 1px solid $light-grey;
+}
+
+.article-img img {
+  width: 100px;
+  height: 100px;
+  margin-right: 25px;
+}
+
+.article-img, .article-content {
+  margin-bottom: 20px;
+}
+
+.article-content h2 {
+  font-size: 23px;
+  font-weight: normal;
+  margin-bottom: -15px;
+}
+
+.article-content p {
+  font-size: 16px;
+  color: $dark-grey;
+}
+
+.article-content ul {
+  list-style: none;
+  margin-left: -40px;
+}
+
+.article-content li {
+  display: inline-block;
+  margin-right: 7px;
+  padding: 1px 8px 1px 8px;
+  font-size: 15px;
+  color: $dark-grey;
+  border: 1px solid $light-grey;
+  border-radius: 7%;
+}
+
+.article-content li:first-child {
+  color: $heading-grey;
+}
+
+.votes-img {
+  vertical-align: middle;
+}
+
+.show-more {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 600;
+  color: $dark-grey;
+}
+
+.show-more img {
+  width: 15px;
+  height: 15px;
+  margin-right: 7px;
+}
+
+// Today section
+.today-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-bottom: 1px solid $light-grey;
+}
+
+.today-header h2 {
+  font-size: 23px;
+  font-weight: normal;
+}
+
+.popular-newest {
+  font-size: 14px;
+  color: $dark-grey;
+  margin-left: auto;
+}
+
+.popular-newest a {
+  font-weight: bold;
+}
+
+.popular-newest a:first-child {
+  color: $heading-grey;
+}
+
+// Media Queries
+@media (min-width: 800px) {
+  .content-container {
+    background-color: $background-color-grey;
+  }
+
+  nav input {
+    border: 1px solid $light-grey;
+    border-radius: 3px;
+  }
+
+  .welcome-banner-container {
+    display: block;
+  }
+
+  .welcome-banner-content, .all-articles-container {
+    margin: 30px auto;
+    width: 1024px;
+    height: auto;
+    background-color: $background-color;
+    border: 1px solid $light-grey;
+    border-radius: 3px;
+  }
+
+  // Clearfix
+  .welcome-banner-content::after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+
+  .welcome-banner-left {
+    display: flex;
+    justify-content: center;
+    align-self: auto;
+  }
+
+  .welcome-banner-left ul {
+    list-style: none;
+  }
+
+  .welcome-banner-left li {
+    display: inline-block;
+  }
+
+  .welcome-banner-right {
+    float: right;
+    margin-right: 10px;
+    position: relative;
+    top: -55px;
+  }
+
+  .welcome-banner-content h3 {
+    font-size: 16px;
+  }
+
+  .welcome-banner-content li:nth-child(2) {
+    font-size: 16px;
+    color: $dark-grey;
+  }
+
+  .popular-this-week, .today {
+    margin: 2px 30px;
+  }
 }
