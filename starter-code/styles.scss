@@ -1,3 +1,119 @@
+$background-color: #f9f9f9;
+$white-color: #FFFFFF;
+
 body {
-  background: #f9f9f9;
+  background: $background-color;
+  color: grey;
+  font-size: 14px;
+  font-family: sans-serif;
+}
+
+header {
+  background-color: $white-color;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 100%;
+}
+
+.header1{
+  display: inline-block;
+  width: 100%;
+}
+
+.header2 {
+  text-decoration: none;
+  width: 100%;
+}
+
+.logo-image {
+  float: left;
+  height: 35px;
+}
+
+.search-bar {
+  padding-bottom: 5px;
+  float: left;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.login {
+  float: right;
+  box-sizing: border-box;
+}
+
+.app .app2 {
+  background-color: $white-color;
+  border-bottom: 3px solid $background-color;
+}
+
+
+
+@media (max-width: 600px) {
+
+  body {
+    background-color: $white-color;
+  }
+
+.email {
+  display: none;
+}
+
+.popular {
+  overflow: auto;
+
+  .app-pic {
+    box-sizing: border-box;
+    display: inline-block;
+  }
+
+  .app-description {
+    font-size: 0.65em;
+    display: inline-block;
+    width: 80%;
+    line-height: 5px;
+    padding-bottom: 20px;
+  }
+}
+
+.today {
+
+  overflow: auto;
+
+  .app-pic2 {
+    box-sizing: border-box;
+    display: inline-block;
+  }
+
+  .app-description2 {
+    font-size: 0.65em;
+    display: inline-block;
+    width: 80%;
+    line-height: 5px;
+    padding-bottom: 20px;
+  }
+}
+}
+
+@media (min-width: 601px) and (max-width: 992px) {
+  .email  {
+    display:inline-block;
+    max-width: 100%;
+    background-color: $white-color;
+    font-size: 0.75em;
+    padding: 5px 30px 5px 30px;
+  }
+
+  .email-bar {
+    display: inline-block;
+  }
+
+  .button {
+    font-size: 0.35em;
+  }
+
+  .app {
+    width: 90%;
+    text-align: center;
+  }
 }
