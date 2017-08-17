@@ -1,3 +1,168 @@
+//LG(large - width > 1200px)
+@media (min-width: 1201px) {
+  .popular {
+    margin: 20px 20px 20px 0;
+    width: 71%;
+    height: 500px;
+    background-color: blue;
+  }
+
+  .today {
+    margin: 20px 20px 20px 0;
+    width: 71%;
+    height: 500px;
+    background-color: purple;
+  }
+
+  .slack {
+    margin: 5px 0;
+    width: 27%;
+    height: 120px;
+    background-color: orange;
+    float: right;
+    position: absolute;
+    top: 39%;
+    right: 0%;
+  }
+
+  .upcoming {
+    margin: 5px 0;
+    width: 27%;
+    height: 725px;
+    background-color: lightgreen;
+    float: right;
+    position: absolute;
+    top: 59%;
+    right: 0%;
+  }
+
+  .tweets {
+    margin: 5px 0;
+    width: 27%;
+    height: 120px;
+    background-color: lightblue;
+    float: right;
+    position: absolute;
+    top: 164%;
+    right: 0%;
+  }
+
+}
+
+//MD(medium - width > 992px)
+@media (max-width: 1200px) and (min-width: 601px) {
+  .search {
+    top: 0;
+    margin: 5px 0px;
+    width: 100%;
+    height: 70px;
+    background-color: black;
+  }
+
+  .menu {
+    margin: 20px 0;
+    width: 100%;
+    height: 70px;
+    background-color: red;
+  }
+
+  .suscribe {
+    width: 100%;
+    height: 80px;
+    background-color: yellow;
+  }
+
+  .popular {
+    margin: 20px 20px 20px 0;
+    width: 100%;
+    height: 500px;
+    background-color: blue;
+  }
+
+  .today {
+    margin: 20px 20px 20px 0;
+    width: 100%;
+    height: 500px;
+    background-color: purple;
+  }
+
+  .slack {
+    display: none;
+  }
+
+  .upcoming {
+    display: none;
+  }
+
+  .tweets {
+    display: none;
+  }
+
+}
+
+//XS(extra-small - width <= 600px)
+@media (max-width: 600px) {
+  .suscribe {
+    display: none;
+  }
+
+  .popular {
+    margin: 20px 20px 20px 0;
+    width: 100%;
+    height: 500px;
+    background-color: blue;
+  }
+
+  .today {
+    margin: 20px 20px 20px 0;
+    width: 100%;
+    height: 500px;
+    background-color: purple;
+  }
+}
+
 body {
   background: #f9f9f9;
+  font: white;
+  margin: 0;
+  padding: 0;
+}
+
+.search {
+  top: 0;
+  margin: 5px 0px;
+  width: 100%;
+  height: 70px;
+  background-color: red;
+    .logo {
+      height: 90%;
+      float: Left;
+    }
+    .barra {
+      float: left;
+      margin: 17px auto;
+      vertical-align: center;
+      display: inline-block;
+      height: 40%;
+      width: 88vw;
+    }
+    .boton {
+      margin: 20px 10px;;
+      float: left;
+      width: 4%;
+      height: 100px;
+    }
+}
+
+.menu {
+  margin: 20px 0;
+  width: 100%;
+  height: 70px;
+  background-color: green;
+}
+
+.suscribe {
+  width: 100%;
+  height: 80px;
+  background-color: yellow;
 }
