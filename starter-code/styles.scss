@@ -1,4 +1,5 @@
 @import "colors";
+@import "mixins";
 
 
 body {
@@ -11,14 +12,14 @@ body {
 }
 
 header {
-  width: 100%;
-  display: inline-block;
-  background-color: $block-down;
-  article {
+  @include container();
+  padding-top: 10px;
+    article {
     background-color: $block-up;
     height: 50px;
     display: inline-block;
     vertical-align: middle;
+
     &.logo {
       width: 5%;
       margin: 0 0.71rem;
@@ -34,9 +35,7 @@ header {
 }
 
 nav {
-  width: 100%;
-  display: inline-block;
-  background-color: $block-down;
+  @include container();
   text-align: center;
   ul {
     width: 95%;
@@ -48,5 +47,35 @@ nav {
 }
 
 .subscribe {
-  
+  @include container();
+  article {
+    height: 40px;
+    background-color: $block-up;
+    width: 30%;
+    margin: 10px;
+    vertical-align: middle;
+    display: inline-block;
+
+    &.proposal {
+      width: 60%;
+    }
+    &.form {
+    width: 25%;
+    }
+    &.close {
+      width: 5%;
+      margin-left: 65px;
+    }
+  }
+}
+
+content-feed {
+  @include container();
+  .feed {
+
+  }
+
+  .widgets {
+    
+  }
 }
