@@ -77,10 +77,10 @@ nav {
   vertical-align: middle;
   display: inline-block;
   .content {
-    width: 70%;
+    width: 69%;
     height: 500px;
     background-color: $block-up;
-    margin: 10px;
+    margin: 38px;
     float: left;
 
     &.week {
@@ -96,21 +96,11 @@ nav {
   }
 
   .widgets {
-    width: 25%;
+    width: 19%;
     height: 500px;
     background-color: $block-up;
-    margin: 10px;
+    margin: 38px;
     float: right;
-
-    &.kittie-bot {
-
-    }
-    &.chats {
-
-    }
-    &.twitter {
-
-    }
 
   }
 }
