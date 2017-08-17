@@ -1,3 +1,72 @@
 body {
-  background: #f9f9f9;
+  background-color: #FFF;
+}
+
+.navi {
+  background-color: green;
+  height: 100px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.welcome {
+  background-color: red;
+  height: 80px;
+}
+
+.main {
+  margin-top: 20px;
+  background-color: #FFF;
+  height: 750px;
+  width: 75%;
+  display: inline-block;
+}
+
+.main1 {
+  height: 375px;
+  margin-bottom: 20px;
+  background-color: blue;
+}
+
+.main2 {
+  height: 375px;
+  background-color: yellow;
+}
+
+.rigth {
+  margin-top: 20px;
+  background-color: black;
+  float: right;
+  height: 750px;
+  width: 20%;
+}
+
+.section1 {
+  height: 150px;
+  background-color: orange;
+  margin-bottom: 20px;
+}
+
+.section2 {
+  height: 600px;
+  background-color: purple;
+}
+@media (max-width: 922px) {
+  .rigth {
+    display: none;
+  }
+
+  .main {
+    width: 95%;
+  }
+}
+@media (max-width: 600px) {
+  .welcome {
+    display: none;
+  }
+
+  .main {
+    position: relative;
+    top: -30px;
+  }
 }
