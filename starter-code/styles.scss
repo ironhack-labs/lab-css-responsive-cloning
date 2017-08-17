@@ -4,7 +4,6 @@
 
 body {
   background: $background-color;
-  margin: 0 auto;
   font-size: 16px;
   width: 1280px;
   padding: 0;
@@ -19,6 +18,9 @@ header {
     height: 50px;
     display: inline-block;
     vertical-align: middle;
+    @media (min-width: 996px) and (max-width: 1200px) {
+      width: 90%;
+    }
 
     &.logo {
       width: 8%;
@@ -39,6 +41,9 @@ nav {
   @include container();
   text-align: center;
   ul {
+    @media (min-width: 996px) and (max-width: 1200px) {
+      width: 80%;
+    }
     width: 90%;
     height: 50px;
     display: inline-block;
@@ -82,6 +87,11 @@ nav {
     background-color: $block-up;
     margin: 38px;
     float: left;
+    @media (min-width: 966px) and (max-width: 1200px){
+      width: 93%;
+    }
+
+
 
     &.week {
       width: 50%;
@@ -101,6 +111,8 @@ nav {
     background-color: $block-up;
     margin: 38px;
     float: right;
-
+    @media (min-width: 996px) and (max-width: 1200px) {
+      display: none;
+    }
   }
 }
