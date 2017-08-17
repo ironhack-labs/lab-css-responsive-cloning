@@ -21,12 +21,13 @@ header {
     vertical-align: middle;
 
     &.logo {
-      width: 5%;
-      margin: 0 0.71rem;
+      width: 8%;
+      margin-right: 16px;
+      margin-left: 44px;
     }
     &.search {
-      width: 80%;
-      margin-right: 1.2rem;
+      width: 71%;
+      margin-right: 1.7rem;
     }
     &.utils {
       width: 10%;
@@ -38,11 +39,11 @@ nav {
   @include container();
   text-align: center;
   ul {
-    width: 95%;
+    width: 90%;
     height: 50px;
     display: inline-block;
     background-color: $block-up;
-    margin: 10px auto;
+    margin: 10px;
   }
 }
 
@@ -57,25 +58,59 @@ nav {
     display: inline-block;
 
     &.proposal {
-      width: 60%;
+      width: 57%;
+      margin-left: 44px;
     }
     &.form {
     width: 25%;
     }
     &.close {
       width: 5%;
-      margin-left: 65px;
+      margin-left: 36px;
     }
   }
 }
 
-content-feed {
+.feed {
   @include container();
-  .feed {
+  height: 600px;
+  vertical-align: middle;
+  display: inline-block;
+  .content {
+    width: 70%;
+    height: 500px;
+    background-color: $block-up;
+    margin: 10px;
+    float: left;
 
+    &.week {
+      width: 50%;
+      height: 150px;
+      background-color: $content;
+    }
+    &.today {
+      width: 50%;
+      height: 150px;
+      background-color: $content;
+    }
   }
 
   .widgets {
-    
+    width: 25%;
+    height: 500px;
+    background-color: $block-up;
+    margin: 10px;
+    float: right;
+
+    &.kittie-bot {
+
+    }
+    &.chats {
+
+    }
+    &.twitter {
+
+    }
+
   }
 }
