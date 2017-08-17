@@ -1,3 +1,91 @@
+$yellow: #F4D03F;
+$green: #58D68D;
+$blue: #5DADE2;
+$red: #EC7063;
+$purple: #AF7AC5;
+
 body {
+  margin: 0;
+  padding: 0;
   background: #f9f9f9;
+  text-align: center;
+}
+
+nav {
+  width: 100%;
+  height: 100px;
+  //position: fixed;
+  text-align: center;
+  background: $purple;
+}
+
+nav div {
+  width: 70%;
+  height: 100px;
+  margin: 0 auto;
+  background: $red;
+}
+
+.container {
+  width: 70%;
+  margin: 0 auto;
+}
+
+header {
+  margin-top: 20px;
+}
+
+header div {
+  height: 60px;
+  background: $green;
+}
+
+.container > div {
+  width: 65%;
+  height: 800px;
+  float: left;
+}
+
+section.sect {
+  width: 100%;
+  height: 500px;
+  background: $blue;
+  margin-top:30px;
+}
+
+aside {
+  width: 30%;
+  height: 800px;
+  display: inline-block;
+  margin-left: 5%;
+  margin-top: 30px;
+}
+
+aside section {
+  width: 100%;
+  height: 200px;
+  background: $yellow;
+  margin-bottom: 40px;
+}
+
+aside section.larga {
+  height: 375px;
+}
+
+@media screen and (max-width:992px) {
+  aside {
+    display: none;
+  }
+  .container > div {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width:600px) {
+  aside {
+    display: none;
+  }
+  header {
+    display: none;
+  }
 }
