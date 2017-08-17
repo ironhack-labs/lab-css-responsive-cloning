@@ -1,3 +1,146 @@
+$Right-color: #00D1AE;
+$Right-margin: 20px;
+$Right-height: 250px;
+$Left-color: pink;
+$Left-margin: 20px;
+$Left-height: 380px;
+
 body {
   background: #f9f9f9;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+
+}
+
+.header1 {
+  background-color: yellow;
+  height: 40px;
+  width: 100%;
+}
+
+.header2 {
+  background-color: orange;
+  height: 40px;
+  width: 100%;
+}
+
+.welcome {
+  margin: auto;
+  top: 100px;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  width: 80%;
+}
+
+.welcome1 {
+  height: 50px;
+  background-color: green;
+  width: 59%;
+  display: inline-block;
+}
+
+.welcome2 {
+  height: 50px;
+  background-color: red;
+  width: 40%;
+  display: inline-block;
+}
+
+.main {
+  background-color: grey;
+  width: 80%;
+  margin: auto;
+}
+
+.leftSide {
+  background-color: blue;
+  width: 63%;
+  margin: 20px, 0 20px, 10px;
+  display: inline-block;
+}
+
+.popular {
+  background-color: $Left-color;
+  height: $Left-height;
+  margin-bottom: $Left-margin;
+}
+
+.today {
+  background-color: $Left-color;
+  height: $Left-height;
+  margin-bottom: $Left-margin;
+}
+
+.rightSide {
+  background-color: black;
+  width: 36%;
+  margin: 20px, 0 20px, 10px;
+  display: inline-block;
+}
+
+.kittyBot {
+  background-color: $Right-color;
+  margin-bottom: $Right-margin;
+  height: $Right-height;
+  margin-left: $Right-margin;
+}
+
+.upComing {
+  background-color: $Right-color;
+  margin-bottom: $Right-margin;
+  height: $Right-height;
+  margin-left: $Right-margin;
+}
+
+.tweets {
+  background-color: $Right-color;
+  margin-bottom: $Right-margin;
+  margin-left: $Right-margin;
+  height: $Right-height;
+}
+@media (min-width: 992px) and (max-width: 1220px) {
+  .rightSide {
+    display: none;
+  }
+
+  .leftSide {
+    width: 100%;
+  }
+}
+@media (min-width: 600px) and (max-width: 992px) {
+  .rightSide {
+    display: none;
+  }
+
+  .leftSide {
+    width: 100%;
+  }
+
+  .welcome1 {
+    height: 50px;
+    background-color: green;
+    width: 100%;
+  }
+
+  .welcome2 {
+    height: 50px;
+    background-color: red;
+    width: 100%;
+  }
+}
+@media (max-width: 600px) {
+  .rightSide {
+    display: none;
+  }
+
+  .leftSide {
+    width: 100%;
+  }
+
+  .welcome {
+    display: none;
+  }
 }
