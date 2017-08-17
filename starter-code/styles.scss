@@ -1,3 +1,141 @@
-body {
-  background: #f9f9f9;
+body{
+  background-color: #F9F9F9;
+}
+/*Nav*/
+.nav1 {
+  margin:auto;
+  width:100%;
+  height:90px;
+  background-color:red;
+}
+.nav2{
+  margin:auto;
+  width:100%;
+  height:90px;
+  background-color:blue;
+}
+
+/*Header*/
+header{
+  margin:auto;
+  width:85%;
+  height:100px;
+  margin-top:1.5%;
+  margin-bottom:1.5%;
+}
+.header-left{
+  width:50%;
+  height:100%;
+  float:left;
+  background-color:green;
+}
+.header-right{
+  width:50%;
+  height:100%;
+  float:left;
+  background-color:yellow;
+}
+/*Principal section*/
+section{
+  margin:auto;
+  width:85%;
+  height:700px;
+  margin-top:1%;
+}
+
+.left{
+  width:68.5%;
+  height:100%;
+  float:left;
+  margin-right:1.5%;
+
+}
+
+.right{
+  width:30%;
+  height:100%;
+  float:left;
+}
+
+/*Principal section: left div*/
+.left-top{
+  width:100%;
+  background-color:red;
+  height: 48.5%;
+  margin-bottom:3%;
+}
+.left-bot{
+  width:100%;
+  background-color:blue;
+  height: 48.5%;
+}
+/*Principal section: right div*/
+.right-top{
+  width:100%;
+  background-color:blue;
+  height: calc(20% - 3%);
+  margin-bottom:3%;
+
+
+}
+.right-middle{
+  width:100%;
+  background-color:purple;
+  height: calc(60% - 3%);
+  margin-bottom: 3%;
+}
+.right-bot{
+  width:100%;
+  background-color:black;
+  height: 23%;
+}
+
+/*Response width: 992 - 1200pixels*/
+/*Right column*/
+@media (min-width: 992px) and (max-width: 1200px) {
+  .column {
+    display:none;
+  }
+  .left-divs{
+    width:100%;
+  }
+}
+/*Response width: 0 - 992pixels*/
+@media (min-width: 600px) and (max-width: 992px) {
+  .column {
+    display:none;
+  }
+  .left-divs{
+    width:100%;
+}
+  .header-left2{
+    float:none;
+    width:100%;
+  }
+  .header-right2{
+    width:100%;
+    margin-bottom:4%;
+
+  }
+}
+
+@media (min-width: 0px) and (max-width: 600px) {
+  .column {
+    display:none;
+  }
+  .left-divs{
+    width:100%;
+}
+  .header-left2{
+    float:none;
+    width:100%;
+    display:none;
+  }
+  .header-right2{
+    width:100%;
+    display:none;
+  }
+  header{
+    height:0px;
+  }
 }
