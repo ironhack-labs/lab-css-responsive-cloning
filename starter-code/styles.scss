@@ -1,3 +1,247 @@
+
+$light-blue: #586BA4;
+$middle-blue: #405699;
+$dark-blue: #324376;
+$light-yellow: #F5DD90;
+$light-grey: #eee;
+$light-orange: #F68E5F;
+$dark-orange: #F76C5E;
+
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700');
+
+
 body {
   background: #f9f9f9;
+  margin: 0;
+  padding:0;
+  font-family: 'Lato', sans-serif;
+  font-size: 0.9rem;
+}
+.clearfix{
+  clear: both;
+}
+.content{
+  width: 100%;
+  text-align: center;
+
+}
+.content-1{
+  width: 70%;
+  text-align: center;
+  margin: 0 auto;
+  background-color: $light-grey;
+  overflow: hidden;
+  position: relative;
+}
+nav{
+  width: 100%;
+  height: 90px;
+  background-color: $light-blue;
+  .menu{
+    width: 70%;
+    margin: 0 auto;
+    height: 90px;
+    background: $dark-blue;
+    .logo{
+      width: 40px;
+      img{
+        height: 40px;
+      }
+    }
+    .input-search{
+      width: calc(90% - 40px);
+      input{
+        width: 100%;
+        margin: 10px 0;
+
+      }
+    }
+    .login{
+      width: 10%;
+      padding: 10px 0;
+      a{
+        text-decoration: none;
+        color: grey;
+      }
+
+    }
+
+  }
+  .search{
+    width: 100%;
+    height: 40px;
+  }
+  .items{
+    width: 100%;
+    height: 45px;
+    background-color: $middle-blue;
+    border-top:1px solid #ccc;
+    ul{
+      list-style-type: none;
+      margin: 0;
+      padding:0;
+      text-align: left;
+      li{
+        display: inline-block;
+        padding: 15px 20px;
+        color: white;
+        text-align: left;
+        &:hover{
+          background-color: $light-blue;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+.welcome{
+  width: 100%;
+  background-color: $dark-blue;
+  margin: 50px auto;
+  height: 60px;
+  .information-welcome{
+    width: 60%;
+    height: 60px;
+    background-color: $dark-blue;
+    display: flex;
+    p{
+      margin: auto;
+      font-size: 0.8rem;
+    }
+  }
+  .email-welcome{
+    width: 20%;
+    background: $middle-blue;
+    input{
+      height: 30px;
+      border: 1px solid #ccc;
+      margin: 12px 0;
+      width: 90%;
+    }
+  }
+  .button-welcome{
+    width: 20%;
+    height: 60px;
+    background: $light-blue;
+    button{
+      padding: 12px;
+      margin: 10px;
+      float: left;
+      text-transform: uppercase;
+      border-radius: 3px;
+      border: none;
+    }
+  }
+}
+.col{
+  float: left;
+}
+.popular, .today{
+  width: 70%;
+  height: 500px;
+  background:$light-yellow;
+  margin: 0;
+  &.mg-top{
+    margin-top: 20px;
+  }
+  &.mg-right{
+    margin-right: 3%;
+  }
+
+}
+.sidebar{
+  position: absolute;
+  background-color: $light-orange;
+  width: 27%;
+  height: 1020px;
+  top: 160px;
+  right: 0;
+  float: right;
+  .kittybot{
+    width: 100%;
+    height: 200px;
+    background-color: $dark-orange;
+  }
+  .upcoming{
+    width: 100%;
+    height: 400px;
+    margin-top: 20px;
+    background-color: $dark-orange;
+  }
+  .tweets{
+    width: 100%;
+    height: 400px;
+    margin-top: 20px;
+    background-color: $dark-orange;
+  }
+}
+
+/*RESPONSIVE*/
+@media (min-width: 992px) and (max-width: 1199px) {
+  .content-1, nav .menu{
+    width: 90%;
+  }
+  .sidebar{
+    display: none;
+  }
+  .popular, .today{
+    width: 100%;
+  }
+
+}
+@media (min-width: 600px) and (max-width: 991px) {
+  .content-1, nav .menu{
+    width: 95%;
+  }
+  .welcome{
+    height: 120px;
+    .information-welcome{
+      width: 100%;
+    }
+    .email-welcome{
+      width: 50%;
+      input{
+        width: 50%;
+        margin-left: 50%;
+      }
+    }
+    .button-welcome{
+      width: 50%;
+    }
+    .col{
+      display: inline-flex;
+      vertical-align: middle;
+    }
+  }
+  .sidebar{
+    display: none;
+  }
+  .popular, .today{
+    width: 100%;
+  }
+}
+@media (max-width: 599px) {
+  .content-1, nav .menu{
+    width: 100%;
+  }
+  .welcome{
+    display: none;
+  }
+  .sidebar{
+    display: none;
+  }
+  .popular, .today{
+    width: 100%;
+    margin-top: 5px;
+    &.mg-top{
+      margin-top: 0px;
+    }
+  }
+  nav .menu .login{
+    width: 15%;
+  }
+  nav .menu .input-search{
+    width: calc(85% - 40px);
+  }
+
 }
