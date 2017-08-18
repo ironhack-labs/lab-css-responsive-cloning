@@ -1,3 +1,159 @@
 body {
+  margin: 0;
+  padding: 0;
   background: #f9f9f9;
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 75%;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .search-bar {
+  //  border: 2px solid blue;
+    height: 50px;
+    background-color: blue;
+    margin: 0 auto;
+  }
+  .main-menu {
+    // border: 2px solid yellow;
+    height: 50px;
+    background-color: yellow;
+    margin: 0 auto;
+  }
+  .subscribe-bar {
+    // border: 2px solid green;
+    height: 80px;
+    background-color: green;
+    margin: 0 auto;
+  }
+  .main-content {
+    display: inline-block;
+    width: 74%;
+    height: 800px;
+    background-color: blue;
+    // border: 2px solid blue;
+    margin: 0 auto;
+  }
+  .sidebar {
+    display: inline-block;
+    width: 25%;
+    height: 800px;
+    background-color: yellow;
+    // border: 2px solid yellow;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .container {
+    width: 90%;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .search-bar {
+  //  border: 2px solid blue;
+    height: 50px;
+    background-color: blue;
+    margin: 0 auto;
+  }
+  .main-menu {
+    // border: 2px solid yellow;
+    height: 50px;
+    background-color: yellow;
+    margin: 0 auto;
+  }
+  .subscribe-bar {
+    // border: 2px solid green;
+    height: 80px;
+    background-color: green;
+    margin: 0 auto;
+  }
+  .main-content {
+    display: inline-block;
+    width: 100%;
+    height: 800px;
+    background-color: blue;
+    // border: 2px solid blue;
+    margin: 0 auto;
+  }
+  .sidebar {
+    display: none;
+    // width: 25%;
+    // height: 800px;
+    // background-color: yellow;
+    // border: 2px solid yellow;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 991px) {
+  .container {
+    width: 100%;
+  }
+  .search-bar {
+  //  border: 2px solid blue;
+    height: 50px;
+    background-color: blue;
+  }
+  .main-menu {
+    // border: 2px solid yellow;
+    height: 50px;
+    background-color: yellow;
+  }
+  .subscribe-bar {
+    // border: 2px solid green;
+    height: 80px;
+    background-color: green;
+  }
+  .main-content {
+    display: inline-block;
+    width: 100%;
+    height: 800px;
+    background-color: blue;
+    // border: 2px solid blue;
+  }
+  .sidebar {
+    display: none;
+    // width: 25%;
+    // height: 800px;
+    // background-color: yellow;
+    // border: 2px solid yellow;
+  }
+}
+
+@media (max-width: 599px) {
+  .container {
+    width: 100%;
+  }
+  .search-bar {
+  //  border: 2px solid blue;
+    height: 50px;
+    background-color: blue;
+  }
+  .main-menu {
+    // border: 2px solid yellow;
+    height: 50px;
+    background-color: yellow;
+  }
+  .subscribe-bar {
+    // border: 2px solid green;
+    height: 80px;
+    background-color: green;
+  }
+  .main-content {
+    display: inline-block;
+    width: 100%;
+    height: 800px;
+    background-color: blue;
+    // border: 2px solid blue;
+  }
+  .sidebar {
+    display: none;
+    // width: 25%;
+    // height: 800px;
+    // background-color: yellow;
+    // border: 2px solid yellow;
+  }
 }
