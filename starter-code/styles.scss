@@ -1,5 +1,7 @@
 body {
   background-color: #FFF;
+  margin:0;
+  padding:0;
 }
 
 .navi {
@@ -12,6 +14,8 @@ body {
 .welcome {
   background-color: red;
   height: 80px;
+  margin-left: 25px;
+  margin-right: 25px;
 }
 
 .main {
@@ -20,6 +24,7 @@ body {
   height: 750px;
   width: 75%;
   display: inline-block;
+  margin-left: 20px;
 }
 
 .main1 {
@@ -39,6 +44,7 @@ body {
   float: right;
   height: 750px;
   width: 20%;
+  margin-right: 10px;
 }
 
 .section1 {
