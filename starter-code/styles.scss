@@ -1,3 +1,85 @@
 body {
   background: #f9f9f9;
 }
+
+$width-middle: 75%;
+$width-side: 14%;
+$height-small: 300px;
+$margin-bottom-small: 10px;
+
+nav {
+  background: green;
+  margin: 0 auto;
+  height: $height-small;
+  margin-bottom: $margin-bottom-small
+}
+
+.header {
+  height: 130px;
+  background: orange;
+  margin: 0 auto;
+  width: 90%;
+  margin-bottom: $margin-bottom-small
+}
+
+#container{
+  .middle{
+    width: $width-middle;
+    margin-left: 5%;
+    height: 1200px;
+    .this-week{
+      background: blue;
+      height: 600px;
+      margin-bottom: $margin-bottom-small
+    }
+    .today{
+      background: yellow;
+      height: 600px;
+    }
+  }
+  .side {
+    width:$width-side;
+    float: right;
+    margin-right: 5%;
+    position: relative;
+    height: 1200px;
+    bottom: 1200px;
+    .kitty-bot{
+      height: $height-small;
+      background: red;
+      bottom: 580px;
+      margin-bottom: $margin-bottom-small
+    }
+    .live-chats{
+      height: 600px;
+      background: purple;
+      left: 201px;
+      bottom: 350px;
+      margin-bottom: $margin-bottom-small
+    }
+    .tweets {
+      background: pink;
+      height: $height-small
+    }
+  }
+}
+
+@media screen and (max-width: 920px) {
+  .middle{
+    .this-week{
+      width: 120%;
+    }
+    .today{
+      width: 120%;
+    }
+  }
+  .side {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .header{
+    display: none;
+  }
+}
