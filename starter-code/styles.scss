@@ -1,3 +1,173 @@
+// COLORS
+$background-color: #f9f9f9;
+$container-color: #fcc;
+$header-bar-color: #fba;
+$subs-bar-color: #cfb;
+$content-body-color: #bca;
+$left-part-color: #9f9;
+$week-section-color: #f55;
+$slack-section-color: #cbf;
+$chat-color: #cab;
+$tweet-color: #acb;
+
+// HEIGHT
+$content-body-height: 950px;
+$slack-height: 150px;
+$chat-height: 350px;
+$tweet-height: 230px;
+$header-bar-height: 50px;
+$bar-height: 30px;
+
+// WIDTH
+$max-width: 100%;
+$min-width: 80%;
+$section-width: 90%;
+$left-width: 70%;
+$rigth-width: 20%;
+
+// MARGIN
+$margin-center: 0 auto;
+$margin-left: 5%;
+$margin-top-0: 0;
+$margin-top-10: 10px;
+$margin-top-20: 20px;
+
 body {
-  background: #f9f9f9;
+    background: $background-color;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    text-align: center;
+
+    .header-bar {
+        width: $max-width;
+        height: $header-bar-height;
+        margin: $margin-center;
+        background-color: $header-bar-color;
+    }
+
+    .subs-bar {
+        width: $min-width;
+        height: $bar-height;
+        background-color: $subs-bar-color;
+        margin:$margin-center;
+        margin-top: $margin-top-20;
+    }
+
+    .content-body {
+        width: $min-width;
+        background-color: $content-body-color;
+        margin: $margin-center;
+        margin-top: $margin-top-20;
+        height: $content-body-height;
+
+        .left-part {
+            float: left;
+            width: $left-width;
+            height: $content-body-height;
+            background-color: $left-part-color;
+
+            .week-section {
+                background-color: $week-section-color;
+                width: $section-width;
+                height: 450px;
+                margin: $margin-center;
+                margin-top: $margin-top-10;
+            }
+
+            .today-section {
+                background-color: pink;
+                width: $section-width;
+                height: 450px;
+                margin: $margin-center;
+                margin-top: $margin-top-10;
+            }
+        }
+
+        .rigth-part {
+            float: right;
+            width: $rigth-width;
+            height: $content-body-height;
+            margin: $margin-center;
+            margin-left: $margin-left;
+
+            .slack-bot-section{
+                background-color: $slack-section-color;
+                width: $section-width;
+                height: $slack-height;
+                margin: $margin-center;
+                margin-top: $margin-top-10;
+            }
+
+            .live-chat-section{
+                background-color: $chat-color;
+                width: $section-width;
+                height: $chat-height;
+                margin: $margin-center;
+                margin-top: $margin-top-10;
+            }
+
+            .tweets-section{
+                background-color: $tweet-color;
+                width: $section-width;
+                height: $tweet-height;
+                margin: $margin-center;
+                margin-top: $margin-top-10;
+            }
+        }
+    }
+}
+@media (max-width: 1200px) {
+    .container{
+        .subs-bar{
+            width: $min-width;
+        }
+        .content-body{
+            width: $min-width;
+            .left-part{
+                width: $max-width;
+            }
+            .rigth-part{
+                visibility: hidden;
+            }
+
+        }
+    }
+}
+@media (min-width: 992px) {
+    .container{
+        .subs-bar{
+            width: $section-width;
+        }
+        .content-body{
+            width: $section-width;
+        }
+    }
+}
+@media (max-width: 600px) {
+    .container {
+        .subs-bar {
+            visibility: hidden;
+        }
+        .content-body{
+            width: $max-width;
+            margin-top: $margin-top-0;
+            .left-part{
+                margin-top: $margin-top-0;
+                .week-section{
+                    width: $max-width;
+                    margin-top: $margin-top-0;
+                }
+                .today-section{
+                    width: $max-width;
+                    margin-top: $margin-top-0;
+                }
+            }
+            .rigth-part{
+                margin-top: $margin-top-0;
+            }
+        }
+    }
 }
