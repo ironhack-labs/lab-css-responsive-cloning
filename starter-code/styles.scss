@@ -1,3 +1,62 @@
-body {
-  background: #f9f9f9;
+$red: #f00;
+$green: #0f0;
+$blue: #00f;
+$white: #fff;
+$black: #000;
+$yellow: #ffee12;
+
+@mixin color-height($color, $height-box) {
+  background: $color;
+  height: $height-box;
+}
+
+.buscador{
+  @include color-height( $red, 50px);
+}
+
+nav{
+  @include color-height( $yellow, 50px);
+}
+
+.welcome{
+  @include color-height( $green, 50px);
+  display: inline-block;
+  width: 40%;
+}
+
+.email{
+  @include color-height( $blue, 50px);
+  display: inline-block;
+  width: 40%;
+}
+
+.left-section{
+  display: inline-block;
+  width: 60%;
+  .popular{
+    @include color-height( $black, 400px);
+  }
+  .today{
+    @include color-height( $green, 400px);
+  }
+}
+
+.right-section{
+  display: inline-block;
+  width: 30%;
+  .slack{
+    @include color-height( $red, 100px);
+  }
+  .chats{
+    @include color-height( $yellow, 600px);
+  }
+  .tweets{
+    @include color-height( $blue, 100px);
+  }
+}
+
+@media (max-width: 992px) {
+  .right-section {
+    display: none;
+  }
 }
