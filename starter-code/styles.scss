@@ -11,12 +11,12 @@ $chat-color: #cab;
 $tweet-color: #acb;
 
 // HEIGHT
-$header-bar-height: 50px;
-$bar-height: 30px;
 $content-body-height: 950px;
 $slack-height: 150px;
 $chat-height: 350px;
 $tweet-height: 230px;
+$header-bar-height: 50px;
+$bar-height: 30px;
 
 // WIDTH
 $max-width: 100%;
@@ -149,7 +149,7 @@ body {
 @media (max-width: 600px) {
     .container {
         .subs-bar {
-            width: $max-width;
+            visibility: hidden;
         }
         .content-body{
             width: $max-width;
