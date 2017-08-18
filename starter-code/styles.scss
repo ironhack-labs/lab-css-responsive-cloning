@@ -1,3 +1,283 @@
+/*.wrapper {
+  width: 500px;
+  margin: 0 auto;
+}*/
+
 body {
-  background: #f9f9f9;
+  background:#f9f9f9;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.logo {
+  background: url('./images/logo.png');
+  background-size: 100%;
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  margin-bottom: -10px;
+}
+
+.search {
+  background: url('./images/search.png');
+  background-size: 100%;
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+}
+
+.login {
+  display: inline-block;
+  float: right;
+}
+
+.discover {
+  display: inline-block;
+}
+
+a {
+  margin-left: 10px;
+  text-decoration: none;
+  font-size: 12px;
+  color: rgba(0,0,0,.5);
+}
+
+.nav {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-top: 2px solid rgba(0,0,0,.1);
+  border-bottom: 2px solid rgba(0,0,0,.1);
+}
+
+.welcome {
+  background: white;
+  text-align: center;
+  height: 75px;
+}
+
+.welcome > p {
+  padding-top: 20px;
+}
+
+.subs {
+  background: rgba(225,100,20,1);
+}
+
+.pop {
+  margin-top: 30px;
+}
+
+.section {
+  margin-top: 10px;
+  border-top: 1px solid rgba(0,0,0,.3);
+  background: white;
+  position: relative;
+}
+
+.app1 {
+
+  background-image: url('./images/popular-this-week/app-1.png');
+  display: inline-block;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  width: 60px;
+  height: 60px;
+}
+
+.app2 {
+
+  background-image: url('./images/popular-this-week/app-2.png');
+  display: inline-block;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  width: 60px;
+  height: 60px;
+}
+
+.app3 {
+
+  background-image: url('./images/popular-this-week/app-3.png');
+  display: inline-block;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  width: 60px;
+  height: 60px;
+}
+
+.inner {
+  display: inline-block;
+  /*width: 80%;*/
+  margin-left: 20px;
+}
+
+h2 {
+  font-size: 14px;
+  font-weight: lighter;
+}
+
+p {
+  font-size: 12px;
+}
+
+.showM {
+  margin-top: 10px;
+  text-align: center;
+  font-size: 12px;
+}
+
+.newest {
+  margin-top: 10px;
+  float: right;
+}
+
+.today {
+  margin-top: 20px;
+  display: inline-block;
+}
+
+.appt1 {
+
+  background-image: url('./images/today/app-1.png');
+  display: inline-block;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  width: 60px;
+  height: 60px;
+}
+
+.appt2 {
+
+  background-image: url('./images/today/app-2.png');
+  display: inline-block;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  width: 60px;
+  height: 60px;
+}
+
+.appt3 {
+
+  background-image: url('./images/today/app-3.png');
+  display: inline-block;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  width: 60px;
+  height: 60px;
+}
+
+/*
+.appt4 {
+
+  background-image: url('./images/popular-this-week/app-1.png');
+  display: inline-block;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  width: 60px;
+  height: 60px;
+}
+*/
+
+.right {
+  display: inline-block;
+  position: absolute;
+  right: 0;
+}
+
+.rightCol {
+  width: 19%;
+}
+
+.kittybot {
+  background: white;
+
+}
+
+.kittyButton {
+  background: orange;
+}
+
+.upcoming {
+  background: white;
+
+}
+
+.tweets {
+  background: white;
+
+}
+
+
+@media (max-width: 600px) {
+  .welcome {
+    display: none;
+  }
+  .right {
+    display: none;
+  }
+}
+
+@media (min-width: 600px) {
+  /*.lt {
+    display: none;
+  }*/
+  button:nth-child(3) {
+    display: none;
+  }
+  button:nth-child(4) {
+    display: none;
+  }
+}
+
+@media (max-width: 992px) {
+  p > input {
+    display: none;
+  }
+  p > button {
+    display: none;
+  }
+}
+
+@media (min-width: 992px) {
+  .underInp {
+    display: none;
+  }
+}
+
+@media (max-width: 1200px) {
+  .rightCol {
+    display: none;
+  }
+}
+
+@media (min-width: 1200px) {
+  .kittyButton {
+    display: block;
+  }
+  .wrapper {
+    width: 50%;
+    margin: 0 auto;
+    position: relative;
+  }
+  .section {
+    position: relative;
+    width: 79%;
+  }
+  .right {
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+  }
+  .pop {
+    width: 50%;
+    margin: 0 auto;
+    position: relative;
+  }
+  .today {
+    width: 50%;
+    margin: 0 auto;
+  }
+  .rightCol {
+    float: right;
+    position: relative;
+    bottom: 606px;
+  }
 }
