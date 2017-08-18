@@ -1,0 +1,9 @@
+@mixin container {
+  width: 100%;
+  display: inline-block;
+  background-color: $block-down;
+}
+
+@mixin margin-sides {
+  margin: 20px;
+}
