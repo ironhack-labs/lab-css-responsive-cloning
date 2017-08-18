@@ -40,6 +40,14 @@ header div {
   background: $green;
 }
 
+header .head {
+  width: 40%;
+  height: 80%;
+  background: $blue;
+  display: inline-block;
+  margin: 6px 15px;
+}
+
 .container > div {
   width: 65%;
   height: 800px;
@@ -82,10 +90,18 @@ aside section.larga {
 }
 
 @media screen and (max-width:600px) {
-  aside {
-    display: none;
+  .container {
+    width: 90%;
   }
-  header {
-    display: none;
+  nav div {
+    width: 90%;
+  }
+  header .head {
+    display: block;
+    height: 40%;
+    width: 90%;
+    margin: 8px auto;
   }
 }
+
+@meadia screen and (max-width: )
