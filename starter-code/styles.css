@@ -70,7 +70,7 @@ body {
   
 }
 
-@media (min-width: 992px)  {
+@media (max-width: 992px)  {
       
       .all {
       	width: 95%;
@@ -80,6 +80,14 @@ body {
       	height: 100px;
       	margin: 4%;
       }
+
+      .right {
+   	visibility: hidden;
+   }
+
+   .left {
+   	max-width: 100%
+   }
 }
 
 @media (max-width: 600px ) {
@@ -89,7 +97,7 @@ body {
    }
   
   .bar {
-  	width: 100%;
+  	max-width: 350PX;
   	top: 95px;
   }
 
