@@ -1,3 +1,112 @@
+$margin-contentSide:calc(10% - 1px);
+$margin-generalTop: calc(1% - 1px);
+
 body {
-  background: #f9f9f9;
+
+  margin: 0px;
+}
+nav{
+  height: 80px;
+  background-color: #FF025F;
+  border-: 0px;
+}
+
+.suscribe{
+background-color: #2EFE64;
+
+height: 40px;
+margin-top: $margin-generalTop;
+margin-left: $margin-contentSide;
+margin-right: $margin-contentSide;
+}
+.popular{
+position: absolute;
+background-color: #CED8F6;
+left: $margin-contentSide;
+top: 132px;
+width: 60%;
+height: 300px;
+margin-top:$margin-generalTop;
+}
+.slack{
+  position: absolute;
+  background-color: #F5A9F2;
+  right:  $margin-contentSide;
+  top: 132px;
+  width: 20%;
+  height: 100px;
+  margin-top:$margin-generalTop;
+}
+.liveChats{
+  position: absolute;
+  background-color: #FF00FF;
+  right:  $margin-contentSide;
+  top: 237px ;
+  width: 20%;
+  height: 400px;
+  margin-top:$margin-generalTop;
+
+}
+
+.today
+{
+  position: absolute;
+  background-color: #8181F7;
+  left: $margin-contentSide;
+  top: 437px;
+  width: 60%;
+  height: 350px;
+  margin-top:$margin-generalTop;
+
+}
+.tweets{
+  position: absolute;
+  background-color: #81F7BE;
+  right:  $margin-contentSide;
+  top: 642px ;
+  width: 20%;
+  height: 400px;
+  margin-top:$margin-generalTop;
+}
+@media (max-width: 1200px) {
+  .tweets{
+  display: none;
+  }
+  .liveChats{
+    display: none;
+  }
+  .slack{
+    display: none;
+  }
+  .popular{
+    width: 80%;
+  }
+  .today
+{
+  width: 80%;
+}
+}
+@media (max-width:992px) {
+.suscribe{
+  height: 80px;
+}
+.popular{
+  top:172px;
+}
+.today{
+  top: 477px;
+}
+}
+@media (max-width:600px) {
+
+  .suscribe{
+    display: none;
+  }
+  .popular{
+    top: 92px;
+  }
+  .today{
+    top: 397px;
+  }
+
 }
