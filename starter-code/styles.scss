@@ -1,3 +1,59 @@
+@media (min-width: 1201px) {
+
+}
+
+@media (min-width: 993px) and (max-width: 1200px) {
+
+}
+
+@media (min-width: 601px) and (max-width: 992px) {
+  .logo-sm {
+    width: 30px;
+  }
+}
+
+@media (max-width: 600px) {
+ .invisible-xs {
+   display: none;
+ }
+
+ .logo-xs {
+   width: 30px;
+ }
+}
+
 body {
+  margin: 0;
+  padding: 0;
   background: #f9f9f9;
+  color: black;
+  line-height: 1.45em;
+  font-size: 16px;
+  font-family: "Helvetica Neue",Arial,sans-serif;
+  box-sizing: border-box;
+}
+
+.logo {
+  width: 40px;
+  height: 40px;
+}
+
+.find-zone form {
+  img {
+    
+  }
+  input {
+    width: 70%;
+  }
+
+}
+
+.navbar ul li {
+  display: inline;
+  list-style-type: none;
+
+  img {
+    width: 20px;
+    height: 20px;
+  }
 }
