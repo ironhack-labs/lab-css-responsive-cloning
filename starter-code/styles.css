@@ -1,0 +1,80 @@
+body
+  {background-color: #f9f9f9;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  height: 45px;
+  background-color: white;
+  margin-bottom: 5px;
+}
+
+header img {
+  width: 40px;
+  height: 40px;;
+}
+
+header input {
+  width: 75%;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: white;
+  background-image: url("images/search.png");
+  background-position: -5px 30% 0 0;
+  background-repeat: no-repeat;
+}
+
+a {
+  text-decoration: none;
+  color: grey;
+  font-size: 14px;
+}
+
+.scrollmenu {
+  height: 45px;
+  overflow: auto;
+  white-space: nowrap;
+  background-color: white;
+}
+
+.popular {
+  background-color: white;
+
+}
+
+.popular h1 {
+  font-size: 18px;
+}
+
+.today {
+  background-color: white;
+
+}
+
+.today h1 {
+    font-size: 18px;
+}
+
+.link {
+  height: 90px;
+  border: 1px solid grey;
+  display: flex;
+  align-items: center;
+  background-color: white;
+}
+
+.link img {
+  width: 80px;
+  height: 80px;
+  margin-left: 3%;
+}
+
+.app {
+  margin-left: 5%;
+}
+
+@ media (min-width = 600px){
+
+}
