@@ -5,9 +5,66 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>CSS Lab | Responsive Cloning | Product Hunt</title>
+  <!--  Mobile first : (max-width: 600px) -->
   <link rel="stylesheet" href="styles.min.css">
+  <!--  Responsive CSS  -->
+  <link rel="stylesheet" media="(min-width: 1650px)" href="styles-large.css" />
+  <link rel="stylesheet" media="(min-width: 993px) and (max-width: 1649px)" href="styles-medium.css" />
+  <link rel="stylesheet" media="(min-width: 601px) and (max-width: 992px)" href="styles-small.css" />
 </head>
 <body>
-  
+  <nav class="nav">
+    <section class="nav-up">
+      <div class="nav-up-logo">
+        <img src="./images/logo.png" alt="logo">
+      </div>
+      <div class="nav-up-search-container">
+        <svg width="15" height="15" viewBox="0 0 15 15" xmlns="http://www.w3.org/2000/svg"><path d="M9.383 10.347c-.987.78-2.233 1.244-3.588 1.244C2.595 11.59 0 8.997 0 5.796 0 2.595 2.595 0 5.795 0c3.2 0 5.796 2.595 5.796 5.795 0 1.355-.464 2.6-1.243 3.588L15 14.036l-.964.964-4.653-4.653zm-3.588-.12c2.448 0 4.432-1.984 4.432-4.432 0-2.447-1.984-4.43-4.432-4.43-2.447 0-4.43 1.983-4.43 4.43 0 2.448 1.983 4.432 4.43 4.432z" fill="#BBB" fill-rule="evenodd"></path></svg>
+        <input type="text" placeholder="Discover your next favorite thing...">
+      </div>
+      <ul class="nav-up-login">
+        <li><a class="nav-up-login-list" href="#"></a>...</li>
+        <li><a class="nav-up-login-list" href="#">Login</a></li>
+      </ul>
+    </section>
+    <section class="nav-down">
+      <ul class="nav-down-menu"><hr>
+        <li class="nav-down-menu-list"><a href="#" class="nav-down-menu-list" >Home</a></li>
+        <li class="nav-down-menu-list"><a href="#" class="nav-down-menu-list" >Tech</a></li>
+        <li class="nav-down-menu-list"><a href="#" class="nav-down-menu-list" >Games</a></li>
+        <li class="nav-down-menu-list"><a href="#" class="nav-down-menu-list" >Podcasts</a></li>
+        <li class="nav-down-menu-list"><a href="#" class="nav-down-menu-list" >Books</a></li>
+        <li class="nav-down-menu-list"><a href="#" class="nav-down-menu-list" >Bots</a></li>
+        <li class="nav-down-menu-list"><a href="#" class="nav-down-menu-list" >Developer tools</a></li>
+        <li class="nav-down-menu-list"><a href="#" class="nav-down-menu-list" >iMessage Apps</a></li>
+        <li class="nav-down-menu-list"><a href="#" class="nav-down-menu-list" >iPhone</a></li>
+        <li class="nav-down-menu-list"><a href="#" class="nav-down-menu-list" >Photography Tolls</a></li>
+        <li class="nav-down-menu-list"><a href="#" class="nav-down-menu-list" ><</a></li>
+        <li class="nav-down-menu-list"><a href="#" class="nav-down-menu-list" >></a></li>
+      </ul>
+    </section>
+  </nav>
+  <section class="welcome">
+    <div class="welcome-container">
+      <article class="wecolme-message">
+        <span class="welcome-message-title">Welcome to Product Hunt</span>
+        <span class="welcome-message-text">Get the best new products into your inbox, daily.</span>
+      </article>
+      <input class="email" placeholder="email" type="email">
+      <button type="submit" class="email-submit">SUBSCRIBE</button>
+      <img src="./images/close.png" alt="close-windows">
+    </div>
+  </section>
+  <section class="main-container">
+    <div class="main-container-left">
+      <div class="main-container-left-top">Popular this week</div>
+      <div class="main-container-left-bottom">Today</div>
+    </div>
+    <div class="main-container-right">
+      <div class="main-container-right-top">Killbot for Slack</div>
+      <div class="main-container-right-middle">Upcomming live chats</div>
+      <div class="main-container-right-bottom">Tweets</div>
+    </div>
+  </section>
 </body>
 </html>
