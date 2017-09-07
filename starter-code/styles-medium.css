@@ -1,15 +1,3 @@
-*{
-  margin: 0;
-  box-sizing: border-box;
-  font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif;
-  font-size: 10px;
-  color: grey;
-  -webkit-padding-start: 0;
-}
-body {
-  background: #f9f9f9;
-}
-
 .nav {
   background-color: white;
   border-bottom: 2px solid rgb(232,232,232);
@@ -18,7 +6,7 @@ body {
   display: flex;
   justify-content: space-between;
   text-align: center;
-  width: 100%;
+  width: 60%;
   height: 50px;
   padding: 5px 15px;
   margin: auto;
@@ -40,8 +28,8 @@ body {
   align-items: center;
   justify-content: center;
   padding: 15px;
-  // border: 2px solid rgb(232,232,232);
-  // border-radius: 5px;
+  border: 2px solid rgb(232,232,232);
+  border-radius: 5px;
   margin-left: 30px;
 }
 .nav-up-search-container > svg {
@@ -64,7 +52,7 @@ body {
 }
 
 .nav-up-login-list{
-  display: flex;
+  display: none;
   align-items: center;
   font-size: 1.1rem;
   margin: 0 10px;
@@ -72,10 +60,10 @@ body {
   text-decoration: none;
 }
 .nav-down{
-  display: flex;
+  display: none;
   justify-content: space-between;
   text-align: center;
-  width: 100%;
+  width: 60%;
   height: 50px;
   padding: 3px 15px 2px;
   margin: auto;
@@ -87,17 +75,9 @@ hr{
   border: 0;
   color: rgb(232,232,232);
 
-.hide-menu{
-  margin: 0 0;
-  font-size: 1.5rem;
-  text-decoration: none;
-  display: none;
-  padding: 5px;
-}
-
 }
 .nav-down-menu{
-    display: none;
+    display: inline-block;
     justify-content:flex-start;
     align-items: center;
     list-style-type: none;
@@ -111,6 +91,8 @@ hr{
     display: inline-block;
     padding: 5px;
   }
+
+
 .welcome{
   height: 100px;
   padding: 20px 30px;
@@ -166,7 +148,7 @@ hr{
 .main-container{
   height: 800px;
   padding: 20px 30px;
-  width: 100%;
+  width: 60%;
   height: 50px;
   margin: auto;
   display: flex;
@@ -174,7 +156,7 @@ hr{
 }
 
 .main-container-left{
-  width: 100%;
+  width: 60%;
   display: flex;
   direction:column;
   display: block;
@@ -201,7 +183,7 @@ hr{
 
 .main-container-right{
   width: 30%;
-  display: none;
+  display: flex;
   justify-content: flex-end;
   display: block;
   text-align: center;
@@ -209,7 +191,6 @@ hr{
 }
 
 .main-container-right-top{
-  display: none;
   width:100%;
   height: 100px;
   border: 1px solid rgb(232,232,232);
@@ -219,7 +200,6 @@ hr{
   font-size: 2.5rem;
 }
 .main-container-right-middle{
-  display: none;
   width:100%;
   height: 400px;
   border: 1px solid rgb(232,232,232);
@@ -229,7 +209,6 @@ hr{
   font-size: 2.5rem;
 }
 .main-container-right-bottom{
-  display: none;
   width:100%;
   height: 150px;
   border: 1px solid rgb(232,232,232);
