@@ -9,11 +9,14 @@
   <link rel="stylesheet" media="(media-features)" href="styles.min.css"/>
 </head>
 <body>
-  <div class="find-zone">
-    <img src="images\logo.png" alt="Logo's image" class="logo logo-xs">
+  <div class="container find-zone">
+    <header>
+      <img src="images\logo.png" alt="Logo's image" class="logo logo-xs">
       <form>
         <img src="images\search.png" alt="Search"> : <input type="text" name="search" value="Discover your next favorite thing…">
       </form>
+      <p class="top-left">... Log in</p>
+    </header>
   </div>
 
   <nav class="navbar">
@@ -28,38 +31,76 @@
       <li><img src="images\arrow-prev.png" alt="Menu button previous"></li>
       <li><img src="images\arrow-next.png" alt="Menu button next"></li>
     </ul>
+    <div class="clear-fix"></div>
   </nav>
 
-  <h2 class="invisible-xs">Welcome to Product Hunt</h2>
-
-  <div class="container">
-    <header><h3>Popular this week</h3></header>
-      <section class="product"><img src="images\popular-this-week\app-1.png" alt="image of product"></section>
-      <section class="product"><img src="images\popular-this-week\app-2.png" alt="image of product"></section>
-      <section class="product"><img src="images\popular-this-week\app-3.png" alt="image of product"></section>
+  <div class="container welcome invisible-xs">
+    <h2 class="invisible-xs">Welcome to Product Hunt</h2>
   </div>
 
   <div class="container">
-    <header><h3>Today</h3></header>
-      <section class="product"><img src="images\today\app-1.png" alt="image of product"></section>
-      <section class="product"><img src="images\today\app-2.png" alt="image of product"></section>
-      <section class="product"><img src="images\today\app-3.png" alt="image of product"></section>
-  </div
+    <header>
+      <h3>Popular this week</h3><img src="images\close.png" alt="Close button" class="top-left">
+    </header>
+    <section class="product">
+      <img src="images\popular-this-week\app-1.png" alt="image of product">
+      <div class="product-info">
+        <h4>Duolingo Bots</h4>
+        <p>AI-powered characters to teach language conversation</p>
+      </div>
+      <div class="clear-fix"><div>
+    </section>
 
+    <section class="product">
+      <img src="images\popular-this-week\app-2.png" alt="image of product">
+      <div class="product-info">
+        <h4>Tribe 2.0</h4>
+        <p>Introducing Augmented Messaging</p>
+      </div>
+      <div class="clear-fix"><div>
+    </section>
 
-Get the best new products in your inbox, daily.
+      <section class="product">
+        <img src="images\popular-this-week\app-3.png" alt="image of product">
+        <div class="product-info">
+          <h4>Workplace by Facebook</h4>
+          <p>Connect everyone in your company and turn ideas into action</p>
+        </div>
+        <div class="clear-fix"><div>
+      </section>
+  </div>
 
+  <div class="container">
+    <header>
+      <h3>Today</h3><p class="top-left">POPULAR | NEWEST</p>
+    </header>
 
-Ask
-|
-LOG IN
-SIGN UP
+    <section class="product">
+      <img src="images\today\app-1.png" alt="image of product">
+      <div class="product-info">
+        <h4>Sprayscape</h4>
+        <p>A perfectly imperfect VR-ish camera experiment, by Google</p>
+      </div>
+      <div class="clear-fix"><div>
+    </section>
 
-Discover your next favorite thing
-Product Hunt surfaces the best new products, every day. It's a place for product-loving enthusiasts to share and geek out about the latest mobile apps, websites, hardware projects, and tech creations.
+    <section class="product">
+      <img src="images\today\app-2.png" alt="image of product">
+      <div class="product-info">
+        <h4>Ask Gary Vee</h4>
+        <p>The unofficial Gary Vee persona chatbot on Messenger!</p>
+      </div>
+      <div class="clear-fix"><div>
+    </section>
 
-
-SIGN UP
-
+    <section class="product">
+      <img src="images\today\app-3.png" alt="image of product">
+      <div class="product-info">
+        <h4>The Electron Wheel</h4>
+        <p>TTurn your standard bicycle into electric bike.</p>
+      </div>
+      <div class="clear-fix"><div>
+    </section>
+  </div>
 </body>
 </html>

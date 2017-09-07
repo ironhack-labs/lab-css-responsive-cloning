@@ -1,18 +1,18 @@
-@media (min-width: 1201px) {
-
-}
-
-@media (min-width: 993px) and (max-width: 1200px) {
-
-}
-
-@media (min-width: 601px) and (max-width: 992px) {
-  .logo-sm {
-    width: 30px;
-  }
-}
 
 @media (max-width: 600px) {
+  div.find-zone form {
+    img {
+      width: 20px;
+      height: 20px;
+    }
+    input {
+      width: 50%;
+      margin: -35px 5px 10px;
+
+    }
+
+  }
+
  .invisible-xs {
    display: none;
  }
@@ -20,6 +20,68 @@
  .logo-xs {
    width: 30px;
  }
+
+ .container .product {
+
+   img {
+     width: 60px;
+     height: 60px;
+     margin: 10% 5% 10% 5px;
+   }
+  }
+}
+
+@media (min-width: 601px) and (max-width: 992px) {
+  .logo-sm {
+    width: 30px;
+  }
+
+  .container .product {
+
+    .product-info {
+      margin: 5%;
+    }
+
+    img {
+      width: 70px;
+      height: 70px;
+      margin: 3% 2% 3% 5px;
+    }
+  }
+}
+
+
+@media (min-width: 993px) and (max-width: 1200px) {
+  .container .product {
+
+    .product-info {
+      margin: 4%;
+    }
+     img {
+      margin: 2% 2% 2% 5px;
+      width: 75px;
+      height: 75px;
+    }
+  }
+}
+
+@media (min-width: 1201px) {
+
+  body {
+    font-size: 18px;
+  }
+  .container .product {
+
+    .product-info {
+      margin: 5%;
+    }
+
+    img {
+      margin: 30px 30px 30px 3%;
+      width: 90px;
+      height: 90px;
+    }
+  }
 }
 
 body {
@@ -27,10 +89,18 @@ body {
   padding: 0;
   background: #f9f9f9;
   color: black;
-  line-height: 1.45em;
+  line-height: 1.4em;
   font-size: 16px;
-  font-family: "Helvetica Neue",Arial,sans-serif;
+  font-family: "Helvetica Neue", Arial,sans-serif;
   box-sizing: border-box;
+}
+
+.clear-fix {
+  clear: both;
+}
+
+.product .clear-fix {
+  border-top: 1px solid lightGrey;
 }
 
 .logo {
@@ -40,7 +110,7 @@ body {
 
 .find-zone form {
   img {
-    
+
   }
   input {
     width: 70%;
@@ -55,5 +125,50 @@ body {
   img {
     width: 20px;
     height: 20px;
+  }
+}
+
+.find-zone header {
+  img,form,p {
+  display: inline;
+}
+}
+
+.container {
+  margin: 4%;
+  position: relative;
+
+  header {
+  border-bottom: 1px solid lightGrey;
+  height: 10%;
+  position: relative;
+  top: 0;
+  clear: both;
+    .top-left {
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+  }
+
+  .product {
+    height: 30%;
+    position: relative;
+
+    img {
+      float: left;
+    }
+
+    .product-info {
+      float: left;
+      margin: 2%;
+      width: 65%;
+
+      h4,p {
+            -webkit-margin-after: 0.5em;
+            -webkit-margin-before: 0.5em;
+      }
+
+    }
   }
 }
