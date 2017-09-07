@@ -1,3 +1,119 @@
 body {
-  background: #f9f9f9;
+  background-color: #f9f9f9;
+  font-size: 20px:
+  }
+
+body, content, main, aside {
+display: flex;
+flex-direction: column;
+justify-content: flex-start;
+}
+
+section, main, aside, div {
+  border-style: solid;
+  background-color: white;
+  border: 1px solid #e7e7e7;
+}
+
+ul {
+    list-style-type: none;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border: 1px solid #e7e7e7;
+    background-color: #f3f3f3;
+}
+
+li a {
+    display: block;
+    color: #666;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    border: 1px solid #e7e7e7;
+    margin: 0 20px;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.logosize {
+  width : 70px;
+}
+
+.welcomeformat {
+  text-align: center;
+  padding: 30px 5px;
+  }
+
+.mainimagesaizing {
+  float:left;
+  margin-right: 100px;
+  margin-left: 10px;
+  padding:3px 0px;
+  width : 110px;
+}
+
+.font15 {
+  font-size: 1.5rem;
+}
+
+.font13 {
+  font-size: 1.3rem;
+}
+
+.widthmain {
+  width: 90%;
+  margin: 20px auto
+}
+
+aside {
+  display: none;
+}
+
+@media (min-width: 768px) {
+    aside {
+        display: flex;
+    }
+}
+
+@media (min-width: 768px) {
+    .largrescreen {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+}
+
+@media (min-width: 768px) {
+    .largrescreenlayout {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
+
+@media (min-width: 768px) {
+    .largrescreenmainwidth {
+        width: 80%;
+            }
+}
+
+@media (min-width: 768px) {
+    .marginleft {
+        margin-left: 100px;
+            }
+}
+
+@media (min-width: 768px) {
+    .largrescreenasidewidth {
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
 }
