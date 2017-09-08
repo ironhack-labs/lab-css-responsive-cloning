@@ -1,13 +1,181 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>CSS Lab | Responsive Cloning | Product Hunt</title>
-  <link rel="stylesheet" href="styles.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS Lab | Responsive Cloning | Product Hunt</title>
+    <link rel="stylesheet" href="styles.min.css">
 </head>
+
 <body>
-  
+    <header>
+        <div class="container-header">
+            <div class="search-bar">
+                <img id="logo" src="images/logo.png">
+                <img src="images/search.png">
+                <input id="discover" placeholder="Discover life bro...">
+                <p>... Login</p>
+            </div>
+            <div class="nav-bar">
+                <ul>
+                    <li>Home</li>
+                    <li>Tech</li>
+                    <li>Games</li>
+                    <li>Podcasts</li>
+                    <li>Books</li>
+                    <li>Bots</li>
+                    <li>Developer Tools</li>
+                    <li>iMessage Apps</li>
+                    <li>iPhone</li>
+                    <li>Photography Tools</li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <div class="page-container">
+        <div class="welcome">
+            <div id="welcome-text">
+                <span><strong>Welcome to Product Hunt</strong> Get the best product in your inbox daily!</span>
+            </div>
+            <div id="subscribe">
+                <input type="email" name="email" placeholder="Enter your email">
+                <div class="button">
+                    Subscribe
+                </div>
+            </div>
+            <div class="icon-x">
+                <img class="x" src="images/close.png">
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="content">
+            <div class="week">
+                <div class="title">
+                    Popular this week
+                </div>
+                <div class="card">
+                    <div class="card-thumbnail">
+                        <img src="images/popular-this-week/app-1.png">
+                    </div>
+                    <div class="text-container">
+                        <div class="text">
+                            <h3>Duolingo</h3>
+                            <p> Bots AI-powered charachters to teach language conversation</p>
+                        </div>
+                        <div class="vote">
+                            IPHONE
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-thumbnail">
+                        <img src="images/popular-this-week/app-2.png">
+                    </div>
+                    <div class="text-container">
+                        <div class="text">
+                            <h3>Tribe 2.0</h3>
+                            <p> Introducing Augmented Messaging</p>
+                        </div>
+                        <div class="vote">
+                            ANDROID
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-thumbnail">
+                        <img src="images/popular-this-week/app-3.png">
+                    </div>
+                    <div class="text-container">
+                        <div class="text">
+                            <h3>Workplace by Facebook</h3>
+                            <p>Connect with everyone in your company and tun ideas into action</p>
+                        </div>
+                        <div class="vote">
+                            ANDROID
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="today">
+                <div class="title" id="day">
+                    <div class="title-text">
+                        Today
+                    </div>
+                    <div id="popular">
+                        <p>POPULAR | NEWEST</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-thumbnail">
+                        <img src="images/today/app-1.png">
+                    </div>
+                    <div class="text-container">
+                        <div class="text">
+                            <h3>Sprayscape</h3>
+                            <p> A perfectly imperfect VR-ish camera experiment, by Google</p>
+                        </div>
+                        <div class="vote">
+                            ANDROID
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-thumbnail">
+                        <img src="images/today/app-2.png">
+                    </div>
+                    <div class="text-container">
+                        <div class="text">
+                            <h3>Ask Gary Vee</h3>
+                            <p> The unoficial Gary Vee persona chatbot on Messenger!</p>
+                        </div>
+                        <div class="vote">
+                            ANDROID
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-thumbnail">
+                        <img src="images/today/app-3.png">
+                    </div>
+                    <div class="text-container">
+                        <div class="text">
+                            <h3>The Electron Wheel</h3>
+                            <p> Turn your standard bicycle</p>
+                        </div>
+                        <div class="vote">
+                            ANDROID
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="sidebar">
+            <div class="slack">
+                Kittybot for Slack A friendly feline that sends you cool new things
+                <div class="button">
+                    # ADD KITTYBOT TO Slack
+                </div>
+            </div>
+            <div class="live">
+                <div class="person-card">
+                    <div class="thumbnail">
+                    </div>
+                    <div class="name">
+                        <p class="remindme">
+                            REMIND ME
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="tweets">
+            <h2> TWEETS </h2>
+            </div>
+        </div>
+    </div>
+    </div>
 </body>
+
 </html>
