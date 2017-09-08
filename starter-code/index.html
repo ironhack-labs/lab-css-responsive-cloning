@@ -8,31 +8,36 @@
   <link rel="stylesheet" href="styles.min.css">
   <link rel="stylesheet" media="(media-features)" href="styles.min.css"/>
 </head>
+
 <body>
+  <div id="topheader">
   <div class="container input-zone">
     <header>
-      <img src="images\logo.png" alt="Logo's image" class="logo logo-xs">
-      <form>
-        <img src="images\search.png" alt="Search"> : <input type="text" name="search" value="Discover your next favorite thing…">
-      </form>
-      <p class="top-left">... Log in</p>
+      <a class="input-zone-items"><img src="images\logo.png" alt="Logo's image" class="logo logo-xs"></a>
+      <a class="input-zone-items">
+        <form>
+        <img src="images\search.png" alt="Search"> :
+        <input type="text" name="search" placeholder="Discover your next favorite thing…">
+      </form></a>
+      <a class="input-zone-items"><p class="top-left">... Log in</p></a>
     </header>
   </div>
 
   <nav class="container navbar">
     <ul>
-      <li>Home</li>
-      <li>Tech</li>
-      <li>Games</li>
-      <li>Podcasts</li>
-      <li>Books</li>
-      <li>Developer Tools</li>
-      <li>iMassage Apps</li>
-      <li><img src="images\arrow-prev.png" alt="Menu button previous"></li>
-      <li><img src="images\arrow-next.png" alt="Menu button next"></li>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Tech</a></li>
+      <li><a href="#">Games</a></li>
+      <li><a href="#">Podcasts</a></li>
+      <li><a href="#">Books</a></li>
+      <li><a href="#">Developer Tools</a></li>
+      <li><a href="#">iMassage Apps</a></li>
+      <li><a href="#"><img src="images\arrow-prev.png" alt="Menu button previous"></a></li>
+      <li><a href="#"><img src="images\arrow-next.png" alt="Menu button next"></a></li>
     </ul>
     <div class="clear-fix"></div>
   </nav>
+</div>
 
 
   <div class="container input-zone welcome invisible-xs">
@@ -43,12 +48,14 @@
       <input type="email" placeholder="Your email">
       <button type="button">SUBSCRIBE</button>
     </form>
+    <img src="images\close.png" alt="Close button" class="top-left">
   </header>
   </div>
 
   <div class="container">
     <header>
-      <h3>Popular this week</h3><img src="images\close.png" alt="Close button" class="top-left">
+      <h3>Popular this week</h3>
+      <img src="images\close.png" alt="Close button" class="top-left">
     </header>
     <section class="product">
       <img src="images\popular-this-week\app-1.png" alt="image of product">
