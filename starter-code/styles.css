@@ -1,0 +1,188 @@
+body {
+    background: #f9f9f9;
+    font-size: 10px;
+}
+* {
+    box-sizing: border-box;
+}
+.body {
+    padding-left: 25%;
+    padding-right: 25%;
+}
+hr{
+  color:#f9f9f9;
+  margin: 0;
+}
+.top{
+    background-color: white;
+    font-size: 1.5rem
+  }
+header {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    margin-bottom: 1%;
+}
+input {
+    display: block;
+    width: 100%;
+}
+login {
+    flex-grow: 0;
+}
+header form {
+    flex-grow: 1;
+    display: flex;
+    width: 30%;
+}
+
+#logo {
+    width: 50px;
+}
+nav {
+    overflow-x:hidden;
+    padding-left: 10px;
+    margin-bottom: 1%;
+    display: flex;
+    margin: 0px auto;
+}
+ul {
+    width: 100%;
+    background-color: white;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-left: 0px;
+}
+li {
+    width: auto;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 1rem;
+}
+.menu {
+    padding-left: 5%;
+    padding-right: 5%;
+    Width: 100%;
+}
+.menu li img {
+    width: 15px;
+    padding-top: 10px;
+}
+.welcome {
+    margin-bottom: 1%;
+    margin-top: 1%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+.welcome p {
+    font-size: 1rem;
+    width:80%;
+}
+
+.welcome form {
+    flex-grow: 1;
+    padding-left: 10%;
+    display: flex;
+    width: 30%;
+}
+.button {
+    background-color: #da552f;
+    border-color: #da552f;
+    border-radius: 5px;
+    height: 20px;
+}
+.button a {
+    text-decoration: none;
+    font-style: normal;
+    color: white;
+}
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    width: 100%;
+}
+.left {
+    width: 75%;
+}
+.h1{
+  margin-right: 5%;
+  margin-left: 5%;
+}
+.right {
+    width: 25%;
+    font-size: 1rem;
+
+}
+.popular {
+    width: 100%;
+    margin-bottom: 1%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.popular h1 {
+  padding: 0px 10%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.content{
+  font-size: 1.2rem;
+}
+
+
+aside {
+    background-color: white;
+}
+#cross {
+    width: 10px;
+}
+
+
+@media (max-width: 992px) and (min-width: 600px) {
+    .welcome {
+        flex-direction: column;
+    }
+    .welcome form{
+      padding-bottom: 0px;
+      width: 90%;
+    }
+    .welcome p {
+        padding-bottom: 0PX;
+    }
+    .main-body {
+        width: 99%;
+        margin-left: 2.5%;
+    }
+
+    .right {
+        display: none;
+    }
+    .left {
+        width: 100%;
+    }
+}
+
+@media (max-width: 600px) {
+    .right {
+        display: none;
+    }
+    #navBar {
+        height: 40px;
+        width: 100%;
+        background-color: white;
+    }
+    .welcome {
+        display: none;
+    }
+    .left {
+        width: 100%;
+    }
+
+}
