@@ -1,3 +1,203 @@
+$text-color: #949090;
+$title-color: #656161;
+$button-background-color: #e65100;
+
+$widget-width: 200px;
+
+$text-font: Helvetica, sans-serif;
+$text-size: 0.8em;
+$title-size: 1em;
+
 body {
-  background: #f9f9f9;
+  background-color: #f9f9f9;
+  font-family: $text-font;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* ====================== */
+/*  General page layout   */
+/* ====================== */
+.main-container {
+  display: flex;
+}
+
+/* ================= */
+/*  Navbar styling   */
+/* ================= */
+nav ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  padding: 0px 10px;
+
+  li {
+    padding: 10px 10px;
+    color: $text-color;
+    font-size: $text-size;
+  }
+
+  li:hover {
+    color: $title-color;
+    background-color: rgba(232, 232, 232, 0.4);
+  }
+}
+
+/* =========================== */
+/*  Subscribe widget styling   */
+/* =========================== */
+.subscribe-widget {
+  font-size: $title-size;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #FFFFFF;
+  padding: 5px 25px;
+
+  span{
+    font-size: 0.9em;
+    color: $text-color;
+  }
+}
+
+
+/* ====================================== */
+/*  Popular and Recent sections styling   */
+/* ====================================== */
+.app-widget {
+  display: flex;
+  margin: 10px 5px;
+  padding: 15px 0px;
+  border-top: 1px solid #ececec;
+
+  img {
+    width: 60px;
+    height: 60px;
+  }
+
+  h3, p {
+    margin: 0px 10px;
+    font-weight: lighter;
+  }
+
+  h3 {
+    font-size: $title-size;
+    color: $title-color;
+  }
+
+  p {
+    font-size: $text-size;
+    color: $text-color;
+  }
+
+  // The voting button (1st of type) and comments button
+  // images (last of type) need different sizes
+  .app-widget-social-bar {
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+
+    img:first-of-type {
+      width: 30px;
+      height: 25px;
+    }
+
+    img:last-of-type {
+      width: 20px;
+      height: 15px;
+    }
+
+    p:nth-last-child(-n+2) {
+      align-items: flex-end;
+    }
+  }
+}
+
+.popular-section h2, .recent-section h2 {
+  font-size: $title-size;
+  font-weight: lighter;
+}
+
+.popular-section, .recent-section {
+  background-color: #FFFFFF;
+  margin: 10px;
+}
+
+.show-more-widget {
+  font-size: 0.6em;
+  font-weight: lighter;
+  color: $text-color;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  img {
+    width: 10px;
+    height: 10px;
+    margin: 0px 5px;
+  }
+}
+
+/* ====================================== */
+/*      DESKTOP SIDEBAR STYLING           */
+/* ====================================== */
+/* ========================== */
+/*  Kittybot widget styling   */
+/* ========================== */
+.kittybot-widget {
+  width: $widget-width;
+  margin: 15px 10px;
+  padding: 10px;
+  background-color: #FFFFFF;
+
+
+  h2 {
+    font-size: $title-size;
+    color: $title-color;
+  }
+
+  p:first-of-type {
+    font-size: $text-size;
+    color: $text-color;
+  }
+
+  p:last-of-type {
+    font-size: $text-size;
+    color: white;
+    background-color: $button-background-color;
+    padding: 5px 10px;
+  }
+}
+
+/* ========================== */
+/*  Kittybot widget styling   */
+/* ========================== */
+.livechat-widget {
+  width: $widget-width;
+  margin: 15px 10px;
+  padding: 10px;
+  background-color: #FFFFFF;
+}
+
+
+/* ============================= */
+/*        MEDIA QUERIES          */
+/* ============================= */
+
+@media (max-width: 600px) {
+  .subscribe-widget {
+    display: none;
+  }
+
+  .app-widget-social-bar p:nth-last-child(-n+2) {
+    display: none; //The "IPHONE +2" kind of items
+  }
+}
+
+@media (max-width: 1200px) {
+  .kittybot-widget, .livechat-widget {
+    display: none;
+  }
 }
