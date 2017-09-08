@@ -9,7 +9,7 @@
   <link rel="stylesheet" media="(media-features)" href="styles.min.css"/>
 </head>
 <body>
-  <div class="container find-zone">
+  <div class="container input-zone">
     <header>
       <img src="images\logo.png" alt="Logo's image" class="logo logo-xs">
       <form>
@@ -19,7 +19,7 @@
     </header>
   </div>
 
-  <nav class="navbar">
+  <nav class="container navbar">
     <ul>
       <li>Home</li>
       <li>Tech</li>
@@ -34,8 +34,16 @@
     <div class="clear-fix"></div>
   </nav>
 
-  <div class="container welcome invisible-xs">
-    <h2 class="invisible-xs">Welcome to Product Hunt</h2>
+
+  <div class="container input-zone welcome invisible-xs">
+    <header>
+    <h2>Welcome to Product Hunt</h2>
+    <p>Get the best new products in your inbox, daily.</p>
+    <form class="subscribe">
+      <input type="email" placeholder="Your email">
+      <button type="button">SUBSCRIBE</button>
+    </form>
+  </header>
   </div>
 
   <div class="container">

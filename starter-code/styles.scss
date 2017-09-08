@@ -1,6 +1,6 @@
 
 @media (max-width: 600px) {
-  div.find-zone form {
+  div.input-zone form {
     img {
       width: 20px;
       height: 20px;
@@ -108,7 +108,7 @@ body {
   height: 40px;
 }
 
-.find-zone form {
+.input-zone form {
   img {
 
   }
@@ -118,8 +118,10 @@ body {
 
 }
 
-.navbar ul li {
-  display: inline;
+.navbar {
+  text-align: center;
+  ul li {
+  display: inline-block;
   list-style-type: none;
 
   img {
@@ -127,8 +129,9 @@ body {
     height: 20px;
   }
 }
+}
 
-.find-zone header {
+.input-zone header {
   img,form,p {
   display: inline;
 }
