@@ -1,13 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>CSS Lab | Responsive Cloning | Product Hunt</title>
-  <link rel="stylesheet" href="styles.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS Lab | Responsive Cloning | Product Hunt</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-  
+      <div class= top>
+        <header>
+            <span><img id="logo" src="images/logo.png" alt="logo"></span>
+            <form id="recherche" method="post">
+                <input name="search" type="text" placeholder="&#x1f50d; Discover your next favorite thing...">
+            </form>
+            <div id="login">... Login</div>
+        </header>
+        <hr>
+        <nav>
+            <div class="menu">
+                <ul>
+                    <li><strong>Home</strong>
+                    </li>
+                    <li>Tech</li>
+                    <li>Games</li>
+                    <li>Podcasts</li>
+                    <li>Books</li>
+                    <li>Bots</li>
+                    <li>Developer-Tools</li>
+                    <li>iMessage Apps</li>
+                    <li class="disapear">iPhone</li>
+                    <li class="disapear">Photography tools</li>
+                    <li> <img class="arrows" src="images/arrow-prev.png" alt="arrow-prev"></li>
+                    <li> <img class="arrows" src="images/arrow-next.png" alt="arrow-next"></li>
+                </ul>
+            </div>
+        </nav>
+      </div>
+  <div class="body">
+        <div class="welcome">
+          <p><strong>Welcome to Product hunt</strong> Get the best new products in your inbox,daily.</p>
+          <form id="email" method="post">
+            <input name="search" type="text" placeholder="Your email">
+            <table>
+              <tr>
+                <td class="button">
+                  <a href="#">Subscribe</a>
+                </td>
+              </tr>
+            </table>
+          </form>
+        </div>
+
+        <div class="main">
+            <div class="left">
+                <div class="popular">
+                    <h1>Popular this week <img id="cross" src="images/close.png" alt="cross"></h1>
+                    <hr class="h1">
+
+                    <div class="content">
+                        <img class="cook" src="images/popular-this-week/app-1.png" alt="cook">
+                        <div class="profil">
+                            <span class="profilName">Duolingo Bots</span>
+                            <p class="ai">AI-powered characters to teach language conversation</p>
+                            <div class="littleIcons">
+                                <div>
+                                    <img class="voteImage" src="images/votes.png" alt="no picture">
+                                    <span class="textIcons">1460</span>
+                                </div>
+                                <div>
+                                    <img class="commentsImage" src="images/comments.png" alt="no picture">
+                                    <span class="textIcons">49</span>
+                                </div>
+                                <div>
+                                    <img class="saveImage" src="images/save.png" alt="no picture">
+                                    <span class="textIcons">SAVE</span>
+                                </div>
+                                <div>
+                                    <img class="shareImage" src="images/share.png" alt="no picture">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="content">
+                    <span class="profilName">Duolingo Bots</span>
+                    </div>
+                    <hr>
+                    <div class="content">
+                    <span class="profilName">Duolingo Bots</span>
+                    </div>
+                    <div class="showMore"></div>
+                </div>
+
+                <div class="popular">
+                    <h1>Today</h1>
+                    <hr class="h1">
+                    <div class="content">
+                    <span class="profilName">Duolingo Bots</span>
+                    </div>
+                    <hr>
+                    <div class="content">
+                    <span class="profilName">Duolingo Bots</span>
+                    </div>
+                    <hr>
+                    <div class="content">
+                    <span class="profilName">Duolingo Bots</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="right">
+                <aside class="slack">
+                    <h1> Kitty</h1>
+                </aside>
+
+                <aside class="upComing">
+                    <h1> Upcoming</h1>
+                </aside>
+
+                <aside class="Tweets">
+                    <h1> Tweets</h1>
+                </aside>
+        </div>
+    </div>
+  </div>
+
 </body>
+
 </html>
