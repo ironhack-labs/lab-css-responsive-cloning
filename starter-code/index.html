@@ -6,8 +6,116 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>CSS Lab | Responsive Cloning | Product Hunt</title>
   <link rel="stylesheet" href="styles.min.css">
+  <link rel="stylesheet" media="(media-features)" href="styles.min.css"/>
 </head>
+
 <body>
-  
+  <div id="topheader">
+  <div class="container input-zone">
+    <header>
+      <a class="input-zone-items"><img src="images\logo.png" alt="Logo's image" class="logo logo-xs"></a>
+      <a class="input-zone-items">
+        <form>
+        <img src="images\search.png" alt="Search"> :
+        <input type="text" name="search" placeholder="Discover your next favorite thing…">
+      </form></a>
+      <a class="input-zone-items"><p class="top-left">... Log in</p></a>
+    </header>
+  </div>
+
+  <nav class="container navbar">
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Tech</a></li>
+      <li><a href="#">Games</a></li>
+      <li><a href="#">Podcasts</a></li>
+      <li><a href="#">Books</a></li>
+      <li><a href="#">Developer Tools</a></li>
+      <li><a href="#">iMassage Apps</a></li>
+      <li><a href="#"><img src="images\arrow-prev.png" alt="Menu button previous"></a></li>
+      <li><a href="#"><img src="images\arrow-next.png" alt="Menu button next"></a></li>
+    </ul>
+    <div class="clear-fix"></div>
+  </nav>
+</div>
+
+
+  <div class="container input-zone welcome invisible-xs">
+    <header>
+    <h2>Welcome to Product Hunt</h2>
+    <p>Get the best new products in your inbox, daily.</p>
+    <form class="subscribe">
+      <input type="email" placeholder="Your email">
+      <button type="button">SUBSCRIBE</button>
+    </form>
+    <img src="images\close.png" alt="Close button" class="top-left">
+  </header>
+  </div>
+
+  <div class="container">
+    <header>
+      <h3>Popular this week</h3>
+      <img src="images\close.png" alt="Close button" class="top-left">
+    </header>
+    <section class="product">
+      <img src="images\popular-this-week\app-1.png" alt="image of product">
+      <div class="product-info">
+        <h4>Duolingo Bots</h4>
+        <p>AI-powered characters to teach language conversation</p>
+      </div>
+      <div class="clear-fix"><div>
+    </section>
+
+    <section class="product">
+      <img src="images\popular-this-week\app-2.png" alt="image of product">
+      <div class="product-info">
+        <h4>Tribe 2.0</h4>
+        <p>Introducing Augmented Messaging</p>
+      </div>
+      <div class="clear-fix"><div>
+    </section>
+
+      <section class="product">
+        <img src="images\popular-this-week\app-3.png" alt="image of product">
+        <div class="product-info">
+          <h4>Workplace by Facebook</h4>
+          <p>Connect everyone in your company and turn ideas into action</p>
+        </div>
+        <div class="clear-fix"><div>
+      </section>
+  </div>
+
+  <div class="container">
+    <header>
+      <h3>Today</h3><p class="top-left">POPULAR | NEWEST</p>
+    </header>
+
+    <section class="product">
+      <img src="images\today\app-1.png" alt="image of product">
+      <div class="product-info">
+        <h4>Sprayscape</h4>
+        <p>A perfectly imperfect VR-ish camera experiment, by Google</p>
+      </div>
+      <div class="clear-fix"><div>
+    </section>
+
+    <section class="product">
+      <img src="images\today\app-2.png" alt="image of product">
+      <div class="product-info">
+        <h4>Ask Gary Vee</h4>
+        <p>The unofficial Gary Vee persona chatbot on Messenger!</p>
+      </div>
+      <div class="clear-fix"><div>
+    </section>
+
+    <section class="product">
+      <img src="images\today\app-3.png" alt="image of product">
+      <div class="product-info">
+        <h4>The Electron Wheel</h4>
+        <p>TTurn your standard bicycle into electric bike.</p>
+      </div>
+      <div class="clear-fix"><div>
+    </section>
+  </div>
 </body>
 </html>
