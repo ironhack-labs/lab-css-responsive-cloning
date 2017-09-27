@@ -1,3 +1,177 @@
+$grey-color: #7a7a7a;
+$light-grey: #f9f9f9;
+
 body {
   background: #f9f9f9;
+  width: 600px;
+  font-family: sans-serif;
+  margin: 0 auto;
+
 }
+
+
+
+//the smallest (extra-small) resolution is between 0 and 600px
+
+.top-bar{
+  background-color: white;
+    .logo {
+    height:50px;
+    display: inline-block;
+    vertical-align: bottom;
+      }
+      img {
+        display: inline-block;
+
+      }
+      form {
+        display: inline-block;
+        width: 80%;
+
+            #discover {
+              width:90%;
+              font-family: sans-serif;
+            }
+      }
+      p {
+        display: inline-block;
+
+      }
+    }
+
+.divide-search{
+  background-color: white;
+  width: 80%;
+}
+
+.nav-bar{
+  background-color: white;
+  display: inline-block;
+  width: 100%;
+  font-size: 14px;
+  border-top: solid $grey-color 1px;
+  border-bottom: solid $grey-color 1px;
+  position:relative;
+
+      ul{
+        list-style-type: none;
+        text-align: center;
+        padding: 10px;
+        width: 80%;
+        margin:0px;
+        display: inline-block;
+      }
+      li{
+        display: inline;
+        float: left;
+
+            a{
+              text-decoration: none;
+              color: $grey-color;
+              display: block;
+              padding: 5px;
+            }
+
+            a:hover {
+              background-color: $light-grey;
+              color: black;
+
+            }
+
+
+      }
+
+#arrows{
+  display: inline-block;
+  float: right;
+}
+
+      img{
+        display:inline;
+        float: left;
+        width: 1em;
+        padding: 5px;
+      }
+}
+
+.subscribe {
+  margin: 30px;
+  padding: 10px 10px 5px;
+  background-color: white;
+  text-align: center;
+  display: none;
+}
+
+.popular {
+  background-color:white;
+  margin: 0px;
+  width: 600px;
+      h3 {
+        margin: 0px;
+        font-weight: normal;
+        padding: 10px;
+        font-size: 16px;
+      }
+}
+
+.products-displayed{
+  width: 90%;
+  margin: 0px auto;
+  padding: 0px 0px;
+}
+
+.products-displayed img{
+        width: 20%;
+        vertical-align: top;
+      }
+
+.product{
+  border-top: solid $light-grey 2px;
+  margin-top: 10px;
+  padding-top: 20px;
+}
+.container {
+        display: inline-block;
+        margin: 0px;
+        padding: 0px;
+        width: 60%;
+      }
+
+.container p{
+  font-size: 14px;
+  padding-left: 10px;
+  margin-top: 0px;
+}
+.votes-comments {
+  font-size: 12px;
+  display: inline-block;
+  width: 50px;
+  padding: 2px;
+  border: 1px solid $grey-color;
+}
+
+
+
+
+
+
+// the small resolution is between 601 and 991 pixels
+@media (min-width: 800px){
+
+  body{
+    width: 80%;
+  }
+
+  .subscribe {
+    display: block;
+  }
+  .popular h3 {
+      font-size: 22px;
+  }
+
+  .popular {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  }
